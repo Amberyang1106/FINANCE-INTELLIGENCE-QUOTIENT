@@ -1,0 +1,21 @@
+[
+  {
+    "mode": "redesign",
+    "depth": "full",
+    "scope": "app",
+    "shape": "app screen",
+    "theme": "cobalt",
+    "axes": "top command bar, context rail, ledger workspace, evidence inspector",
+    "hero": "none",
+    "nav": "top command bar",
+    "footer": "none",
+    "imagery": "none",
+    "photos": [],
+    "entry": "2026-10-27",
+    "fingerprint": "topbar|left-context|ledger|right-inspector|graphite-finding|keycaps",
+    "sections": "metric strip, variance ledger, anomaly queue, analysis thread, evidence ledger",
+    "signature": "variance ledger",
+    "waived": [],
+    "prompt": "Redesign an FP&A desktop analysis workbench in Cobalt"
+  }
+]

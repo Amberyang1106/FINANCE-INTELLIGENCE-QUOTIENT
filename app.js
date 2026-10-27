@@ -4,18 +4,29 @@ const views = {
   reports: document.getElementById('reportsView')
 };
 
+const breadcrumbs = {
+  monitor: ['监控台', '毛利监控'],
+  analysis: ['分析任务', '华东区毛利调查'],
+  reports: ['财务报告', '报告库']
+};
+
 function switchView(name) {
-  Object.values(views).forEach(view => view.classList.remove('active'));
-  views[name].classList.add('active');
-  document.querySelectorAll('.nav-item').forEach(item => item.classList.toggle('active', item.dataset.view === name));
-  document.querySelector('.breadcrumb').innerHTML = name === 'analysis'
-    ? '<span>分析任务</span><b>/</b><strong>华东区毛利调查</strong>'
-    : name === 'reports'
-      ? '<span>财务报告</span><b>/</b><strong>报告库</strong>'
-      : '<span>监控台</span><b>/</b><strong>毛利监控</strong>';
+  if (!views[name]) return;
+  Object.entries(views).forEach(([key, view]) => {
+    view.classList.toggle('active', key === name);
+    view.setAttribute('aria-hidden', key === name ? 'false' : 'true');
+  });
+  document.querySelectorAll('.nav-item').forEach((item) => {
+    const selected = item.dataset.view === name;
+    item.classList.toggle('active', selected);
+    if (selected) item.setAttribute('aria-current', 'page');
+    else item.removeAttribute('aria-current');
+  });
+  const [section, page] = breadcrumbs[name];
+  document.querySelector('.breadcrumb').innerHTML = `<span>${section}</span><b>/</b><strong>${page}</strong>`;
 }
 
-document.querySelectorAll('.nav-item').forEach(item => item.addEventListener('click', () => switchView(item.dataset.view)));
+document.querySelectorAll('.nav-item').forEach((item) => item.addEventListener('click', () => switchView(item.dataset.view)));
 
 const anomalyTitles = {
   east: '华东区毛利率为何连续下降？',
@@ -23,21 +34,28 @@ const anomalyTitles = {
   marketing: '品牌营销预算为何提前消耗？'
 };
 
-document.querySelectorAll('.anomaly').forEach(item => {
-  item.addEventListener('click', () => {
-    document.querySelectorAll('.anomaly').forEach(row => row.classList.remove('active'));
-    item.classList.add('active');
-    document.getElementById('analysisTitle').textContent = anomalyTitles[item.dataset.anomaly];
-    switchView('analysis');
-  });
-});
+function openAnomaly(item) {
+  const key = item.dataset.anomaly;
+  document.querySelectorAll('.anomaly').forEach((row) => row.classList.toggle('active', row.dataset.anomaly === key));
+  document.getElementById('analysisTitle').textContent = anomalyTitles[key];
+  switchView('analysis');
+  document.getElementById('analysisTitle').focus({ preventScroll: true });
+}
 
-document.querySelectorAll('.inspector-tabs button').forEach(button => {
+document.querySelectorAll('[data-anomaly]').forEach((item) => item.addEventListener('click', () => openAnomaly(item)));
+
+document.querySelectorAll('.inspector-tabs button').forEach((button) => {
   button.addEventListener('click', () => {
-    document.querySelectorAll('.inspector-tabs button').forEach(tab => tab.classList.remove('active'));
-    document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-    button.classList.add('active');
-    document.getElementById(`${button.dataset.tab}Tab`).classList.add('active');
+    document.querySelectorAll('.inspector-tabs button').forEach((tab) => {
+      const selected = tab === button;
+      tab.classList.toggle('active', selected);
+      tab.setAttribute('aria-selected', String(selected));
+    });
+    document.querySelectorAll('.tab-content').forEach((content) => {
+      const selected = content.id === `${button.dataset.tab}Tab`;
+      content.classList.toggle('active', selected);
+      content.hidden = !selected;
+    });
   });
 });
 
@@ -58,29 +76,59 @@ function updateScenario() {
   document.getElementById('scenarioPp').textContent = `毛利率 +${pp.toFixed(1)}pp`;
 }
 
-[discount, cost, mix].forEach(slider => slider.addEventListener('input', updateScenario));
+[discount, cost, mix].forEach((slider) => slider.addEventListener('input', updateScenario));
 
 const toast = document.getElementById('toast');
+let toastTimer;
+
+function showToast(message) {
+  clearTimeout(toastTimer);
+  toast.querySelector('p').textContent = message;
+  toast.classList.add('show');
+  toastTimer = setTimeout(() => toast.classList.remove('show'), 4200);
+}
+
+toast.addEventListener('pointerenter', () => clearTimeout(toastTimer));
+toast.addEventListener('pointerleave', () => { toastTimer = setTimeout(() => toast.classList.remove('show'), 1800); });
+toast.addEventListener('focusin', () => clearTimeout(toastTimer));
+toast.addEventListener('focusout', () => { toastTimer = setTimeout(() => toast.classList.remove('show'), 1800); });
+
 document.getElementById('newAnalysis').addEventListener('click', () => {
   switchView('analysis');
-  toast.classList.add('show');
-  setTimeout(() => toast.classList.remove('show'), 2200);
+  document.getElementById('analysisPrompt').focus();
 });
 
-document.querySelectorAll('.suggested-prompts button').forEach(button => {
+document.querySelectorAll('.suggested-prompts button').forEach((button) => {
   button.addEventListener('click', () => {
-    const textarea = document.querySelector('.composer textarea');
+    const textarea = document.getElementById('analysisPrompt');
     textarea.value = button.textContent;
     textarea.focus();
   });
 });
 
-document.getElementById('sendButton').addEventListener('click', () => {
-  const textarea = document.querySelector('.composer textarea');
-  if (!textarea.value.trim()) return;
-  toast.querySelector('p').textContent = '问题已加入分析队列';
-  toast.classList.add('show');
+document.querySelector('.composer').addEventListener('submit', (event) => {
+  event.preventDefault();
+  const textarea = document.getElementById('analysisPrompt');
+  if (!textarea.value.trim()) {
+    textarea.focus();
+    return;
+  }
+  showToast('问题已加入分析队列');
   textarea.value = '';
-  setTimeout(() => toast.classList.remove('show'), 1800);
 });
 
+document.querySelector('.command-trigger').addEventListener('click', () => {
+  switchView('analysis');
+  document.getElementById('analysisPrompt').focus();
+});
+
+document.addEventListener('keydown', (event) => {
+  if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {
+    event.preventDefault();
+    switchView('analysis');
+    document.getElementById('analysisPrompt').focus();
+  }
+});
+
+switchView('monitor');
+updateScenario();

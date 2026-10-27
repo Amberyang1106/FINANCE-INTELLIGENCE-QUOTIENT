@@ -1,0 +1,12 @@
+{
+  "scanned": "2026-10-27",
+  "findings": {
+    "fonts": "Public Sans, Noto Serif SC, DM Mono via Google Fonts",
+    "palette": "warm paper, acid green, coral and amber custom properties",
+    "motion": "CSS view reveal and toast transition",
+    "spacing": "ad hoc pixel scale",
+    "framework": "static HTML, CSS and JavaScript"
+  },
+  "preserve": ["content", "DOM ids", "view switching", "scenario calculations", "anomaly workflow"],
+  "introduce": ["Cobalt tokens", "app density scale", "variance ledger signature", "accessible control states"]
+}
