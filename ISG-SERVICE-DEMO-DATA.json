@@ -1,0 +1,1116 @@
+{
+  "schema_version": 1,
+  "status": "proposal_for_user_review",
+  "synthetic": true,
+  "scope": {
+    "period_year": "2026",
+    "quarter": 3,
+    "periods": [
+      "2026007",
+      "2026008",
+      "2026009"
+    ],
+    "profit_center": "L0AUXG",
+    "company_code": "DEMO",
+    "geo_cd": "ROW",
+    "currency": "USD",
+    "amount_storage": "integer cents",
+    "cost_display_sign": "positive expense",
+    "quarter_label_note": "Period-year Q3, not an asserted company FY name"
+  },
+  "scenario": {
+    "type": "month3_true_up_only",
+    "locked_periods": [
+      "2026007",
+      "2026008"
+    ],
+    "excluded_revenue_base_record_ids": [
+      "REV-2026009-ADJ9001"
+    ],
+    "booked_revenue_unchanged": true
+  },
+  "proposed_demo_thresholds": {
+    "negative_gp_cents": 0,
+    "large_negative_voucher_cents": -33439250,
+    "rate_change_pp": 20,
+    "rate_reference": "month1/month2 rate (both identical in this fixture)"
+  },
+  "source_rows": [
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 13375700,
+      "amt_lc_cents": 13375700,
+      "local_currency": "USD",
+      "record_id": "REV-2026007-B0",
+      "period": "2026007",
+      "bpc_seg_cd": "B0",
+      "checking_flg": "AL",
+      "alloc_flg": "A",
+      "svc_catg_cd": "AMTREV",
+      "gtm_lv2": null,
+      "document_number": "REV-2026007-B0",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "Routine service revenue — B0",
+      "user_info": "SYSTEM_SERVICE",
+      "reference": "INV-2026007-B0"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 80254200,
+      "amt_lc_cents": 80254200,
+      "local_currency": "USD",
+      "record_id": "REV-2026007-GA",
+      "period": "2026007",
+      "bpc_seg_cd": "GA",
+      "checking_flg": "AL",
+      "alloc_flg": "A",
+      "svc_catg_cd": "IMMDREV",
+      "gtm_lv2": null,
+      "document_number": "REV-2026007-GA",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "Routine service revenue — GA",
+      "user_info": "SYSTEM_SERVICE",
+      "reference": "INV-2026007-GA"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 26751400,
+      "amt_lc_cents": 26751400,
+      "local_currency": "USD",
+      "record_id": "REV-2026007-LE",
+      "period": "2026007",
+      "bpc_seg_cd": "LE",
+      "checking_flg": "AL",
+      "alloc_flg": "A",
+      "svc_catg_cd": "AMTREV",
+      "gtm_lv2": null,
+      "document_number": "REV-2026007-LE",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "Routine service revenue — LE",
+      "user_info": "SYSTEM_SERVICE",
+      "reference": "INV-2026007-LE"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 13375700,
+      "amt_lc_cents": 13375700,
+      "local_currency": "USD",
+      "record_id": "REV-2026007-SMBMM",
+      "period": "2026007",
+      "bpc_seg_cd": "SMBMM",
+      "checking_flg": "AL",
+      "alloc_flg": "A",
+      "svc_catg_cd": "IMMDREV",
+      "gtm_lv2": null,
+      "document_number": "REV-2026007-SMBMM",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "Routine service revenue — SMBMM",
+      "user_info": "SYSTEM_SERVICE",
+      "reference": "INV-2026007-SMBMM"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 26751400,
+      "amt_lc_cents": 26751400,
+      "local_currency": "USD",
+      "record_id": "COST-2026007-GA",
+      "period": "2026007",
+      "bpc_seg_cd": "GA",
+      "checking_flg": null,
+      "alloc_flg": "A",
+      "svc_catg_cd": "BMC",
+      "gtm_lv2": null,
+      "document_number": "COST-2026007-01",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "GA cost with existing segment",
+      "user_info": "SYSTEM_COST"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 2675140,
+      "amt_lc_cents": 2675140,
+      "local_currency": "USD",
+      "record_id": "COST-2026007-LE",
+      "period": "2026007",
+      "bpc_seg_cd": "LE",
+      "checking_flg": null,
+      "alloc_flg": "C",
+      "svc_catg_cd": "NBMC",
+      "gtm_lv2": null,
+      "document_number": "COST-2026007-02",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "LE cost with existing segment",
+      "user_info": "SYSTEM_COST"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 267514,
+      "amt_lc_cents": 267514,
+      "local_currency": "USD",
+      "record_id": "COST-2026007-SM",
+      "period": "2026007",
+      "bpc_seg_cd": null,
+      "checking_flg": null,
+      "alloc_flg": "B",
+      "svc_catg_cd": "NBMC",
+      "gtm_lv2": "SM",
+      "document_number": "COST-2026007-03",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "B-class manual cost mapped from SM",
+      "user_info": "Demo Cost Analyst"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 267514,
+      "amt_lc_cents": 267514,
+      "local_currency": "USD",
+      "record_id": "COST-2026007-MM",
+      "period": "2026007",
+      "bpc_seg_cd": null,
+      "checking_flg": null,
+      "alloc_flg": "B",
+      "svc_catg_cd": "NBMC",
+      "gtm_lv2": "MM",
+      "document_number": "COST-2026007-04",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "B-class manual cost mapped from MM",
+      "user_info": "Demo Cost Analyst"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 40127100,
+      "amt_lc_cents": 40127100,
+      "local_currency": "USD",
+      "record_id": "POOL-2026007-BMC",
+      "period": "2026007",
+      "bpc_seg_cd": null,
+      "checking_flg": null,
+      "alloc_flg": "C",
+      "svc_catg_cd": "BMC",
+      "gtm_lv2": null,
+      "document_number": "POOL-2026007-01",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "Unsegmented BMC pool",
+      "user_info": "SYSTEM_COST"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 16050840,
+      "amt_lc_cents": 16050840,
+      "local_currency": "USD",
+      "record_id": "POOL-2026007-NBMC",
+      "period": "2026007",
+      "bpc_seg_cd": null,
+      "checking_flg": null,
+      "alloc_flg": "B",
+      "svc_catg_cd": "NBMC",
+      "gtm_lv2": null,
+      "document_number": "POOL-2026007-02",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "B-class cost without GTM mapping; allocate by revenue",
+      "user_info": "Demo Cost Analyst"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 13375700,
+      "amt_lc_cents": 13375700,
+      "local_currency": "USD",
+      "record_id": "REV-2026008-B0",
+      "period": "2026008",
+      "bpc_seg_cd": "B0",
+      "checking_flg": "AL",
+      "alloc_flg": "A",
+      "svc_catg_cd": "AMTREV",
+      "gtm_lv2": null,
+      "document_number": "REV-2026008-B0",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "Routine service revenue — B0",
+      "user_info": "SYSTEM_SERVICE",
+      "reference": "INV-2026008-B0"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 80254200,
+      "amt_lc_cents": 80254200,
+      "local_currency": "USD",
+      "record_id": "REV-2026008-GA",
+      "period": "2026008",
+      "bpc_seg_cd": "GA",
+      "checking_flg": "AL",
+      "alloc_flg": "A",
+      "svc_catg_cd": "IMMDREV",
+      "gtm_lv2": null,
+      "document_number": "REV-2026008-GA",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "Routine service revenue — GA",
+      "user_info": "SYSTEM_SERVICE",
+      "reference": "INV-2026008-GA"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 26751400,
+      "amt_lc_cents": 26751400,
+      "local_currency": "USD",
+      "record_id": "REV-2026008-LE",
+      "period": "2026008",
+      "bpc_seg_cd": "LE",
+      "checking_flg": "AL",
+      "alloc_flg": "A",
+      "svc_catg_cd": "AMTREV",
+      "gtm_lv2": null,
+      "document_number": "REV-2026008-LE",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "Routine service revenue — LE",
+      "user_info": "SYSTEM_SERVICE",
+      "reference": "INV-2026008-LE"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 13375700,
+      "amt_lc_cents": 13375700,
+      "local_currency": "USD",
+      "record_id": "REV-2026008-SMBMM",
+      "period": "2026008",
+      "bpc_seg_cd": "SMBMM",
+      "checking_flg": "AL",
+      "alloc_flg": "A",
+      "svc_catg_cd": "IMMDREV",
+      "gtm_lv2": null,
+      "document_number": "REV-2026008-SMBMM",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "Routine service revenue — SMBMM",
+      "user_info": "SYSTEM_SERVICE",
+      "reference": "INV-2026008-SMBMM"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 26751400,
+      "amt_lc_cents": 26751400,
+      "local_currency": "USD",
+      "record_id": "COST-2026008-GA",
+      "period": "2026008",
+      "bpc_seg_cd": "GA",
+      "checking_flg": null,
+      "alloc_flg": "A",
+      "svc_catg_cd": "BMC",
+      "gtm_lv2": null,
+      "document_number": "COST-2026008-01",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "GA cost with existing segment",
+      "user_info": "SYSTEM_COST"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 2675140,
+      "amt_lc_cents": 2675140,
+      "local_currency": "USD",
+      "record_id": "COST-2026008-LE",
+      "period": "2026008",
+      "bpc_seg_cd": "LE",
+      "checking_flg": null,
+      "alloc_flg": "C",
+      "svc_catg_cd": "NBMC",
+      "gtm_lv2": null,
+      "document_number": "COST-2026008-02",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "LE cost with existing segment",
+      "user_info": "SYSTEM_COST"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 267514,
+      "amt_lc_cents": 267514,
+      "local_currency": "USD",
+      "record_id": "COST-2026008-SM",
+      "period": "2026008",
+      "bpc_seg_cd": null,
+      "checking_flg": null,
+      "alloc_flg": "B",
+      "svc_catg_cd": "NBMC",
+      "gtm_lv2": "SM",
+      "document_number": "COST-2026008-03",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "B-class manual cost mapped from SM",
+      "user_info": "Demo Cost Analyst"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 267514,
+      "amt_lc_cents": 267514,
+      "local_currency": "USD",
+      "record_id": "COST-2026008-MM",
+      "period": "2026008",
+      "bpc_seg_cd": null,
+      "checking_flg": null,
+      "alloc_flg": "B",
+      "svc_catg_cd": "NBMC",
+      "gtm_lv2": "MM",
+      "document_number": "COST-2026008-04",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "B-class manual cost mapped from MM",
+      "user_info": "Demo Cost Analyst"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 40127100,
+      "amt_lc_cents": 40127100,
+      "local_currency": "USD",
+      "record_id": "POOL-2026008-BMC",
+      "period": "2026008",
+      "bpc_seg_cd": null,
+      "checking_flg": null,
+      "alloc_flg": "C",
+      "svc_catg_cd": "BMC",
+      "gtm_lv2": null,
+      "document_number": "POOL-2026008-01",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "Unsegmented BMC pool",
+      "user_info": "SYSTEM_COST"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 16050840,
+      "amt_lc_cents": 16050840,
+      "local_currency": "USD",
+      "record_id": "POOL-2026008-NBMC",
+      "period": "2026008",
+      "bpc_seg_cd": null,
+      "checking_flg": null,
+      "alloc_flg": "B",
+      "svc_catg_cd": "NBMC",
+      "gtm_lv2": null,
+      "document_number": "POOL-2026008-02",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "B-class cost without GTM mapping; allocate by revenue",
+      "user_info": "Demo Cost Analyst"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 13375700,
+      "amt_lc_cents": 13375700,
+      "local_currency": "USD",
+      "record_id": "REV-2026009-B0",
+      "period": "2026009",
+      "bpc_seg_cd": "B0",
+      "checking_flg": "AL",
+      "alloc_flg": "A",
+      "svc_catg_cd": "AMTREV",
+      "gtm_lv2": null,
+      "document_number": "REV-2026009-B0",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "Routine service revenue — B0",
+      "user_info": "SYSTEM_SERVICE",
+      "reference": "INV-2026009-B0"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 80254200,
+      "amt_lc_cents": 80254200,
+      "local_currency": "USD",
+      "record_id": "REV-2026009-GA",
+      "period": "2026009",
+      "bpc_seg_cd": "GA",
+      "checking_flg": "AL",
+      "alloc_flg": "A",
+      "svc_catg_cd": "IMMDREV",
+      "gtm_lv2": null,
+      "document_number": "REV-2026009-GA",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "Routine service revenue — GA",
+      "user_info": "SYSTEM_SERVICE",
+      "reference": "INV-2026009-GA"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 26751400,
+      "amt_lc_cents": 26751400,
+      "local_currency": "USD",
+      "record_id": "REV-2026009-LE",
+      "period": "2026009",
+      "bpc_seg_cd": "LE",
+      "checking_flg": "AL",
+      "alloc_flg": "A",
+      "svc_catg_cd": "AMTREV",
+      "gtm_lv2": null,
+      "document_number": "REV-2026009-LE",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "Routine service revenue — LE",
+      "user_info": "SYSTEM_SERVICE",
+      "reference": "INV-2026009-LE"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 13375700,
+      "amt_lc_cents": 13375700,
+      "local_currency": "USD",
+      "record_id": "REV-2026009-SMBMM",
+      "period": "2026009",
+      "bpc_seg_cd": "SMBMM",
+      "checking_flg": "AL",
+      "alloc_flg": "A",
+      "svc_catg_cd": "IMMDREV",
+      "gtm_lv2": null,
+      "document_number": "REV-2026009-SMBMM",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "Routine service revenue — SMBMM",
+      "user_info": "SYSTEM_SERVICE",
+      "reference": "INV-2026009-SMBMM"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 26751400,
+      "amt_lc_cents": 26751400,
+      "local_currency": "USD",
+      "record_id": "COST-2026009-GA",
+      "period": "2026009",
+      "bpc_seg_cd": "GA",
+      "checking_flg": null,
+      "alloc_flg": "A",
+      "svc_catg_cd": "BMC",
+      "gtm_lv2": null,
+      "document_number": "COST-2026009-01",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "GA cost with existing segment",
+      "user_info": "SYSTEM_COST"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 2675140,
+      "amt_lc_cents": 2675140,
+      "local_currency": "USD",
+      "record_id": "COST-2026009-LE",
+      "period": "2026009",
+      "bpc_seg_cd": "LE",
+      "checking_flg": null,
+      "alloc_flg": "C",
+      "svc_catg_cd": "NBMC",
+      "gtm_lv2": null,
+      "document_number": "COST-2026009-02",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "LE cost with existing segment",
+      "user_info": "SYSTEM_COST"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 267514,
+      "amt_lc_cents": 267514,
+      "local_currency": "USD",
+      "record_id": "COST-2026009-SM",
+      "period": "2026009",
+      "bpc_seg_cd": null,
+      "checking_flg": null,
+      "alloc_flg": "B",
+      "svc_catg_cd": "NBMC",
+      "gtm_lv2": "SM",
+      "document_number": "COST-2026009-03",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "B-class manual cost mapped from SM",
+      "user_info": "Demo Cost Analyst"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 267514,
+      "amt_lc_cents": 267514,
+      "local_currency": "USD",
+      "record_id": "COST-2026009-MM",
+      "period": "2026009",
+      "bpc_seg_cd": null,
+      "checking_flg": null,
+      "alloc_flg": "B",
+      "svc_catg_cd": "NBMC",
+      "gtm_lv2": "MM",
+      "document_number": "COST-2026009-04",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "B-class manual cost mapped from MM",
+      "user_info": "Demo Cost Analyst"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 40127100,
+      "amt_lc_cents": 40127100,
+      "local_currency": "USD",
+      "record_id": "POOL-2026009-BMC",
+      "period": "2026009",
+      "bpc_seg_cd": null,
+      "checking_flg": null,
+      "alloc_flg": "C",
+      "svc_catg_cd": "BMC",
+      "gtm_lv2": null,
+      "document_number": "POOL-2026009-01",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "Unsegmented BMC pool",
+      "user_info": "SYSTEM_COST"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": 16050840,
+      "amt_lc_cents": 16050840,
+      "local_currency": "USD",
+      "record_id": "POOL-2026009-NBMC",
+      "period": "2026009",
+      "bpc_seg_cd": null,
+      "checking_flg": null,
+      "alloc_flg": "B",
+      "svc_catg_cd": "NBMC",
+      "gtm_lv2": null,
+      "document_number": "POOL-2026009-02",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "B-class cost without GTM mapping; allocate by revenue",
+      "user_info": "Demo Cost Analyst"
+    },
+    {
+      "company_code": "DEMO",
+      "profit_center": "L0AUXG",
+      "geo_cd": "ROW",
+      "currency": "USD",
+      "non_alloc_flg": null,
+      "amt_cents": -120381300,
+      "amt_lc_cents": -120381300,
+      "local_currency": "USD",
+      "record_id": "REV-2026009-ADJ9001",
+      "period": "2026009",
+      "bpc_seg_cd": "LE",
+      "checking_flg": "AL",
+      "alloc_flg": "B",
+      "svc_catg_cd": "GTN",
+      "gtm_lv2": "LE",
+      "document_number": "5900018271",
+      "fiscal_year": "2026",
+      "line_item": "001",
+      "document_text": "Quarter-end service revenue adjustment — pending positive-entry review",
+      "user_info": "yangtt16",
+      "reference": "5900018392",
+      "source_trace": "Synthetic source voucher reference retained on allocated revenue row",
+      "demo_annotations": {
+        "entry_type": "manual",
+        "classification_basis": "User-defined demo assumption; username alone does not prove manual posting."
+      }
+    }
+  ],
+  "monthly_inputs": [
+    {
+      "period": "2026007",
+      "revenue_cents": {
+        "B0": 13375700,
+        "GA": 80254200,
+        "LE": 26751400,
+        "SMBMM": 13375700
+      },
+      "copy_cost_cents": {
+        "B0": 267514,
+        "GA": 26751400,
+        "LE": 2675140,
+        "SMBMM": 267514
+      },
+      "pool_cents": 56177940,
+      "executed_allocation_cents": {
+        "B0": 5617794,
+        "GA": 33706764,
+        "LE": 11235588,
+        "SMBMM": 5617794
+      }
+    },
+    {
+      "period": "2026008",
+      "revenue_cents": {
+        "B0": 13375700,
+        "GA": 80254200,
+        "LE": 26751400,
+        "SMBMM": 13375700
+      },
+      "copy_cost_cents": {
+        "B0": 267514,
+        "GA": 26751400,
+        "LE": 2675140,
+        "SMBMM": 267514
+      },
+      "pool_cents": 56177940,
+      "executed_allocation_cents": {
+        "B0": 5617794,
+        "GA": 33706764,
+        "LE": 11235588,
+        "SMBMM": 5617794
+      }
+    },
+    {
+      "period": "2026009",
+      "revenue_cents": {
+        "B0": 13375700,
+        "GA": 80254200,
+        "LE": -93629900,
+        "SMBMM": 13375700
+      },
+      "copy_cost_cents": {
+        "B0": 267514,
+        "GA": 26751400,
+        "LE": 2675140,
+        "SMBMM": 267514
+      },
+      "pool_cents": 56177940
+    }
+  ],
+  "results": {
+    "before": {
+      "quarter_base_cents": {
+        "B0": 40127100,
+        "GA": 240762600,
+        "LE": -40127100,
+        "SMBMM": 40127100
+      },
+      "quarter_rate": {
+        "B0": 0.14285714285714285,
+        "GA": 0.8571428571428571,
+        "LE": -0.14285714285714285,
+        "SMBMM": 0.14285714285714285
+      },
+      "quarter_target_allocation_cents": {
+        "B0": 24076260,
+        "GA": 144457560,
+        "LE": -24076260,
+        "SMBMM": 24076260
+      },
+      "prior_executed_allocation_cents": {
+        "B0": 11235588,
+        "GA": 67413528,
+        "LE": 22471176,
+        "SMBMM": 11235588
+      },
+      "month3_true_up_cents": {
+        "B0": 12840672,
+        "GA": 77044032,
+        "LE": -46547436,
+        "SMBMM": 12840672
+      },
+      "month3_cost_after_cents": {
+        "B0": 13108186,
+        "GA": 103795432,
+        "LE": -43872296,
+        "SMBMM": 13108186
+      },
+      "month3_gp_cents": {
+        "B0": 267514,
+        "GA": -23541232,
+        "LE": -49757604,
+        "SMBMM": 267514
+      },
+      "quarter_cost_after_cents": {
+        "B0": 24878802,
+        "GA": 224711760,
+        "LE": -16050840,
+        "SMBMM": 24878802
+      },
+      "quarter_gp_cents": {
+        "B0": 15248298,
+        "GA": 16050840,
+        "LE": -24076260,
+        "SMBMM": 15248298
+      }
+    },
+    "after": {
+      "quarter_base_cents": {
+        "B0": 40127100,
+        "GA": 240762600,
+        "LE": 80254200,
+        "SMBMM": 40127100
+      },
+      "quarter_rate": {
+        "B0": 0.1,
+        "GA": 0.6,
+        "LE": 0.2,
+        "SMBMM": 0.1
+      },
+      "quarter_target_allocation_cents": {
+        "B0": 16853382,
+        "GA": 101120292,
+        "LE": 33706764,
+        "SMBMM": 16853382
+      },
+      "prior_executed_allocation_cents": {
+        "B0": 11235588,
+        "GA": 67413528,
+        "LE": 22471176,
+        "SMBMM": 11235588
+      },
+      "month3_true_up_cents": {
+        "B0": 5617794,
+        "GA": 33706764,
+        "LE": 11235588,
+        "SMBMM": 5617794
+      },
+      "month3_cost_after_cents": {
+        "B0": 5885308,
+        "GA": 60458164,
+        "LE": 13910728,
+        "SMBMM": 5885308
+      },
+      "month3_gp_cents": {
+        "B0": 7490392,
+        "GA": 19796036,
+        "LE": -107540628,
+        "SMBMM": 7490392
+      },
+      "quarter_cost_after_cents": {
+        "B0": 17655924,
+        "GA": 181374492,
+        "LE": 41732184,
+        "SMBMM": 17655924
+      },
+      "quarter_gp_cents": {
+        "B0": 22471176,
+        "GA": 59388108,
+        "LE": -81859284,
+        "SMBMM": 22471176
+      }
+    }
+  },
+  "validation": {
+    "passed": 43,
+    "failed": 0,
+    "checks": [
+      {
+        "name": "Quarter targets equal pool",
+        "passed": true
+      },
+      {
+        "name": "Month3 allocation equals current pool",
+        "passed": true
+      },
+      {
+        "name": "True-up rollforward B0",
+        "passed": true
+      },
+      {
+        "name": "Month3 cost identity B0",
+        "passed": true
+      },
+      {
+        "name": "Month3 GP identity B0",
+        "passed": true
+      },
+      {
+        "name": "Exact target calculation B0",
+        "passed": true
+      },
+      {
+        "name": "True-up rollforward GA",
+        "passed": true
+      },
+      {
+        "name": "Month3 cost identity GA",
+        "passed": true
+      },
+      {
+        "name": "Month3 GP identity GA",
+        "passed": true
+      },
+      {
+        "name": "Exact target calculation GA",
+        "passed": true
+      },
+      {
+        "name": "True-up rollforward LE",
+        "passed": true
+      },
+      {
+        "name": "Month3 cost identity LE",
+        "passed": true
+      },
+      {
+        "name": "Month3 GP identity LE",
+        "passed": true
+      },
+      {
+        "name": "Exact target calculation LE",
+        "passed": true
+      },
+      {
+        "name": "True-up rollforward SMBMM",
+        "passed": true
+      },
+      {
+        "name": "Month3 cost identity SMBMM",
+        "passed": true
+      },
+      {
+        "name": "Month3 GP identity SMBMM",
+        "passed": true
+      },
+      {
+        "name": "Exact target calculation SMBMM",
+        "passed": true
+      },
+      {
+        "name": "Quarter targets equal pool",
+        "passed": true
+      },
+      {
+        "name": "Month3 allocation equals current pool",
+        "passed": true
+      },
+      {
+        "name": "True-up rollforward B0",
+        "passed": true
+      },
+      {
+        "name": "Month3 cost identity B0",
+        "passed": true
+      },
+      {
+        "name": "Month3 GP identity B0",
+        "passed": true
+      },
+      {
+        "name": "Exact target calculation B0",
+        "passed": true
+      },
+      {
+        "name": "True-up rollforward GA",
+        "passed": true
+      },
+      {
+        "name": "Month3 cost identity GA",
+        "passed": true
+      },
+      {
+        "name": "Month3 GP identity GA",
+        "passed": true
+      },
+      {
+        "name": "Exact target calculation GA",
+        "passed": true
+      },
+      {
+        "name": "True-up rollforward LE",
+        "passed": true
+      },
+      {
+        "name": "Month3 cost identity LE",
+        "passed": true
+      },
+      {
+        "name": "Month3 GP identity LE",
+        "passed": true
+      },
+      {
+        "name": "Exact target calculation LE",
+        "passed": true
+      },
+      {
+        "name": "True-up rollforward SMBMM",
+        "passed": true
+      },
+      {
+        "name": "Month3 cost identity SMBMM",
+        "passed": true
+      },
+      {
+        "name": "Month3 GP identity SMBMM",
+        "passed": true
+      },
+      {
+        "name": "Exact target calculation SMBMM",
+        "passed": true
+      },
+      {
+        "name": "History locked",
+        "passed": true
+      },
+      {
+        "name": "Total GP unchanged",
+        "passed": true
+      },
+      {
+        "name": "Base adjustment equals excluded amount",
+        "passed": true
+      },
+      {
+        "name": "No matching positive reference",
+        "passed": true
+      },
+      {
+        "name": "Revenue input rollup 2026007",
+        "passed": true
+      },
+      {
+        "name": "Revenue input rollup 2026008",
+        "passed": true
+      },
+      {
+        "name": "Revenue input rollup 2026009",
+        "passed": true
+      }
+    ]
+  },
+  "limitations": [
+    "Synthetic fixtures; not real company records or approved financial policy.",
+    "No missing-base, net-zero denominator, PRC amount, A-class missing-segment or Y-exclusion cases in the main story.",
+    "Offset search only covers the synthetic quarter and profit center across all segments.",
+    "USD original and reporting amounts equal; no FX residual claim."
+  ],
+  "field_aliases": {
+    "gtm_lv2": "refreshed_gtm_cust_seg_leve2"
+  },
+  "randomization": {
+    "method": "one shared factor across all monetary values",
+    "factor_numerator": 133757,
+    "factor_denominator": 100000,
+    "factor": 1.33757,
+    "preserves_rates": true,
+    "exact_integer_cents": true
+  },
+  "provenance": {
+    "identifiers": "Profit center, focal document number, focal user info and reference supplied by user.",
+    "amounts": "Synthetic amounts uniformly scaled by one randomly sampled factor.",
+    "system_connection": "No live financial-system connection or validation of the supplied identifiers."
+  }
+}

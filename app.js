@@ -5,9 +5,9 @@ const views = {
 };
 
 const breadcrumbs = {
-  monitor: ['监控台', '毛利监控'],
-  analysis: ['分析任务', '华东区毛利调查'],
-  reports: ['财务报告', '报告库']
+  monitor: ['Monitor', 'Gross margin'],
+  analysis: ['Analysis', 'East China margin review'],
+  reports: ['Reports', 'Report library']
 };
 
 function switchView(name) {
@@ -29,9 +29,9 @@ function switchView(name) {
 document.querySelectorAll('.nav-item').forEach((item) => item.addEventListener('click', () => switchView(item.dataset.view)));
 
 const anomalyTitles = {
-  east: '华东区毛利率为何连续下降？',
-  cloud: '云服务单位成本为何异常上升？',
-  marketing: '品牌营销预算为何提前消耗？'
+  east: 'Why does East China gross margin keep falling?',
+  cloud: 'Why did cloud service unit costs spike?',
+  marketing: 'Why is brand marketing spending ahead of plan?'
 };
 
 function openAnomaly(item) {
@@ -73,7 +73,7 @@ function updateScenario() {
   document.getElementById('costLabel').textContent = `${costValue}%`;
   document.getElementById('mixLabel').textContent = `${mixValue}pp`;
   document.getElementById('scenarioValue').textContent = `+¥${amount.toFixed(1)}M`;
-  document.getElementById('scenarioPp').textContent = `毛利率 +${pp.toFixed(1)}pp`;
+  document.getElementById('scenarioPp').textContent = `Gross margin +${pp.toFixed(1)}pp`;
 }
 
 [discount, cost, mix].forEach((slider) => slider.addEventListener('input', updateScenario));
@@ -113,7 +113,7 @@ document.querySelector('.composer').addEventListener('submit', (event) => {
     textarea.focus();
     return;
   }
-  showToast('问题已加入分析队列');
+  showToast('Question added to the analysis queue');
   textarea.value = '';
 });
 

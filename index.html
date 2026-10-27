@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="FP&A Agent 财务监控、根因分析与行动建议桌面工作台演示。">
-  <title>FP&A Agent 财务差异工作台</title>
+  <meta name="description" content="FP&A Agent desktop workspace demo for financial monitoring, root cause analysis, and recommended actions.">
+  <title>FP&A Agent | Financial Variance Workspace</title>
   <script>document.documentElement.classList.add('js');</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,175 +14,175 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">跳到主要内容</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
   <div class="app-shell">
     <header class="topbar">
-      <a class="brand" href="#" aria-label="FP&A Agent 首页">
+      <a class="brand" href="#" aria-label="FP&A Agent home">
         <span class="brand-mark" aria-hidden="true">F</span>
-        <span><strong>FP&amp;A Agent</strong><small>财务智能工作台</small></span>
+        <span><strong>FP&amp;A Agent</strong><small>Finance Intelligence Workspace</small></span>
       </a>
-      <nav class="primary-nav" aria-label="主导航">
-        <button type="button" class="nav-item active" data-view="monitor" aria-current="page">监控台</button>
-        <button type="button" class="nav-item" data-view="analysis">分析任务</button>
-        <button type="button" class="nav-item" data-view="reports">财务报告</button>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <button type="button" class="nav-item active" data-view="monitor" aria-current="page">Monitor</button>
+        <button type="button" class="nav-item" data-view="analysis">Analysis</button>
+        <button type="button" class="nav-item" data-view="reports">Reports</button>
       </nav>
-      <button type="button" class="command-trigger" aria-label="打开快捷命令"><span>搜索或提问</span><kbd>Ctrl K</kbd></button>
+      <button type="button" class="command-trigger" aria-label="Open command search"><span>Search or ask</span><kbd>Ctrl K</kbd></button>
       <div class="top-actions">
-        <span class="period">2026 年 10 月，实际 vs 预算</span>
-        <button type="button" class="icon-key" aria-label="通知">3</button>
-        <button type="button" class="key key-primary" id="newAnalysis">新建分析</button>
+        <span class="period">Oct 2026 · Actual vs Budget</span>
+        <button type="button" class="icon-key" aria-label="Notifications">3</button>
+        <button type="button" class="key key-primary" id="newAnalysis">New analysis</button>
       </div>
     </header>
 
     <div class="app-body">
-      <aside class="context-rail" aria-label="监控场景">
+      <aside class="context-rail" aria-label="Monitoring scenarios">
         <section class="rail-section">
-          <div class="rail-heading"><h2>固定监控</h2><button type="button" aria-label="添加监控场景">+</button></div>
-          <button type="button" class="scene active"><span>毛利监控</span><b>2</b></button>
-          <button type="button" class="scene"><span>费用监控</span><b>1</b></button>
-          <button type="button" class="scene"><span>现金流预测</span><b>0</b></button>
-          <button type="button" class="scene"><span>预算达成率</span><b>0</b></button>
+          <div class="rail-heading"><h2>Pinned monitors</h2><button type="button" aria-label="Add monitoring scenario">+</button></div>
+          <button type="button" class="scene active"><span>Gross margin</span><b>2</b></button>
+          <button type="button" class="scene"><span>Expenses</span><b>1</b></button>
+          <button type="button" class="scene"><span>Cash flow forecast</span><b>0</b></button>
+          <button type="button" class="scene"><span>Budget attainment</span><b>0</b></button>
         </section>
         <section class="rail-section recent">
-          <div class="rail-heading"><h2>最近分析</h2></div>
-          <button type="button"><time datetime="2026-10-27">今天</time><span>为什么华东毛利率下降？</span></button>
-          <button type="button"><time datetime="2026-10-26">昨天</time><span>Q3 营销费用偏差拆解</span></button>
-          <button type="button"><time datetime="2026-10-24">10 月 24 日</time><span>库存周转风险复盘</span></button>
+          <div class="rail-heading"><h2>Recent analyses</h2></div>
+          <button type="button"><time datetime="2026-10-27">Today</time><span>Why did East China margin fall?</span></button>
+          <button type="button"><time datetime="2026-10-26">Yesterday</time><span>Q3 marketing expense variance</span></button>
+          <button type="button"><time datetime="2026-10-24">Oct 24</time><span>Inventory turnover risk review</span></button>
         </section>
         <div class="rail-footer">
           <div class="avatar" aria-hidden="true">YT</div>
-          <div><strong>财务分析中心</strong><span>数据已同步 09:42</span></div>
-          <button type="button" aria-label="账户设置">设置</button>
+          <div><strong>Finance Analytics</strong><span>Data synced at 09:42</span></div>
+          <button type="button" aria-label="Account settings">Settings</button>
         </div>
       </aside>
 
       <main class="workspace" id="main">
         <div class="workspace-bar">
-          <div class="breadcrumb"><span>监控台</span><b>/</b><strong>毛利监控</strong></div>
-          <div class="sync-state" role="status"><span aria-hidden="true"></span>刚刚同步</div>
+          <div class="breadcrumb"><span>Monitor</span><b>/</b><strong>Gross margin</strong></div>
+          <div class="sync-state" role="status"><span aria-hidden="true"></span>Just synced</div>
         </div>
 
         <section class="view monitor-view active" id="monitorView" aria-labelledby="monitor-title">
           <header class="screen-heading">
-            <div><h1 id="monitor-title">经营体检，先看异常。</h1><p>AI 已完成 36 项指标检查，发现 3 个需要关注的偏差。</p></div>
-            <div class="health-index"><span>经营健康度</span><strong>78</strong><small>/ 100</small></div>
+            <div><h1 id="monitor-title">Business health starts with exceptions.</h1><p>AI checked 36 metrics and flagged 3 variances for review.</p></div>
+            <div class="health-index"><span>Business health</span><strong>78</strong><small>/ 100</small></div>
           </header>
-          <dl class="metric-strip" aria-label="关键财务指标">
-            <div class="metric-primary"><dt>综合毛利率</dt><dd>24.8%</dd><p>较预算低 2.4pp</p></div>
-            <div><dt>营业收入</dt><dd>¥186.4M</dd><p>同比增加 6.8%</p></div>
-            <div><dt>经营费用率</dt><dd>18.3%</dd><p>较预算高 0.7pp</p></div>
-            <div><dt>经营现金流</dt><dd>¥42.7M</dd><p>同比增加 12.1%</p></div>
+          <dl class="metric-strip" aria-label="Key financial metrics">
+            <div class="metric-primary"><dt>Overall gross margin</dt><dd>24.8%</dd><p>2.4pp below budget</p></div>
+            <div><dt>Revenue</dt><dd>¥186.4M</dd><p>Up 6.8% YoY</p></div>
+            <div><dt>Operating expense ratio</dt><dd>18.3%</dd><p>0.7pp above budget</p></div>
+            <div><dt>Operating cash flow</dt><dd>¥42.7M</dd><p>Up 12.1% YoY</p></div>
           </dl>
           <div class="monitor-layout">
             <section class="ledger-panel" aria-labelledby="ledger-title">
               <header class="panel-heading">
-                <div><h2 id="ledger-title">毛利偏差构成</h2><p>实际与预算，单位：百万元</p></div>
-                <button type="button" class="quiet-key">查看明细</button>
+                <div><h2 id="ledger-title">Gross profit variance</h2><p>Actual vs budget · CNY millions</p></div>
+                <button type="button" class="quiet-key">View details</button>
               </header>
-              <figure class="variance-figure" aria-label="预算毛利到实际毛利的差异桥图">
+              <figure class="variance-figure" aria-label="Variance bridge from budget to actual gross profit">
                 <div class="chart-scale" aria-hidden="true"><span>24</span><span>18</span><span>12</span><span>6</span><span>0</span></div>
                 <div class="bridge-bars">
-                  <div class="bridge-item"><strong>¥48.6</strong><span class="bridge-bar base" style="--bar-size: 88%"></span><small>预算毛利</small></div>
-                  <div class="bridge-item"><strong>−¥2.1</strong><span class="bridge-bar negative" style="--bar-size: 42%"></span><small>价格</small></div>
-                  <div class="bridge-item"><strong>−¥1.4</strong><span class="bridge-bar negative" style="--bar-size: 28%"></span><small>成本</small></div>
-                  <div class="bridge-item"><strong>+¥0.8</strong><span class="bridge-bar positive" style="--bar-size: 19%"></span><small>销量</small></div>
-                  <div class="bridge-item"><strong>−¥1.1</strong><span class="bridge-bar negative" style="--bar-size: 23%"></span><small>组合</small></div>
-                  <div class="bridge-item"><strong>¥44.8</strong><span class="bridge-bar actual" style="--bar-size: 74%"></span><small>实际毛利</small></div>
+                  <div class="bridge-item"><strong>¥48.6</strong><span class="bridge-bar base" style="--bar-size: 88%"></span><small>Budget GP</small></div>
+                  <div class="bridge-item"><strong>−¥2.1</strong><span class="bridge-bar negative" style="--bar-size: 42%"></span><small>Price</small></div>
+                  <div class="bridge-item"><strong>−¥1.4</strong><span class="bridge-bar negative" style="--bar-size: 28%"></span><small>Cost</small></div>
+                  <div class="bridge-item"><strong>+¥0.8</strong><span class="bridge-bar positive" style="--bar-size: 19%"></span><small>Volume</small></div>
+                  <div class="bridge-item"><strong>−¥1.1</strong><span class="bridge-bar negative" style="--bar-size: 23%"></span><small>Mix</small></div>
+                  <div class="bridge-item"><strong>¥44.8</strong><span class="bridge-bar actual" style="--bar-size: 74%"></span><small>Actual GP</small></div>
                 </div>
-                <figcaption>价格、成本、销量和产品组合共同形成当前毛利偏差。</figcaption>
+                <figcaption>Price, cost, volume, and product mix explain the gross profit variance.</figcaption>
               </figure>
             </section>
             <section class="anomaly-panel" aria-labelledby="anomaly-title">
-              <header class="panel-heading"><div><h2 id="anomaly-title">异常优先队列</h2><p>按财务影响排序</p></div><span class="count">3 项</span></header>
+              <header class="panel-heading"><div><h2 id="anomaly-title">Priority exceptions</h2><p>Ranked by financial impact</p></div><span class="count">3 items</span></header>
               <div class="anomaly-list">
-                <button type="button" class="anomaly active" data-anomaly="east"><span class="severity">高</span><span><strong>华东区毛利率连续 3 周下降</strong><small>当前 19.6%，低于预算 5.8pp，影响 ¥4.2M</small></span><time datetime="2026-10-27T09:30">09:30</time></button>
-                <button type="button" class="anomaly" data-anomaly="cloud"><span class="severity medium">中</span><span><strong>云服务产品单位成本异常上升</strong><small>环比上升 11.4%，集中于供应商 A</small></span><time datetime="2026-10-27T08:15">08:15</time></button>
-                <button type="button" class="anomaly" data-anomaly="marketing"><span class="severity medium">中</span><span><strong>品牌营销费用提前消耗</strong><small>年度预算已使用 91%，时间进度 83%</small></span><time datetime="2026-10-26">昨天</time></button>
+                <button type="button" class="anomaly active" data-anomaly="east"><span class="severity">High</span><span><strong>East China margin fell for 3 weeks</strong><small>Now 19.6% · 5.8pp below budget · ¥4.2M impact</small></span><time datetime="2026-10-27T09:30">09:30</time></button>
+                <button type="button" class="anomaly" data-anomaly="cloud"><span class="severity medium">Med</span><span><strong>Cloud service unit cost spike</strong><small>Up 11.4% MoM, concentrated at Supplier A</small></span><time datetime="2026-10-27T08:15">08:15</time></button>
+                <button type="button" class="anomaly" data-anomaly="marketing"><span class="severity medium">Med</span><span><strong>Brand marketing spend ahead of plan</strong><small>91% of annual budget used; 83% of year elapsed</small></span><time datetime="2026-10-26">Yesterday</time></button>
               </div>
-              <button type="button" class="anomaly-action" data-anomaly="east">分析最高影响项</button>
+              <button type="button" class="anomaly-action" data-anomaly="east">Analyze top impact</button>
             </section>
           </div>
         </section>
 
         <section class="view analysis-view" id="analysisView" aria-labelledby="analysisTitle">
           <header class="analysis-header">
-            <div><h1 id="analysisTitle" tabindex="-1">华东区毛利率为何连续下降？</h1><p>根因调查 A-1027，已连接财务指标层。</p></div>
-            <span class="run-status">已验证 4 / 6 项证据</span>
+            <div><h1 id="analysisTitle" tabindex="-1">Why does East China gross margin keep falling?</h1><p>Root cause investigation A-1027 · Connected to the financial metrics layer.</p></div>
+            <span class="run-status">4 / 6 evidence items verified</span>
           </header>
           <div class="analysis-thread">
-            <article class="message user-message"><div class="message-avatar" aria-hidden="true">YT</div><div><strong>你</strong><p>请分析华东区本月毛利率下降的原因，并给出可以执行的改善建议。</p><time datetime="2026-10-27T09:43">09:43</time></div></article>
+            <article class="message user-message"><div class="message-avatar" aria-hidden="true">YT</div><div><strong>You</strong><p>Analyze the causes of this month’s gross margin decline in East China and recommend actionable improvements.</p><time datetime="2026-10-27T09:43">09:43</time></div></article>
             <article class="message agent-message">
               <div class="agent-avatar" aria-hidden="true">F</div>
               <div class="message-body">
-                <div class="agent-name">FP&amp;A Agent <span>已连接财务指标层</span></div>
-                <p>我将先核对指标口径，再按产品、客户、量价、成本和组合效应逐层下钻。所有金额结论都会保留可复算依据。</p>
+                <div class="agent-name">FP&amp;A Agent <span>Connected to financial metrics</span></div>
+                <p>I’ll confirm metric definitions, then drill into products, customers, volume, price, cost, and mix effects. Every financial conclusion will retain a reproducible calculation trail.</p>
                 <ol class="execution-stack">
-                  <li><span>1</span><div><strong>读取指标口径</strong><small>毛利率 =（营业收入 − 销售成本）/ 营业收入</small></div><time>0.8s</time></li>
-                  <li><span>2</span><div><strong>执行差异分解</strong><small>按产品、客户和渠道比较实际与预算</small></div><time>3.2s</time></li>
-                  <li><span>3</span><div><strong>核验业务证据</strong><small>关联促销政策、采购价格与订单明细</small></div><time>运行中</time></li>
+                  <li><span>1</span><div><strong>Read metric definitions</strong><small>Gross margin = (Revenue − Cost of sales) / Revenue</small></div><time>0.8s</time></li>
+                  <li><span>2</span><div><strong>Decompose the variance</strong><small>Compare actuals with budget by product, customer, and channel</small></div><time>3.2s</time></li>
+                  <li><span>3</span><div><strong>Verify business evidence</strong><small>Link promotion policies, purchase prices, and order details</small></div><time>Running</time></li>
                 </ol>
-                <div class="finding-ledger"><div><span>主要发现</span><strong>促销折扣扩大，但销量增量未覆盖单价损失</strong><p>企业渠道平均折扣从 8.2% 升至 13.6%，销量仅增长 4.1%。</p></div><div class="finding-value"><strong>−2.6pp</strong><span>毛利率影响</span></div></div>
-                <div class="suggested-prompts" aria-label="建议追问"><button type="button">排除促销影响后呢？</button><button type="button">查看客户明细</button><button type="button">生成改善方案</button></div>
+                <div class="finding-ledger"><div><span>Key finding</span><strong>Deeper discounts outweighed the gains from higher volume</strong><p>Average enterprise channel discounts rose from 8.2% to 13.6%, while volume grew only 4.1%.</p></div><div class="finding-value"><strong>−2.6pp</strong><span>Gross margin impact</span></div></div>
+                <div class="suggested-prompts" aria-label="Suggested follow-ups"><button type="button">What if we exclude promotions?</button><button type="button">View customer details</button><button type="button">Create an improvement plan</button></div>
               </div>
             </article>
           </div>
-          <form class="composer" aria-label="继续分析">
-            <button type="button" class="attach" aria-label="添加附件">+</button>
-            <label class="sr-only" for="analysisPrompt">继续追问</label>
-            <textarea id="analysisPrompt" name="analysisPrompt" rows="1" placeholder="继续追问，或输入 @ 引用财务文件…"></textarea>
-            <div class="composer-meta"><span>深度分析</span><button type="submit" id="sendButton" aria-label="发送问题">发送</button></div>
+          <form class="composer" aria-label="Continue analysis">
+            <button type="button" class="attach" aria-label="Add attachment">+</button>
+            <label class="sr-only" for="analysisPrompt">Ask a follow-up</label>
+            <textarea id="analysisPrompt" name="analysisPrompt" rows="1" placeholder="Ask a follow-up, or type @ to reference a finance file…"></textarea>
+            <div class="composer-meta"><span>Deep analysis</span><button type="submit" id="sendButton" aria-label="Send question">Send</button></div>
           </form>
         </section>
 
         <section class="view reports-view" id="reportsView" aria-labelledby="reports-title">
           <div class="report-index">
-            <header><h1 id="reports-title">让每次分析，沉淀成经营记忆。</h1><p>这里将归档月度经营分析、异常调查与行动复盘。</p></header>
-            <button type="button" class="key key-primary">生成 10 月经营分析报告</button>
+            <header><h1 id="reports-title">Turn every analysis into business knowledge.</h1><p>Archive monthly business reviews, exception investigations, and action reviews here.</p></header>
+            <button type="button" class="key key-primary">Generate October business review</button>
           </div>
         </section>
       </main>
 
-      <aside class="inspector" aria-label="分析检查器">
-        <div class="inspector-tabs" role="tablist" aria-label="检查器视图">
-          <button type="button" class="active" role="tab" aria-selected="true" aria-controls="evidenceTab" data-tab="evidence">证据</button>
-          <button type="button" role="tab" aria-selected="false" aria-controls="actionsTab" data-tab="actions">建议</button>
-          <button type="button" role="tab" aria-selected="false" aria-controls="scenarioTab" data-tab="scenario">测算</button>
+      <aside class="inspector" aria-label="Analysis inspector">
+        <div class="inspector-tabs" role="tablist" aria-label="Inspector views">
+          <button type="button" class="active" role="tab" aria-selected="true" aria-controls="evidenceTab" data-tab="evidence">Evidence</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="actionsTab" data-tab="actions">Actions</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="scenarioTab" data-tab="scenario">Scenarios</button>
         </div>
         <section class="tab-content active" id="evidenceTab" role="tabpanel">
-          <header class="inspector-heading"><h2>根因证据链</h2><p>区分数值定位与业务原因，所有结论均可回溯。</p></header>
+          <header class="inspector-heading"><h2>Root cause evidence</h2><p>Trace every conclusion from quantified drivers to business causes.</p></header>
           <div class="cause-ledger">
-            <div class="cause-root"><span>结果指标</span><strong>毛利率 −5.8pp</strong></div>
-            <button type="button" class="cause-row verified"><span>01</span><div><strong>企业渠道促销折扣扩大</strong><small>价格因素 −2.6pp</small></div><b>已验证</b></button>
-            <button type="button" class="cause-row verified"><span>02</span><div><strong>云资源采购单价上升</strong><small>成本因素 −1.7pp</small></div><b>已验证</b></button>
-            <button type="button" class="cause-row verified"><span>03</span><div><strong>基础版产品占比提升</strong><small>组合因素 −1.1pp</small></div><b>已验证</b></button>
-            <button type="button" class="cause-row pending"><span>04</span><div><strong>待核验退款与汇率影响</strong><small>其他因素 −0.4pp</small></div><b>待确认</b></button>
+            <div class="cause-root"><span>Outcome</span><strong>Gross margin −5.8pp</strong></div>
+            <button type="button" class="cause-row verified"><span>01</span><div><strong>Deeper enterprise channel discounts</strong><small>Price effect −2.6pp</small></div><b>Verified</b></button>
+            <button type="button" class="cause-row verified"><span>02</span><div><strong>Higher cloud resource purchase prices</strong><small>Cost effect −1.7pp</small></div><b>Verified</b></button>
+            <button type="button" class="cause-row verified"><span>03</span><div><strong>Higher share of Basic products</strong><small>Mix effect −1.1pp</small></div><b>Verified</b></button>
+            <button type="button" class="cause-row pending"><span>04</span><div><strong>Refund and FX effects under review</strong><small>Other effects −0.4pp</small></div><b>Pending</b></button>
           </div>
           <section class="source-list" aria-labelledby="source-title">
-            <div class="subsection-heading"><h3 id="source-title">数据来源</h3><span>6 个</span></div>
-            <div class="source"><span>DB</span><div><strong>finance_metric_view</strong><small>刷新于 09:40，48,261 行</small></div><b>通过</b></div>
-            <div class="source"><span>XL</span><div><strong>FY26促销政策.xlsx</strong><small>SharePoint，版本 7</small></div><b>通过</b></div>
-            <div class="source"><span>ERP</span><div><strong>采购订单明细</strong><small>SAP，实时连接</small></div><b>通过</b></div>
+            <div class="subsection-heading"><h3 id="source-title">Data sources</h3><span>6 sources</span></div>
+            <div class="source"><span>DB</span><div><strong>finance_metric_view</strong><small>Refreshed at 09:40 · 48,261 rows</small></div><b>Passed</b></div>
+            <div class="source"><span>XL</span><div><strong>FY26_Promotion_Policy.xlsx</strong><small>SharePoint · Version 7</small></div><b>Passed</b></div>
+            <div class="source"><span>ERP</span><div><strong>Purchase order details</strong><small>SAP · Live connection</small></div><b>Passed</b></div>
           </section>
         </section>
         <section class="tab-content" id="actionsTab" role="tabpanel">
-          <header class="inspector-heading"><h2>改善建议</h2><p>建议与已验证根因逐项对应，并明确预期影响。</p></header>
-          <article class="action-row"><span>优先</span><h3>调整企业渠道折扣门槛</h3><p>将超过 12% 的折扣改为逐单审批，并对重点客户设置销量承诺。</p><dl><div><dt>预计毛利改善</dt><dd>+¥1.3M / 月</dd></div><div><dt>优先级</dt><dd>P1</dd></div></dl><button type="button">加入行动计划</button></article>
-          <article class="action-row"><span>其次</span><h3>锁定云资源季度采购价</h3><p>与供应商 A 重谈阶梯价格，将 60% 用量转为季度承诺。</p><dl><div><dt>预计成本节省</dt><dd>¥0.7M / 月</dd></div><div><dt>优先级</dt><dd>P2</dd></div></dl><button type="button">查看测算依据</button></article>
-          <article class="action-row"><span>观察</span><h3>提升高毛利套餐引导</h3><p>针对续约客户增加专业版升级激励，目标提升组合毛利 0.6pp。</p><dl><div><dt>观察周期</dt><dd>6 至 8 周</dd></div><div><dt>优先级</dt><dd>P3</dd></div></dl><button type="button">设为观察项</button></article>
+          <header class="inspector-heading"><h2>Recommended actions</h2><p>Each action maps to a verified root cause with an expected impact.</p></header>
+          <article class="action-row"><span>First</span><h3>Revise enterprise discount thresholds</h3><p>Require order-level approval for discounts above 12% and volume commitments from key accounts.</p><dl><div><dt>Expected gross profit uplift</dt><dd>+¥1.3M / month</dd></div><div><dt>Priority</dt><dd>P1</dd></div></dl><button type="button">Add to action plan</button></article>
+          <article class="action-row"><span>Next</span><h3>Lock in quarterly cloud pricing</h3><p>Renegotiate volume tiers with Supplier A and move 60% of usage to quarterly commitments.</p><dl><div><dt>Expected cost savings</dt><dd>¥0.7M / month</dd></div><div><dt>Priority</dt><dd>P2</dd></div></dl><button type="button">View calculation basis</button></article>
+          <article class="action-row"><span>Watch</span><h3>Promote higher-margin plans</h3><p>Offer Pro upgrade incentives at renewal, targeting a 0.6pp gross margin gain from mix.</p><dl><div><dt>Review period</dt><dd>6–8 weeks</dd></div><div><dt>Priority</dt><dd>P3</dd></div></dl><button type="button">Add to watchlist</button></article>
         </section>
         <section class="tab-content" id="scenarioTab" role="tabpanel">
-          <header class="inspector-heading"><h2>影响测算</h2><p>拖动参数，实时查看对毛利的潜在影响。</p></header>
-          <div class="scenario-result"><span>预计毛利改善</span><strong id="scenarioValue">+¥2.0M</strong><small id="scenarioPp">毛利率 +1.1pp</small></div>
-          <label class="slider-row" for="discountSlider"><span>平均折扣降低 <b id="discountLabel">2.0pp</b></span><input id="discountSlider" type="range" min="0" max="5" step="0.5" value="2"></label>
-          <label class="slider-row" for="costSlider"><span>采购成本降低 <b id="costLabel">4%</b></span><input id="costSlider" type="range" min="0" max="10" step="1" value="4"></label>
-          <label class="slider-row" for="mixSlider"><span>专业版占比提升 <b id="mixLabel">3pp</b></span><input id="mixSlider" type="range" min="0" max="8" step="1" value="3"></label>
-          <p class="scenario-note">基于 2026 年 10 月销量与成本基线，未计入需求弹性和执行滞后。</p>
-          <button type="button" class="key key-primary scenario-save">保存为改善方案</button>
+          <header class="inspector-heading"><h2>Impact simulation</h2><p>Adjust the sliders to see the potential gross profit impact.</p></header>
+          <div class="scenario-result"><span>Expected gross profit uplift</span><strong id="scenarioValue">+¥2.0M</strong><small id="scenarioPp">Gross margin +1.1pp</small></div>
+          <label class="slider-row" for="discountSlider"><span>Average discount reduction <b id="discountLabel">2.0pp</b></span><input id="discountSlider" type="range" min="0" max="5" step="0.5" value="2"></label>
+          <label class="slider-row" for="costSlider"><span>Purchase cost reduction <b id="costLabel">4%</b></span><input id="costSlider" type="range" min="0" max="10" step="1" value="4"></label>
+          <label class="slider-row" for="mixSlider"><span>Pro share increase <b id="mixLabel">3pp</b></span><input id="mixSlider" type="range" min="0" max="8" step="1" value="3"></label>
+          <p class="scenario-note">Based on October 2026 volume and cost baselines. Excludes demand elasticity and implementation lag.</p>
+          <button type="button" class="key key-primary scenario-save">Save improvement plan</button>
         </section>
       </aside>
     </div>
   </div>
-  <div class="toast" id="toast" role="status" aria-live="polite" tabindex="-1"><p>问题已加入分析队列</p></div>
+  <div class="toast" id="toast" role="status" aria-live="polite" tabindex="-1"><p>Question added to the analysis queue</p></div>
   <script src="app.js"></script>
 </body>
 </html>
