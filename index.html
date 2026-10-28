@@ -3,17 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ISG Service allocation monitoring: trace quarter-end exceptions to vouchers and compare a revenue-base adjustment.">
-  <title>FP&A Agent | ISG Service Allocation Monitor</title>
+  <meta name="description" content="Monitor allocation exceptions, ask management-report logic questions, and inspect source-backed finance knowledge.">
+  <title>FP&A Agent | Finance Workspace</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="tokens.css">
   <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="knowledge.css">
   <script src="demo-data.js" defer></script>
   <script src="allocation.js" defer></script>
   <script src="app.js" defer></script>
+  <script src="knowledge-model.js" defer></script>
+  <script src="knowledge-ui.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -24,6 +27,8 @@
     <nav class="primary-nav" aria-label="Primary navigation">
       <button type="button" class="nav-item active" data-view="monitor" aria-current="page">Monitor</button>
       <button type="button" class="nav-item" data-view="analysis">Analysis</button>
+      <button type="button" class="nav-item" data-view="chat">Chat</button>
+      <button type="button" class="nav-item" data-view="knowledge">Knowledge</button>
       <button type="button" class="nav-item" data-view="reports">Reports <span id="reportCount" class="nav-count" hidden>1</span></button>
     </nav>
     <button type="button" class="command-trigger" id="commandSearch"><span>Ask about this allocation</span><kbd>Ctrl K</kbd></button>
@@ -31,8 +36,10 @@
   </header>
   <div class="app-body">
     <aside class="context-rail" aria-label="Case navigation">
+      <div class="rail-workspace"><button type="button" class="key key-primary full-width" id="sidebarNewChat">+ New chat</button><button type="button" class="kb-rail-link" data-view="knowledge">Knowledge bases <span aria-hidden="true">↗</span></button></div>
+      <div class="rail-section"><h2 class="rail-label">REPORT CONVERSATIONS</h2><div id="chatList" class="conversation-list"></div></div>
       <div class="rail-section"><h2 class="rail-label">PINNED MONITOR</h2><button type="button" class="scene active" data-view="monitor"><span>Service allocation</span><b>1</b></button></div>
-      <div class="rail-section"><h2 class="rail-label">CASE SCOPE</h2><dl class="scope-list"><div><dt>Business</dt><dd>ISG Service</dd></div><div><dt>Geography</dt><dd>ROW</dd></div><div><dt>Profit center</dt><dd>L0AUXG</dd></div><div><dt>Quarter</dt><dd>2026 Q3</dd></div></dl></div>
+      <div class="rail-section case-scope"><h2 class="rail-label">MONITOR CASE</h2><dl class="scope-list"><div><dt>Business</dt><dd>ISG Service</dd></div><div><dt>Geography</dt><dd>ROW</dd></div><div><dt>Profit center</dt><dd>L0AUXG</dd></div><div><dt>Quarter</dt><dd>2026 Q3</dd></div></dl></div>
       <div class="rail-section recent"><h2 class="rail-label">INVESTIGATION</h2><button type="button" id="recentCase"><span class="case-dot" aria-hidden="true"></span><strong>Negative GP after true-up</strong><small>GA · 2026009</small></button><p id="recentStatus" class="muted small">Ready to investigate</p></div>
       <div class="rail-footer"><div class="avatar" aria-hidden="true">YT</div><div><strong>Finance reviewer</strong><span>Local demo workspace</span></div></div>
     </aside>
@@ -55,6 +62,17 @@
         <p class="composer-note" id="composerNote">Questions are interpreted within this fixed sample case. No external model or live ledger is connected.</p>
       </section>
       <section id="reportsView" class="view" hidden aria-labelledby="reportsTitle"><header class="screen-heading"><div><p class="eyebrow">CLOSE RECORD / L0AUXG</p><h1 id="reportsTitle" tabindex="-1">Evidence into action.</h1><p>Keep the cause, assumptions and decisions together.</p></div></header><div id="reportContent"></div></section>
+
+      <section id="chatView" class="view chat-view" hidden aria-labelledby="chatTitle">
+        <header class="chat-heading"><div><p class="eyebrow">REPORT LOGIC / KNOWLEDGE Q&amp;A</p><h1 id="chatTitle">A clear answer starts<br>with the right source.</h1><p>Ask about your management report. Follow every rule back to its knowledge.</p></div><button type="button" class="quiet-key" id="chatNewButton">+ New chat</button></header>
+        <div class="chat-scope"><label for="chatReport">Management report<select id="chatReport" aria-label="Management report"></select></label><label for="chatLibrary">Knowledge base<select id="chatLibrary" aria-label="Knowledge base for this chat"></select></label><button type="button" class="kb-rail-link" id="manageKnowledge">Manage knowledge ↗</button></div>
+        <div class="knowledge-chat-layout"><div class="chat-main"><div id="chatMessages" class="chat-messages" tabindex="0" aria-label="Report conversation"></div><div id="chatSuggestions" class="suggested-prompts"></div><form id="knowledgeChatForm" class="knowledge-composer"><label class="sr-only" for="knowledgePrompt">Ask about report logic</label><textarea id="knowledgePrompt" rows="2" maxlength="1500" placeholder="pls tell me the allocation logic for ISG Service?"></textarea><button type="submit" class="key key-primary" id="knowledgeSend">Send</button><button type="button" class="quiet-key" id="knowledgeStop" hidden>Stop</button></form><p id="chatNotice" class="small muted" role="status" aria-live="polite">Local knowledge retrieval · Simulated answer streaming · Your conversations stay in this browser.</p></div><aside class="chat-source-panel" aria-label="Answer sources"><p class="eyebrow">KNOWLEDGE TRACE</p><h2>Sources, alongside the answer.</h2><div id="chatSources"></div></aside></div>
+      </section>
+      <section id="knowledgeView" class="view knowledge-view" hidden aria-labelledby="knowledgeTitle">
+        <header class="screen-heading"><div><p class="eyebrow">REPORT KNOWLEDGE / YOUR WORKSPACE</p><h1 id="knowledgeTitle">Give finance a shared<br>understanding.</h1><p>Browse built-in report rules or build a library of your own.</p></div><button type="button" class="key key-primary" id="createKnowledge">+ New knowledge base</button></header>
+        <div class="knowledge-layout"><aside class="kb-directory" aria-label="Knowledge base list"><p class="rail-label">LIBRARIES</p><div id="knowledgeList"></div><p class="small muted">Built-in rules are read-only. Personal libraries are stored in this browser.</p></aside><div class="kb-workspace"><header id="knowledgeHeader" class="kb-heading"></header><div class="kb-toolbar"><div class="kb-tabs" role="tablist" aria-label="Knowledge content"><button type="button" id="kbFilesButton" role="tab" aria-selected="true" aria-controls="kbContent" data-kb-tab="file">Files <span id="kbFileCount"></span></button><button type="button" id="kbNotesButton" role="tab" aria-selected="false" aria-controls="kbContent" tabindex="-1" data-kb-tab="note">Notes <span id="kbNoteCount"></span></button><button type="button" id="kbLinksButton" role="tab" aria-selected="false" aria-controls="kbContent" tabindex="-1" data-kb-tab="link">Links <span id="kbLinkCount"></span></button><button type="button" id="kbCardsButton" role="tab" aria-selected="false" aria-controls="kbContent" tabindex="-1" data-kb-tab="cards">Cards <span id="kbCardCount"></span></button></div><button type="button" class="quiet-key" id="addKnowledgeSource">+ Add file</button></div><label class="sr-only" for="knowledgeSearch">Search knowledge</label><input type="search" id="knowledgeSearch" class="knowledge-search" placeholder="Search source titles, tags and text…"><div id="cardFilters" class="card-filters" hidden></div><div id="kbContent" role="tabpanel" aria-labelledby="kbFilesButton"></div><p class="small muted" id="knowledgeStorage"></p></div></div>
+        <input type="file" id="knowledgeFileInput" accept=".md,.markdown,.txt,.html,.htm" multiple hidden>
+      </section>
     </main>
     <aside class="inspector" aria-label="Investigation inspector">
       <div class="inspector-tabs" role="tablist" aria-label="Investigation tools"><button type="button" id="evidenceTabButton" role="tab" aria-selected="true" aria-controls="evidenceTab" data-tab="evidence">Evidence</button><button type="button" id="actionsTabButton" role="tab" aria-selected="false" aria-controls="actionsTab" tabindex="-1" data-tab="actions">Actions</button><button type="button" id="scenarioTabButton" role="tab" aria-selected="false" aria-controls="scenarioTab" tabindex="-1" data-tab="scenario">Scenario</button></div>
@@ -66,7 +84,13 @@
 </div>
 <dialog id="voucherDialog" aria-labelledby="voucherTitle"><div class="dialog-heading"><div><p class="eyebrow">VOUCHER EVIDENCE</p><h2 id="voucherTitle">Document details</h2></div><button type="button" class="quiet-key" data-close="voucherDialog" aria-label="Close voucher details">Close</button></div><div id="voucherContent"></div></dialog>
 <dialog id="comparisonDialog" aria-labelledby="comparisonTitle"><div class="dialog-heading"><div><p class="eyebrow">CANDIDATE SCENARIO / 2026009</p><h2 id="comparisonTitle">Every segment. The same total GP.</h2></div><button type="button" class="quiet-key" data-close="comparisonDialog">Close</button></div><div id="comparisonContent"></div></dialog>
-<dialog id="resetDialog" aria-labelledby="resetTitle"><div class="dialog-heading"><h2 id="resetTitle">Start this demo again?</h2></div><p>This clears the candidate plan and report saved by this demo in this browser. The sample data stays available.</p><div class="dialog-actions"><button type="button" class="quiet-key" data-close="resetDialog">Keep working</button><button type="button" class="key key-primary" id="confirmReset">Reset demo</button></div></dialog>
+<dialog id="resetDialog" aria-labelledby="resetTitle"><div class="dialog-heading"><h2 id="resetTitle">Start this demo again?</h2></div><p>This clears the candidate plan and report saved by this demo in this browser. The sample data stays available. Report chats and personal knowledge are kept.</p><div class="dialog-actions"><button type="button" class="quiet-key" data-close="resetDialog">Keep working</button><button type="button" class="key key-primary" id="confirmReset">Reset demo</button></div></dialog>
+
+<dialog id="knowledgeBaseDialog" aria-labelledby="knowledgeBaseTitle"><form id="knowledgeBaseForm"><div class="dialog-heading"><div><p class="eyebrow">PERSONAL LIBRARY</p><h2 id="knowledgeBaseTitle">Create a knowledge base</h2></div><button type="button" class="quiet-key" data-kb-close="knowledgeBaseDialog">Close</button></div><label class="kb-form-label" for="baseName">Name<input id="baseName" required maxlength="80" placeholder="e.g. Service close notes"></label><label class="kb-form-label" for="baseReport">Management report<select id="baseReport"></select></label><label class="kb-form-label" for="baseDescription">Description<textarea id="baseDescription" rows="3" maxlength="300" placeholder="What should this library help explain?"></textarea></label><p id="baseFormError" class="small negative" role="status"></p><div class="dialog-actions"><button type="submit" class="key key-primary">Create knowledge base</button></div></form></dialog>
+<dialog id="knowledgeSourceDialog" aria-labelledby="knowledgeSourceTitle"><form id="knowledgeSourceForm"><div class="dialog-heading"><div><p class="eyebrow">YOUR KNOWLEDGE</p><h2 id="knowledgeSourceTitle">Add a note</h2></div><button type="button" class="quiet-key" data-kb-close="knowledgeSourceDialog">Close</button></div><label class="kb-form-label" for="sourceName">Title<input id="sourceName" required maxlength="120"></label><label id="sourceUrlLabel" class="kb-form-label" for="sourceUrl" hidden>URL<input id="sourceUrl" type="url" placeholder="https://example.com/report-guide"></label><label class="kb-form-label" for="sourceBody"><span id="sourceBodyLabel">Note text</span><textarea id="sourceBody" rows="9" maxlength="50000" required placeholder="Write the business definition, calculation or review rule…"></textarea></label><p class="small muted" id="sourceFormHint"></p><p id="sourceFormError" class="small negative" role="status"></p><div class="dialog-actions"><button type="submit" class="key key-primary">Save source</button></div></form></dialog>
+<dialog id="knowledgeEvidenceDialog" aria-labelledby="knowledgeEvidenceTitle"><div class="dialog-heading"><div><p class="eyebrow">SOURCE EVIDENCE</p><h2 id="knowledgeEvidenceTitle">Knowledge source</h2></div><button type="button" class="quiet-key" data-kb-close="knowledgeEvidenceDialog">Close</button></div><div id="knowledgeEvidenceBody"></div></dialog>
+<dialog id="knowledgeDeleteDialog" aria-labelledby="knowledgeDeleteTitle"><div class="dialog-heading"><h2 id="knowledgeDeleteTitle">Remove this item?</h2></div><p id="knowledgeDeleteText" class="small"></p><div class="dialog-actions"><button type="button" class="quiet-key" data-kb-close="knowledgeDeleteDialog">Keep it</button><button type="button" class="key key-primary" id="confirmKnowledgeDelete">Remove</button></div></dialog>
+
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script id="loadFailure" type="text/plain">The local demo could not load. Keep index.html, demo-data.js, allocation.js and app.js in the same folder.</script>
 </body>

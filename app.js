@@ -36,13 +36,18 @@
     catch (_) { storageAvailable = false; return false; }
   }
   function switchView(name) {
-    if (!['monitor','analysis','reports'].includes(name)) return;
+    if (!['monitor','analysis','reports','chat','knowledge'].includes(name)) return;
     state.view = name;
-    ['monitor','analysis','reports'].forEach(function (v) { var el = $(v + 'View'); el.hidden = v !== name; el.classList.toggle('active', v === name); });
+    ['monitor','analysis','reports','chat','knowledge'].forEach(function (v) { var el = $(v + 'View'); el.hidden = v !== name; el.classList.toggle('active', v === name); });
     document.querySelectorAll('.nav-item').forEach(function (b) { var yes = b.dataset.view === name; b.classList.toggle('active', yes); if (yes) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
-    var titles = {monitor:['Monitor','Service allocation'],analysis:['Analysis','L0AUXG / Quarter-end'],reports:['Reports','Close record']};
+    var titles = {monitor:['Monitor','Service allocation'],analysis:['Analysis','L0AUXG / Quarter-end'],reports:['Reports','Close record'],chat:['Chat','Report logic'],knowledge:['Knowledge','Report libraries']};
     $('breadcrumb').innerHTML = '<span>' + titles[name][0] + '</span><b>/</b><strong>' + titles[name][1] + '</strong>';
     if (name === 'reports') renderReport();
+    var isKnowledge = name === 'chat' || name === 'knowledge';
+    document.querySelector('.app-body').classList.toggle('knowledge-mode', isKnowledge);
+    document.querySelector('.inspector').hidden = isKnowledge;
+    $('commandSearch').querySelector('span').textContent = isKnowledge ? 'Ask about report logic' : 'Ask about this allocation';
+    document.dispatchEvent(new CustomEvent('workspace:view', {detail:{name:name}}));
   }
   function tab(name, focus) {
     document.querySelectorAll('[data-tab]').forEach(function (b) { var yes = b.dataset.tab === name; b.setAttribute('aria-selected',String(yes)); b.tabIndex = yes ? 0 : -1; $(b.getAttribute('aria-controls')).hidden = !yes; if (yes && focus) b.focus(); });
@@ -213,7 +218,7 @@
   $('closeSegment').addEventListener('click',function () { $('segmentPanel').hidden=true; });
   $('newAnalysis').addEventListener('click',function () { prepareAnalysis('GA'); });
   $('recentCase').addEventListener('click',function () { prepareAnalysis('GA'); });
-  $('commandSearch').addEventListener('click',function () { prepareAnalysis(state.segment); });
+  $('commandSearch').addEventListener('click',function () { if ((state.view === 'chat' || state.view === 'knowledge') && window.FPAKnowledge) window.FPAKnowledge.focusChat(); else prepareAnalysis(state.segment); });
   $('analysisForm').addEventListener('submit',function (e) { e.preventDefault(); runAnalysis($('analysisPrompt').value); });
   $('startInvestigation').addEventListener('click',function () { runAnalysis('Why did GA GP turn negative after the month 3 true-up? Trace the revenue base and source voucher.'); });
   $('analysisPrompt').addEventListener('keydown',function (e) { if (e.key==='Enter'&&!e.shiftKey&&!e.isComposing) { e.preventDefault(); $('analysisForm').requestSubmit(); } });
@@ -230,11 +235,12 @@
     try { localStorage.removeItem(storageKey); } catch (_) { storageAvailable=false; }
     $('resetDialog').close(); location.reload();
   });
-  document.addEventListener('keydown',function (e) { if ((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k') { e.preventDefault(); prepareAnalysis(state.segment); } });
-  document.querySelector('[role="tablist"]').addEventListener('keydown',function (e) {
+  document.addEventListener('keydown',function (e) { if ((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k') { e.preventDefault(); if ((state.view === 'chat' || state.view === 'knowledge') && window.FPAKnowledge) window.FPAKnowledge.focusChat(); else prepareAnalysis(state.segment); } });
+  document.querySelector('.inspector-tabs').addEventListener('keydown',function (e) {
     var tabs=Array.from(document.querySelectorAll('[data-tab]'));var index=tabs.indexOf(document.activeElement);if(index<0)return;
     var next=e.key==='ArrowRight'?(index+1)%3:e.key==='ArrowLeft'?(index+2)%3:e.key==='Home'?0:e.key==='End'?2:null;
     if(next!==null){e.preventDefault();tab(tabs[next].dataset.tab,true);}
   });
+  window.FPAWorkspace = {showView:switchView, notify:notify};
   renderMonitor();renderEvidence();renderActions();renderScenario();renderReport();switchView('monitor');
 })();

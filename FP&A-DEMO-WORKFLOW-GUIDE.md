@@ -343,3 +343,27 @@ Sites 承担网页展示，视频在独立制作环境渲染；成片按需要�
 
 - [Sites 技能说明](C:/Users/yangtt16/.codex/plugins/cache/openai-curated-remote/sites/1.1.2/skills/sites/SKILL.md)：静态站点与部署流程。
 - [Remotion 官方说明](https://www.remotion.dev/)：程序化视频制作的候选工具，具体环境、版本和许可在制作阶段核实。
+
+
+## 9. 第二条故事线：报表逻辑问答与知识库（2026-10-28）
+
+用户已授权：先提交阶段二并合并 main，再新增第二条故事线。阶段二提交 00bb499 已快进合并 main；本轮分支 feature/report-knowledge-chat。
+
+### 范围与实现计划
+
+1. 在侧边栏增加 New chat、对话列表和 Knowledge bases 入口，保留原分摊调查故事。
+2. 新对话选择报表；内置 ISG Service，有 ROW PSD 空知识示例用于展示报表隔离，不能编造其规则。
+3. 内置 MR Logic 知识库，将已确认规则整理为 Business Logic.md 与 Data Dictionary & Mapping.md 的可引用段落。
+4. 提问“pls tell me the allocation logic for ISG Service?”后展示知识库检索过程，基于匹配段落组织英文答案，并流式显示、支持停止与引用查看。
+5. 知识库参考截图采用库列表、Files/Notes/Links/Cards 视图、来源状态、搜索和卡片类型筛选。
+6. 允许创建个人库并绑定报表；导入 MD/TXT/HTML、创建笔记、保存链接及摘录；实际本地文本参与检索。内置库只读。
+7. 保存对话和个人库到浏览器；验证无匹配、报表隔离、停止输出、切换对话、刷新恢复和原分摊主线。
+
+### 演示边界
+
+这是静态 Demo：本地文本检索加有来源的答案组织，输出按时间流式展示，不连接外部模型或 embedding 服务；不使用假的向量索引状态。链接只检索用户提供的摘录，不抓取网页；Office/PDF 解析与多设备同步留待后续。截图提供布局参考，不作为真实公司知识库内容。
+
+
+### 第二故事线实现状态
+
+2026-10-28：英文 Chat 与 Knowledge 界面已实现。内置 2 个来源、11 张知识卡；支持个人库、文本文件导入、笔记、链接摘录、按报表检索、流式/停止、引用快照与本地保存。22 项知识检查通过，原 42 项分摊检查继续通过；浏览器已验证两条故事线。新功能当前保留在 feature/report-knowledge-chat，待用户查看后决定提交与合并。

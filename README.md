@@ -55,6 +55,33 @@
 
 ## 当前进度
 
-阶段一已确认，阶段二英文交互 Demo 已实现并完成本地验证。Sites 上线和介绍视频尚未开始。
+阶段一已确认；两条英文交互故事线均已实现并完成本地验证：分摊异常调查、报表逻辑知识问答。Sites 上线和介绍视频尚未开始。
 
-Git：阶段一存档 454c72f；阶段二开发分支 feature/isg-allocation-demo。阶段二改动等待用户查看后决定是否提交及合并 main。
+Git：阶段一存档 454c72f；阶段二提交 00bb499，已按用户要求快进合并 main。第二故事线在 feature/report-knowledge-chat 分支开发。
+
+
+## 第二故事线：报表逻辑问答与知识库
+
+1. 在侧边栏点击 + New chat，选择 Management report（默认 ISG Service）。
+2. 选择 Knowledge base；默认检索该报表的全部库，也可单独选择内置或个人库。
+3. 输入 pls tell me the allocation logic for ISG Service?，点击 Send。
+4. 观察报表知识选择、来源匹配、答案组织与流式输出；可随时 Stop。
+5. 点击正文引用或右侧来源卡，查看准确的知识段落。历史回答保留当时的来源快照。
+6. 在 Knowledge 中浏览内置 MR Logic：Business Logic.md 与 Data Dictionary & Mapping.md，共 11 张规则/字段/概念卡。可搜索、切换 Files/Notes/Links/Cards 及卡片类型。
+7. 点击 + New knowledge base，填写名称并绑定报表。个人库支持导入 MD/TXT/HTML、拖放文件、新建/编辑笔记以及链接摘录。内容实际参与本地检索。
+8. 点击 Ask this library，开启绑定该库的对话；对话列表可切换与删除，刷新后恢复。
+
+ROW PSD 是用于验证报表隔离的空知识示例；没有预设业务规则。可以为它创建个人库，验证新增知识确实会改变答案。
+
+### 本轮范围
+
+- 采用本地关键词检索、匹配段落组织与定时流式输出，没有连接外部 LLM、向量索引或 embedding 模型；跨语言语义检索和自动翻译不属于本轮范围。
+- 内置内容来自用户已确认的分摊口径。附件截图只用于界面结构参考。
+- 文件导入支持 MD、TXT、HTML，每个文件最多 500 KB；Office/PDF、目录扫描和网站爬取尚未实现。HTML 读取正文，保留段落并去除 script/style。
+- 链接只检索用户提供的摘录；没有摘录时为 Reference only，不会伪装已读取网页。
+- 个人库、对话和来源文本保存在该浏览器；存储不可用或满时只保留本次会话并提示。原分摊方案使用独立存储键；Reset demo 不清除报告对话和个人库。
+- 流式输出可停止，切换对话会停止当前未完成回答；刷新时未完成回答保留为部分输出。引用快照不被来源编辑或删除覆盖。
+
+验收记录与截图见 qa/KNOWLEDGE-VERIFICATION.md。
+
+相关文件：knowledge-model.js（内置内容与检索）、knowledge-ui.js（对话与知识管理）、knowledge.css（界面样式）。执行 node knowledge.test.cjs 验证检索、来源和报表隔离，原 node allocation.test.cjs 继续用于分摊回归。
