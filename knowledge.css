@@ -1,5 +1,5 @@
 /* Report knowledge extends the existing Cobalt workspace. */
-.knowledge-mode { grid-template-columns: 11rem minmax(0,1fr); }
+.knowledge-mode { grid-template-columns: var(--rail-width, 11rem) minmax(0,1fr); }
 .knowledge-mode .case-scope { display:none; }
 .rail-workspace { padding-bottom:var(--space-lg); border-bottom:var(--rule-hair) solid var(--color-rule); }
 .rail-workspace .full-width { margin-top:0; }
@@ -121,7 +121,26 @@
 .source-excerpt { margin-top:var(--space-lg); padding-top:var(--space-md); border-top:var(--rule-hair) solid var(--color-rule); }
 .source-excerpt h3 { margin-top:var(--space-xs); }
 .source-excerpt blockquote { margin:var(--space-md) 0; padding:var(--space-md); border-left:3px solid var(--color-accent); background:var(--color-paper-2); white-space:pre-wrap; font-size:var(--text-sm); line-height:1.8; overflow-wrap:anywhere; }
-@media (max-width:80rem) { .knowledge-mode { grid-template-columns:10rem minmax(0,1fr); } .chat-view.active { overflow:visible; } .chat-messages { max-height:38rem; } .knowledge-chat-layout { grid-template-columns:minmax(0,1fr) 14rem; gap:var(--space-md); } .kb-workspace { padding:var(--space-md); } .knowledge-layout { grid-template-columns:10rem minmax(0,1fr); } }
+@media (max-width:80rem) { .knowledge-mode { grid-template-columns:var(--rail-width, 10rem) minmax(0,1fr); } .chat-view.active { overflow:visible; } .chat-messages { max-height:38rem; } .knowledge-chat-layout { grid-template-columns:minmax(0,1fr) 14rem; gap:var(--space-md); } .kb-workspace { padding:var(--space-md); } .knowledge-layout { grid-template-columns:10rem minmax(0,1fr); } }
 @media (min-width:55.01rem) and (max-width:72rem) { .topbar { grid-template-columns:11rem minmax(0,1fr) auto; } .command-trigger { display:none; } }
 @media (max-width:55rem) { .primary-nav { overflow-x:auto; min-width:0; } .nav-item { flex-shrink:0; } .knowledge-mode { display:block; } .chat-heading { flex-direction:column; } .chat-scope { flex-wrap:wrap; } .chat-scope label { width:100%; } .chat-scope select { width:100%; } .chat-scope > button { margin-left:0; } .knowledge-chat-layout { grid-template-columns:1fr; } .chat-source-panel { border-left:0; border-top:var(--rule-hair) solid var(--color-rule); padding:var(--space-lg) 0; } .chat-messages { max-height:38rem; } .knowledge-layout { grid-template-columns:1fr; } .kb-directory { border-right:0; border-bottom:var(--rule-hair) solid var(--color-rule); } #knowledgeList { display:flex; flex-wrap:wrap; gap:var(--space-xs); } .kb-library { width:auto; min-width:10rem; margin-bottom:0; } .kb-directory > p:last-child { margin-top:var(--space-sm); padding-block:var(--space-xs); } .kb-workspace { padding:var(--space-md); } .kb-toolbar { align-items:flex-start; flex-direction:column; padding-bottom:var(--space-xs); } .kb-tabs { width:100%; } .knowledge-file { flex-wrap:wrap; } .source-controls { margin-left:auto; } .chat-heading h1 { max-width:none; } }
 @media (prefers-reduced-motion:reduce) { .stream-caret { animation:none; } .chat-messages { scroll-behavior:auto; } }
+
+/* Compact navigation and finite monitor motion. */
+.rail-contents { display:flex; flex-direction:column; flex:1; min-height:0; }
+.context-rail { overflow-y:auto; }
+.rail-toggle { display:flex; align-items:center; gap:var(--space-xs); width:100%; border:0; background:transparent; color:var(--color-muted); padding:0 var(--space-xs) var(--space-md); text-align:left; font-size:.625rem; }
+.rail-toggle > span:first-child { display:grid; place-items:center; width:1.75rem; height:1.75rem; border:1px solid var(--color-rule-2); border-radius:var(--radius-input); font-size:1.4rem; background:var(--color-paper); }
+.app-body.rail-collapsed { --rail-width:3.5rem; }
+.rail-collapsed .context-rail { padding-inline:var(--space-xs); }
+.rail-collapsed .rail-contents, .rail-collapsed .rail-toggle-label { display:none; }
+.rail-collapsed .rail-toggle { justify-content:center; padding-inline:0; }
+.rail-shortcuts:not([hidden]) { display:flex; flex-direction:column; align-items:center; gap:var(--space-md); }
+.rail-shortcuts button { display:grid; place-items:center; width:2.25rem; height:2.25rem; background:var(--color-paper); border:1px solid var(--color-rule); border-radius:var(--radius-input); color:var(--color-accent-deep); font-size:1.25rem; }
+.rail-shortcuts button:hover { background:var(--color-accent-wash); border-color:var(--color-accent); }
+.monitor-load-status { min-height:1rem; margin:0 0 var(--space-xs); color:var(--color-muted); font-family:var(--font-outlier); font-size:.5625rem; letter-spacing:.03em; }
+.monitor-load-status.is-loading { color:var(--color-accent-deep); }
+#monitorView.active { animation:none; }
+
+.app-body { transition:grid-template-columns 220ms cubic-bezier(0.16,1,0.3,1); }
+@media (prefers-reduced-motion:reduce) { .app-body { transition:none; } }

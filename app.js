@@ -35,8 +35,49 @@
     try { localStorage.setItem(storageKey, JSON.stringify({version:1,scope:data.scope.profit_center,plan:state.plan,report:state.report})); storageAvailable = true; return true; }
     catch (_) { storageAvailable = false; return false; }
   }
+  var monitorAnimations = [], monitorMotionTimer, monitorShown = false;
+  function finishMonitorMotion() {
+    clearTimeout(monitorMotionTimer);
+    monitorAnimations.forEach(function (animation) { animation.cancel(); });
+    monitorAnimations = [];
+    $('monitorLoadStatus').classList.remove('is-loading');
+    $('monitorLoadStatus').textContent = 'Sample allocation ready · USD';
+    $('monitorView').setAttribute('aria-busy','false');
+  }
+  function animateMonitor(mode) {
+    finishMonitorMotion();
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced || typeof $('monitorMetrics').animate !== 'function') return;
+    var targets = mode === 'entry'
+      ? Array.from(document.querySelectorAll('#monitorMetrics > div, #ledgerTable tbody tr, #ledgerTable tfoot tr, #monitorAlerts > *'))
+      : [$('monitorMetrics'), $('ledgerTable'), $('monitorAlerts')];
+    if (mode === 'entry') {
+      $('monitorLoadStatus').textContent = 'Preparing sample allocation view…';
+      $('monitorLoadStatus').classList.add('is-loading');
+      $('monitorView').setAttribute('aria-busy','true');
+    }
+    targets.forEach(function (target,index) {
+      var frames = mode === 'entry' ? [{opacity:0,transform:'translateY(8px)'},{opacity:1,transform:'translateY(0)'}] : [{opacity:0},{opacity:1}];
+      var animation = target.animate(frames,{duration:mode === 'entry'?340:280,delay:mode === 'entry'?120+index*45:0,easing:'cubic-bezier(0.16,1,0.3,1)',fill:'backwards'});
+      monitorAnimations.push(animation);
+      animation.finished.then(function () { animation.cancel(); },function () {});
+    });
+    monitorMotionTimer = setTimeout(finishMonitorMotion,mode === 'entry'?500+targets.length*45:300);
+  }
+  $('sidebarToggle').addEventListener('click',function () {
+    var collapsed = document.querySelector('.app-body').classList.toggle('rail-collapsed');
+    this.setAttribute('aria-expanded',String(!collapsed));
+    this.setAttribute('aria-label',collapsed?'Expand sidebar':'Collapse sidebar');
+    this.title=collapsed?'Expand sidebar':'Collapse sidebar';
+    this.querySelector('span').textContent=collapsed?'›':'‹';
+    $('railContents').hidden=collapsed;
+    document.querySelector('.rail-shortcuts').hidden=!collapsed;
+  });
+  $('compactNewChat').addEventListener('click',function () { $('sidebarNewChat').click(); });
   function switchView(name) {
     if (!['monitor','analysis','reports','chat','knowledge'].includes(name)) return;
+    var enterMonitor = name === 'monitor' && (state.view !== 'monitor' || !monitorShown);
+    if (name !== 'monitor') finishMonitorMotion();
     state.view = name;
     ['monitor','analysis','reports','chat','knowledge'].forEach(function (v) { var el = $(v + 'View'); el.hidden = v !== name; el.classList.toggle('active', v === name); });
     document.querySelectorAll('.nav-item').forEach(function (b) { var yes = b.dataset.view === name; b.classList.toggle('active', yes); if (yes) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
@@ -48,6 +89,7 @@
     document.querySelector('.inspector').hidden = isKnowledge;
     $('commandSearch').querySelector('span').textContent = isKnowledge ? 'Ask about report logic' : 'Ask about this allocation';
     document.dispatchEvent(new CustomEvent('workspace:view', {detail:{name:name}}));
+    if (enterMonitor) { monitorShown=true; animateMonitor('entry'); }
   }
   function tab(name, focus) {
     document.querySelectorAll('[data-tab]').forEach(function (b) { var yes = b.dataset.tab === name; b.setAttribute('aria-selected',String(yes)); b.tabIndex = yes ? 0 : -1; $(b.getAttribute('aria-controls')).hidden = !yes; if (yes && focus) b.focus(); });
@@ -206,7 +248,7 @@
     if (b.dataset.segment) showSegment(b.dataset.segment);
     if (b.dataset.analyze) prepareAnalysis(b.dataset.analyze);
     if (b.dataset.document) openVoucher(b.dataset.document);
-    if (b.hasAttribute('data-period-close')) { state.period=closing; renderMonitor(); }
+    if (b.hasAttribute('data-period-close')) { state.period=closing; renderMonitor(); animateMonitor('period'); }
     if (b.dataset.close) $(b.dataset.close).close();
     if (b.hasAttribute('data-open-actions')) tab('actions',true);
     if (b.hasAttribute('data-open-scenario') || b.hasAttribute('data-voucher-scenario')) { if ($('voucherDialog').open) $('voucherDialog').close(); tab('scenario',true); $('scenarioTab').scrollIntoView({block:'nearest',behavior:'smooth'}); }
@@ -214,7 +256,7 @@
     if (b.hasAttribute('data-generate-report')) generateReport();
     if (b.id==='downloadReport') download('L0AUXG-2026Q3-investigation.md',reportText(),'text/markdown;charset=utf-8');
   });
-  $('periodSelect').addEventListener('change',function (e) { state.period=e.target.value; renderMonitor(); });
+  $('periodSelect').addEventListener('change',function (e) { state.period=e.target.value; renderMonitor(); animateMonitor('period'); });
   $('closeSegment').addEventListener('click',function () { $('segmentPanel').hidden=true; });
   $('newAnalysis').addEventListener('click',function () { prepareAnalysis('GA'); });
   $('recentCase').addEventListener('click',function () { prepareAnalysis('GA'); });

@@ -57,7 +57,7 @@
 
 阶段一已确认；两条英文交互故事线均已实现并完成本地验证：分摊异常调查、报表逻辑知识问答。Sites 上线和介绍视频尚未开始。
 
-Git：阶段一存档 454c72f；阶段二提交 00bb499，已按用户要求快进合并 main。第二故事线在 feature/report-knowledge-chat 分支开发。
+Git：阶段一存档 454c72f；阶段二提交 00bb499，已按用户要求快进合并 main。第二故事线提交 424eefd，已合并 main；侧边栏和监控动效在 feature/sidebar-monitor-motion 分支。
 
 
 ## 第二故事线：报表逻辑问答与知识库
@@ -85,3 +85,12 @@ ROW PSD 是用于验证报表隔离的空知识示例；没有预设业务规则
 验收记录与截图见 qa/KNOWLEDGE-VERIFICATION.md。
 
 相关文件：knowledge-model.js（内置内容与检索）、knowledge-ui.js（对话与知识管理）、knowledge.css（界面样式）。执行 node knowledge.test.cjs 验证检索、来源和报表隔离，原 node allocation.test.cjs 继续用于分摊回归。
+
+
+## 侧边栏与监控动效
+
+桌面侧边栏顶部可 Collapse sidebar / Expand sidebar；收窄后保留 New chat、Knowledge bases、Service allocation、Investigation 快捷入口。窄屏沿用顶部导航。
+
+进入 Service allocation 时短暂显示 Preparing sample allocation view，指标、台账行、合计和预警依次入场；这是本地样例的展示动效，不代表正在读取真实系统。动画完成后保持静止。Review period 切换只对更新数据做 280ms 淡入；快速切换取消旧动画。系统启用减少动态效果时直接显示数据。
+
+执行 node motion.test.cjs 验证一次性动效、取消清理和减少动态效果分支。验收记录见 qa/MOTION-VERIFICATION.md。

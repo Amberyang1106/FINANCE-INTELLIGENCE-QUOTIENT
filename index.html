@@ -35,19 +35,24 @@
     <div class="top-actions"><button type="button" class="quiet-key" id="resetDemo">Reset demo</button><button type="button" class="key key-primary" id="newAnalysis">New analysis</button></div>
   </header>
   <div class="app-body">
-    <aside class="context-rail" aria-label="Case navigation">
+    <aside class="context-rail" id="contextRail" aria-label="Case navigation">
+      <button type="button" id="sidebarToggle" class="rail-toggle" aria-expanded="true" aria-controls="railContents" aria-label="Collapse sidebar" title="Collapse sidebar"><span aria-hidden="true">‹</span><span class="rail-toggle-label">Collapse sidebar</span></button>
+      <nav class="rail-shortcuts" aria-label="Compact navigation" hidden><button type="button" id="compactNewChat" aria-label="New chat" title="New chat">+</button><button type="button" data-view="knowledge" aria-label="Knowledge bases" title="Knowledge bases">▤</button><button type="button" data-view="monitor" aria-label="Service allocation" title="Service allocation">▦</button><button type="button" data-view="analysis" aria-label="Allocation investigation" title="Allocation investigation">↗</button></nav>
+      <div id="railContents" class="rail-contents">
       <div class="rail-workspace"><button type="button" class="key key-primary full-width" id="sidebarNewChat">+ New chat</button><button type="button" class="kb-rail-link" data-view="knowledge">Knowledge bases <span aria-hidden="true">↗</span></button></div>
       <div class="rail-section"><h2 class="rail-label">REPORT CONVERSATIONS</h2><div id="chatList" class="conversation-list"></div></div>
       <div class="rail-section"><h2 class="rail-label">PINNED MONITOR</h2><button type="button" class="scene active" data-view="monitor"><span>Service allocation</span><b>1</b></button></div>
       <div class="rail-section case-scope"><h2 class="rail-label">MONITOR CASE</h2><dl class="scope-list"><div><dt>Business</dt><dd>ISG Service</dd></div><div><dt>Geography</dt><dd>ROW</dd></div><div><dt>Profit center</dt><dd>L0AUXG</dd></div><div><dt>Quarter</dt><dd>2026 Q3</dd></div></dl></div>
       <div class="rail-section recent"><h2 class="rail-label">INVESTIGATION</h2><button type="button" id="recentCase"><span class="case-dot" aria-hidden="true"></span><strong>Negative GP after true-up</strong><small>GA · 2026009</small></button><p id="recentStatus" class="muted small">Ready to investigate</p></div>
       <div class="rail-footer"><div class="avatar" aria-hidden="true">YT</div><div><strong>Finance reviewer</strong><span>Local demo workspace</span></div></div>
+      </div>
     </aside>
     <main class="workspace" id="main">
       <div class="workspace-bar"><div class="breadcrumb" id="breadcrumb"><span>Monitor</span><b>/</b><strong>Service allocation</strong></div><span class="sample-label">SAMPLE DATA · SIMULATED AI</span></div>
       <section id="monitorView" class="view active" aria-labelledby="monitorTitle">
         <header class="screen-heading"><div><p class="eyebrow">QUARTER-END CLOSE / 2026 Q3</p><h1 id="monitorTitle">Spot the exception.<br>Trace the allocation.</h1><p>ISG Service · ROW · Profit center <strong>L0AUXG</strong></p></div><button type="button" class="close-badge" data-analyze="GA" aria-label="Investigate the close exception"><span aria-hidden="true"></span>1 open case →</button></header>
         <div class="scope-controls"><label for="periodSelect">Review period<select id="periodSelect" aria-label="Review period"><option value="2026009">2026009 · Month 3 true-up</option><option value="2026007">2026007 · Month 1 (locked)</option><option value="2026008">2026008 · Month 2 (locked)</option><option value="quarter">2026 Q3 · Quarter total</option></select></label><p id="periodContext">Quarter weights · Current-period amounts · USD</p><button type="button" class="quiet-key" id="downloadCsv">Download CSV</button></div>
+        <p id="monitorLoadStatus" class="monitor-load-status" role="status" aria-live="polite"></p>
         <dl class="metric-strip" id="monitorMetrics" aria-label="Financial overview"></dl>
         <section class="ledger-panel" aria-labelledby="ledgerTitle"><header class="panel-heading"><div><h2 id="ledgerTitle">Allocation base &amp; results</h2><p id="ledgerSubtitle">Select a segment to inspect its revenue base.</p></div><span class="pill success">Pool reconciled</span></header><div id="ledgerTable" class="table-scroll" tabindex="0" aria-label="Allocation results, horizontally scrollable"></div><p class="table-footnote" id="ledgerFootnote"></p></section>
         <div id="monitorAlerts" class="alert-grid" aria-label="Allocation alerts"></div>
