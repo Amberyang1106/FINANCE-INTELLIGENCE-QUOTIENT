@@ -55,9 +55,9 @@
 
 ## 当前进度
 
-阶段一已确认；两条英文交互故事线均已实现并完成本地验证：分摊异常调查、报表逻辑知识问答。Sites 上线和介绍视频尚未开始。
+阶段一已确认；三条英文交互故事线均已实现并完成本地验证：分摊异常调查、报表逻辑知识问答、自定义 Monitor 与模板复用。Sites 上线和介绍视频尚未开始。
 
-Git：阶段一存档 454c72f；阶段二提交 00bb499，已按用户要求快进合并 main。第二故事线提交 424eefd，已合并 main；侧边栏和监控动效在 feature/sidebar-monitor-motion 分支。
+Git：阶段一存档 454c72f；阶段二提交 00bb499，已按用户要求快进合并 main。第二故事线提交 424eefd，已合并 main；侧边栏和监控动效提交 dff002c，已合并 main；新布局与 Monitor Studio 在 feature/custom-monitor-workspace 分支。
 
 
 ## 第二故事线：报表逻辑问答与知识库
@@ -94,3 +94,29 @@ ROW PSD 是用于验证报表隔离的空知识示例；没有预设业务规则
 进入 Service allocation 时短暂显示 Preparing sample allocation view，指标、台账行、合计和预警依次入场；这是本地样例的展示动效，不代表正在读取真实系统。动画完成后保持静止。Review period 切换只对更新数据做 280ms 淡入；快速切换取消旧动画。系统启用减少动态效果时直接显示数据。
 
 执行 node motion.test.cjs 验证一次性动效、取消清理和减少动态效果分支。验收记录见 qa/MOTION-VERIFICATION.md。
+
+
+## 新布局与第三故事线：Monitor Studio / Monitor Market
+
+- 顶部采用 Lenovo 官方红色 Logo。主导航位于可收窄侧栏；活动背景按目标项位置和尺寸滑动，并带轻微回弹。New chat 留在侧栏；固定监控、Monitor case、Investigation、对话列表与用户身份在上方。
+- 数据卡采用高不透明度磨砂表面；支持 corner-shape:squircle 的浏览器使用连续圆角，其余保留普通圆角。表格和文字保持可读。
+- Review period 现在也显示样例准备反馈，并对指标、表格行、合计和预警交错入场；完成后保持静止。自定义柱图的轻微循环为独立表现；趋势图使用 SVG 描线和跟随点。减少动态效果偏好下关闭这些动画。
+
+### 演示步骤
+
+1. 点击 Monitor Studio，选择 Business group / Management report / Dimension / KPI。首版支持 ISG / ISG Service；其他范围明确提示无样例，禁用字段选择。
+2. 点击 Quarterly GP by segment，再点击 Generate monitor。观察逐步模拟路由：报表、字段、样例来源、聚合、图表。生成最近完整样例季度 2026 Q3 的 GP 柱图。GP 使用既有季度合计（不是第一故事线的 2026009 月度 GP）；LE 为负。
+3. 点击 Five-quarter revenue trend，再 Generate monitor。生成 2025 Q3–2026 Q3 的三条 BPC BU Revenue 曲线。此历史序列为合成演示数据；最后一季度按既有 Revenue 总额的 46% / 27% / 27% 拆分。
+4. 点击卡片右上 Benchmark。GP 默认 <0 USD 预警；Revenue 默认 QoQ 增长 ≥8% 高亮、下降 ≥5% 预警；成本模板默认 >1,000,000 USD 预警。修改规则会实际重算样例信号，未配置邮件或调度服务。
+5. 按住标题拖动卡片，跨行跨列移动、避让、吸附；底部角落可调整大小。标题旁 Layout options 提供 Move earlier/later 与 Toggle full width 的键盘替代。布局保存在当前浏览器，手机单列不会覆盖桌面布局。
+6. 点击 Monitor Market，安装 GP / Revenue / Cost 内置模板。搜索可筛选模板。
+7. 在 Studio 点击 Save as template，将整张看板保存到本地个人集合。Download board / Download 导出 JSON；Import template 导入有效模板后可安装。导入校验版本、报表/字段组合和阈值，限制 250 KB、每板 1–20 张卡。
+8. 生成过程中切换工作区会取消本次生成，避免完成后强制跳转。
+
+### 数据与能力边界
+
+这是静态交互 Demo。自然语言只路由到上面三个已定义的样例组合，不是任意 SQL 或真实数据库查询；报表、日期和字段在来源追踪中明确显示。BU 名称与五季度历史为合成样例。市场中的个人发布、看板、阈值和布局都保存在本浏览器的独立存储键 fpa-monitor-studio:v1；Reset demo 继续只清除原分摊方案和报告。跨用户共享托管、真实上传服务和后台预警调度未接入。
+
+图表复用浏览器原生 SVG，网格拖拽与避让复用 GridStack 14.0.0（MIT，本地 vendor 目录）。品牌资产与依赖来源见 assets/README.md 和 vendor/README.md。
+
+验证：node monitor-model.test.cjs、node motion.test.cjs、node allocation.test.cjs、node knowledge.test.cjs。结果及截图见 qa/CUSTOM-MONITOR-VERIFICATION.md。

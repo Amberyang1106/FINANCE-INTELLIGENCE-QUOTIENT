@@ -29,4 +29,7 @@ check(()=>assert.equal(f.elements.monitorView.attrs['aria-busy'],'false'));
 check(()=>assert.equal(f.elements.monitorLoadStatus.textContent,'Sample allocation ready · USD'));
 f=fixture(true);f.run('entry');check(()=>assert.equal(f.animations.length,0));check(()=>assert.equal(f.timers.size,0));
 f=fixture(false,false);f.run('entry');check(()=>assert.equal(f.animations.length,0));check(()=>assert.equal(f.elements.monitorView.attrs['aria-busy'],'false'));
+let changeHandler,chosenMode,renderCount=0;const periodContext=vm.createContext({$:()=>({addEventListener:(name,fn)=>changeHandler=fn}),state:{},renderMonitor:()=>renderCount++,animateMonitor:mode=>chosenMode=mode});
+const periodBinding=code.split('\n').find(line=>line.includes("$('periodSelect').addEventListener"));vm.runInContext(periodBinding,periodContext);changeHandler({target:{value:'2026007'}});
+check(()=>assert.equal(chosenMode,'entry'));check(()=>assert.equal(renderCount,1));
 console.log(checks+' finite-motion checks passed.');

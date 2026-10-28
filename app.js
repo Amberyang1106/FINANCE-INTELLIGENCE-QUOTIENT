@@ -70,25 +70,32 @@
     this.setAttribute('aria-label',collapsed?'Expand sidebar':'Collapse sidebar');
     this.title=collapsed?'Expand sidebar':'Collapse sidebar';
     this.querySelector('span').textContent=collapsed?'›':'‹';
-    $('railContents').hidden=collapsed;
-    document.querySelector('.rail-shortcuts').hidden=!collapsed;
+    requestAnimationFrame(updateNavIndicator);
   });
-  $('compactNewChat').addEventListener('click',function () { $('sidebarNewChat').click(); });
+  function updateNavIndicator() {
+    var nav=document.querySelector('.primary-nav'), selected=nav.querySelector('.nav-item.active');
+    if(!selected)return;
+    var box=selected.getBoundingClientRect(), parent=nav.getBoundingClientRect(), indicator=$('navIndicator');
+    indicator.style.transform='translate('+(box.left-parent.left)+'px,'+(box.top-parent.top)+'px)';
+    indicator.style.width=box.width+'px'; indicator.style.height=box.height+'px';
+  }
+  new ResizeObserver(updateNavIndicator).observe(document.querySelector('.primary-nav'));
   function switchView(name) {
-    if (!['monitor','analysis','reports','chat','knowledge'].includes(name)) return;
+    if (!['monitor','analysis','reports','chat','knowledge','studio','market'].includes(name)) return;
     var enterMonitor = name === 'monitor' && (state.view !== 'monitor' || !monitorShown);
     if (name !== 'monitor') finishMonitorMotion();
     state.view = name;
-    ['monitor','analysis','reports','chat','knowledge'].forEach(function (v) { var el = $(v + 'View'); el.hidden = v !== name; el.classList.toggle('active', v === name); });
+    ['monitor','analysis','reports','chat','knowledge','studio','market'].forEach(function (v) { var el = $(v + 'View'); el.hidden = v !== name; el.classList.toggle('active', v === name); });
     document.querySelectorAll('.nav-item').forEach(function (b) { var yes = b.dataset.view === name; b.classList.toggle('active', yes); if (yes) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
-    var titles = {monitor:['Monitor','Service allocation'],analysis:['Analysis','L0AUXG / Quarter-end'],reports:['Reports','Close record'],chat:['Chat','Report logic'],knowledge:['Knowledge','Report libraries']};
+    var titles = {monitor:['Monitor','Service allocation'],analysis:['Analysis','L0AUXG / Quarter-end'],reports:['Reports','Close record'],chat:['Chat','Report logic'],knowledge:['Knowledge','Report libraries'],studio:['Monitor Studio','Your canvas'],market:['Monitor Market','Reusable templates']};
     $('breadcrumb').innerHTML = '<span>' + titles[name][0] + '</span><b>/</b><strong>' + titles[name][1] + '</strong>';
     if (name === 'reports') renderReport();
-    var isKnowledge = name === 'chat' || name === 'knowledge';
+    var isKnowledge = ['chat','knowledge','studio','market'].includes(name);
     document.querySelector('.app-body').classList.toggle('knowledge-mode', isKnowledge);
     document.querySelector('.inspector').hidden = isKnowledge;
-    $('commandSearch').querySelector('span').textContent = isKnowledge ? 'Ask about report logic' : 'Ask about this allocation';
+    $('commandSearch').querySelector('span').textContent = name === 'studio' ? 'Describe a monitor' : name === 'market' ? 'Find a monitor template' : isKnowledge ? 'Ask about report logic' : 'Ask about this allocation';
     document.dispatchEvent(new CustomEvent('workspace:view', {detail:{name:name}}));
+    requestAnimationFrame(updateNavIndicator);
     if (enterMonitor) { monitorShown=true; animateMonitor('entry'); }
   }
   function tab(name, focus) {
@@ -248,7 +255,7 @@
     if (b.dataset.segment) showSegment(b.dataset.segment);
     if (b.dataset.analyze) prepareAnalysis(b.dataset.analyze);
     if (b.dataset.document) openVoucher(b.dataset.document);
-    if (b.hasAttribute('data-period-close')) { state.period=closing; renderMonitor(); animateMonitor('period'); }
+    if (b.hasAttribute('data-period-close')) { state.period=closing; renderMonitor(); animateMonitor('entry'); }
     if (b.dataset.close) $(b.dataset.close).close();
     if (b.hasAttribute('data-open-actions')) tab('actions',true);
     if (b.hasAttribute('data-open-scenario') || b.hasAttribute('data-voucher-scenario')) { if ($('voucherDialog').open) $('voucherDialog').close(); tab('scenario',true); $('scenarioTab').scrollIntoView({block:'nearest',behavior:'smooth'}); }
@@ -256,11 +263,11 @@
     if (b.hasAttribute('data-generate-report')) generateReport();
     if (b.id==='downloadReport') download('L0AUXG-2026Q3-investigation.md',reportText(),'text/markdown;charset=utf-8');
   });
-  $('periodSelect').addEventListener('change',function (e) { state.period=e.target.value; renderMonitor(); animateMonitor('period'); });
+  $('periodSelect').addEventListener('change',function (e) { state.period=e.target.value; renderMonitor(); animateMonitor('entry'); });
   $('closeSegment').addEventListener('click',function () { $('segmentPanel').hidden=true; });
   $('newAnalysis').addEventListener('click',function () { prepareAnalysis('GA'); });
   $('recentCase').addEventListener('click',function () { prepareAnalysis('GA'); });
-  $('commandSearch').addEventListener('click',function () { if ((state.view === 'chat' || state.view === 'knowledge') && window.FPAKnowledge) window.FPAKnowledge.focusChat(); else prepareAnalysis(state.segment); });
+  $('commandSearch').addEventListener('click',function () { if (state.view === 'studio') $('monitorRequest').focus(); else if(state.view === 'market') $('marketSearch').focus(); else if ((state.view === 'chat' || state.view === 'knowledge') && window.FPAKnowledge) window.FPAKnowledge.focusChat(); else prepareAnalysis(state.segment); });
   $('analysisForm').addEventListener('submit',function (e) { e.preventDefault(); runAnalysis($('analysisPrompt').value); });
   $('startInvestigation').addEventListener('click',function () { runAnalysis('Why did GA GP turn negative after the month 3 true-up? Trace the revenue base and source voucher.'); });
   $('analysisPrompt').addEventListener('keydown',function (e) { if (e.key==='Enter'&&!e.shiftKey&&!e.isComposing) { e.preventDefault(); $('analysisForm').requestSubmit(); } });
@@ -277,7 +284,7 @@
     try { localStorage.removeItem(storageKey); } catch (_) { storageAvailable=false; }
     $('resetDialog').close(); location.reload();
   });
-  document.addEventListener('keydown',function (e) { if ((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k') { e.preventDefault(); if ((state.view === 'chat' || state.view === 'knowledge') && window.FPAKnowledge) window.FPAKnowledge.focusChat(); else prepareAnalysis(state.segment); } });
+  document.addEventListener('keydown',function (e) { if ((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k') { e.preventDefault(); if (state.view === 'studio') $('monitorRequest').focus(); else if(state.view === 'market') $('marketSearch').focus(); else if ((state.view === 'chat' || state.view === 'knowledge') && window.FPAKnowledge) window.FPAKnowledge.focusChat(); else prepareAnalysis(state.segment); } });
   document.querySelector('.inspector-tabs').addEventListener('keydown',function (e) {
     var tabs=Array.from(document.querySelectorAll('[data-tab]'));var index=tabs.indexOf(document.activeElement);if(index<0)return;
     var next=e.key==='ArrowRight'?(index+1)%3:e.key==='ArrowLeft'?(index+2)%3:e.key==='Home'?0:e.key==='End'?2:null;
