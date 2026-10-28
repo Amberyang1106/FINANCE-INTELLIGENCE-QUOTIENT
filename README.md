@@ -55,9 +55,9 @@
 
 ## 当前进度
 
-阶段一已确认；三条英文交互故事线均已实现并完成本地验证：分摊异常调查、报表逻辑知识问答、自定义 Monitor 与模板复用。Sites 上线和介绍视频尚未开始。
+阶段一已确认；四条英文交互故事线均已实现并完成本地验证：分摊异常调查、报表逻辑知识问答、自定义 Monitor 与模板复用、Proposal 任务闭环。Sites 上线和介绍视频尚未开始。
 
-Git：阶段一存档 454c72f；阶段二提交 00bb499，已按用户要求快进合并 main。第二故事线提交 424eefd，已合并 main；侧边栏和监控动效提交 dff002c，已合并 main；新布局与 Monitor Studio 在 feature/custom-monitor-workspace 分支。
+Git：阶段一存档 454c72f；阶段二提交 00bb499，已按用户要求快进合并 main。第二故事线提交 424eefd，已合并 main；侧边栏和监控动效提交 dff002c，已合并 main；新布局与 Monitor Studio / Market 提交 c082232，已合并 main；Task To-do 在 feature/proposal-task-board 分支。
 
 
 ## 第二故事线：报表逻辑问答与知识库
@@ -120,3 +120,40 @@ ROW PSD 是用于验证报表隔离的空知识示例；没有预设业务规则
 图表复用浏览器原生 SVG，网格拖拽与避让复用 GridStack 14.0.0（MIT，本地 vendor 目录）。品牌资产与依赖来源见 assets/README.md 和 vendor/README.md。
 
 验证：node monitor-model.test.cjs、node motion.test.cjs、node allocation.test.cjs、node knowledge.test.cjs。结果及截图见 qa/CUSTOM-MONITOR-VERIFICATION.md。
+
+
+## 第四故事线：Proposal → Task To-do
+
+### 直接体验内置 sample
+
+打开 Task To-do，Task collection 默认选择 Built-in samples。5 个可交互样例随代码内置，首次打开新浏览器环境也会出现：
+
+| Sample | 行动 | 人员 | 初始状态 |
+| --- | --- | --- | --- |
+| DEMO-001 | Contact the posting user | yangtt16 | Completed |
+| DEMO-002 | Verify the positive counterpart | Alex Chen | In progress |
+| DEMO-003 | Check the LE segment assignment | Maya Patel | Assigned |
+| DEMO-004 | Check currency differences if relevant | David Kim | Received |
+| DEMO-005 | Confirm the allocation-base treatment | 未分派 | Created |
+
+点击 View sample handoff 或任意任务卡，查看五步链路、proposal 原因/证据/假设与 Handoff log。DEMO-002 展示 Maya → Alex 的重新分派记录。所有样例都标记 SAMPLE，人员反馈与结果为预设 Demo 内容；没有实际消息发送。FX 样例仅表示接收相关性核实请求，不代表已发现汇率问题。
+
+样例只初始化一次；交互后的进度会保存，刷新不重复生成或自动恢复初始状态。原有任务不被覆盖。Task collection 可切换 My proposal tasks 或 All tasks；导航数字为全部未完成任务数，概览数字属于当前集合。
+
+### 从固定 Monitor 的 proposal 新建任务
+
+1. 沿 Monitor → Analysis 调查案例，在 Actions 选择跟进行动，在 Scenario 选择 base exclusion 并保存 candidate proposal。
+2. 点击 Scenario 或报告中的 Create proposal tasks，勾选需落地的行动。另有一项分摊处理决策任务，用于记录业务复核后的处理结果。
+3. 创建后进入 Task To-do 的 My proposal tasks 集合。相同 proposal 内容及行动重复创建时去重；只创建此前未创建的选中行动。未保存的表单改动不进入任务。
+4. 以 Finance reviewer 视角打开任务，选择 Assignee 及可选 Due date，点击 Assign task。任务进入 Assigned，等待负责人反馈。
+5. 在 Viewing as 或任务内 Demo perspective 切换到该负责人，依次 Receive task → Start work → Mark completed。完成时必须填写结果或证据说明；其他人不能替当前负责人反馈。
+6. 未完成任务可重新分派，新负责人需要重新接收；旧接收、工作状态和所有交接日志仍保留。同一负责人只修改截止日期时不重置已返回的进度。
+7. 搜索支持任务、凭证、Reference、人员和原 proposal 说明；可按人员/状态筛选，并使用 My inbox 或 Unassigned queue。
+
+### 保存与范围
+
+任务、日志、来源快照和样例初始化版本保存在独立的 fpa-proposal-tasks:v1 浏览器存储中。后续重新保存 proposal 或 Reset demo 不覆盖历史任务中的原因、证据、假设和决策说明。无法恢复的已有存储不会被样例初始化自动覆盖，改为会话内运行并提示。
+
+角色切换仅为本地演示，不代表真实身份认证、真实人员目录或多人同步；未连接邮件/消息通知/任务服务。任务完成只记录反馈，不修改凭证或生产分摊，也不会把原固定 monitor 的异常自动认定为解决。
+
+执行 node task-model.test.cjs 验证任务与样例逻辑。完整验收见 qa/TASK-TO-DO-VERIFICATION.md。

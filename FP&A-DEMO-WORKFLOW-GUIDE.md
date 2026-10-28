@@ -393,3 +393,24 @@ Sites 承担网页展示，视频在独立制作环境渲染；成片按需要�
 7. 验证数据路由/阈值/导入校验/本地保存/布局连续性、旧故事线回归及响应式可读性。
 
 本轮实现与验收：105 项检查通过，浏览器验证三条故事线、真实拖拽避让、阈值重算、模板安装/保存/下载/有效与无效导入、刷新恢复、BG/Report 联动、导航指示块及窄屏。最终样例保留 3 张 monitor 与本地个人模板，方便演示。详情见 qa/CUSTOM-MONITOR-VERIFICATION.md。新版本尚未提交，待用户验收后存档合并。
+
+
+## 12. 第四故事线：Proposal → Task To-do（2026-10-28）
+
+新布局、Monitor Studio / Market 已提交 c082232 并快进合并 main。本轮分支 feature/proposal-task-board。
+
+### 范围与实现计划
+
+1. 固定 Monitor 识别问题后，沿现有 Analysis / Actions / Scenario 选择并保存 candidate proposal。Scenario 和报告提供 Create proposal tasks 入口；Task To-do 也可读取当前已保存 proposal。
+2. 展示已选行动与分摊处理决策任务，用户选择要创建的任务；保存 proposal 快照与原始凭证、范围、原因、测算假设，后续改动不覆盖历史任务证据。同一 proposal 内容与同一行动重复创建时去重。
+3. Task To-do 五列：Created、Assigned、Received、In progress、Completed。财务负责人创建与分派任务、选择人员及可选截止日期；被分派人反馈接收、开始、完成。完成需填写结果说明。
+4. 角色切换为本地 Demo 预览：Finance reviewer 与人员目录中的样例账号。只有当前被分派人视角能反馈状态；负责人不能代替他人点击接收/完成。未完成任务可重新分派，重新等待接收，日志保留。
+5. 单任务展示五步链路、来源 proposal、人员与说明、时间戳交接日志。支持按人员、状态和文字筛选；所有状态与证据本地保存，刷新恢复。
+6. 使用现有磨砂卡片、蓝绿状态信号和一次性进度过渡，参考附件的 stepper 与 handoff log 结构。附件只作视觉参考。
+7. 验证 proposal 转任务、去重、状态顺序、人员身份、重新分派、完成说明、日志与快照、刷新、窄屏和前三条故事线回归。
+
+边界：本地任务协作 Demo，不连接邮箱、真实人员账号、消息推送或任务服务；角色切换不代表真实身份认证，状态反馈明确为模拟。完成任务只记录本地结果，不执行凭证或生产分摊。Reset demo 继续只重置原分摊方案/报告，保留任务历史与来源快照。
+
+用户补充：Task To-do 保留 sample。已内置 5 个交互样例，分别处于 Created / Assigned / Received / In progress / Completed，均标记 SAMPLE；首次使用一次性写入，并与 My proposal tasks 分组。现有任务和样例的已保存进度不被自动覆盖。样例来源使用同一已审核财务数据，预置接收/完成记录明确为 Demo。
+
+验收进度：任务/样例 65 项、动效 16 项、财务计算 42 项、知识检索 22 项、自定义 Monitor 25 项，共 170 项检查通过。浏览器验证任务创建/去重、分派、负责人接收与完成、重新分派、来源快照、报告入口、刷新、个人收件箱、首次样例与进度保留及窄屏。完整记录见 qa/TASK-TO-DO-VERIFICATION.md。
