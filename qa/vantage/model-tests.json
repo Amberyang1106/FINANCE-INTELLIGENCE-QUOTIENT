@@ -1,0 +1,27 @@
+[
+  {
+    "file": "allocation.test.cjs",
+    "status": 0,
+    "output": "42 financial calculation and data checks passed.\n"
+  },
+  {
+    "file": "knowledge.test.cjs",
+    "status": 0,
+    "output": "22 knowledge retrieval and provenance checks passed.\n"
+  },
+  {
+    "file": "monitor-model.test.cjs",
+    "status": 0,
+    "output": "25 custom monitor model checks passed.\n"
+  },
+  {
+    "file": "motion.test.cjs",
+    "status": 0,
+    "output": "16 finite-motion checks passed.\n"
+  },
+  {
+    "file": "task-model.test.cjs",
+    "status": 0,
+    "output": "65 proposal task workflow checks passed.\n"
+  }
+]

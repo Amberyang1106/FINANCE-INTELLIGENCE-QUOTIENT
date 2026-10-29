@@ -1,0 +1,19 @@
+  FAIL 10a x6 knowledge.css:145 transitioning grid-template-columns on .app-body; tasks.css:2 transitioning width on .task-flow-track>span | fix: Animate transform or opacity instead
+  FAIL 19 index.html:53 dash "–" in copy | fix: A comma, a colon, a full stop or parentheses; never a dash
+  FAIL 24a x18 tasks.css:1 +22 more raw spacing lengths with a matching --space-* token in…; tasks.css:2 gap: 1.5rem on .task-workspace-controls where --space-lg exists | fix: Use the tokens
+  FAIL 48 x197 styles.css:205 oklch literal oklch(21% .028 262 / .18) outside tokens (box-sha…; styles.css:206 oklch literal oklch(21% .028 262 / .35) outside tokens (backgro… | fix: Lift the value into the token block
+  FAIL 50 x2 styles.css:223 bare 1fr track holds images (.topbar); workspace.css:7 bare 1fr track holds images (.topbar) | fix: Use minmax(0, 1fr) for image tracks
+  FAIL 54 x15 index.html:62 eyebrow "CLOSE RECORD / L0AUXG" before <h1>; index.html:65 eyebrow "REPORT LOGIC / KNOWLEDGE Q&A" before <h1> | fix: Cut it; the heading already says this (craft.md § 7 has twelve other openings)
+  FAIL 63 x8 index.html:43 middle-dot meta string "Monitor case L0AUXG · ROW · 2026 Q3"; index.html:46 middle-dot meta string "ISG Service · ROW · Profit center L0AUX… | fix: Line breaks, columns or hairlines; one dot in a byline at most
+  FAIL 67 x11 index.html:41 "FINANCE INTELLIGENCE" typed in capitals tracked 0.18em (<div c…; index.html:43 "PINNED MONITOR" typed in capitals tracked 0.08em (<span class=… | fix: Sentence case in the body face; capitals survive only as a wordmark or as the display voice
+  WARN 3 x4 knowledge.css:32 side stripe border-left: 3px solid var(--color-accent) on .welc…; knowledge.css:123 side stripe border-left: 3px solid var(--color-accent) on .sour… | fix: Hairline all round, none, or an accent square
+  WARN 25 styles.css:71 measure 24ch on .scope-controls > p (28-75ch range) | fix: Set prose measure between 45 and 75ch; a one-sentence lede or caption from 28ch
+  WARN 29 x4 styles.css:3 glass panel: backdrop-filter blur over a translucent white on .…; styles.css:3 glass panel: backdrop-filter blur over a translucent white on .… | fix: Solid or grained surface; elevation by lightness
+  WARN 40 x6 styles.css:65 4.18:1 < 4.5:1 on .close-badge; styles.css:67 3.76:1 < 4.5:1 on .pill.warning | fix: Raise the contrast to threshold
+  WARN F4 knowledge.css:106 2 filled primary-button recipes: .composer-meta button + .card-… | fix: One filled primary per page; demote the rest to outline/quiet variants
+  WARN F6 x5 knowledge.css:141 numeric selector .monitor-load-status at display size without t…; styles.css:84 numeric selector table at display size without tabular figures | fix: Add font-variant-numeric: tabular-nums
+  WARN F7 x2 styles.css:70 same container recipe on 10 selectors (.scope-controls select, …; workspace.css:3 same container recipe on 19 selectors (.glass-panel, .ledger-pa… | fix: Vary weight, radius, or fill by role; not every box is the same box
+  WARN F24 styles.css:205 a hairline border under a wide soft shadow on dialog | fix: Commit to one: a defined edge, or elevation by shadow
+sloplint: 258 FAIL, 24 WARN across 1 file(s), grouped by gate; every line is in .hallmark\before.txt.
+render tier not run: no puppeteer-core found locally, globally or via HALLMARK_PUPPETEER
+before: recorded 1 links, 0 fields, 0 handlers, 0 test hooks, 11 script hooks in .hallmark\before.json; --kept checks a redesign against it

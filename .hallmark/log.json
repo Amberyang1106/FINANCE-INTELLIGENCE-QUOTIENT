@@ -1,6 +1,26 @@
 [
   {
     "mode": "redesign",
+    "depth": "restyle",
+    "scope": "app",
+    "shape": "existing finance workbench",
+    "theme": "vantage",
+    "axes": "blue-black steel|Geologica|lime|corner ticks",
+    "hero": "none / app scope",
+    "nav": "existing collapsible side rail",
+    "footer": "none / app scope",
+    "imagery": "actual finance interface and Lenovo user-requested asset",
+    "photos": [],
+    "entry": "2026-10-29",
+    "fingerprint": "finance-ledger|steel|lime|corner-frames|handoff",
+    "sections": "Monitor, Analysis, Chat, Knowledge, Reports, Studio, Market, Task To-do",
+    "signature": "allocation ledger and accountable task handoff",
+    "waived": [],
+    "prompt": "Use Hallmark Vantage as independent version; preserve four stories and samples; do not merge main",
+    "verification": "170 checks; lint 0 FAIL 0 WARN 6 ANSWERED; render tier unavailable; actual Cua desktop/mobile; finish reviewer fix resolved and recaptured"
+  },
+  {
+    "mode": "redesign",
     "depth": "full",
     "scope": "app",
     "shape": "app screen",

@@ -1,0 +1,13 @@
+knowledge.css
+  ANSWERED F7 :68 same container recipe on 8 selectors (.knowledge-layout, .cause-row, .action-row, .ta…...)
+styles.css
+  ANSWERED F7 :75 same container recipe on 11 selectors (.scope-controls select, .ledger-panel, .detail-…...)
+  ANSWERED F7 :184 same container recipe on 7 selectors (.scenario-result, .route-trace li, .monitor-sig…...)
+vantage.css
+  ANSWERED F7 :38 same container recipe on 18 selectors (.glass-panel, .ledger-panel, .metric-strip, .al…...)
+workspace.css
+  ANSWERED F7 :8 same container recipe on 19 selectors (.glass-panel, .ledger-panel, .metric-strip, .al…...)
+  ANSWERED F7 :10 same container recipe on 6 selectors (.monitor-scope select, .market-toolbar input, .…...)
+sloplint: 0 FAIL, 0 WARN, 6 ANSWERED across 1 file(s).
+render tier not run: no puppeteer-core found locally, globally or via HALLMARK_PUPPETEER
+kept: links 1/1, script hooks 11/11; before 258 FAIL, 0 REFLEX, now 0 FAIL, 0 REFLEX

@@ -157,3 +157,12 @@ ROW PSD 是用于验证报表隔离的空知识示例；没有预设业务规则
 角色切换仅为本地演示，不代表真实身份认证、真实人员目录或多人同步；未连接邮件/消息通知/任务服务。任务完成只记录反馈，不修改凭证或生产分摊，也不会把原固定 monitor 的异常自动认定为解决。
 
 执行 node task-model.test.cjs 验证任务与样例逻辑。完整验收见 qa/TASK-TO-DO-VERIFICATION.md。
+
+## Vantage 独立版本（2026-10-29）
+
+Task To-do 与 Sample 已提交 3071b6d 并合并 main；当前 feature/vantage-ui 保存 Hallmark Vantage 暗色版本，不合并 main。四条故事线与 5 个样例均已验收，170 项检查通过。
+
+- 界面对比：qa/vantage/compare.html（真实截图，支持 Monitor / Task To-do 切换）。
+- 验收记录：qa/VANTAGE-VERIFICATION.md。
+- 本地查看当前分支：python -m http.server 4173。切换 main 查看原版前，先确保工作区干净。
+- 主题为蓝黑钢色、Geologica、青柠色信号、细角框与平面小圆角；支持 chart motion 暂停。业务数据/模型及本地保存规则保持原口径。

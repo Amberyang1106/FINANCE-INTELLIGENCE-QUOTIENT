@@ -414,3 +414,12 @@ Sites 承担网页展示，视频在独立制作环境渲染；成片按需要�
 用户补充：Task To-do 保留 sample。已内置 5 个交互样例，分别处于 Created / Assigned / Received / In progress / Completed，均标记 SAMPLE；首次使用一次性写入，并与 My proposal tasks 分组。现有任务和样例的已保存进度不被自动覆盖。样例来源使用同一已审核财务数据，预置接收/完成记录明确为 Demo。
 
 验收进度：任务/样例 65 项、动效 16 项、财务计算 42 项、知识检索 22 项、自定义 Monitor 25 项，共 170 项检查通过。浏览器验证任务创建/去重、分派、负责人接收与完成、重新分派、来源快照、报告入口、刷新、个人收件箱、首次样例与进度保留及窄屏。完整记录见 qa/TASK-TO-DO-VERIFICATION.md。
+
+
+## 13. Vantage 独立 UI 版本（2026-10-28）
+
+Task To-do、内置 Sample 与验收文档已提交 3071b6d 并合并 main。新分支 feature/vantage-ui，使用 Hallmark 官方 Vantage steel 主题进行应用界面换肤。保留全部业务数据、8 个页面入口、字段/事件接线、4 条故事线与 5 个任务样例；修改颜色、字体、表面、控件、图表主题和展示文案，另存新版本。无页面或功能删除。
+
+实施：记录换肤前契约与截图；从 Vantage scaffold 建立 token；统一暗色控件与财务状态、细角框及单一字体；保留交互并使位移动效使用 transform/opacity；执行 Hallmark 检查、170 项业务回归及桌面/窄屏验收。原版 main 可独立切换查看。
+
+2026-10-29 验收完成：四条故事线及 5 个内置 Sample 正常，170 项检查通过。完成桌面/手机首屏复核、手机市场搜索框修复与原版/Vantage 对比。详见 qa/VANTAGE-VERIFICATION.md 与 qa/vantage/compare.html。按用户最新要求保留 feature/vantage-ui，禁止合并 main。
