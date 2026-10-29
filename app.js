@@ -38,6 +38,7 @@
   var monitorAnimations = [], monitorMotionTimer, monitorShown = false;
   function finishMonitorMotion() {
     clearTimeout(monitorMotionTimer);
+    if (window.FPAStoryMotion) window.FPAStoryMotion.cancel('monitor');
     monitorAnimations.forEach(function (animation) { animation.cancel(); });
     monitorAnimations = [];
     $('monitorLoadStatus').classList.remove('is-loading');
@@ -62,7 +63,7 @@
       monitorAnimations.push(animation);
       animation.finished.then(function () { animation.cancel(); },function () {});
     });
-    monitorMotionTimer = setTimeout(finishMonitorMotion,mode === 'entry'?500+targets.length*45:300);
+    monitorMotionTimer = setTimeout(function () { finishMonitorMotion(); if (window.FPAStoryMotion) window.FPAStoryMotion.monitor(); },mode === 'entry'?500+targets.length*45:300);
   }
   $('sidebarToggle').addEventListener('click',function () {
     var collapsed = document.querySelector('.app-body').classList.toggle('rail-collapsed');
@@ -81,6 +82,7 @@
     if(old.width&&indicator.animate&&!matchMedia('(prefers-reduced-motion: reduce)').matches){navMotion=indicator.animate([{transform:'translate('+(old.left-parent.left)+'px,'+(old.top-parent.top)+'px) scale('+(old.width/box.width)+','+(old.height/box.height)+')'},{transform:'translate('+x+'px,'+y+'px) scale(1)'}],{duration:220,easing:'cubic-bezier(.16,1,.3,1)'});}
   }
   new ResizeObserver(updateNavIndicator).observe(document.querySelector('.primary-nav'));
+  window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',function(){finishMonitorMotion();if(navMotion)navMotion.cancel();});
   function switchView(name) {
     if (!['monitor','analysis','reports','chat','knowledge','studio','market','tasks'].includes(name)) return;
     var enterMonitor = name === 'monitor' && (state.view !== 'monitor' || !monitorShown);
@@ -100,6 +102,7 @@
     if (enterMonitor) { monitorShown=true; animateMonitor('entry'); }
   }
   function tab(name, focus) {
+    if (window.FPAStoryMotion) window.FPAStoryMotion.cancel('scenario');
     document.querySelectorAll('[data-tab]').forEach(function (b) { var yes = b.dataset.tab === name; b.setAttribute('aria-selected',String(yes)); b.tabIndex = yes ? 0 : -1; $(b.getAttribute('aria-controls')).hidden = !yes; if (yes && focus) b.focus(); });
   }
   function td(value, extra) { return '<td class="numeric ' + (extra || '') + '">' + value + '</td>'; }
@@ -143,6 +146,7 @@
     var fields = [['Company / year / line',row.company_code + ' / ' + row.fiscal_year + ' / ' + row.line_item],['Period',row.period],['Profit center',row.profit_center],['BPC segment',row.bpc_seg_cd],['Category / allocation flag',row.svc_catg_cd + ' / ' + row.alloc_flg],['User info',row.user_info],['Reference',row.reference || 'Not supplied'],['Checking / non-allocation flag',String(row.checking_flg || '(blank)') + ' / ' + (row.non_alloc_flg || '(blank)')]];
     $('voucherContent').innerHTML = '<p class="voucher-amount ' + cls(row.amt_cents) + '">' + money(row.amt_cents) + ' <small>USD</small></p><dl class="voucher-ledger">' + fields.map(function (f) { return '<div><dt>' + f[0] + '</dt><dd>' + esc(f[1]) + '</dd></div>'; }).join('') + '<div class="wide"><dt>Document text</dt><dd>' + esc(row.document_text) + '</dd></div></dl>' + (focal ? '<div class="info-box"><strong>Manual entry / Demo assumption</strong><br>The supplied username is yangtt16. The manual-entry classification is part of this sample, not inferred from the username.</div><h3>Positive-entry check</h3><p class="small">' + positiveRows().length + ' positive revenue records checked across all four segments in this quarter and profit center. No positive record shares reference ' + esc(voucher.reference) + '; no single positive amount equals the adjustment. Routine revenue with another reference is not a confirmed offset.</p><p class="scenario-note">Cross-period or one-to-many offsets still require finance review. Original and reporting currency are both USD in this sample; no FX residual has been established.</p><button type="button" class="key key-primary" data-voucher-scenario>Compare exclusion from base</button>' : '<p class="small muted">Routine sample revenue. A matching segment alone does not establish an offset relationship.</p>');
     $('voucherDialog').showModal();
+    if (window.FPAStoryMotion) window.FPAStoryMotion.voucher();
   }
   var actionDefinitions = [
     {id:'contact',title:'Contact the posting user',text:'Ask yangtt16 about the entry background and reference 5900018392. Request the expected positive voucher.'},
@@ -161,7 +165,8 @@
     var active = state.exclude ? adjusted : baseline;
     var m = active.months[2];
     $('excludeBase').checked = state.exclude;
-    $('scenarioContent').innerHTML = '<div class="scenario-result"><span>GA / 2026009 GP / ' + (state.exclude ? 'candidate' : 'original') + '</span><strong>' + money(m.gp.GA) + '</strong><small>USD / ' + (state.exclude ? signed(m.gp.GA-original.gp.GA) + ' change from original' : 'Select the exclusion to compare') + '</small></div><dl class="mini-comparison"><div><dt>GA quarter weight</dt><dd>85.7143%' + rate(active.quarter.rates.GA) + '</dd></div><div><dt>GA month 3 true-up / USD</dt><dd>' + money(original.allocation.GA) + '' + money(m.allocation.GA) + '</dd></div><div><dt>LE month 3 GP / USD</dt><dd class="negative">' + money(original.gp.LE) + '' + money(m.gp.LE) + '</dd></div><div><dt>Total month 3 GP / USD</dt><dd>' + money(sum(m.gp)) + ' / unchanged</dd></div></dl><p class="scenario-note">Posted revenue stays unchanged. LE remains unresolved. The candidate reallocates cost across segments; it does not increase total profit.</p>';
+    function pair(before,after) { return '<span class="scenario-before"><small>Original</small>' + before + '</span><strong class="scenario-after"><small>' + (state.exclude?'Candidate':'Selected') + '</small>' + after + '</strong>'; }
+    $('scenarioContent').innerHTML = '<div class="scenario-result"><span>GA / 2026009 GP / ' + (state.exclude ? 'candidate' : 'original') + '</span><strong>' + money(m.gp.GA) + '</strong><small>USD / ' + (state.exclude ? signed(m.gp.GA-original.gp.GA) + ' change from original' : 'Select the exclusion to compare') + '</small></div><dl class="mini-comparison"><div><dt>GA quarter weight</dt><dd>' + pair('85.7143%',rate(active.quarter.rates.GA)) + '</dd></div><div><dt>GA month 3 true-up / USD</dt><dd>' + pair(money(original.allocation.GA),money(m.allocation.GA)) + '</dd></div><div><dt>GA total cost / USD</dt><dd>' + pair(money(original.cost.GA),money(m.cost.GA)) + '</dd></div><div><dt>LE month 3 GP / USD</dt><dd class="negative">' + pair(money(original.gp.LE),money(m.gp.LE)) + '</dd></div><div><dt>Total month 3 GP / USD</dt><dd>' + money(sum(m.gp)) + ' / unchanged</dd></div></dl><p class="scenario-note"><strong>Months 1–2 locked / Total GP unchanged.</strong><br>Posted revenue stays unchanged. LE remains unresolved. The candidate reallocates cost across segments; it does not increase total profit.</p>';
     $('decisionNotes').value = state.notes;
     $('savePlan').disabled = !state.exclude;
     $('saveStatus').textContent = state.plan ? ('Candidate saved ' + new Date(state.plan.savedAt).toLocaleString('en-GB') + '. ' + (storageAvailable ? 'Stored in this browser.' : 'Session only; browser storage is unavailable.') + (planChanged() ? ' Current selections have unsaved changes.' : '')) : (state.exclude ? 'Save the candidate with its assumptions and selected follow-ups.' : 'Select the exclusion to save this candidate.');
@@ -205,6 +210,7 @@
     $('analysisThread').innerHTML = '<article class="message"><div class="avatar" aria-hidden="true">YT</div><div class="message-body"><strong>You</strong><p>' + esc(state.lastQuestion) + '</p></div></article><article class="message"><div class="avatar" aria-hidden="true">F</div><div class="message-body"><strong>FP&amp;A Agent <span class="muted small">· Simulated investigation</span></strong><ol class="execution-stack">' + list + '</ol>' + result + '</div></article>';
     $('recentStatus').textContent = state.status === 'complete' ? 'Investigation traced / Review open' : 'Tracing sample evidence…';
     renderEvidence();
+    if (window.FPAStoryMotion) window.FPAStoryMotion.investigation(state.stage,state.status === 'complete');
   }
   function runAnalysis(question) {
     if (state.status === 'running') return;
@@ -212,8 +218,8 @@
     state.lastQuestion = question.trim(); state.followup = followupText(question); state.status = 'running'; state.stage = 0;
     $('analysisPrompt').value = ''; $('composerNote').textContent = 'Predefined sample investigation / No external AI call.';
     renderAnalysis();
-    function next() { state.stage += 1; if (state.stage >= 4) { state.status = 'complete'; renderAnalysis(); notify('Investigation traced. Review the voucher and candidate actions.'); return; } renderAnalysis(); timer = setTimeout(next, 500); }
-    timer = setTimeout(next, 500);
+    function next() { state.stage += 1; if (state.stage >= 4) { state.status = 'complete'; renderAnalysis(); notify('Investigation traced. Review the voucher and candidate actions.'); return; } renderAnalysis(); timer = setTimeout(next, window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 1100); }
+    timer = setTimeout(next, window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 1100);
   }
   function savePlan() {
     if (!state.exclude) return;
@@ -274,7 +280,7 @@
   $('analysisForm').addEventListener('submit',function (e) { e.preventDefault(); runAnalysis($('analysisPrompt').value); });
   $('startInvestigation').addEventListener('click',function () { runAnalysis('Why did GA GP turn negative after the month 3 true-up? Trace the revenue base and source voucher.'); });
   $('analysisPrompt').addEventListener('keydown',function (e) { if (e.key==='Enter'&&!e.shiftKey&&!e.isComposing) { e.preventDefault(); $('analysisForm').requestSubmit(); } });
-  $('excludeBase').addEventListener('change',function (e) { state.exclude=e.target.checked; renderScenario(); });
+  $('excludeBase').addEventListener('change',function (e) { state.exclude=e.target.checked; renderScenario(); if (window.FPAStoryMotion) window.FPAStoryMotion.scenario(); });
   $('decisionNotes').addEventListener('input',function (e) { state.notes=e.target.value; $('saveStatus').textContent=state.plan?'Current notes have unsaved changes. Save the candidate again to update the report inputs.':'Notes will be saved with the candidate.'; });
   $('actionsContent').addEventListener('change',function (e) { if (!e.target.dataset.action) return; state.actions=Array.from(document.querySelectorAll('[data-action]:checked')).map(function (b) { return b.dataset.action; }); renderScenario(); });
   $('fullComparison').addEventListener('click',showComparison);

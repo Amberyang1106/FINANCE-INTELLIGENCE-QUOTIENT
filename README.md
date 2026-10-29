@@ -166,3 +166,7 @@ Task To-do 与 Sample 已提交 3071b6d 并合并 main；当前 feature/vantage-
 - 验收记录：qa/VANTAGE-VERIFICATION.md。
 - 本地查看当前分支：python -m http.server 4173。切换 main 查看原版前，先确保工作区干净。
 - 主题为蓝黑钢色、Geologica、青柠色信号、细角框与平面小圆角；支持 chart motion 暂停。业务数据/模型及本地保存规则保持原口径。
+
+### Vantage 业务动效增强
+
+已完成异常聚焦、四步调查、凭证关键字段、Scenario 原值/候选值对比及 Task 跨列流转。新增 story-motion.js 仅控制展示；数据/业务模型和 5 个 Sample 保留。206 项检查通过，见 qa/STORY-MOTION-VERIFICATION.md；执行 node story-motion.test.cjs 验证取消、reduce、关窗与 resize。

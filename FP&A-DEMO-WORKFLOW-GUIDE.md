@@ -423,3 +423,11 @@ Task To-do、内置 Sample 与验收文档已提交 3071b6d 并合并 main。新
 实施：记录换肤前契约与截图；从 Vantage scaffold 建立 token；统一暗色控件与财务状态、细角框及单一字体；保留交互并使位移动效使用 transform/opacity；执行 Hallmark 检查、170 项业务回归及桌面/窄屏验收。原版 main 可独立切换查看。
 
 2026-10-29 验收完成：四条故事线及 5 个内置 Sample 正常，170 项检查通过。完成桌面/手机首屏复核、手机市场搜索框修复与原版/Vantage 对比。详见 qa/VANTAGE-VERIFICATION.md 与 qa/vantage/compare.html。按用户最新要求保留 feature/vantage-ui，禁止合并 main。
+
+## 14. Vantage 五项业务动效增强
+
+范围：feature/vantage-ui，保留既有业务模型、金额、样例初始化及任务规则，不合并 main。使用现有 Web Animations API：结账异常顺序聚焦；调查四步骤与证据同步呈现；凭证弹窗及关键字段依次强调；Scenario 保留原值/候选值并依次强调权重、成本、GP 和守恒约束；Task 创建入场、跨列位移、链路与日志反馈。修改 app.js、task-board.js、index.html、Vantage 样式，新增共用展示动效脚本及针对性检查。
+
+验收：五项实际浏览器流程；快速切换/关闭后的取消、reduced-motion、动画结束稳定；170 项旧检查与新增动效检查；财务模型/源数据/样例文件保持不变；截图和记录保存到 qa。
+
+本轮验收完成：旧 170 项与新增 36 项动效检查，共 206 项通过；桌面、手机、快速切换/关窗清理、任务闭环与 Sample 恢复通过。详见 qa/STORY-MOTION-VERIFICATION.md。继续保留 feature/vantage-ui，不合并 main。

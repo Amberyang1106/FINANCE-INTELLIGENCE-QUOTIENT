@@ -71,3 +71,16 @@ code,samp{font-family:var(--font-body);font-size:inherit;color:inherit;font-weig
 .task-card p{max-width:100%;overflow-wrap:anywhere}
 
 @media(max-width:620px){.market-toolbar{display:flex;flex-direction:column;align-items:stretch}.market-toolbar input{width:100%;min-width:0;flex:none}.market-toolbar .pill{align-self:flex-start}}
+
+/* One-shot evidence focus; values stay exact and settle back to the theme. */
+.story-focus{position:relative;isolation:isolate}
+.story-focus::after{content:'';position:absolute;inset:0;pointer-events:none;border:1px solid var(--color-accent);border-radius:var(--radius-card);animation:story-focus 900ms ease-out both;z-index:1}
+@keyframes story-focus{0%{opacity:0}20%,65%{opacity:.85}100%{opacity:0}}
+#scenarioContent .mini-comparison dd{display:flex;justify-content:flex-end;gap:var(--space-md);flex-wrap:wrap}
+.scenario-before,.scenario-after{display:flex;flex-direction:column;align-items:flex-end;font-variant-numeric:tabular-nums}
+.scenario-before{color:var(--color-muted)}.scenario-after{color:var(--color-ink);font-weight:400}
+.scenario-before small,.scenario-after small{font-size:var(--text-xs);font-weight:300;color:var(--color-muted)}
+#taskKanban .task-card{position:relative;z-index:1}.task-log-event:last-child{animation:none}
+@media(prefers-reduced-motion:reduce){.story-focus::after{animation:none;opacity:0}}
+
+.negative .scenario-after{color:var(--color-danger)}
