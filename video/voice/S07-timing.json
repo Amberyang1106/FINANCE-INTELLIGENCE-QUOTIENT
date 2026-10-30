@@ -1,0 +1,122 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  2,
+        "Seconds":  0.1370625,
+        "Text":  "财务"
+    },
+    {
+        "Index":  2,
+        "Count":  1,
+        "Seconds":  0.805125,
+        "Text":  "也"
+    },
+    {
+        "Index":  3,
+        "Count":  2,
+        "Seconds":  1.0943749999999999,
+        "Text":  "可以"
+    },
+    {
+        "Index":  5,
+        "Count":  2,
+        "Seconds":  1.7074375,
+        "Text":  "直接"
+    },
+    {
+        "Index":  7,
+        "Count":  2,
+        "Seconds":  2.2376875,
+        "Text":  "询问"
+    },
+    {
+        "Index":  9,
+        "Count":  2,
+        "Seconds":  2.9332499999999997,
+        "Text":  "报表"
+    },
+    {
+        "Index":  11,
+        "Count":  2,
+        "Seconds":  3.5049375,
+        "Text":  "逻辑"
+    },
+    {
+        "Index":  14,
+        "Count":  2,
+        "Seconds":  5.3236875,
+        "Text":  "回答"
+    },
+    {
+        "Index":  16,
+        "Count":  2,
+        "Seconds":  6.02625,
+        "Text":  "展示"
+    },
+    {
+        "Index":  18,
+        "Count":  2,
+        "Seconds":  6.70125,
+        "Text":  "知识"
+    },
+    {
+        "Index":  20,
+        "Count":  2,
+        "Seconds":  7.204,
+        "Text":  "来源"
+    },
+    {
+        "Index":  23,
+        "Count":  2,
+        "Seconds":  8.4646875,
+        "Text":  "点击"
+    },
+    {
+        "Index":  25,
+        "Count":  2,
+        "Seconds":  9.0364375,
+        "Text":  "引用"
+    },
+    {
+        "Index":  28,
+        "Count":  2,
+        "Seconds":  10.241937499999999,
+        "Text":  "即可"
+    },
+    {
+        "Index":  30,
+        "Count":  2,
+        "Seconds":  10.7723125,
+        "Text":  "核对"
+    },
+    {
+        "Index":  32,
+        "Count":  2,
+        "Seconds":  11.419812499999999,
+        "Text":  "季度"
+    },
+    {
+        "Index":  34,
+        "Count":  2,
+        "Seconds":  11.984499999999999,
+        "Text":  "分摊"
+    },
+    {
+        "Index":  36,
+        "Count":  2,
+        "Seconds":  12.625,
+        "Text":  "规则"
+    },
+    {
+        "Index":  38,
+        "Count":  1,
+        "Seconds":  13.1345625,
+        "Text":  "的"
+    },
+    {
+        "Index":  39,
+        "Count":  2,
+        "Seconds":  13.2998125,
+        "Text":  "原文"
+    }
+]

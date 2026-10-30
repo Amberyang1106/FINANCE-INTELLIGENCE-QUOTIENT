@@ -1,0 +1,13 @@
+{
+  "name": "finance-exception-intelligence-demo",
+  "version": "0.4.0",
+  "private": true,
+  "description": "Static finance exception intelligence demo; Vantage independent branch.",
+  "scripts": {
+    "test": "node --test allocation.test.cjs knowledge.test.cjs monitor-model.test.cjs task-model.test.cjs motion.test.cjs story-motion.test.cjs kpi-overview.test.cjs",
+    "sync-data": "node sync-demo-data.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

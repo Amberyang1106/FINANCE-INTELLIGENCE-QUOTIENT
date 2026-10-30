@@ -84,3 +84,32 @@ code,samp{font-family:var(--font-body);font-size:inherit;color:inherit;font-weig
 @media(prefers-reduced-motion:reduce){.story-focus::after{animation:none;opacity:0}}
 
 .negative .scenario-after{color:var(--color-danger)}
+
+/* Fixed Monitor: ordinary KPI pulse and the existing allocation case. */
+.brand strong{font-size:clamp(.75rem,1.05vw,.95rem);line-height:1.25;letter-spacing:.025em;white-space:normal;max-width:28ch;display:block}
+.context-pinned{flex-wrap:wrap;gap:var(--space-xs)}
+.context-pinned .scene{background:transparent;color:var(--color-muted);transition:background-color var(--dur-short) var(--ease-out),color var(--dur-short) var(--ease-out)}
+.context-pinned .scene.active{background:var(--color-paper-3);color:var(--color-accent);border-color:var(--color-rule-2)}
+.kpi-mode .workspace-context>.context-group{display:none}
+.kpi-data-note{font-size:var(--text-xs);color:var(--color-muted);margin:0 0 var(--space-md);max-width:90ch}
+.kpi-chart-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-md)}
+.kpi-chart-card{padding:var(--space-lg);min-width:0;animation:kpi-card-enter var(--dur-long) var(--ease-out) both}
+.kpi-chart-card:nth-child(2){animation-delay:80ms}.kpi-chart-card:nth-child(3){grid-column:1 / -1;animation-delay:160ms}
+.kpi-chart-card header{display:flex;align-items:flex-start;justify-content:space-between;gap:var(--space-md)}
+.kpi-chart-card h2{font-size:var(--text-lg);font-weight:400}.kpi-chart-card header p{font-size:var(--text-xs);color:var(--color-muted);margin-top:var(--space-xs)}
+.kpi-chart-card .monitor-chart{max-width:850px;margin:var(--space-md) auto 0;width:100%}
+.kpi-chart-card footer{display:flex;justify-content:space-between;gap:var(--space-md);flex-wrap:wrap;border-top:1px solid var(--color-rule);padding-top:var(--space-sm);color:var(--color-muted);font-size:var(--text-xs)}
+.kpi-chart-card footer>span:first-child{color:var(--color-ink)}
+.kpi-trend{stroke-dasharray:1;stroke-dashoffset:0;animation:kpi-line-enter 900ms var(--ease-out) both}
+.kpi-bar{transform-box:fill-box;transform-origin:center bottom;animation:kpi-bar-enter 600ms var(--ease-out) both}
+.kpi-exception-link{display:flex;align-items:center;justify-content:space-between;gap:var(--space-lg);padding:var(--space-lg) 0;margin-top:var(--space-lg);border-top:1px solid var(--color-rule)}
+.kpi-exception-link h2{font-size:var(--text-lg);margin:var(--space-xs) 0}.kpi-exception-link p{font-size:var(--text-sm);color:var(--color-muted);max-width:75ch}.kpi-exception-link button{flex-shrink:0}
+@keyframes kpi-card-enter{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes kpi-line-enter{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes kpi-bar-enter{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@media(max-width:76rem){.topbar .command-trigger{display:none}.topbar{grid-template-columns:minmax(0,1fr) auto}.brand{min-width:0;text-align:left}.brand>span{min-width:0}}
+@media(max-width:65rem){.kpi-chart-grid{grid-template-columns:minmax(0,1fr)}.kpi-chart-card:nth-child(3){grid-column:auto}.kpi-exception-link{align-items:flex-start;flex-direction:column}}
+@media(max-width:40rem){.brand .lenovo-logo{width:72px;height:24px}.brand strong{font-size:.7rem;max-width:23ch}.brand small{font-size:.65rem}.top-actions .quiet-key,.top-reviewer{display:none}.kpi-chart-card{padding:var(--space-md)}.kpi-chart-card header{flex-wrap:wrap}.context-pinned .scene{white-space:normal}}
+@media(prefers-reduced-motion:reduce){.kpi-chart-card,.kpi-trend,.kpi-bar{animation:none!important}.context-pinned .scene{transition:none}}
+
+.brand small{display:block}

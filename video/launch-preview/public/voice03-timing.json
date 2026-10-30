@@ -1,0 +1,26 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  4,
+        "Seconds":  0.1370625,
+        "Text":  "Turn"
+    },
+    {
+        "Index":  5,
+        "Count":  7,
+        "Seconds":  0.4815,
+        "Text":  "insight"
+    },
+    {
+        "Index":  13,
+        "Count":  4,
+        "Seconds":  1.1153125,
+        "Text":  "into"
+    },
+    {
+        "Index":  18,
+        "Count":  6,
+        "Seconds":  1.4804374999999999,
+        "Text":  "action"
+    }
+]

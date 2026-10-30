@@ -1,0 +1,134 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  2,
+        "Seconds":  0.1370625,
+        "Text":  "任务"
+    },
+    {
+        "Index":  2,
+        "Count":  2,
+        "Seconds":  0.76374999999999993,
+        "Text":  "分派"
+    },
+    {
+        "Index":  4,
+        "Count":  1,
+        "Seconds":  1.47325,
+        "Text":  "到"
+    },
+    {
+        "Index":  5,
+        "Count":  3,
+        "Seconds":  1.7556874999999998,
+        "Text":  "负责人"
+    },
+    {
+        "Index":  9,
+        "Count":  2,
+        "Seconds":  3.2573125,
+        "Text":  "接收"
+    },
+    {
+        "Index":  11,
+        "Count":  1,
+        "Seconds":  3.90475,
+        "Text":  "与"
+    },
+    {
+        "Index":  12,
+        "Count":  2,
+        "Seconds":  4.18025,
+        "Text":  "进展"
+    },
+    {
+        "Index":  14,
+        "Count":  2,
+        "Seconds":  4.82775,
+        "Text":  "回报"
+    },
+    {
+        "Index":  16,
+        "Count":  1,
+        "Seconds":  5.495875,
+        "Text":  "都"
+    },
+    {
+        "Index":  17,
+        "Count":  1,
+        "Seconds":  5.7506249999999994,
+        "Text":  "会"
+    },
+    {
+        "Index":  18,
+        "Count":  2,
+        "Seconds":  6.088125,
+        "Text":  "留下"
+    },
+    {
+        "Index":  20,
+        "Count":  2,
+        "Seconds":  6.7011249999999993,
+        "Text":  "记录"
+    },
+    {
+        "Index":  23,
+        "Count":  2,
+        "Seconds":  8.44425,
+        "Text":  "通过"
+    },
+    {
+        "Index":  25,
+        "Count":  2,
+        "Seconds":  9.0916249999999987,
+        "Text":  "链路"
+    },
+    {
+        "Index":  27,
+        "Count":  1,
+        "Seconds":  9.718375,
+        "Text":  "和"
+    },
+    {
+        "Index":  28,
+        "Count":  2,
+        "Seconds":  10.124749999999999,
+        "Text":  "交接"
+    },
+    {
+        "Index":  30,
+        "Count":  2,
+        "Seconds":  10.710125,
+        "Text":  "日志"
+    },
+    {
+        "Index":  33,
+        "Count":  2,
+        "Seconds":  11.853625,
+        "Text":  "可以"
+    },
+    {
+        "Index":  35,
+        "Count":  2,
+        "Seconds":  12.342625,
+        "Text":  "持续"
+    },
+    {
+        "Index":  37,
+        "Count":  2,
+        "Seconds":  13.024624999999999,
+        "Text":  "跟进"
+    },
+    {
+        "Index":  39,
+        "Count":  2,
+        "Seconds":  13.699562499999999,
+        "Text":  "方案"
+    },
+    {
+        "Index":  41,
+        "Count":  2,
+        "Seconds":  14.291875,
+        "Text":  "执行"
+    }
+]

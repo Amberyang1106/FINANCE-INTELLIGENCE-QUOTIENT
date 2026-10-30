@@ -1,0 +1,167 @@
+{
+  "duration": 10,
+  "width": 3840,
+  "height": 2160,
+  "fps": "60/1",
+  "frames": 600,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "audioChannels": 2,
+  "audioSampleRate": "48000",
+  "bytes": 13781137,
+  "fullDecode": {
+    "returncode": 0,
+    "errors": ""
+  },
+  "voiceSegmentRms": [
+    0.10757237090328882,
+    0.08083503908738428,
+    0.09602019208743544,
+    0.08012760012448104
+  ],
+  "language": "English",
+  "visualReviewTimes": [
+    1.9,
+    4.5,
+    6.9,
+    9.2
+  ],
+  "completedDate": "2026-10-30",
+  "tools": {
+    "remotion": "4.0.539",
+    "hyperframes": "0.8.216"
+  },
+  "browserPlayback": {
+    "duration": 10,
+    "currentTime": 10,
+    "ended": true,
+    "readyState": 4,
+    "width": 3840,
+    "height": 2160,
+    "muted": false,
+    "error": null
+  },
+  "hyperframesProject": "http://localhost:4181/#project/vantage-launch-preview",
+  "player": "http://127.0.0.1:4182/watch.html",
+  "referenceRepository": "https://github.com/Leonxlnx/claude-launchvideo/tree/f0906e8629fa524c7cedc1ac959bf987005ee846",
+  "applicationSourceIntegrity": {
+    "head": "b5541d4c04cf00e275c91b89115216ea4b38846e",
+    "main": "3071b6df494298594eed4674c59a4b88bd80bb30",
+    "sourceFiles": [
+      {
+        "file": "ISG-SERVICE-DEMO-DATA.json",
+        "matches": true
+      },
+      {
+        "file": "allocation.js",
+        "matches": true
+      },
+      {
+        "file": "allocation.test.cjs",
+        "matches": true
+      },
+      {
+        "file": "app.js",
+        "matches": true
+      },
+      {
+        "file": "base.css",
+        "matches": true
+      },
+      {
+        "file": "demo-data.js",
+        "matches": true
+      },
+      {
+        "file": "index.html",
+        "matches": true
+      },
+      {
+        "file": "knowledge-model.js",
+        "matches": true
+      },
+      {
+        "file": "knowledge-ui.js",
+        "matches": true
+      },
+      {
+        "file": "knowledge.css",
+        "matches": true
+      },
+      {
+        "file": "knowledge.test.cjs",
+        "matches": true
+      },
+      {
+        "file": "monitor-model.js",
+        "matches": true
+      },
+      {
+        "file": "monitor-model.test.cjs",
+        "matches": true
+      },
+      {
+        "file": "monitor-studio.js",
+        "matches": true
+      },
+      {
+        "file": "motion.test.cjs",
+        "matches": true
+      },
+      {
+        "file": "story-motion.js",
+        "matches": true
+      },
+      {
+        "file": "story-motion.test.cjs",
+        "matches": true
+      },
+      {
+        "file": "styles.css",
+        "matches": true
+      },
+      {
+        "file": "sync-demo-data.cjs",
+        "matches": true
+      },
+      {
+        "file": "task-board.js",
+        "matches": true
+      },
+      {
+        "file": "task-model.js",
+        "matches": true
+      },
+      {
+        "file": "task-model.test.cjs",
+        "matches": true
+      },
+      {
+        "file": "task-samples.js",
+        "matches": true
+      },
+      {
+        "file": "tasks.css",
+        "matches": true
+      },
+      {
+        "file": "tokens.css",
+        "matches": true
+      },
+      {
+        "file": "vantage-ui.js",
+        "matches": true
+      },
+      {
+        "file": "vantage.css",
+        "matches": true
+      },
+      {
+        "file": "workspace.css",
+        "matches": true
+      }
+    ],
+    "allMatch": true,
+    "normalization": "CRLF to LF only"
+  }
+}

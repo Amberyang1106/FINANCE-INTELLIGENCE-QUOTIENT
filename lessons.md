@@ -57,3 +57,27 @@
 - 用户明确 Vantage 先保留独立分支，不合并 main；此前其他轮次的合并授权不延续到本版本。
 - 首屏与局部细节截图分别留证，原版/新版本用同视口比较；不可用中段截图代替移动端入口检查。
 - 长占位符搜索框与 badge 在手机端分行，实测输入宽度及整页溢出；视觉主题检查不能只依赖静态 lint。
+
+## 2026-10-29：产品介绍视频先锁定总时长
+
+- 用户修正：Demo 介绍视频压缩在 3 分钟以内。脚本由 4:30/18 镜头改为 2:50/14 镜头，四条故事线保留。
+- 后续先分配总秒数，再写旁白与动作；片头、转场、片尾、音频尾部均计入。优先压缩重复操作和次要配置，不用快进或加速旁白替代内容取舍。
+- 脚本预算不等于成片时长；最终必须检查导出文件小于 180 秒。
+
+## 2026-10-29 · Launch-style English preview
+- New video direction: take the user-provided Tessel film and repository as the motion reference; deliver a 10-second style preview before regenerating the full film.
+- Use English for visible copy, subtitles and synthesized speech; target native 4K rather than enlarging prior screenshots. Preserve Vantage case facts and keep main unmerged.
+
+## 2026-10-30 · Fixed Monitor has two purposes
+- Product name: FINANCE EXCEPTION INTELLIGENCE; subtitle: Finance Workspace. Update assistant labels as well as the header. Existing exported videos are historical files, not live product branding.
+- Separate routine KPI overview from scenario-specific Service allocation. Preserve the latter investigation/Scenario/report/task path and all existing Samples.
+- Cost credit must be distinguished from negative allocated true-up. Show its source-row definition and label synthetic historical quarters clearly; reconcile the reviewed quarter with existing data.
+
+## 2026-10-30 · Chart labels and video baseline
+- Bar centers must sit inside categorical bands, not on the first/last grid boundary. Check left and right bar edges against the plot for both 3- and 5-quarter views.
+- Before a new product video, reconcile the current brand, fixed-Monitor branches, language and resolution with the script. Treat existing renders as historical outputs, not current-spec deliverables.
+
+## 2026-10-30 · Approved video story order
+- Keep the saved-proposal handoff and task follow-through directly after the investigation/report. Knowledge and custom monitors follow the completed action narrative.
+- Whenever scenes move, update shot IDs, timestamps, chapter budgets, capture order, transition instructions and continuity references together; do not only reorder a high-level feature list.
+- Editing transition notes are not additional spoken copy; retain the 170-second total and measure future English voice timing separately.

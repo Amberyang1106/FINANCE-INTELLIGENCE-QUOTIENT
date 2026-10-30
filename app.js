@@ -20,7 +20,7 @@
   var original = baseline.months[2];
   var revised = adjusted.months[2];
   var storageKey = 'isg-allocation-demo:L0AUXG:1.33757:v1';
-  var state = {view:'monitor',period:closing,segment:'GA',status:'idle',stage:0,exclude:false,notes:'',actions:['contact','offset','segment'],plan:null,report:null,lastQuestion:'',followup:''};
+  var state = {view:'kpi',monitorBranch:'kpi',period:closing,segment:'GA',status:'idle',stage:0,exclude:false,notes:'',actions:['contact','offset','segment'],plan:null,report:null,lastQuestion:'',followup:''};
   var timer, toastTimer, storageAvailable = true;
   try {
     var saved = JSON.parse(localStorage.getItem(storageKey) || 'null');
@@ -84,19 +84,22 @@
   new ResizeObserver(updateNavIndicator).observe(document.querySelector('.primary-nav'));
   window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',function(){finishMonitorMotion();if(navMotion)navMotion.cancel();});
   function switchView(name) {
-    if (!['monitor','analysis','reports','chat','knowledge','studio','market','tasks'].includes(name)) return;
+    if (!['kpi','monitor','analysis','reports','chat','knowledge','studio','market','tasks'].includes(name)) return;
     var enterMonitor = name === 'monitor' && (state.view !== 'monitor' || !monitorShown);
     if (name !== 'monitor') finishMonitorMotion();
     state.view = name;
-    ['monitor','analysis','reports','chat','knowledge','studio','market','tasks'].forEach(function (v) { var el = $(v + 'View'); el.hidden = v !== name; el.classList.toggle('active', v === name); });
-    document.querySelectorAll('.nav-item').forEach(function (b) { var yes = b.dataset.view === name; b.classList.toggle('active', yes); if (yes) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
-    var titles = {monitor:['Monitor','Service allocation'],analysis:['Analysis','L0AUXG / Quarter-end'],reports:['Reports','Close record'],chat:['Chat','Report logic'],knowledge:['Knowledge','Report libraries'],studio:['Monitor Studio','Your canvas'],market:['Monitor Market','Reusable templates'],tasks:['Task To-do','Proposal handoffs']};
+    if(name==='kpi'||name==='monitor')state.monitorBranch=name;
+    document.querySelectorAll('.context-pinned [data-view]').forEach(function(b){var selected=b.dataset.view===state.monitorBranch;b.classList.toggle('active',selected);b.setAttribute('aria-pressed',String(selected));});
+    document.querySelector('.app-body').classList.toggle('kpi-mode',name==='kpi');
+    ['kpi','monitor','analysis','reports','chat','knowledge','studio','market','tasks'].forEach(function (v) { var el = $(v + 'View'); el.hidden = v !== name; el.classList.toggle('active', v === name); });
+    document.querySelectorAll('.nav-item').forEach(function (b) { var yes = b.dataset.view === (name==='kpi'?'monitor':name); b.classList.toggle('active', yes); if (yes) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
+    var titles = {kpi:['Monitor','KPI overview'],monitor:['Monitor','Service allocation'],analysis:['Analysis','L0AUXG / Quarter-end'],reports:['Reports','Close record'],chat:['Chat','Report logic'],knowledge:['Knowledge','Report libraries'],studio:['Monitor Studio','Your canvas'],market:['Monitor Market','Reusable templates'],tasks:['Task To-do','Proposal handoffs']};
     $('breadcrumb').innerHTML = '<span>' + titles[name][0] + '</span><b>/</b><strong>' + titles[name][1] + '</strong>';
     if (name === 'reports') renderReport();
-    var isKnowledge = ['chat','knowledge','studio','market','tasks'].includes(name);
+    var isKnowledge = ['kpi','chat','knowledge','studio','market','tasks'].includes(name);
     document.querySelector('.app-body').classList.toggle('knowledge-mode', isKnowledge);
     document.querySelector('.inspector').hidden = isKnowledge;
-    $('commandSearch').querySelector('span').textContent = name === 'tasks' ? 'Find a proposal task' : name === 'studio' ? 'Describe a monitor' : name === 'market' ? 'Find a monitor template' : isKnowledge ? 'Ask about report logic' : 'Ask about this allocation';
+    $('commandSearch').querySelector('span').textContent = name === 'kpi' ? 'Explore performance / Review exceptions' : name === 'tasks' ? 'Find a proposal task' : name === 'studio' ? 'Describe a monitor' : name === 'market' ? 'Find a monitor template' : isKnowledge ? 'Ask about report logic' : 'Ask about this allocation';
     document.dispatchEvent(new CustomEvent('workspace:view', {detail:{name:name}}));
     requestAnimationFrame(updateNavIndicator);
     if (enterMonitor) { monitorShown=true; animateMonitor('entry'); }
@@ -207,7 +210,7 @@
     var steps = [['Check the allocation rules','Copy costs first; hold months 1–2 executed allocations fixed.'],['Reconcile the GA true-up','Quarter target ' + money(baseline.quarter.allocation.GA) + ' less executed ' + money(baseline.prior.GA) + ' USD.'],['Trace the quarter revenue base','LE contributes ' + money(baseline.quarter.base.LE) + ' USD to the denominator.'],['Inspect the negative voucher','5900018271 / ' + positiveRows().length + ' positive records checked in the sample scope.']];
     var list = steps.map(function (s,i) { var done = state.status === 'complete' || i < state.stage; return '<li class="' + (done ? 'done' : i === state.stage ? 'current' : '') + '"><span>' + (done ? '✓' : i+1) + '</span><div><strong>' + s[0] + '</strong><small>' + s[1] + '</small></div><em>' + (done ? 'Checked' : i === state.stage ? 'Tracing' : 'Queued') + '</em></li>'; }).join('');
     var result = state.status === 'complete' ? '<div class="finding-ledger"><p class="screen-context">THE LINKED CAUSE</p><h2>A negative LE voucher inflates the GA weight.</h2><p>The quarter base is ' + money(sum(baseline.quarter.base)) + ' USD. GA contributes ' + money(baseline.quarter.base.GA) + ' USD, giving it an 85.7143% weight.</p></div><ol class="trace-list"><li>GA month 3 true-up: <strong>' + money(baseline.quarter.allocation.GA) + ' − ' + money(baseline.prior.GA) + ' = ' + money(original.allocation.GA) + '</strong> USD.</li><li>Add GA copy cost of ' + money(original.copy.GA) + ': total cost is ' + money(original.cost.GA) + ' USD.</li><li>Revenue ' + money(original.revenue.GA) + ' less cost gives <strong class="negative">GP ' + money(original.gp.GA) + '</strong> USD.</li><li>LE contains voucher <button type="button" class="row-link" data-document="' + esc(voucher.record_id) + '">' + esc(voucher.document_number) + '</button>, amount <strong>' + money(voucher.amt_cents) + '</strong> USD, posted by ' + esc(voucher.user_info) + '.</li></ol><p><strong>Counterpart not confirmed in the sample scope.</strong> Check reference 5900018392, posting background and segment assignment with the posting user.</p><p class="small muted">Manual-entry status is a demo assumption. Source validity, cross-period offsets and eligibility for a base exclusion remain unverified. No FX cause has been established.</p><div class="suggested-prompts"><button type="button" data-document="' + esc(voucher.record_id) + '">Open voucher</button><button type="button" data-followup="Check the positive counterpart and reference">Check the counterpart</button><button type="button" data-open-scenario>Compare base exclusion</button><button type="button" data-open-actions>Review actions</button></div><div class="info-box"><strong>Answer to your question</strong><br>' + esc(state.followup) + '</div>' : '<p class="muted small" role="status">Running the predefined investigation against the sample records…</p>';
-    $('analysisThread').innerHTML = '<article class="message"><div class="avatar" aria-hidden="true">YT</div><div class="message-body"><strong>You</strong><p>' + esc(state.lastQuestion) + '</p></div></article><article class="message"><div class="avatar" aria-hidden="true">F</div><div class="message-body"><strong>FP&amp;A Agent <span class="muted small">· Simulated investigation</span></strong><ol class="execution-stack">' + list + '</ol>' + result + '</div></article>';
+    $('analysisThread').innerHTML = '<article class="message"><div class="avatar" aria-hidden="true">YT</div><div class="message-body"><strong>You</strong><p>' + esc(state.lastQuestion) + '</p></div></article><article class="message"><div class="avatar" aria-hidden="true">F</div><div class="message-body"><strong>FINANCE EXCEPTION INTELLIGENCE <span class="muted small">· Simulated investigation</span></strong><ol class="execution-stack">' + list + '</ol>' + result + '</div></article>';
     $('recentStatus').textContent = state.status === 'complete' ? 'Investigation traced / Review open' : 'Tracing sample evidence…';
     renderEvidence();
     if (window.FPAStoryMotion) window.FPAStoryMotion.investigation(state.stage,state.status === 'complete');
@@ -259,7 +262,7 @@
   }
   document.addEventListener('click',function (event) {
     var b = event.target.closest('button'); if (!b) return;
-    if (b.dataset.view) switchView(b.dataset.view);
+    if (b.dataset.view) switchView(b.classList.contains('nav-item')&&b.dataset.view==='monitor'?state.monitorBranch:b.dataset.view);
     if (b.dataset.tab) tab(b.dataset.tab,false);
     if (b.dataset.segment) showSegment(b.dataset.segment);
     if (b.dataset.analyze) prepareAnalysis(b.dataset.analyze);
@@ -276,7 +279,7 @@
   $('closeSegment').addEventListener('click',function () { $('segmentPanel').hidden=true; });
   $('newAnalysis').addEventListener('click',function () { prepareAnalysis('GA'); });
   $('recentCase').addEventListener('click',function () { prepareAnalysis('GA'); });
-  $('commandSearch').addEventListener('click',function () { if(state.view === 'tasks') $('taskSearch').focus(); else if (state.view === 'studio') $('monitorRequest').focus(); else if(state.view === 'market') $('marketSearch').focus(); else if ((state.view === 'chat' || state.view === 'knowledge') && window.FPAKnowledge) window.FPAKnowledge.focusChat(); else prepareAnalysis(state.segment); });
+  $('commandSearch').addEventListener('click',function () { if(state.view === 'kpi') { switchView('monitor'); } else if(state.view === 'tasks') $('taskSearch').focus(); else if (state.view === 'studio') $('monitorRequest').focus(); else if(state.view === 'market') $('marketSearch').focus(); else if ((state.view === 'chat' || state.view === 'knowledge') && window.FPAKnowledge) window.FPAKnowledge.focusChat(); else prepareAnalysis(state.segment); });
   $('analysisForm').addEventListener('submit',function (e) { e.preventDefault(); runAnalysis($('analysisPrompt').value); });
   $('startInvestigation').addEventListener('click',function () { runAnalysis('Why did GA GP turn negative after the month 3 true-up? Trace the revenue base and source voucher.'); });
   $('analysisPrompt').addEventListener('keydown',function (e) { if (e.key==='Enter'&&!e.shiftKey&&!e.isComposing) { e.preventDefault(); $('analysisForm').requestSubmit(); } });
@@ -305,5 +308,5 @@
     return JSON.parse(JSON.stringify({plan:plan,sample:!!sample,case:{business:'ISG Service',geo:'ROW',profitCenter:data.scope.profit_center,quarter:'2026 Q3',period:closing,document:voucher.document_number,reference:voucher.reference},evidence:{document:voucher.document_number,recordId:voucher.record_id,segment:voucher.bpc_seg_cd,user:voucher.user_info,amount:money(voucher.amt_cents)+' USD',text:voucher.document_text,counterpart:'No matching positive reference confirmed within the sample quarter; wider checks remain open.'},cause:'The negative LE revenue voucher reduces the quarter denominator and raises the GA allocation weight.',assumptions:'Exclude the voucher from the allocation base only; preserve posted revenue, copy costs, cost pool and months 1–2. Recalculate month 3 true-up only. Business eligibility is not yet verified.',impact:{originalGPGa:money(original.gp.GA)+' USD',candidateGPGa:money(revised.gp.GA)+' USD',totalGP:money(sum(original.gp))+' USD / unchanged',leCandidateGP:money(revised.gp.LE)+' USD'},actions:actionDefinitions.filter(function(a){return plan.actions.includes(a.id);}),hasUnsavedChanges:!sample&&!!planChanged()}));
   }
   window.FPAWorkspace = {showView:switchView, notify:notify, getProposal:getProposalSnapshot, getSampleProposal:function(){return getProposalSnapshot(true);}, refreshNavigation:updateNavIndicator, reviewProposal:function(){switchView('analysis');tab('scenario',true);}};
-  renderMonitor();renderEvidence();renderActions();renderScenario();renderReport();switchView('monitor');
+  renderMonitor();renderEvidence();renderActions();renderScenario();renderReport();switchView('kpi');
 })();

@@ -1,7 +1,38 @@
-# ISG Service 分摊异常：演示数据与完整业务故事 v0.2
+# FINANCE EXCEPTION INTELLIGENCE：业务故事地图与分摊案例 v0.4
 
-日期：2026-10-27  
+更新日期：2026-10-30（原分摊数据于 2026-10-27 确认）
 状态：用户已确认，作为阶段二实现依据
+
+## 当前产品故事地图（2026-10-30 更新）
+
+产品名称：**FINANCE EXCEPTION INTELLIGENCE**；副标题：**Finance Workspace**。保留 Vantage 独立分支，不合并 main。下文原分摊规则、凭证和测算数据继续有效。
+
+| 故事线 | 用户路径 | 演示目的 |
+| --- | --- | --- |
+| 固定 Monitor / 日常 KPI 分支 | Monitor → KPI overview → Revenue、Cost、Cost credit 图表；最近 5／3 个季度 | 财务先看整体趋势和季度口径，信息一目了然 |
+| 固定 Monitor / 专项场景分支 | KPI overview 的 Review Service allocation 或旁边同名按钮 → Service allocation → GA 预警 → Analysis → 凭证 → Scenario → Report | 从特定场景信号追到证据与可供人工决策的方案 |
+| 任务跟进 | 同一已保存 proposal → Task To-do → 创建 / 分派 / 接收 / 进行 / 完成 / 日志 | 保存证据、假设、负责人反馈和后续结果，五个 Sample 继续保留 |
+| 知识问答 | New chat → Report / Knowledge base → 提问 → 模拟流式答复 → 引用原文；Knowledge 管理内置和个人资料 | 解释报表字段与业务规则，答案可以溯源 |
+| 自定义监控 | Studio → BG / Report / Dimension / KPI → 自然语言 → 模拟路由 → 图表 / Benchmark / 拖拽；Market 复用模板 | 固定看板以外的个人监控需求 |
+
+**用户已确认的视频顺序：日常 KPI 监测 → 专项异常调查与方案 → 方案落实与任务跟进 → 报表逻辑问答与知识库 → 自定义监控与模板复用。** 上表按该顺序排列。专项案例保存方案/报告后直接进入 Task To-do，完成跟进叙事后再介绍问答与自建监控，不在中间打断。
+
+固定 Monitor 的两行是同一产品故事的两个分支；加上问答、自建监控和任务，仍按四条产品故事组织。KPI overview 默认显示，侧栏 Monitor 返回当前已选分支。点击普通 KPI 图表不自动执行异常诊断；专项调查从 Service allocation 的预警开始。
+
+### 日常 KPI 的样例口径
+
+- 范围与分摊案例一致：ISG Service / ROW / L0AUXG；季度累计，USD。
+- 最新 Q3 Revenue **2,808,897.00**、净 Cost **2,584,185.24**，季度 GP **224,711.76**。这些是利润中心季度总额，不是 GA 的第三个月金额。
+- Cost credit 暂按符合本流程口径的分摊前负数 BMC/NBMC 源成本行绝对金额汇总；已含在净 Cost 内，不再重复抵减。当前已审核样例没有此类负数成本行，所以 Q3 为 **0.00**。
+- LE 第三个月负 Cost 来自分摊 true-up，不能当成源凭证 Cost credit。Cost credit 的减少也不能直接解读为利润改善。
+- 之前四个季度是合成演示历史，明确标注；Revenue 历史与现有 Studio BU 序列汇总一致。显示的 QoQ 参考这些合成历史，不代表真实财务业绩。
+- 视频先展示季度 KPI，再明确切换至 2026009 专项场景。季度总额或趋势本身不能证明分摊合理，也不能直接推断凭证错误。
+
+### 当前视频文档
+
+v0.4 已落实上述审核顺序；新版计划为全英文旁白、字幕、说明，原生 4K/60fps，15 个镜头、170 秒目标，成片小于 3 分钟。详见 [脚本](video/PRODUCT-VIDEO-SCRIPT.md) 和 [制作指南](video/VIDEO-PRODUCTION-GUIDE.md)。旧 2:50 中文片和旧名称的 10 秒英文片为历史已交付素材；本次仅更新故事顺序及制作文档，不修改 Demo、旧成片或配音，不声称新片已制作。
+
+---
 
 利润中心、主凭证号、user info 与 Reference 由用户指定；金额与业务文本为演示样例，不代表已核实实际凭证或真实入账背景。
 
@@ -86,7 +117,7 @@ GA 分摊后 Cost=267,514.00+770,440.32=1,037,954.32；本期 GP=802,542.00−1,
 
 ### Pinned Monitor 的实际展示
 
-季度选择 2026 Q3，默认展开 2026009。Rev% 标题明确为“季度 Rev%（用于 true-up）”；Revenue、Cost、GP 为第三个月金额。季度总览可单独切换，不混淆第三个月与季度 GP。
+从 KPI overview 切换到 Service allocation 后，季度选择 2026 Q3，分摊页默认展开 2026009。Rev% 标题明确为“季度 Rev%（用于 true-up）”；Revenue、Cost、GP 为第三个月金额。季度总览可单独切换，不混淆第三个月与季度 GP。
 
 | Segment | 本期 Revenue | 季度 Rev% | Cost 分摊前 | Cost 分摊后 | GP | 预警 |
 | --- | --- | --- | --- | --- | --- | --- |

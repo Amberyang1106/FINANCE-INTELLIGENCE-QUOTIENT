@@ -1,0 +1,86 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  1,
+        "Seconds":  0.1370625,
+        "Text":  "本"
+    },
+    {
+        "Index":  1,
+        "Count":  1,
+        "Seconds":  0.43324999999999997,
+        "Text":  "片"
+    },
+    {
+        "Index":  2,
+        "Count":  2,
+        "Seconds":  0.853375,
+        "Text":  "使用"
+    },
+    {
+        "Index":  4,
+        "Count":  1,
+        "Seconds":  1.425,
+        "Text":  "样"
+    },
+    {
+        "Index":  5,
+        "Count":  1,
+        "Seconds":  1.7280624999999998,
+        "Text":  "例"
+    },
+    {
+        "Index":  6,
+        "Count":  2,
+        "Seconds":  1.9346875,
+        "Text":  "数据"
+    },
+    {
+        "Index":  9,
+        "Count":  2,
+        "Seconds":  3.154,
+        "Text":  "展示"
+    },
+    {
+        "Index":  11,
+        "Count":  1,
+        "Seconds":  3.81525,
+        "Text":  "从"
+    },
+    {
+        "Index":  12,
+        "Count":  2,
+        "Seconds":  4.2284999999999995,
+        "Text":  "发现"
+    },
+    {
+        "Index":  14,
+        "Count":  1,
+        "Seconds":  4.8415,
+        "Text":  "到"
+    },
+    {
+        "Index":  15,
+        "Count":  2,
+        "Seconds":  5.13075,
+        "Text":  "跟进"
+    },
+    {
+        "Index":  17,
+        "Count":  1,
+        "Seconds":  5.7368125,
+        "Text":  "的"
+    },
+    {
+        "Index":  18,
+        "Count":  2,
+        "Seconds":  5.9846875,
+        "Text":  "完整"
+    },
+    {
+        "Index":  20,
+        "Count":  2,
+        "Seconds":  6.5838125,
+        "Text":  "路径"
+    }
+]

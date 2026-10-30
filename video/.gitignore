@@ -1,0 +1,5 @@
+.tools/
+edit/cache/
+edit/scene*.mp4
+edit/__pycache__/
+*.log

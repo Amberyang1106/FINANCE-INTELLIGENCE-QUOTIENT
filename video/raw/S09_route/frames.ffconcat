@@ -1,0 +1,22 @@
+ffconcat version 1.0
+file 'frame00000.jpg'
+duration 0.203000
+file 'frame00001.jpg'
+duration 0.280000
+file 'frame00002.jpg'
+duration 0.167000
+file 'frame00003.jpg'
+duration 0.200000
+file 'frame00004.jpg'
+duration 0.158000
+file 'frame00005.jpg'
+duration 0.216000
+file 'frame00006.jpg'
+duration 0.213000
+file 'frame00007.jpg'
+duration 0.193000
+file 'frame00008.jpg'
+duration 0.242000
+file 'frame00009.jpg'
+duration 0.297000
+file 'frame00009.jpg'

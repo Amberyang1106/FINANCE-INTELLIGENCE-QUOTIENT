@@ -1,0 +1,18 @@
+{
+  "name": "vantage-launch-preview",
+  "private": true,
+  "scripts": {
+    "render:product": "remotion render src/index.tsx VantageLaunch renders/remotion-product-4k.mp4 --codec=h264 --crf=15 --concurrency=2 --muted",
+    "check:film": "hyperframes check film --at 1.9,4.5,6.9,9.2 --no-browser-gpu",
+    "render:film": "hyperframes render film --output renders/Vantage-Launch-Preview-4K-EN-10s.mp4 --fps 60 --quality high --workers 2 --no-browser-gpu",
+    "preview:film": "hyperframes preview film --background --no-open"
+  },
+  "dependencies": {
+    "hyperframes": "0.8.216",
+    "@remotion/cli": "4.0.539",
+    "remotion": "4.0.539",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "gsap": "3.14.2"
+  }
+}

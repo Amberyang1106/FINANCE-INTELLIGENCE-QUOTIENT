@@ -1,0 +1,140 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  2,
+        "Seconds":  0.1370625,
+        "Text":  "结账"
+    },
+    {
+        "Index":  2,
+        "Count":  2,
+        "Seconds":  0.88093749999999993,
+        "Text":  "监控"
+    },
+    {
+        "Index":  4,
+        "Count":  2,
+        "Seconds":  1.4870625,
+        "Text":  "发现"
+    },
+    {
+        "Index":  7,
+        "Count":  1,
+        "Seconds":  2.1758124999999997,
+        "Text":  "G"
+    },
+    {
+        "Index":  9,
+        "Count":  1,
+        "Seconds":  2.4513125,
+        "Text":  "A"
+    },
+    {
+        "Index":  11,
+        "Count":  2,
+        "Seconds":  2.7268749999999997,
+        "Text":  "毛利"
+    },
+    {
+        "Index":  13,
+        "Count":  1,
+        "Seconds":  3.2571874999999997,
+        "Text":  "为"
+    },
+    {
+        "Index":  14,
+        "Count":  1,
+        "Seconds":  3.5188124999999997,
+        "Text":  "负"
+    },
+    {
+        "Index":  16,
+        "Count":  2,
+        "Seconds":  4.45575,
+        "Text":  "收入"
+    },
+    {
+        "Index":  18,
+        "Count":  2,
+        "Seconds":  5.1030625,
+        "Text":  "分摊"
+    },
+    {
+        "Index":  20,
+        "Count":  1,
+        "Seconds":  5.7298124999999995,
+        "Text":  "权"
+    },
+    {
+        "Index":  21,
+        "Count":  1,
+        "Seconds":  6.0949374999999995,
+        "Text":  "重"
+    },
+    {
+        "Index":  22,
+        "Count":  2,
+        "Seconds":  6.3428749999999994,
+        "Text":  "异常"
+    },
+    {
+        "Index":  25,
+        "Count":  2,
+        "Seconds":  7.6380624999999993,
+        "Text":  "同时"
+    },
+    {
+        "Index":  27,
+        "Count":  1,
+        "Seconds":  8.3956875,
+        "Text":  "标"
+    },
+    {
+        "Index":  28,
+        "Count":  1,
+        "Seconds":  8.7195,
+        "Text":  "出"
+    },
+    {
+        "Index":  30,
+        "Count":  1,
+        "Seconds":  9.0845624999999988,
+        "Text":  "L"
+    },
+    {
+        "Index":  32,
+        "Count":  1,
+        "Seconds":  9.4082499999999989,
+        "Text":  "E"
+    },
+    {
+        "Index":  34,
+        "Count":  1,
+        "Seconds":  9.6286875,
+        "Text":  "的"
+    },
+    {
+        "Index":  35,
+        "Count":  1,
+        "Seconds":  9.8903749999999988,
+        "Text":  "负"
+    },
+    {
+        "Index":  36,
+        "Count":  2,
+        "Seconds":  10.200375,
+        "Text":  "收入"
+    },
+    {
+        "Index":  38,
+        "Count":  2,
+        "Seconds":  10.827124999999999,
+        "Text":  "基数"
+    },
+    {
+        "Index":  40,
+        "Count":  2,
+        "Seconds":  11.37125,
+        "Text":  "信号"
+    }
+]

@@ -1,0 +1,16 @@
+# Reinstallable dependencies and local tools
+**/node_modules/
+video/.tools/
+**/__pycache__/
+# Transient runtime output; input captures, voices, QA and delivered films ARE versioned.
+*.log
+video/edit/cache/
+video/edit/scene*.mp4
+video/launch-preview/.hyperframes/
+video/launch-preview/film/.hyperframes/
+# Local credentials and editor state
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db

@@ -37,5 +37,12 @@ function validate(payload){
  return {id:root.crypto.randomUUID(),kind:t.kind,title:String(c.title||t.title).slice(0,100),scope:Object.assign({},t.scope),benchmark:benchmark,pos:{x:x,y:num('y',Math.floor(i/2)*5,100),w:w,h:Math.max(5,num('h',5,10))}};
  })};
 }
-root.FPAMonitor={templates:templates,scopes:scopes,route:route,dataFor:dataFor,signals:signals,validate:validate};
+function overview(){
+ var history=dataFor(templates[1]),quarter=baseline.quarter,total=root.ISGAllocation.total;
+ var credits=baseline.costRows.reduce(function(n,r){var amount=r.geo_cd==='PRC'?r.amt_lc_cents:r.amt_cents;return n+Math.max(0,-amount);},0);
+ var costFactors=[.70,.77,.84,.88,1],creditHistory=[1483152,1920684,1142837,2341769,credits];
+ return history.labels.map(function(label,i){return {label:label,revenueCents:history.series.reduce(function(n,s){return n+Math.round(s.values[i]*100);},0),costCents:Math.round(total(quarter.cost)*costFactors[i]),creditCents:creditHistory[i],reviewed:i===4};});
+}
+function overviewChange(current,previous){return previous===0?null:(current-previous)/Math.abs(previous)*100;}
+root.FPAMonitor={overview:overview,overviewChange:overviewChange,templates:templates,scopes:scopes,route:route,dataFor:dataFor,signals:signals,validate:validate};
 })(window);

@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-30",
+  "version": "v0.4",
+  "approvedOrder": "日常 KPI 监测 → 专项异常调查与方案 → 方案落实与任务跟进 → 报表逻辑问答与知识库 → 自定义监控与模板复用",
+  "shots": [
+    {
+      "id": "01",
+      "start": 0,
+      "end": 6,
+      "duration": 6
+    },
+    {
+      "id": "02",
+      "start": 6,
+      "end": 18,
+      "duration": 12
+    },
+    {
+      "id": "03",
+      "start": 18,
+      "end": 30,
+      "duration": 12
+    },
+    {
+      "id": "04",
+      "start": 30,
+      "end": 42,
+      "duration": 12
+    },
+    {
+      "id": "05",
+      "start": 42,
+      "end": 57,
+      "duration": 15
+    },
+    {
+      "id": "06",
+      "start": 57,
+      "end": 77,
+      "duration": 20
+    },
+    {
+      "id": "07",
+      "start": 77,
+      "end": 85,
+      "duration": 8
+    },
+    {
+      "id": "08",
+      "start": 85,
+      "end": 95,
+      "duration": 10
+    },
+    {
+      "id": "09",
+      "start": 95,
+      "end": 109,
+      "duration": 14
+    },
+    {
+      "id": "10",
+      "start": 109,
+      "end": 115,
+      "duration": 6
+    },
+    {
+      "id": "11",
+      "start": 115,
+      "end": 129,
+      "duration": 14
+    },
+    {
+      "id": "12",
+      "start": 129,
+      "end": 137,
+      "duration": 8
+    },
+    {
+      "id": "13",
+      "start": 137,
+      "end": 150,
+      "duration": 13
+    },
+    {
+      "id": "14",
+      "start": 150,
+      "end": 163,
+      "duration": 13
+    },
+    {
+      "id": "15",
+      "start": 163,
+      "end": 170,
+      "duration": 7
+    }
+  ],
+  "totalSeconds": 170,
+  "guideBudgetSeconds": 170,
+  "englishNarration": true,
+  "relatedDocumentsAgree": true,
+  "localLinksChecked": 19,
+  "brokenLinks": [],
+  "branch": "ref: refs/heads/feature/vantage-ui",
+  "main": "3071b6df494298594eed4674c59a4b88bd80bb30",
+  "scope": "Documentation only. No new media generation, application edit, commit or merge in this turn."
+}

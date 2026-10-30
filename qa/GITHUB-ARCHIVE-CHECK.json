@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-30",
+  "execution": "Existing test files evaluated in isolated Node VM contexts with native dependencies. This is a model/source regression, not browser QA.",
+  "results": [
+    {
+      "file": "allocation.test.cjs",
+      "passed": true,
+      "output": [
+        "42 financial calculation and data checks passed."
+      ]
+    },
+    {
+      "file": "knowledge.test.cjs",
+      "passed": true,
+      "output": [
+        "22 knowledge retrieval and provenance checks passed."
+      ]
+    },
+    {
+      "file": "monitor-model.test.cjs",
+      "passed": true,
+      "output": [
+        "25 custom monitor model checks passed."
+      ]
+    },
+    {
+      "file": "task-model.test.cjs",
+      "passed": true,
+      "output": [
+        "65 proposal task workflow checks passed."
+      ]
+    },
+    {
+      "file": "motion.test.cjs",
+      "passed": true,
+      "output": [
+        "16 finite-motion checks passed."
+      ]
+    },
+    {
+      "file": "story-motion.test.cjs",
+      "passed": true,
+      "output": [
+        "36 story-motion checks passed."
+      ]
+    },
+    {
+      "file": "kpi-overview.test.cjs",
+      "passed": true,
+      "output": [
+        "KPI reconciliation, source-credit eligibility, BU history consistency and zero-base comparison checks passed.",
+        "Rendered Cost credit chart: 3/5-quarter bars stay inside the plot and clear the y-axis labels."
+      ]
+    }
+  ]
+}

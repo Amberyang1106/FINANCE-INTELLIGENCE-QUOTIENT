@@ -1,0 +1,254 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  2,
+        "Seconds":  0.1370625,
+        "Text":  "财务"
+    },
+    {
+        "Index":  2,
+        "Count":  2,
+        "Seconds":  0.7845,
+        "Text":  "可以"
+    },
+    {
+        "Index":  4,
+        "Count":  2,
+        "Seconds":  1.3010625,
+        "Text":  "核实"
+    },
+    {
+        "Index":  6,
+        "Count":  2,
+        "Seconds":  2.0174374999999998,
+        "Text":  "入账"
+    },
+    {
+        "Index":  8,
+        "Count":  2,
+        "Seconds":  2.5822499999999997,
+        "Text":  "背景"
+    },
+    {
+        "Index":  11,
+        "Count":  1,
+        "Seconds":  3.8085625,
+        "Text":  "并"
+    },
+    {
+        "Index":  12,
+        "Count":  2,
+        "Seconds":  4.1254374999999994,
+        "Text":  "比较"
+    },
+    {
+        "Index":  14,
+        "Count":  1,
+        "Seconds":  4.7178125,
+        "Text":  "仅"
+    },
+    {
+        "Index":  15,
+        "Count":  2,
+        "Seconds":  5.0415624999999995,
+        "Text":  "排除"
+    },
+    {
+        "Index":  17,
+        "Count":  2,
+        "Seconds":  5.695875,
+        "Text":  "分摊"
+    },
+    {
+        "Index":  20,
+        "Count":  2,
+        "Seconds":  6.3294999999999995,
+        "Text":  "基数"
+    },
+    {
+        "Index":  23,
+        "Count":  1,
+        "Seconds":  6.853,
+        "Text":  "的"
+    },
+    {
+        "Index":  24,
+        "Count":  2,
+        "Seconds":  7.0044999999999993,
+        "Text":  "方案"
+    },
+    {
+        "Index":  27,
+        "Count":  2,
+        "Seconds":  8.8301875,
+        "Text":  "保留"
+    },
+    {
+        "Index":  29,
+        "Count":  1,
+        "Seconds":  9.5258124999999989,
+        "Text":  "已"
+    },
+    {
+        "Index":  30,
+        "Count":  2,
+        "Seconds":  9.8081874999999989,
+        "Text":  "入账"
+    },
+    {
+        "Index":  32,
+        "Count":  2,
+        "Seconds":  10.3385,
+        "Text":  "收入"
+    },
+    {
+        "Index":  34,
+        "Count":  1,
+        "Seconds":  10.965187499999999,
+        "Text":  "和"
+    },
+    {
+        "Index":  35,
+        "Count":  1,
+        "Seconds":  11.399125,
+        "Text":  "前"
+    },
+    {
+        "Index":  36,
+        "Count":  1,
+        "Seconds":  11.777999999999999,
+        "Text":  "两"
+    },
+    {
+        "Index":  37,
+        "Count":  1,
+        "Seconds":  12.081,
+        "Text":  "个"
+    },
+    {
+        "Index":  38,
+        "Count":  1,
+        "Seconds":  12.2945,
+        "Text":  "月"
+    },
+    {
+        "Index":  39,
+        "Count":  2,
+        "Seconds":  12.5424375,
+        "Text":  "分摊"
+    },
+    {
+        "Index":  42,
+        "Count":  1,
+        "Seconds":  13.88575,
+        "Text":  "重"
+    },
+    {
+        "Index":  43,
+        "Count":  1,
+        "Seconds":  14.237,
+        "Text":  "算"
+    },
+    {
+        "Index":  44,
+        "Count":  2,
+        "Seconds":  14.6365,
+        "Text":  "第三"
+    },
+    {
+        "Index":  46,
+        "Count":  1,
+        "Seconds":  15.2288125,
+        "Text":  "个"
+    },
+    {
+        "Index":  47,
+        "Count":  1,
+        "Seconds":  15.435437499999999,
+        "Text":  "月"
+    },
+    {
+        "Index":  48,
+        "Count":  1,
+        "Seconds":  15.683375,
+        "Text":  "后"
+    },
+    {
+        "Index":  50,
+        "Count":  1,
+        "Seconds":  16.641,
+        "Text":  "G"
+    },
+    {
+        "Index":  52,
+        "Count":  1,
+        "Seconds":  16.909625,
+        "Text":  "A"
+    },
+    {
+        "Index":  54,
+        "Count":  2,
+        "Seconds":  17.185187499999998,
+        "Text":  "毛利"
+    },
+    {
+        "Index":  56,
+        "Count":  2,
+        "Seconds":  17.7085625,
+        "Text":  "转正"
+    },
+    {
+        "Index":  59,
+        "Count":  1,
+        "Seconds":  18.9348125,
+        "Text":  "总"
+    },
+    {
+        "Index":  60,
+        "Count":  2,
+        "Seconds":  19.2515625,
+        "Text":  "毛利"
+    },
+    {
+        "Index":  62,
+        "Count":  1,
+        "Seconds":  19.823124999999997,
+        "Text":  "不"
+    },
+    {
+        "Index":  63,
+        "Count":  1,
+        "Seconds":  20.0916875,
+        "Text":  "变"
+    },
+    {
+        "Index":  65,
+        "Count":  1,
+        "Seconds":  21.035562499999997,
+        "Text":  "L"
+    },
+    {
+        "Index":  67,
+        "Count":  1,
+        "Seconds":  21.35925,
+        "Text":  "E"
+    },
+    {
+        "Index":  69,
+        "Count":  1,
+        "Seconds":  21.68975,
+        "Text":  "仍"
+    },
+    {
+        "Index":  70,
+        "Count":  1,
+        "Seconds":  22.0134375,
+        "Text":  "需"
+    },
+    {
+        "Index":  71,
+        "Count":  2,
+        "Seconds":  22.2958125,
+        "Text":  "复核"
+    }
+]

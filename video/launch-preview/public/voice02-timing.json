@@ -1,0 +1,20 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  5,
+        "Seconds":  0.1370625,
+        "Text":  "Trace"
+    },
+    {
+        "Index":  6,
+        "Count":  3,
+        "Seconds":  0.598625,
+        "Text":  "the"
+    },
+    {
+        "Index":  10,
+        "Count":  8,
+        "Seconds":  0.8328125,
+        "Text":  "evidence"
+    }
+]

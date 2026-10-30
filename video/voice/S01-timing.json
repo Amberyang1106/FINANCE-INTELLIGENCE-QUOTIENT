@@ -1,0 +1,74 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  1,
+        "Seconds":  0.1370625,
+        "Text":  "在"
+    },
+    {
+        "Index":  1,
+        "Count":  1,
+        "Seconds":  0.5434375,
+        "Text":  "同"
+    },
+    {
+        "Index":  2,
+        "Count":  1,
+        "Seconds":  0.90156249999999993,
+        "Text":  "一"
+    },
+    {
+        "Index":  3,
+        "Count":  3,
+        "Seconds":  1.1219375,
+        "Text":  "工作台"
+    },
+    {
+        "Index":  7,
+        "Count":  2,
+        "Seconds":  2.637375,
+        "Text":  "连接"
+    },
+    {
+        "Index":  9,
+        "Count":  2,
+        "Seconds":  3.3399375,
+        "Text":  "财务"
+    },
+    {
+        "Index":  11,
+        "Count":  2,
+        "Seconds":  3.877125,
+        "Text":  "异常"
+    },
+    {
+        "Index":  14,
+        "Count":  2,
+        "Seconds":  5.1723124999999994,
+        "Text":  "业务"
+    },
+    {
+        "Index":  16,
+        "Count":  2,
+        "Seconds":  5.640625,
+        "Text":  "证据"
+    },
+    {
+        "Index":  18,
+        "Count":  1,
+        "Seconds":  6.2811249999999994,
+        "Text":  "和"
+    },
+    {
+        "Index":  19,
+        "Count":  2,
+        "Seconds":  6.6875,
+        "Text":  "后续"
+    },
+    {
+        "Index":  21,
+        "Count":  2,
+        "Seconds":  7.2521875,
+        "Text":  "行动"
+    }
+]

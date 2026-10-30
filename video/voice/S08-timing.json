@@ -1,0 +1,92 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  2,
+        "Seconds":  0.1370625,
+        "Text":  "内置"
+    },
+    {
+        "Index":  2,
+        "Count":  2,
+        "Seconds":  0.66737499999999994,
+        "Text":  "规则"
+    },
+    {
+        "Index":  4,
+        "Count":  1,
+        "Seconds":  1.3078125,
+        "Text":  "和"
+    },
+    {
+        "Index":  5,
+        "Count":  2,
+        "Seconds":  1.6452499999999999,
+        "Text":  "个人"
+    },
+    {
+        "Index":  7,
+        "Count":  2,
+        "Seconds":  2.1961874999999997,
+        "Text":  "知识"
+    },
+    {
+        "Index":  9,
+        "Count":  2,
+        "Seconds":  2.795375,
+        "Text":  "可以"
+    },
+    {
+        "Index":  11,
+        "Count":  2,
+        "Seconds":  3.4290624999999997,
+        "Text":  "统一"
+    },
+    {
+        "Index":  13,
+        "Count":  2,
+        "Seconds":  4.0489375,
+        "Text":  "管理"
+    },
+    {
+        "Index":  16,
+        "Count":  2,
+        "Seconds":  5.2475625,
+        "Text":  "帮助"
+    },
+    {
+        "Index":  18,
+        "Count":  2,
+        "Seconds":  5.7848125,
+        "Text":  "财务"
+    },
+    {
+        "Index":  20,
+        "Count":  2,
+        "Seconds":  6.3908125,
+        "Text":  "复用"
+    },
+    {
+        "Index":  22,
+        "Count":  1,
+        "Seconds":  7.0245,
+        "Text":  "已"
+    },
+    {
+        "Index":  23,
+        "Count":  2,
+        "Seconds":  7.2930625,
+        "Text":  "有的"
+    },
+    {
+        "Index":  25,
+        "Count":  2,
+        "Seconds":  7.809625,
+        "Text":  "口径"
+    },
+    {
+        "Index":  27,
+        "Count":  2,
+        "Seconds":  8.395,
+        "Text":  "说明"
+    }
+]

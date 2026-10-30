@@ -1,0 +1,32 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  1,
+        "Seconds":  0.1370625,
+        "Text":  "F"
+    },
+    {
+        "Index":  2,
+        "Count":  1,
+        "Seconds":  0.42643749999999997,
+        "Text":  "P"
+    },
+    {
+        "Index":  4,
+        "Count":  3,
+        "Seconds":  0.819125,
+        "Text":  "and"
+    },
+    {
+        "Index":  8,
+        "Count":  1,
+        "Seconds":  0.99131249999999993,
+        "Text":  "A"
+    },
+    {
+        "Index":  10,
+        "Count":  5,
+        "Seconds":  1.2186875,
+        "Text":  "Agent"
+    }
+]

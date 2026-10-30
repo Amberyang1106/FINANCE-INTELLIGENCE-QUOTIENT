@@ -1,0 +1,188 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  1,
+        "Seconds":  0.1370625,
+        "Text":  "下"
+    },
+    {
+        "Index":  1,
+        "Count":  1,
+        "Seconds":  0.5503125,
+        "Text":  "钻"
+    },
+    {
+        "Index":  2,
+        "Count":  1,
+        "Seconds":  0.90156249999999993,
+        "Text":  "到"
+    },
+    {
+        "Index":  3,
+        "Count":  2,
+        "Seconds":  1.115,
+        "Text":  "大额"
+    },
+    {
+        "Index":  5,
+        "Count":  1,
+        "Seconds":  1.7485625,
+        "Text":  "负"
+    },
+    {
+        "Index":  6,
+        "Count":  2,
+        "Seconds":  2.1411249999999997,
+        "Text":  "收入"
+    },
+    {
+        "Index":  8,
+        "Count":  2,
+        "Seconds":  2.705875,
+        "Text":  "凭证"
+    },
+    {
+        "Index":  11,
+        "Count":  2,
+        "Seconds":  3.9666249999999996,
+        "Text":  "查看"
+    },
+    {
+        "Index":  13,
+        "Count":  2,
+        "Seconds":  4.6070625,
+        "Text":  "金额"
+    },
+    {
+        "Index":  16,
+        "Count":  2,
+        "Seconds":  5.8815,
+        "Text":  "维度"
+    },
+    {
+        "Index":  18,
+        "Count":  1,
+        "Seconds":  6.47375,
+        "Text":  "和"
+    },
+    {
+        "Index":  19,
+        "Count":  2,
+        "Seconds":  6.880125,
+        "Text":  "入账"
+    },
+    {
+        "Index":  21,
+        "Count":  2,
+        "Seconds":  7.444875,
+        "Text":  "信息"
+    },
+    {
+        "Index":  24,
+        "Count":  1,
+        "Seconds":  9.394625,
+        "Text":  "本"
+    },
+    {
+        "Index":  25,
+        "Count":  1,
+        "Seconds":  9.69075,
+        "Text":  "次"
+    },
+    {
+        "Index":  26,
+        "Count":  1,
+        "Seconds":  10.0558125,
+        "Text":  "样"
+    },
+    {
+        "Index":  27,
+        "Count":  1,
+        "Seconds":  10.358875,
+        "Text":  "例"
+    },
+    {
+        "Index":  28,
+        "Count":  2,
+        "Seconds":  10.5655,
+        "Text":  "范围"
+    },
+    {
+        "Index":  30,
+        "Count":  1,
+        "Seconds":  11.1164375,
+        "Text":  "内"
+    },
+    {
+        "Index":  32,
+        "Count":  2,
+        "Seconds":  12.0534375,
+        "Text":  "尚未"
+    },
+    {
+        "Index":  34,
+        "Count":  2,
+        "Seconds":  12.68025,
+        "Text":  "确认"
+    },
+    {
+        "Index":  36,
+        "Count":  2,
+        "Seconds":  13.3139375,
+        "Text":  "匹配"
+    },
+    {
+        "Index":  38,
+        "Count":  1,
+        "Seconds":  13.9061875,
+        "Text":  "的"
+    },
+    {
+        "Index":  39,
+        "Count":  1,
+        "Seconds":  14.167874999999999,
+        "Text":  "正"
+    },
+    {
+        "Index":  40,
+        "Count":  1,
+        "Seconds":  14.491562499999999,
+        "Text":  "向"
+    },
+    {
+        "Index":  41,
+        "Count":  1,
+        "Seconds":  14.877312499999999,
+        "Text":  "抵"
+    },
+    {
+        "Index":  42,
+        "Count":  1,
+        "Seconds":  15.132124999999998,
+        "Text":  "销"
+    },
+    {
+        "Index":  44,
+        "Count":  2,
+        "Seconds":  16.1518125,
+        "Text":  "需要"
+    },
+    {
+        "Index":  46,
+        "Count":  2,
+        "Seconds":  16.7234375,
+        "Text":  "财务"
+    },
+    {
+        "Index":  48,
+        "Count":  3,
+        "Seconds":  17.363875,
+        "Text":  "进一步"
+    },
+    {
+        "Index":  51,
+        "Count":  2,
+        "Seconds":  18.093875,
+        "Text":  "核实"
+    }
+]

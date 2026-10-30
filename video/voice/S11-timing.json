@@ -1,0 +1,104 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  2,
+        "Seconds":  0.1370625,
+        "Text":  "回到"
+    },
+    {
+        "Index":  2,
+        "Count":  2,
+        "Seconds":  0.81206249999999991,
+        "Text":  "保存"
+    },
+    {
+        "Index":  4,
+        "Count":  1,
+        "Seconds":  1.4180625,
+        "Text":  "的"
+    },
+    {
+        "Index":  5,
+        "Count":  2,
+        "Seconds":  1.5695625,
+        "Text":  "方案"
+    },
+    {
+        "Index":  8,
+        "Count":  1,
+        "Seconds":  2.823375,
+        "Text":  "把"
+    },
+    {
+        "Index":  9,
+        "Count":  2,
+        "Seconds":  3.092,
+        "Text":  "选中"
+    },
+    {
+        "Index":  11,
+        "Count":  1,
+        "Seconds":  3.71875,
+        "Text":  "的"
+    },
+    {
+        "Index":  12,
+        "Count":  2,
+        "Seconds":  3.8701874999999997,
+        "Text":  "行动"
+    },
+    {
+        "Index":  14,
+        "Count":  1,
+        "Seconds":  4.5728124999999995,
+        "Text":  "转"
+    },
+    {
+        "Index":  15,
+        "Count":  1,
+        "Seconds":  4.889625,
+        "Text":  "成"
+    },
+    {
+        "Index":  16,
+        "Count":  2,
+        "Seconds":  5.1995,
+        "Text":  "任务"
+    },
+    {
+        "Index":  19,
+        "Count":  2,
+        "Seconds":  6.3291875,
+        "Text":  "保留"
+    },
+    {
+        "Index":  21,
+        "Count":  2,
+        "Seconds":  6.969625,
+        "Text":  "关联"
+    },
+    {
+        "Index":  23,
+        "Count":  2,
+        "Seconds":  7.5757499999999993,
+        "Text":  "证据"
+    },
+    {
+        "Index":  25,
+        "Count":  1,
+        "Seconds":  8.2024999999999988,
+        "Text":  "和"
+    },
+    {
+        "Index":  26,
+        "Count":  2,
+        "Seconds":  8.608875,
+        "Text":  "测算"
+    },
+    {
+        "Index":  28,
+        "Count":  2,
+        "Seconds":  9.26325,
+        "Text":  "假设"
+    }
+]

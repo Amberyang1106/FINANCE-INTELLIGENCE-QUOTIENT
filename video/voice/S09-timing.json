@@ -1,0 +1,116 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  2,
+        "Seconds":  0.1370625,
+        "Text":  "选定"
+    },
+    {
+        "Index":  2,
+        "Count":  2,
+        "Seconds":  0.8395625,
+        "Text":  "报表"
+    },
+    {
+        "Index":  5,
+        "Count":  2,
+        "Seconds":  2.052,
+        "Text":  "维度"
+    },
+    {
+        "Index":  7,
+        "Count":  1,
+        "Seconds":  2.637375,
+        "Text":  "和"
+    },
+    {
+        "Index":  8,
+        "Count":  2,
+        "Seconds":  2.9610624999999997,
+        "Text":  "指标"
+    },
+    {
+        "Index":  11,
+        "Count":  1,
+        "Seconds":  4.2286874999999995,
+        "Text":  "用"
+    },
+    {
+        "Index":  12,
+        "Count":  2,
+        "Seconds":  4.600625,
+        "Text":  "自然"
+    },
+    {
+        "Index":  14,
+        "Count":  2,
+        "Seconds":  5.1240625,
+        "Text":  "语言"
+    },
+    {
+        "Index":  16,
+        "Count":  2,
+        "Seconds":  5.7025625,
+        "Text":  "生成"
+    },
+    {
+        "Index":  18,
+        "Count":  2,
+        "Seconds":  6.3774999999999995,
+        "Text":  "季度"
+    },
+    {
+        "Index":  20,
+        "Count":  2,
+        "Seconds":  6.91475,
+        "Text":  "毛利"
+    },
+    {
+        "Index":  22,
+        "Count":  2,
+        "Seconds":  7.4519375,
+        "Text":  "监控"
+    },
+    {
+        "Index":  25,
+        "Count":  1,
+        "Seconds":  8.7333125,
+        "Text":  "再"
+    },
+    {
+        "Index":  26,
+        "Count":  2,
+        "Seconds":  9.0431875,
+        "Text":  "设置"
+    },
+    {
+        "Index":  28,
+        "Count":  2,
+        "Seconds":  9.5804375,
+        "Text":  "低于"
+    },
+    {
+        "Index":  30,
+        "Count":  2,
+        "Seconds":  10.1383125,
+        "Text":  "零时"
+    },
+    {
+        "Index":  32,
+        "Count":  1,
+        "Seconds":  10.71675,
+        "Text":  "的"
+    },
+    {
+        "Index":  33,
+        "Count":  2,
+        "Seconds":  10.9785,
+        "Text":  "预警"
+    },
+    {
+        "Index":  35,
+        "Count":  2,
+        "Seconds":  11.5293125,
+        "Text":  "条件"
+    }
+]

@@ -1,0 +1,137 @@
+{
+  "sourceCommit": "b5541d4",
+  "branch": "feature/vantage-ui",
+  "duration": 170,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "voice": "Microsoft Huihui Desktop",
+  "shots": [
+    {
+      "id": "01",
+      "start": 0,
+      "end": 8,
+      "title": "开场",
+      "narration": "在同一工作台，连接财务异常、业务证据和后续行动。",
+      "voice": "在同一工作台，连接财务异常、业务证据和后续行动。",
+      "caption": "FP&A Agent / From signals to actions"
+    },
+    {
+      "id": "02",
+      "start": 8,
+      "end": 20,
+      "title": "异常发现",
+      "narration": "结账监控发现 GA 毛利为负，收入分摊权重异常，同时标出 LE 的负收入基数信号。",
+      "voice": "结账监控发现 G A 毛利为负，收入分摊权重异常，同时标出 L E 的负收入基数信号。",
+      "caption": "Month 3 close / Allocation alerts"
+    },
+    {
+      "id": "03",
+      "start": 20,
+      "end": 32,
+      "title": "调查步骤",
+      "narration": "进入分析，带入同一业务范围，依次核对规则、季度轧差、收入基数和相关凭证。",
+      "voice": "进入分析，带入同一业务范围，依次核对规则、季度分摊调整、收入基数和相关凭证。",
+      "caption": "Rules → True-up → Base → Voucher"
+    },
+    {
+      "id": "04",
+      "start": 32,
+      "end": 47,
+      "title": "凭证证据",
+      "narration": "下钻到大额负收入凭证，查看金额、维度和入账信息。本次样例范围内，尚未确认匹配的正向抵销，需要财务进一步核实。",
+      "voice": "下钻到大额负收入凭证，查看金额、维度和入账信息。本次样例范围内，尚未确认匹配的正向抵销，需要财务进一步核实。",
+      "caption": "Document evidence / Counterpart review open"
+    },
+    {
+      "id": "05",
+      "start": 47,
+      "end": 67,
+      "title": "方案与测算",
+      "narration": "财务可以核实入账背景，并比较仅排除分摊 base 的方案。保留已入账收入和前两个月分摊，重算第三个月后，GA 毛利转正；总毛利不变，LE 仍需复核。",
+      "voice": "财务可以核实入账背景，并比较仅排除分摊 基数 的方案。保留已入账收入和前两个月分摊，重算第三个月后，G A 毛利转正；总毛利不变，L E 仍需复核。",
+      "caption": "Base only / Months 1–2 locked / Total GP unchanged"
+    },
+    {
+      "id": "06",
+      "start": 67,
+      "end": 76,
+      "title": "保存报告",
+      "narration": "保存候选方案，生成包含原因、证据、假设和后续行动的报告草稿。",
+      "voice": "保存候选方案，生成包含原因、证据、假设和后续行动的报告草稿。",
+      "caption": "A reviewable decision record"
+    },
+    {
+      "id": "07",
+      "start": 76,
+      "end": 91,
+      "title": "报表问答",
+      "narration": "财务也可以直接询问报表逻辑。回答展示知识来源，点击引用，即可核对季度分摊规则的原文。",
+      "voice": "财务也可以直接询问报表逻辑。回答展示知识来源，点击引用，即可核对季度分摊规则的原文。",
+      "caption": "Source-backed report Q&A"
+    },
+    {
+      "id": "08",
+      "start": 91,
+      "end": 101,
+      "title": "知识管理",
+      "narration": "内置规则和个人知识可以统一管理，帮助财务复用已有的口径说明。",
+      "voice": "内置规则和个人知识可以统一管理，帮助财务复用已有的口径说明。",
+      "caption": "Built-in rules / Personal knowledge"
+    },
+    {
+      "id": "09",
+      "start": 101,
+      "end": 116,
+      "title": "自建 GP 监控",
+      "narration": "选定报表、维度和指标，用自然语言生成季度毛利监控，再设置低于零时的预警条件。",
+      "voice": "选定报表、维度和指标，用自然语言生成季度毛利监控，再设置低于零时的预警条件。",
+      "caption": "Quarter GP / Configurable benchmark"
+    },
+    {
+      "id": "10",
+      "start": 116,
+      "end": 132,
+      "title": "趋势与模板",
+      "narration": "同一看板还能查看五个季度的收入趋势，配置增长与下降提示，并调整卡片布局。常用监控可通过模板复用。",
+      "voice": "同一看板还能查看五个季度的收入趋势，配置增长与下降提示，并调整卡片布局。常用监控可通过模板复用。",
+      "caption": "Revenue trends / Reusable templates"
+    },
+    {
+      "id": "11",
+      "start": 132,
+      "end": 142,
+      "title": "从方案创建任务",
+      "narration": "回到保存的方案，把选中的行动转成任务，保留关联证据和测算假设。",
+      "voice": "回到保存的方案，把选中的行动转成任务，保留关联证据和测算假设。",
+      "caption": "Proposal → Task"
+    },
+    {
+      "id": "12",
+      "start": 142,
+      "end": 156,
+      "title": "分派与进展",
+      "narration": "任务分派到负责人，接收与进展回报都会留下记录。通过链路和交接日志，可以持续跟进方案执行。",
+      "voice": "任务分派到负责人，接收与进展回报都会留下记录。通过链路和交接日志，可以持续跟进方案执行。",
+      "caption": "Assigned → Received → In progress / Local role preview"
+    },
+    {
+      "id": "13",
+      "start": 156,
+      "end": 163,
+      "title": "任务完成",
+      "narration": "填写结果后完成跟进行动，交接历史和原始方案一起保留。",
+      "voice": "填写结果后完成跟进行动，交接历史和原始方案一起保留。",
+      "caption": "Completed / Outcome recorded"
+    },
+    {
+      "id": "14",
+      "start": 163,
+      "end": 170,
+      "title": "收尾",
+      "narration": "本片使用样例数据，展示从发现到跟进的完整路径。",
+      "voice": "本片使用样例数据，展示从发现到跟进的完整路径。",
+      "caption": "Interactive prototype / Sample data / Simulated AI and task feedback / No live ledger changes"
+    }
+  ]
+}

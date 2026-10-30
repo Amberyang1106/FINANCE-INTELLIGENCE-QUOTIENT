@@ -1,0 +1,116 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  2,
+        "Seconds":  0.1370625,
+        "Text":  "进入"
+    },
+    {
+        "Index":  2,
+        "Count":  2,
+        "Seconds":  0.681125,
+        "Text":  "分析"
+    },
+    {
+        "Index":  5,
+        "Count":  1,
+        "Seconds":  1.976375,
+        "Text":  "带"
+    },
+    {
+        "Index":  6,
+        "Count":  1,
+        "Seconds":  2.238,
+        "Text":  "入"
+    },
+    {
+        "Index":  7,
+        "Count":  1,
+        "Seconds":  2.5479374999999997,
+        "Text":  "同"
+    },
+    {
+        "Index":  8,
+        "Count":  1,
+        "Seconds":  2.9198125,
+        "Text":  "一"
+    },
+    {
+        "Index":  9,
+        "Count":  2,
+        "Seconds":  3.2435,
+        "Text":  "业务"
+    },
+    {
+        "Index":  11,
+        "Count":  2,
+        "Seconds":  3.7186874999999997,
+        "Text":  "范围"
+    },
+    {
+        "Index":  14,
+        "Count":  2,
+        "Seconds":  4.9794374999999995,
+        "Text":  "依次"
+    },
+    {
+        "Index":  16,
+        "Count":  2,
+        "Seconds":  5.647625,
+        "Text":  "核对"
+    },
+    {
+        "Index":  18,
+        "Count":  2,
+        "Seconds":  6.2399375,
+        "Text":  "规则"
+    },
+    {
+        "Index":  21,
+        "Count":  2,
+        "Seconds":  7.48675,
+        "Text":  "季度"
+    },
+    {
+        "Index":  23,
+        "Count":  2,
+        "Seconds":  8.037625,
+        "Text":  "分摊"
+    },
+    {
+        "Index":  25,
+        "Count":  2,
+        "Seconds":  8.664375,
+        "Text":  "调整"
+    },
+    {
+        "Index":  28,
+        "Count":  2,
+        "Seconds":  9.9525624999999991,
+        "Text":  "收入"
+    },
+    {
+        "Index":  30,
+        "Count":  2,
+        "Seconds":  10.5379375,
+        "Text":  "基数"
+    },
+    {
+        "Index":  32,
+        "Count":  1,
+        "Seconds":  11.1234375,
+        "Text":  "和"
+    },
+    {
+        "Index":  33,
+        "Count":  2,
+        "Seconds":  11.5229375,
+        "Text":  "相关"
+    },
+    {
+        "Index":  35,
+        "Count":  2,
+        "Seconds":  12.184125,
+        "Text":  "凭证"
+    }
+]

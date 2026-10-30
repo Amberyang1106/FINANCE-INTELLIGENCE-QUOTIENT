@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-29",
+  "sourceBranch": "feature/vantage-ui",
+  "sourceCommit": "b5541d4c04cf00e275c91b89115216ea4b38846e",
+  "mainCommitUnchanged": "3071b6df494298594eed4674c59a4b88bd80bb30",
+  "output": "exports/FPA-Agent-Vantage-Overview-zh-CN-v01.mp4",
+  "durationSeconds": 170,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "videoCodec": "H.264 High",
+  "audioCodec": "AAC LC",
+  "audioSampleRate": 48000,
+  "audioChannels": 2,
+  "bytes": 10972856,
+  "fullDecode": {
+    "returncode": 0,
+    "errors": ""
+  },
+  "browserPlayback": {
+    "duration": 170,
+    "seekableEnd": 170,
+    "chapterSeekTime": 101.009097,
+    "width": 1920,
+    "height": 1080,
+    "paused": true
+  },
+  "visualReview": {
+    "sampleTimes": [
+      3,
+      15,
+      26,
+      40,
+      61,
+      72,
+      84,
+      96,
+      109,
+      124,
+      137,
+      149,
+      160,
+      168
+    ],
+    "fourStoriesPresent": true,
+    "voucherFieldsVisible": true,
+    "scenarioLimitationsPresent": true,
+    "quarterGpAndSyntheticHistoryLabelsVisible": true,
+    "sameTask006LifecycleVisible": true,
+    "subtitlesRendered": true
+  },
+  "voice": "Microsoft Huihui Desktop, offline synthesis, Rate 0",
+  "publication": "Local files only. No Sites deployment.",
+  "gitArchive": "Not committed; no main merge."
+}
