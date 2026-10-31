@@ -1,0 +1,91 @@
+- link "Skip to main content":
+  - /url: "#main"
+- banner:
+  - button "Finance Exception Intelligence home":
+    - img "Lenovo"
+    - strong: FINANCE EXCEPTION INTELLIGENCE
+    - generic: Finance Workspace
+  - button "Focus monitor request Ctrl K":
+    - generic: Focus monitor request
+    - generic: Ctrl K
+  - generic "Finance reviewer / Local demo workspace":
+    - generic: YT
+    - generic: Finance reviewer
+  - generic "Workspace options"
+- complementary "Workspace navigation":
+  - button "Collapse sidebar" [expanded]:
+    - generic: ‹
+    - generic: Collapse sidebar
+  - navigation "Primary navigation":
+    - button "Monitor":
+      - generic: Monitor
+    - button "Analysis":
+      - generic: Analysis
+    - button "Report Q&A":
+      - generic: Report Q&A
+    - button "Knowledge":
+      - generic: Knowledge
+    - button "Reports":
+      - generic: Reports
+      - generic: "1"
+    - button "Monitor Studio" [active]:
+      - generic: Monitor Studio
+    - button "Monitor Market":
+      - generic: Monitor Market
+    - button "Task To-do":
+      - generic: Task To-do
+      - generic: "2"
+  - text: Finance
+  - text: intelligence
+- main:
+  - group "Fixed monitor views":
+    - button "KPI overview"
+    - button "Service allocation 1" [pressed]:
+      - text: Service allocation
+      - generic: "1"
+  - generic: Investigation traced / Review open
+  - text: Monitor Studio/
+  - strong: Your canvas
+  - generic: Sample data / Simulated AI / No ledger changes
+  - region "Monitor studio":
+    - heading "Monitor studio" [level=1]
+    - paragraph: Build a monitor from your report fields
+    - paragraph: Choose the report. Describe what matters. Keep the signal in view.
+    - button "Explore templates"
+    - button "Download board"
+    - button "Save as template"
+    - button "Pause chart motion"
+    - text: Business group
+    - combobox "Business group":
+      - option "ISG" [selected]
+      - option "SSG / no sample"
+    - text: Management report
+    - combobox "Management report":
+      - option "ISG Service" [selected]
+      - option "ROW PSD / no sample"
+    - text: Dimension
+    - combobox "Dimension":
+      - option "BPC Segment / bpc_seg_cd" [selected]
+      - option "BPC BU / bpc_bu"
+    - text: KPI
+    - combobox "KPI":
+      - option "GP / Revenue − Cost" [selected]
+      - option "Revenue"
+      - option "Cost"
+    - generic: Describe your monitor
+    - textbox "Describe your monitor":
+      - /placeholder: Monitor GP by BPC Segment for the latest quarter…
+    - button "Generate monitor"
+    - generic: Try a question
+    - button "Quarterly GP by segment"
+    - button "Five-quarter revenue trend"
+    - status: Sample data / Simulated database routing / No external AI connection
+    - heading "Monitor canvas" [level=2]
+    - generic: 0 monitors
+    - paragraph: Drag a card by its title to move it across rows and columns. Resize from the bottom-right corner. Layout saves in this browser.
+    - generic "Custom monitor board"
+    - text: ＋
+    - heading "Start with a question, keep a monitor." [level=2]
+    - paragraph: Generate a chart above or install a ready-made template from Monitor Market.
+    - paragraph
+- status: "Task updated: Completed. Handoff recorded locally."

@@ -1,0 +1,860 @@
+[
+  {
+    "name": "freight-modal-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "matrix-expanded-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "trends-three-quarters-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "allocation-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "segment-detail-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "analysis-ready-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "analysis-running-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "analysis-completed-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "analysis-trace-expanded-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "voucher-modal-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "scenario-original-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "scenario-candidate-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "scenario-all-segments-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "scenario-unsaved-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "report-saved-version-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "task-duplicate-prevention-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "tasks-list-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "tasks-board-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "task-completed-detail-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "task-frozen-source-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "task-created-detail-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "task-assigned-detail-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "task-received-detail-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "task-in-progress-detail-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "task-final-completion-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "task-samples-list-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "task-samples-board-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "report-q-a-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "knowledge-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "monitor-studio-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "monitor-market-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "workspace-menu-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "reset-confirmation-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "allocation-1280",
+    "jpeg": true,
+    "height": 800,
+    "width": 1280,
+    "expected": {
+      "height": 800,
+      "width": 1280
+    },
+    "matches": true
+  },
+  {
+    "name": "analysis-1280",
+    "jpeg": true,
+    "height": 800,
+    "width": 1280,
+    "expected": {
+      "height": 800,
+      "width": 1280
+    },
+    "matches": true
+  },
+  {
+    "name": "reports-1280",
+    "jpeg": true,
+    "height": 800,
+    "width": 1280,
+    "expected": {
+      "height": 800,
+      "width": 1280
+    },
+    "matches": true
+  },
+  {
+    "name": "task-to-do-1280",
+    "jpeg": true,
+    "height": 800,
+    "width": 1280,
+    "expected": {
+      "height": 800,
+      "width": 1280
+    },
+    "matches": true
+  },
+  {
+    "name": "report-q-a-1280",
+    "jpeg": true,
+    "height": 800,
+    "width": 1280,
+    "expected": {
+      "height": 800,
+      "width": 1280
+    },
+    "matches": true
+  },
+  {
+    "name": "knowledge-1280",
+    "jpeg": true,
+    "height": 800,
+    "width": 1280,
+    "expected": {
+      "height": 800,
+      "width": 1280
+    },
+    "matches": true
+  },
+  {
+    "name": "monitor-studio-1280",
+    "jpeg": true,
+    "height": 800,
+    "width": 1280,
+    "expected": {
+      "height": 800,
+      "width": 1280
+    },
+    "matches": true
+  },
+  {
+    "name": "monitor-market-1280",
+    "jpeg": true,
+    "height": 800,
+    "width": 1280,
+    "expected": {
+      "height": 800,
+      "width": 1280
+    },
+    "matches": true
+  },
+  {
+    "name": "tasks-1280",
+    "jpeg": true,
+    "height": 800,
+    "width": 1280,
+    "expected": {
+      "height": 800,
+      "width": 1280
+    },
+    "matches": true
+  },
+  {
+    "name": "kpi-768",
+    "jpeg": true,
+    "height": 1024,
+    "width": 768,
+    "expected": {
+      "height": 1024,
+      "width": 768
+    },
+    "matches": true
+  },
+  {
+    "name": "allocation-768",
+    "jpeg": true,
+    "height": 1024,
+    "width": 768,
+    "expected": {
+      "height": 1024,
+      "width": 768
+    },
+    "matches": true
+  },
+  {
+    "name": "analysis-768",
+    "jpeg": true,
+    "height": 1024,
+    "width": 768,
+    "expected": {
+      "height": 1024,
+      "width": 768
+    },
+    "matches": true
+  },
+  {
+    "name": "reports-768",
+    "jpeg": true,
+    "height": 1024,
+    "width": 768,
+    "expected": {
+      "height": 1024,
+      "width": 768
+    },
+    "matches": true
+  },
+  {
+    "name": "task-to-do-768",
+    "jpeg": true,
+    "height": 1024,
+    "width": 768,
+    "expected": {
+      "height": 1024,
+      "width": 768
+    },
+    "matches": true
+  },
+  {
+    "name": "report-q-a-768",
+    "jpeg": true,
+    "height": 1024,
+    "width": 768,
+    "expected": {
+      "height": 1024,
+      "width": 768
+    },
+    "matches": true
+  },
+  {
+    "name": "knowledge-768",
+    "jpeg": true,
+    "height": 1024,
+    "width": 768,
+    "expected": {
+      "height": 1024,
+      "width": 768
+    },
+    "matches": true
+  },
+  {
+    "name": "monitor-studio-768",
+    "jpeg": true,
+    "height": 1024,
+    "width": 768,
+    "expected": {
+      "height": 1024,
+      "width": 768
+    },
+    "matches": true
+  },
+  {
+    "name": "monitor-market-768",
+    "jpeg": true,
+    "height": 1024,
+    "width": 768,
+    "expected": {
+      "height": 1024,
+      "width": 768
+    },
+    "matches": true
+  },
+  {
+    "name": "kpi-375",
+    "jpeg": true,
+    "height": 812,
+    "width": 375,
+    "expected": {
+      "height": 812,
+      "width": 375
+    },
+    "matches": true
+  },
+  {
+    "name": "report-q-a-375",
+    "jpeg": true,
+    "height": 812,
+    "width": 375,
+    "expected": {
+      "height": 812,
+      "width": 375
+    },
+    "matches": true
+  },
+  {
+    "name": "knowledge-375",
+    "jpeg": true,
+    "height": 812,
+    "width": 375,
+    "expected": {
+      "height": 812,
+      "width": 375
+    },
+    "matches": true
+  },
+  {
+    "name": "monitor-studio-375",
+    "jpeg": true,
+    "height": 812,
+    "width": 375,
+    "expected": {
+      "height": 812,
+      "width": 375
+    },
+    "matches": true
+  },
+  {
+    "name": "monitor-market-375",
+    "jpeg": true,
+    "height": 812,
+    "width": 375,
+    "expected": {
+      "height": 812,
+      "width": 375
+    },
+    "matches": true
+  },
+  {
+    "name": "scenario-table-stable-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "matrix-visible-top-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "matrix-visible-bottom-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "analysis-trace-bottom-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "tasks-empty-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "report-empty-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "freight-modal-375",
+    "jpeg": true,
+    "height": 812,
+    "width": 375,
+    "expected": {
+      "height": 812,
+      "width": 375
+    },
+    "matches": true
+  },
+  {
+    "name": "analysis-375",
+    "jpeg": true,
+    "height": 812,
+    "width": 375,
+    "expected": {
+      "height": 812,
+      "width": 375
+    },
+    "matches": true
+  },
+  {
+    "name": "allocation-375",
+    "jpeg": true,
+    "height": 812,
+    "width": 375,
+    "expected": {
+      "height": 812,
+      "width": 375
+    },
+    "matches": true
+  },
+  {
+    "name": "reports-375",
+    "jpeg": true,
+    "height": 812,
+    "width": 375,
+    "expected": {
+      "height": 812,
+      "width": 375
+    },
+    "matches": true
+  },
+  {
+    "name": "task-to-do-375",
+    "jpeg": true,
+    "height": 812,
+    "width": 375,
+    "expected": {
+      "height": 812,
+      "width": 375
+    },
+    "matches": true
+  },
+  {
+    "name": "task-detail-375",
+    "jpeg": true,
+    "height": 812,
+    "width": 375,
+    "expected": {
+      "height": 812,
+      "width": 375
+    },
+    "matches": true
+  },
+  {
+    "name": "task-source-375",
+    "jpeg": true,
+    "height": 812,
+    "width": 375,
+    "expected": {
+      "height": 812,
+      "width": 375
+    },
+    "matches": true
+  },
+  {
+    "name": "trends-three-quarters-stable-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "cost-credit-three-quarters-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "kpi-1440",
+    "jpeg": true,
+    "height": 900,
+    "width": 1440,
+    "expected": {
+      "height": 900,
+      "width": 1440
+    },
+    "matches": true
+  },
+  {
+    "name": "kpi-1280",
+    "jpeg": true,
+    "height": 800,
+    "width": 1280,
+    "expected": {
+      "height": 800,
+      "width": 1280
+    },
+    "matches": true
+  },
+  {
+    "name": "scenario-1280",
+    "jpeg": true,
+    "height": 800,
+    "width": 1280,
+    "expected": {
+      "height": 800,
+      "width": 1280
+    },
+    "matches": true
+  },
+  {
+    "name": "scenario-768",
+    "jpeg": true,
+    "height": 1024,
+    "width": 768,
+    "expected": {
+      "height": 1024,
+      "width": 768
+    },
+    "matches": true
+  },
+  {
+    "name": "scenario-375",
+    "jpeg": true,
+    "height": 812,
+    "width": 375,
+    "expected": {
+      "height": 812,
+      "width": 375
+    },
+    "matches": true
+  },
+  {
+    "name": "scenario-impacts-lower-375",
+    "jpeg": true,
+    "height": 812,
+    "width": 375,
+    "expected": {
+      "height": 812,
+      "width": 375
+    },
+    "matches": true
+  },
+  {
+    "name": "scenario-total-375",
+    "jpeg": true,
+    "height": 812,
+    "width": 375,
+    "expected": {
+      "height": 812,
+      "width": 375
+    },
+    "matches": true
+  }
+]

@@ -1,0 +1,2137 @@
+[
+  {
+    "name": "freight-modal-1440",
+    "capturedAt": "2026-10-31T06:54:24.754Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 1440,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend",
+      "Monitor overview",
+      "Freight Cost Anomaly Detected"
+    ],
+    "impact": [],
+    "primary": [
+      {
+        "bottom": 526.4375,
+        "text": "Review allocation",
+        "top": 486.4375
+      }
+    ],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "matrix-expanded-1440",
+    "capturedAt": "2026-10-31T06:54:25.706Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 1440,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend",
+      "Monitor overview"
+    ],
+    "impact": [],
+    "primary": [
+      {
+        "bottom": -402.8958435058594,
+        "text": "Review allocation",
+        "top": -442.8958435058594
+      }
+    ],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "trends-three-quarters-1440",
+    "capturedAt": "2026-10-31T06:54:26.503Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 1440,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend",
+      "Monitor overview"
+    ],
+    "impact": [],
+    "primary": [
+      {
+        "bottom": -402.8958435058594,
+        "text": "Review allocation",
+        "top": -442.8958435058594
+      }
+    ],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "allocation-1440",
+    "capturedAt": "2026-10-31T06:54:37.653Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Service allocation",
+      "Segment GP needs review",
+      "Allocation base & results",
+      "From GP to the voucher."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "segment-detail-1440",
+    "capturedAt": "2026-10-31T06:54:38.839Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Service allocation",
+      "Segment GP needs review",
+      "Allocation base & results",
+      "GA / Quarter revenue-base detail",
+      "From GP to the voucher."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "analysis-ready-1440",
+    "capturedAt": "2026-10-31T06:54:48.545Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Why did GA GP turn negative?",
+      "A question with its context attached.",
+      "From GP to the voucher."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "analysis-running-1440",
+    "capturedAt": "2026-10-31T06:54:49.209Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Why did GA GP turn negative?",
+      "From GP to the voucher."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "analysis-completed-1440",
+    "capturedAt": "2026-10-31T06:55:11.569Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Why did GA GP turn negative?",
+      "A negative LE voucher inflates the GA weight.",
+      "From GP to the voucher."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "analysis-trace-expanded-1440",
+    "capturedAt": "2026-10-31T06:55:12.316Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Why did GA GP turn negative?",
+      "A negative LE voucher inflates the GA weight.",
+      "From GP to the voucher."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "voucher-modal-1440",
+    "capturedAt": "2026-10-31T06:55:13.075Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Why did GA GP turn negative?",
+      "A negative LE voucher inflates the GA weight.",
+      "From GP to the voucher.",
+      "Document 5900018271"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "scenario-original-1440",
+    "capturedAt": "2026-10-31T06:55:22.392Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Scenario comparison",
+      "GA GP",
+      "LE GP",
+      "Total GP",
+      "Follow-up actions"
+    ],
+    "impact": [
+      {
+        "bottom": 541.6562652587891,
+        "text": "GA GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−235,412.32\nCandidate\n−235,412.32\nDelta\n0.00\n\nCost redistribution",
+        "top": 320.6458435058594
+      },
+      {
+        "bottom": 541.6562652587891,
+        "text": "LE GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−497,576.04\nCandidate\n−497,576.04\nDelta\n0.00\n\nFinance review open",
+        "top": 320.6458435058594
+      },
+      {
+        "bottom": 541.6562652587891,
+        "text": "Total GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−727,638.08\nCandidate\n−727,638.08\nDelta\n0.00\n\nUnchanged / No profit increase",
+        "top": 320.6458435058594
+      }
+    ],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "scenario-candidate-1440",
+    "capturedAt": "2026-10-31T06:55:23.162Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Scenario comparison",
+      "GA GP",
+      "LE GP",
+      "Total GP",
+      "Follow-up actions"
+    ],
+    "impact": [
+      {
+        "bottom": 541.6562652587891,
+        "text": "GA GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−235,412.32\nCandidate\n197,960.36\nDelta\n+433,372.68\n\nCost redistribution",
+        "top": 320.6458435058594
+      },
+      {
+        "bottom": 541.6562652587891,
+        "text": "LE GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−497,576.04\nCandidate\n−1,075,406.28\nDelta\n−577,830.24\n\nFinance review open",
+        "top": 320.6458435058594
+      },
+      {
+        "bottom": 541.6562652587891,
+        "text": "Total GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−727,638.08\nCandidate\n−727,638.08\nDelta\n0.00\n\nUnchanged / No profit increase",
+        "top": 320.6458435058594
+      }
+    ],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "scenario-all-segments-1440",
+    "capturedAt": "2026-10-31T06:55:23.780Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Scenario comparison",
+      "GA GP",
+      "LE GP",
+      "Total GP",
+      "Follow-up actions"
+    ],
+    "impact": [
+      {
+        "bottom": 320.9895935058594,
+        "text": "GA GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−235,412.32\nCandidate\n197,960.36\nDelta\n+433,372.68\n\nCost redistribution",
+        "top": 99.97917175292967
+      },
+      {
+        "bottom": 320.9895935058594,
+        "text": "LE GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−497,576.04\nCandidate\n−1,075,406.28\nDelta\n−577,830.24\n\nFinance review open",
+        "top": 99.97917175292967
+      },
+      {
+        "bottom": 320.9895935058594,
+        "text": "Total GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−727,638.08\nCandidate\n−727,638.08\nDelta\n0.00\n\nUnchanged / No profit increase",
+        "top": 99.97917175292967
+      }
+    ],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "scenario-unsaved-1440",
+    "capturedAt": "2026-10-31T06:55:24.519Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Scenario comparison",
+      "GA GP",
+      "LE GP",
+      "Total GP",
+      "Follow-up actions"
+    ],
+    "impact": [
+      {
+        "bottom": 142.3229217529297,
+        "text": "GA GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−235,412.32\nCandidate\n197,960.36\nDelta\n+433,372.68\n\nCost redistribution",
+        "top": -78.6875
+      },
+      {
+        "bottom": 142.3229217529297,
+        "text": "LE GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−497,576.04\nCandidate\n−1,075,406.28\nDelta\n−577,830.24\n\nFinance review open",
+        "top": -78.6875
+      },
+      {
+        "bottom": 142.3229217529297,
+        "text": "Total GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−727,638.08\nCandidate\n−727,638.08\nDelta\n0.00\n\nUnchanged / No profit increase",
+        "top": -78.6875
+      }
+    ],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "report-saved-version-1440",
+    "capturedAt": "2026-10-31T06:55:34.640Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Investigation report",
+      "ISG Service allocation investigation",
+      "From GP to the voucher."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "task-duplicate-prevention-1440",
+    "capturedAt": "2026-10-31T06:55:35.302Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Investigation report",
+      "ISG Service allocation investigation",
+      "From GP to the voucher.",
+      "Create the follow-through."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "tasks-list-1440",
+    "capturedAt": "2026-10-31T06:55:43.733Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Proposal tasks",
+      "Follow-up actions"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "tasks-board-1440",
+    "capturedAt": "2026-10-31T06:55:44.102Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Proposal tasks",
+      "Follow-up actions"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "task-completed-detail-1440",
+    "capturedAt": "2026-10-31T06:55:44.941Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Proposal tasks",
+      "Follow-up actions",
+      "Contact the posting user"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "task-frozen-source-1440",
+    "capturedAt": "2026-10-31T06:55:51.859Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Proposal tasks",
+      "Follow-up actions",
+      "Contact the posting user",
+      "Saved proposal / Source evidence"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "task-created-detail-1440",
+    "capturedAt": "2026-10-31T06:56:19.645Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Proposal tasks",
+      "Follow-up actions",
+      "Verify the positive counterpart"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "task-assigned-detail-1440",
+    "capturedAt": "2026-10-31T06:56:20.409Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Proposal tasks",
+      "Follow-up actions",
+      "Verify the positive counterpart"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "task-received-detail-1440",
+    "capturedAt": "2026-10-31T06:56:21.209Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Proposal tasks",
+      "Follow-up actions",
+      "Verify the positive counterpart"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "task-in-progress-detail-1440",
+    "capturedAt": "2026-10-31T06:56:21.906Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Proposal tasks",
+      "Follow-up actions",
+      "Verify the positive counterpart"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "task-final-completion-1440",
+    "capturedAt": "2026-10-31T06:56:31.649Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Proposal tasks",
+      "Follow-up actions",
+      "Verify the positive counterpart"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "task-samples-list-1440",
+    "capturedAt": "2026-10-31T06:57:07.563Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Proposal tasks",
+      "Follow-up actions"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "task-samples-board-1440",
+    "capturedAt": "2026-10-31T06:57:07.846Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Proposal tasks",
+      "Follow-up actions"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "report-q-a-1440",
+    "capturedAt": "2026-10-31T06:57:11.396Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 1440,
+    "headings": [
+      "Report Q&A",
+      "Ask a report question.See the knowledge behind it.",
+      "Sources, alongside the answer."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "knowledge-1440",
+    "capturedAt": "2026-10-31T06:57:11.917Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 1440,
+    "headings": [
+      "Report knowledge",
+      "MR Logic"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "monitor-studio-1440",
+    "capturedAt": "2026-10-31T06:57:33.138Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 1440,
+    "headings": [
+      "Monitor studio",
+      "Monitor canvas",
+      "Start with a question, keep a monitor."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "monitor-market-1440",
+    "capturedAt": "2026-10-31T06:57:33.725Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 1440,
+    "headings": [
+      "Monitor templates",
+      "Curated monitors Built-in",
+      "Your published templates Local collection"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "workspace-menu-1440",
+    "capturedAt": "2026-10-31T07:00:08.171Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 1440,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend"
+    ],
+    "impact": [],
+    "primary": [
+      {
+        "bottom": 564.4375,
+        "text": "Review allocation",
+        "top": 524.4375
+      }
+    ],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "reset-confirmation-1440",
+    "capturedAt": "2026-10-31T07:00:08.702Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 1440,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend",
+      "Monitor overview",
+      "Start this demo again?"
+    ],
+    "impact": [],
+    "primary": [
+      {
+        "bottom": 564.4375,
+        "text": "Review allocation",
+        "top": 524.4375
+      }
+    ],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "allocation-1280",
+    "capturedAt": "2026-10-31T07:03:24.979Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1265,
+    "headings": [
+      "Service allocation",
+      "Segment GP needs review",
+      "Allocation base & results",
+      "From GP to the voucher."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    }
+  },
+  {
+    "name": "analysis-1280",
+    "capturedAt": "2026-10-31T07:03:26.682Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1265,
+    "headings": [
+      "Why did GA GP turn negative?",
+      "A negative LE voucher inflates the GA weight.",
+      "From GP to the voucher."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    }
+  },
+  {
+    "name": "reports-1280",
+    "capturedAt": "2026-10-31T07:03:30.078Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1265,
+    "headings": [
+      "Investigation report",
+      "ISG Service allocation investigation",
+      "From GP to the voucher."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    }
+  },
+  {
+    "name": "task-to-do-1280",
+    "capturedAt": "2026-10-31T07:03:31.801Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1265,
+    "headings": [
+      "Proposal tasks",
+      "Follow-up actions"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    }
+  },
+  {
+    "name": "report-q-a-1280",
+    "capturedAt": "2026-10-31T07:03:33.647Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 1265,
+    "headings": [
+      "Report Q&A",
+      "Ask a report question.See the knowledge behind it.",
+      "Sources, alongside the answer."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    }
+  },
+  {
+    "name": "knowledge-1280",
+    "capturedAt": "2026-10-31T07:03:35.245Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 1265,
+    "headings": [
+      "Report knowledge",
+      "MR Logic"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    }
+  },
+  {
+    "name": "monitor-studio-1280",
+    "capturedAt": "2026-10-31T07:03:36.839Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 1265,
+    "headings": [
+      "Monitor studio",
+      "Monitor canvas",
+      "Start with a question, keep a monitor."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    }
+  },
+  {
+    "name": "monitor-market-1280",
+    "capturedAt": "2026-10-31T07:03:38.514Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 1265,
+    "headings": [
+      "Monitor templates",
+      "Curated monitors Built-in",
+      "Your published templates Local collection"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    }
+  },
+  {
+    "name": "tasks-1280",
+    "capturedAt": "2026-10-31T07:03:55.112Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1265,
+    "headings": [
+      "Proposal tasks",
+      "Follow-up actions"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    }
+  },
+  {
+    "name": "kpi-768",
+    "capturedAt": "2026-10-31T07:03:56.760Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 753,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend"
+    ],
+    "impact": [],
+    "primary": [
+      {
+        "bottom": 888.5625,
+        "text": "Review allocation",
+        "top": 848.5625
+      }
+    ],
+    "viewport": {
+      "height": 1024,
+      "width": 768
+    }
+  },
+  {
+    "name": "allocation-768",
+    "capturedAt": "2026-10-31T07:03:58.393Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 753,
+    "headings": [
+      "Service allocation",
+      "Segment GP needs review",
+      "Allocation base & results",
+      "From GP to the voucher."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 1024,
+      "width": 768
+    }
+  },
+  {
+    "name": "analysis-768",
+    "capturedAt": "2026-10-31T07:04:00.100Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 753,
+    "headings": [
+      "Why did GA GP turn negative?",
+      "A negative LE voucher inflates the GA weight.",
+      "From GP to the voucher."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 1024,
+      "width": 768
+    }
+  },
+  {
+    "name": "reports-768",
+    "capturedAt": "2026-10-31T07:04:03.464Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 753,
+    "headings": [
+      "Investigation report",
+      "ISG Service allocation investigation",
+      "From GP to the voucher."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 1024,
+      "width": 768
+    }
+  },
+  {
+    "name": "task-to-do-768",
+    "capturedAt": "2026-10-31T07:04:05.130Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 753,
+    "headings": [
+      "Proposal tasks",
+      "Follow-up actions"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 1024,
+      "width": 768
+    }
+  },
+  {
+    "name": "report-q-a-768",
+    "capturedAt": "2026-10-31T07:04:06.744Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 753,
+    "headings": [
+      "Report Q&A",
+      "Ask a report question.See the knowledge behind it.",
+      "Sources, alongside the answer."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 1024,
+      "width": 768
+    }
+  },
+  {
+    "name": "knowledge-768",
+    "capturedAt": "2026-10-31T07:04:08.342Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 753,
+    "headings": [
+      "Report knowledge",
+      "MR Logic"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 1024,
+      "width": 768
+    }
+  },
+  {
+    "name": "monitor-studio-768",
+    "capturedAt": "2026-10-31T07:04:09.893Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 753,
+    "headings": [
+      "Monitor studio",
+      "Monitor canvas",
+      "Start with a question, keep a monitor."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 1024,
+      "width": 768
+    }
+  },
+  {
+    "name": "monitor-market-768",
+    "capturedAt": "2026-10-31T07:04:11.516Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 753,
+    "headings": [
+      "Monitor templates",
+      "Curated monitors Built-in",
+      "Your published templates Local collection"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 1024,
+      "width": 768
+    }
+  },
+  {
+    "name": "kpi-375",
+    "capturedAt": "2026-10-31T07:04:45.355Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 360,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend"
+    ],
+    "impact": [],
+    "primary": [
+      {
+        "bottom": 1195.71875,
+        "text": "Review allocation",
+        "top": 1155.71875
+      }
+    ],
+    "viewport": {
+      "height": 812,
+      "width": 375
+    }
+  },
+  {
+    "name": "report-q-a-375",
+    "capturedAt": "2026-10-31T07:04:54.929Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 360,
+    "headings": [
+      "Report Q&A",
+      "Ask a report question.See the knowledge behind it.",
+      "Sources, alongside the answer."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 812,
+      "width": 375
+    }
+  },
+  {
+    "name": "knowledge-375",
+    "capturedAt": "2026-10-31T07:04:56.618Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 360,
+    "headings": [
+      "Report knowledge",
+      "MR Logic"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 812,
+      "width": 375
+    }
+  },
+  {
+    "name": "monitor-studio-375",
+    "capturedAt": "2026-10-31T07:04:58.219Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 360,
+    "headings": [
+      "Monitor studio",
+      "Monitor canvas",
+      "Start with a question, keep a monitor."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 812,
+      "width": 375
+    }
+  },
+  {
+    "name": "monitor-market-375",
+    "capturedAt": "2026-10-31T07:04:59.740Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 360,
+    "headings": [
+      "Monitor templates",
+      "Curated monitors Built-in",
+      "Your published templates Local collection"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 812,
+      "width": 375
+    }
+  },
+  {
+    "name": "scenario-table-stable-1440",
+    "capturedAt": "2026-10-31T07:07:10.902Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Scenario comparison",
+      "GA GP",
+      "LE GP",
+      "Total GP",
+      "Follow-up actions"
+    ],
+    "impact": [
+      {
+        "bottom": 87.65625,
+        "text": "GA GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−235,412.32\nCandidate\n197,960.36\nDelta\n+433,372.68\n\nCost redistribution",
+        "top": -133.3541717529297
+      },
+      {
+        "bottom": 87.65625,
+        "text": "LE GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−497,576.04\nCandidate\n−1,075,406.28\nDelta\n−577,830.24\n\nFinance review open",
+        "top": -133.3541717529297
+      },
+      {
+        "bottom": 87.65625,
+        "text": "Total GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−727,638.08\nCandidate\n−727,638.08\nDelta\n0.00\n\nUnchanged / No profit increase",
+        "top": -133.3541717529297
+      }
+    ],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "matrix-visible-top-1440",
+    "capturedAt": "2026-10-31T07:07:20.040Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 1440,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend",
+      "Monitor overview"
+    ],
+    "impact": [],
+    "primary": [
+      {
+        "bottom": -813.5625,
+        "text": "Review allocation",
+        "top": -853.5625
+      }
+    ],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "matrix-visible-bottom-1440",
+    "capturedAt": "2026-10-31T07:07:20.583Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "documentWidth": 1440,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend",
+      "Monitor overview"
+    ],
+    "impact": [],
+    "primary": [
+      {
+        "bottom": -1500.229248046875,
+        "text": "Review allocation",
+        "top": -1540.229248046875
+      }
+    ],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "analysis-trace-bottom-1440",
+    "capturedAt": "2026-10-31T07:08:29.867Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Why did GA GP turn negative?",
+      "A negative LE voucher inflates the GA weight.",
+      "From GP to the voucher."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "tasks-empty-1440",
+    "capturedAt": "2026-10-31T07:08:47.506Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Proposal tasks",
+      "Follow-up actions",
+      "No tasks in this proposal collection yet"
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "report-empty-1440",
+    "capturedAt": "2026-10-31T07:08:48.322Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "documentWidth": 1440,
+    "headings": [
+      "Investigation report",
+      "Save the decision context first.",
+      "From GP to the voucher."
+    ],
+    "impact": [],
+    "primary": [],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "freight-modal-375",
+    "capturedAt": "2026-10-31T07:13:41.807Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "dialogs": [
+      {
+        "height": 614.1041870117188,
+        "id": "freightAlert",
+        "width": 328
+      }
+    ],
+    "documentWidth": 375,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend",
+      "Monitor overview",
+      "Freight Cost Anomaly Detected"
+    ],
+    "impact": [],
+    "primary": [
+      {
+        "bottom": -28.28125,
+        "text": "Review allocation",
+        "top": -68.28125
+      }
+    ],
+    "scroll": {
+      "x": 0,
+      "y": 1224
+    },
+    "viewport": {
+      "height": 812,
+      "width": 375
+    }
+  },
+  {
+    "name": "analysis-375",
+    "capturedAt": "2026-10-31T07:18:23.343Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "dialogs": [],
+    "documentWidth": 360,
+    "headings": [
+      "Why did GA GP turn negative?",
+      "A question with its context attached.",
+      "From GP to the voucher."
+    ],
+    "impact": [],
+    "primary": [],
+    "scroll": {
+      "x": 0,
+      "y": 0
+    },
+    "viewport": {
+      "height": 812,
+      "width": 375
+    }
+  },
+  {
+    "name": "allocation-375",
+    "capturedAt": "2026-10-31T07:18:42.539Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "dialogs": [],
+    "documentWidth": 360,
+    "headings": [
+      "Service allocation",
+      "Segment GP needs review",
+      "Allocation base & results",
+      "From GP to the voucher."
+    ],
+    "impact": [],
+    "primary": [],
+    "scroll": {
+      "x": 0,
+      "y": 0
+    },
+    "viewport": {
+      "height": 812,
+      "width": 375
+    }
+  },
+  {
+    "name": "reports-375",
+    "capturedAt": "2026-10-31T07:19:13.208Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "dialogs": [],
+    "documentWidth": 360,
+    "headings": [
+      "Investigation report",
+      "ISG Service allocation investigation",
+      "From GP to the voucher."
+    ],
+    "impact": [],
+    "primary": [],
+    "scroll": {
+      "x": 0,
+      "y": 0
+    },
+    "viewport": {
+      "height": 812,
+      "width": 375
+    }
+  },
+  {
+    "name": "task-to-do-375",
+    "capturedAt": "2026-10-31T07:19:20.290Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "dialogs": [],
+    "documentWidth": 360,
+    "headings": [
+      "Proposal tasks",
+      "Follow-up actions"
+    ],
+    "impact": [],
+    "primary": [],
+    "scroll": {
+      "x": 0,
+      "y": 0
+    },
+    "viewport": {
+      "height": 812,
+      "width": 375
+    }
+  },
+  {
+    "name": "task-detail-375",
+    "capturedAt": "2026-10-31T07:19:29.261Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "dialogs": [
+      {
+        "height": 780,
+        "id": "taskDetailDialog",
+        "width": 322
+      }
+    ],
+    "documentWidth": 360,
+    "headings": [
+      "Proposal tasks",
+      "Follow-up actions",
+      "Contact the posting user"
+    ],
+    "impact": [],
+    "primary": [],
+    "scroll": {
+      "x": 0,
+      "y": 1128
+    },
+    "viewport": {
+      "height": 812,
+      "width": 375
+    }
+  },
+  {
+    "name": "task-source-375",
+    "capturedAt": "2026-10-31T07:19:37.853Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "dialogs": [
+      {
+        "height": 780,
+        "id": "taskDetailDialog",
+        "width": 322
+      },
+      {
+        "height": 764,
+        "id": "comparisonDialog",
+        "width": 322
+      }
+    ],
+    "documentWidth": 360,
+    "headings": [
+      "Proposal tasks",
+      "Follow-up actions",
+      "Contact the posting user",
+      "Saved proposal / Source evidence"
+    ],
+    "impact": [],
+    "primary": [],
+    "scroll": {
+      "x": 0,
+      "y": 1128
+    },
+    "viewport": {
+      "height": 812,
+      "width": 375
+    }
+  },
+  {
+    "name": "trends-three-quarters-stable-1440",
+    "capturedAt": "2026-10-31T07:20:29.857Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "dialogs": [],
+    "documentWidth": 1440,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend"
+    ],
+    "impact": [],
+    "primary": [
+      {
+        "bottom": 254.4375,
+        "text": "Review allocation",
+        "top": 214.4375
+      }
+    ],
+    "scroll": {
+      "x": 0,
+      "y": 0
+    },
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "cost-credit-three-quarters-1440",
+    "capturedAt": "2026-10-31T07:20:39.595Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "dialogs": [],
+    "documentWidth": 1440,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend",
+      "Monitor overview"
+    ],
+    "impact": [],
+    "primary": [
+      {
+        "bottom": -122.89584350585938,
+        "text": "Review allocation",
+        "top": -162.89584350585938
+      }
+    ],
+    "scroll": {
+      "x": 0,
+      "y": 0
+    },
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "kpi-1440",
+    "capturedAt": "2026-10-31T07:20:53.647Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "dialogs": [],
+    "documentWidth": 1440,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend",
+      "Monitor overview"
+    ],
+    "impact": [],
+    "primary": [
+      {
+        "bottom": 694.4375,
+        "text": "Review allocation",
+        "top": 654.4375
+      }
+    ],
+    "scroll": {
+      "x": 0,
+      "y": 0
+    },
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "kpi-1280",
+    "capturedAt": "2026-10-31T07:21:00.653Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": false,
+    "dialogs": [],
+    "documentWidth": 1265,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend",
+      "Monitor overview"
+    ],
+    "impact": [],
+    "primary": [
+      {
+        "bottom": 694.4375,
+        "text": "Review allocation",
+        "top": 654.4375
+      }
+    ],
+    "scroll": {
+      "x": 0,
+      "y": 0
+    },
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    }
+  },
+  {
+    "name": "scenario-1280",
+    "capturedAt": "2026-10-31T07:21:08.069Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "dialogs": [],
+    "documentWidth": 1265,
+    "headings": [
+      "Scenario comparison",
+      "GA GP",
+      "LE GP",
+      "Total GP",
+      "Follow-up actions"
+    ],
+    "impact": [
+      {
+        "bottom": 699.6562652587891,
+        "text": "GA GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−235,412.32\nCandidate\n197,960.36\nDelta\n+433,372.68\n\nCost redistribution",
+        "top": 478.6458435058594
+      },
+      {
+        "bottom": 699.6562652587891,
+        "text": "LE GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−497,576.04\nCandidate\n−1,075,406.28\nDelta\n−577,830.24\n\nFinance review open",
+        "top": 478.6458435058594
+      },
+      {
+        "bottom": 699.6562652587891,
+        "text": "Total GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−727,638.08\nCandidate\n−727,638.08\nDelta\n0.00\n\nUnchanged / No profit increase",
+        "top": 478.6458435058594
+      }
+    ],
+    "primary": [],
+    "scroll": {
+      "x": 0,
+      "y": 0
+    },
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    }
+  },
+  {
+    "name": "scenario-768",
+    "capturedAt": "2026-10-31T07:21:21.070Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "dialogs": [],
+    "documentWidth": 753,
+    "headings": [
+      "Scenario comparison",
+      "GA GP",
+      "LE GP",
+      "Total GP",
+      "Follow-up actions"
+    ],
+    "impact": [
+      {
+        "bottom": 644.5937805175781,
+        "text": "GA GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−235,412.32\nCandidate\n197,960.36\nDelta\n+433,372.68\n\nCost redistribution",
+        "top": 485.0416870117187
+      },
+      {
+        "bottom": 812.1458435058594,
+        "text": "LE GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−497,576.04\nCandidate\n−1,075,406.28\nDelta\n−577,830.24\n\nFinance review open",
+        "top": 652.59375
+      },
+      {
+        "bottom": 979.6979675292968,
+        "text": "Total GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−727,638.08\nCandidate\n−727,638.08\nDelta\n0.00\n\nUnchanged / No profit increase",
+        "top": 820.1458740234375
+      }
+    ],
+    "primary": [],
+    "scroll": {
+      "x": 0,
+      "y": 0
+    },
+    "viewport": {
+      "height": 1024,
+      "width": 768
+    }
+  },
+  {
+    "name": "scenario-375",
+    "capturedAt": "2026-10-31T07:23:36.253Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "dialogs": [],
+    "documentWidth": 360,
+    "headings": [
+      "Scenario comparison",
+      "GA GP",
+      "LE GP",
+      "Total GP",
+      "Follow-up actions"
+    ],
+    "impact": [
+      {
+        "bottom": 920.2396240234376,
+        "text": "GA GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−235,412.32\nCandidate\n197,960.36\nDelta\n+433,372.68\n\nCost redistribution",
+        "top": 725.4896240234375
+      },
+      {
+        "bottom": 1122.9896240234375,
+        "text": "LE GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−497,576.04\nCandidate\n−1,075,406.28\nDelta\n−577,830.24\n\nFinance review open",
+        "top": 928.2396240234376
+      },
+      {
+        "bottom": 1325.7396240234375,
+        "text": "Total GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−727,638.08\nCandidate\n−727,638.08\nDelta\n0.00\n\nUnchanged / No profit increase",
+        "top": 1130.9896240234375
+      }
+    ],
+    "primary": [],
+    "scroll": {
+      "x": 0,
+      "y": 0
+    },
+    "viewport": {
+      "height": 812,
+      "width": 375
+    }
+  },
+  {
+    "name": "scenario-impacts-lower-375",
+    "capturedAt": "2026-10-31T07:23:43.530Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "dialogs": [],
+    "documentWidth": 375,
+    "headings": [
+      "Scenario comparison",
+      "GA GP",
+      "LE GP",
+      "Total GP",
+      "Follow-up actions"
+    ],
+    "impact": [
+      {
+        "bottom": 444.90625,
+        "text": "GA GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−235,412.32\nCandidate\n197,960.36\nDelta\n+433,372.68\n\nCost redistribution",
+        "top": 250.15625
+      },
+      {
+        "bottom": 647.65625,
+        "text": "LE GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−497,576.04\nCandidate\n−1,075,406.28\nDelta\n−577,830.24\n\nFinance review open",
+        "top": 452.90625
+      },
+      {
+        "bottom": 850.40625,
+        "text": "Total GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−727,638.08\nCandidate\n−727,638.08\nDelta\n0.00\n\nUnchanged / No profit increase",
+        "top": 655.65625
+      }
+    ],
+    "primary": [],
+    "scroll": {
+      "x": 0,
+      "y": 475.3333435058594
+    },
+    "viewport": {
+      "height": 812,
+      "width": 375
+    }
+  },
+  {
+    "name": "scenario-total-375",
+    "capturedAt": "2026-10-31T07:24:28.305Z",
+    "signature": [
+      255,
+      216,
+      255
+    ],
+    "caseNavVisible": true,
+    "dialogs": [],
+    "documentWidth": 360,
+    "headings": [
+      "Scenario comparison",
+      "GA GP",
+      "LE GP",
+      "Total GP",
+      "Follow-up actions"
+    ],
+    "impact": [
+      {
+        "bottom": 170.90625,
+        "text": "GA GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−235,412.32\nCandidate\n197,960.36\nDelta\n+433,372.68\n\nCost redistribution",
+        "top": -23.84375
+      },
+      {
+        "bottom": 373.65625,
+        "text": "LE GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−497,576.04\nCandidate\n−1,075,406.28\nDelta\n−577,830.24\n\nFinance review open",
+        "top": 178.90625
+      },
+      {
+        "bottom": 576.40625,
+        "text": "Total GP\n\n2026009 / Month 3 / USD\n\nOriginal\n−727,638.08\nCandidate\n−727,638.08\nDelta\n0.00\n\nUnchanged / No profit increase",
+        "top": 381.65625
+      }
+    ],
+    "primary": [],
+    "scroll": {
+      "x": 0,
+      "y": 749.3333129882812
+    },
+    "viewport": {
+      "height": 812,
+      "width": 375
+    }
+  }
+]

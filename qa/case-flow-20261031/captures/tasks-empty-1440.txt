@@ -1,0 +1,137 @@
+- link "Skip to main content":
+  - /url: "#main"
+- banner:
+  - button "Finance Exception Intelligence home":
+    - img "Lenovo"
+    - strong: FINANCE EXCEPTION INTELLIGENCE
+    - generic: Finance Workspace
+  - button "Focus task search Ctrl K":
+    - generic: Focus task search
+    - generic: Ctrl K
+  - generic "Finance reviewer / Local demo workspace":
+    - generic: YT
+    - generic: Finance reviewer
+  - generic "Workspace options"
+- complementary "Workspace navigation":
+  - button "Collapse sidebar" [expanded]:
+    - generic: ‹
+    - generic: Collapse sidebar
+  - navigation "Primary navigation":
+    - button "Monitor":
+      - generic: Monitor
+    - button "Analysis":
+      - generic: Analysis
+    - button "Report Q&A":
+      - generic: Report Q&A
+    - button "Knowledge":
+      - generic: Knowledge
+    - button "Reports":
+      - generic: Reports
+    - button "Monitor Studio":
+      - generic: Monitor Studio
+    - button "Monitor Market":
+      - generic: Monitor Market
+    - button "Task To-do" [active]:
+      - generic: Task To-do
+  - text: Finance
+  - text: intelligence
+- main:
+  - group "Fixed monitor views":
+    - button "KPI overview" [pressed]
+    - button "Service allocation 1":
+      - text: Service allocation
+      - generic: "1"
+  - generic: Ready to investigate
+  - text: Task To-do/
+  - strong: Proposal handoffs
+  - generic: Sample data / Simulated AI / No ledger changes
+  - region "Allocation case journey":
+    - navigation "Case steps":
+      - button "1 Review allocation Not started":
+        - generic: "1"
+        - strong: Review allocation
+        - generic: Not started
+      - button "2 Investigate Not started":
+        - generic: "2"
+        - strong: Investigate
+        - generic: Not started
+      - button "3 Compare scenario Not started" [disabled]:
+        - generic: "3"
+        - strong: Compare scenario
+        - generic: Not started
+      - button "4 Report Not started":
+        - generic: "4"
+        - strong: Report
+        - generic: Not started
+      - button "5 Follow up Not started":
+        - generic: "5"
+        - strong: Follow up
+        - generic: Not started
+    - status: Actions track local follow-up. Completion does not close finance review or change the ledger.
+  - region "Proposal tasks":
+    - heading "Proposal tasks" [level=1]
+    - paragraph: Saved proposals and accountable actions
+    - paragraph: Assign the action. Follow the handoff. Keep the outcome connected to its evidence.
+    - button "Create from saved proposal"
+    - strong: No saved candidate yet
+    - paragraph: Existing task snapshots remain available. Save a candidate to create follow-up tasks.
+    - button "Review scenario"
+    - text: Task collection
+    - combobox "Task collection":
+      - option "My proposal tasks" [selected]
+      - option "Demo samples"
+      - option "All tasks"
+    - text: Find a task
+    - searchbox "Find a task"
+    - text: Display
+    - combobox "Display":
+      - option "List" [selected]
+      - option "Kanban board"
+    - generic "Filters & demo role preview"
+    - option "Finance reviewer / Proposal owner" [selected]
+    - option "yangtt16 / Assignee preview"
+    - option "Alex Chen / Assignee preview"
+    - option "Maya Patel / Assignee preview"
+    - option "David Kim / Assignee preview"
+    - option "All people" [selected]
+    - option "Unassigned"
+    - option "yangtt16"
+    - option "Alex Chen"
+    - option "Maya Patel"
+    - option "David Kim"
+    - option "All stages" [selected]
+    - option "Created"
+    - option "Assigned"
+    - option "Received"
+    - option "In progress"
+    - option "Completed"
+    - generic "Task overview":
+      - button "01 0 Created":
+        - generic: "01"
+        - generic: "0"
+        - generic: Created
+      - button "02 0 Assigned":
+        - generic: "02"
+        - generic: "0"
+        - generic: Assigned
+      - button "03 0 Received":
+        - generic: "03"
+        - generic: "0"
+        - generic: Received
+      - button "04 0 In progress":
+        - generic: "04"
+        - generic: "0"
+        - generic: In progress
+      - button "05 0 Completed":
+        - generic: "05"
+        - generic: "0"
+        - generic: Completed
+    - heading "Follow-up actions" [level=2]
+    - paragraph: 0 of 0 tasks / Collection / Finance reviewer view
+    - generic "Proposal task list"
+    - heading "No tasks in this proposal collection yet" [level=2]
+    - paragraph: Save a candidate and select follow-up actions. Finance review stays open.
+    - button "Review candidate"
+    - button "View demo samples"
+    - status: Tasks and proposal evidence are saved in this browser / Demo feedback only.
+- status

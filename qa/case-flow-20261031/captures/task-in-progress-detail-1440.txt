@@ -1,0 +1,271 @@
+- link "Skip to main content":
+  - /url: "#main"
+- banner:
+  - button "Finance Exception Intelligence home":
+    - img "Lenovo"
+    - strong: FINANCE EXCEPTION INTELLIGENCE
+    - generic: Finance Workspace
+  - button "Focus task search Ctrl K":
+    - generic: Focus task search
+    - generic: Ctrl K
+  - generic "Finance reviewer / Local demo workspace":
+    - generic: YT
+    - generic: Finance reviewer
+  - generic "Workspace options"
+- complementary "Workspace navigation":
+  - button "Collapse sidebar" [expanded]:
+    - generic: ‹
+    - generic: Collapse sidebar
+  - navigation "Primary navigation":
+    - button "Monitor":
+      - generic: Monitor
+    - button "Analysis":
+      - generic: Analysis
+    - button "Report Q&A":
+      - generic: Report Q&A
+    - button "Knowledge":
+      - generic: Knowledge
+    - button "Reports":
+      - generic: Reports
+      - generic: "1"
+    - button "Monitor Studio":
+      - generic: Monitor Studio
+    - button "Monitor Market":
+      - generic: Monitor Market
+    - button "Task To-do":
+      - generic: Task To-do
+      - generic: "3"
+  - text: Finance
+  - text: intelligence
+- main:
+  - group "Fixed monitor views":
+    - button "KPI overview"
+    - button "Service allocation 1" [pressed]:
+      - text: Service allocation
+      - generic: "1"
+  - generic: Investigation traced / Review open
+  - text: Task To-do/
+  - strong: Proposal handoffs
+  - generic: Sample data / Simulated AI / No ledger changes
+  - region "Allocation case journey":
+    - navigation "Case steps":
+      - button "1 Review allocation Not started":
+        - generic: "1"
+        - strong: Review allocation
+        - generic: Not started
+      - button "2 Investigate Calculation traced":
+        - generic: "2"
+        - strong: Investigate
+        - generic: Calculation traced
+      - button "3 Compare scenario In progress":
+        - generic: "3"
+        - strong: Compare scenario
+        - generic: In progress
+      - button "4 Report Draft generated":
+        - generic: "4"
+        - strong: Report
+        - generic: Draft generated
+      - button "5 Follow up Tasks created":
+        - generic: "5"
+        - strong: Follow up
+        - generic: Tasks created
+    - status: Actions track local follow-up. Completion does not close finance review or change the ledger.
+  - region "Proposal tasks":
+    - heading "Proposal tasks" [level=1]
+    - paragraph: Saved proposals and accountable actions
+    - paragraph: Assign the action. Follow the handoff. Keep the outcome connected to its evidence.
+    - button "Create from saved proposal"
+    - heading "Revenue-base exclusion / L0AUXG" [level=3]
+    - generic: Saved candidate / business review open
+    - paragraph: ISG Service / ROW / 2026 Q3 / 2026009
+    - generic: Document 5900018271
+    - generic: Reference 5900018392
+    - generic: Candidate saved 31 Oct, 14:48:24
+    - paragraph: Uses last saved candidate / Current form has unsaved changes.
+    - button "Review saved candidate"
+    - button "View all my proposal tasks"
+    - text: Task collection
+    - combobox "Task collection":
+      - option "My proposal tasks" [selected]
+      - option "Demo samples"
+      - option "All tasks"
+    - text: Find a task
+    - searchbox "Find a task"
+    - text: Display
+    - combobox "Display":
+      - option "List" [selected]
+      - option "Kanban board"
+    - generic "Filters & demo role preview"
+    - option "Finance reviewer / Proposal owner"
+    - option "yangtt16 / Assignee preview"
+    - option "Alex Chen / Assignee preview" [selected]
+    - option "Maya Patel / Assignee preview"
+    - option "David Kim / Assignee preview"
+    - option "All people" [selected]
+    - option "Unassigned"
+    - option "yangtt16"
+    - option "Alex Chen"
+    - option "Maya Patel"
+    - option "David Kim"
+    - option "All stages" [selected]
+    - option "Created"
+    - option "Assigned"
+    - option "Received"
+    - option "In progress"
+    - option "Completed"
+    - generic "Task overview":
+      - button "01 2 Created":
+        - generic: "01"
+        - generic: "2"
+        - generic: Created
+      - button "02 0 Assigned":
+        - generic: "02"
+        - generic: "0"
+        - generic: Assigned
+      - button "03 0 Received":
+        - generic: "03"
+        - generic: "0"
+        - generic: Received
+      - button "04 1 In progress":
+        - generic: "04"
+        - generic: "1"
+        - generic: In progress
+      - button "05 1 Completed":
+        - generic: "05"
+        - generic: "1"
+        - generic: Completed
+    - heading "Follow-up actions" [level=2]
+    - paragraph: 4 of 4 tasks / Collection / Alex Chen view
+    - generic "Proposal task list":
+      - table:
+        - rowgroup:
+          - row "Action Owner / Due Status Latest feedback":
+            - columnheader "Action"
+            - columnheader "Owner / Due"
+            - columnheader "Status"
+            - columnheader "Latest feedback"
+        - rowgroup:
+          - 'row "Contact the posting user TASK-006 / L0AUXG yangtt16 No due date Completed Demo QA: posting context request recorded; finance eligibility and LE review remain open. No ledger changes. 31 Oct, 14:49:04"':
+            - cell "Contact the posting user TASK-006 / L0AUXG":
+              - button "Contact the posting user"
+              - generic: TASK-006 / L0AUXG
+            - cell "yangtt16 No due date":
+              - text: yangtt16
+              - generic: No due date
+            - cell "Completed":
+              - generic: Completed
+            - 'cell "Demo QA: posting context request recorded; finance eligibility and LE review remain open. No ledger changes. 31 Oct, 14:49:04"':
+              - text: "Demo QA: posting context request recorded; finance eligibility and LE review remain open. No ledger changes."
+              - generic: 31 Oct, 14:49:04
+          - row "Verify the positive counterpart TASK-007 / L0AUXG Alex Chen No due date In progress Work started on the assigned action. 31 Oct, 14:56:21":
+            - cell "Verify the positive counterpart TASK-007 / L0AUXG":
+              - button "Verify the positive counterpart"
+              - generic: TASK-007 / L0AUXG
+            - cell "Alex Chen No due date":
+              - text: Alex Chen
+              - generic: No due date
+            - cell "In progress":
+              - generic: In progress
+            - cell "Work started on the assigned action. 31 Oct, 14:56:21":
+              - text: Work started on the assigned action.
+              - generic: 31 Oct, 14:56:21
+          - row "Check the LE segment assignment TASK-008 / L0AUXG Unassigned No due date Created Created from the selected saved proposal action. 31 Oct, 14:48:36":
+            - cell "Check the LE segment assignment TASK-008 / L0AUXG":
+              - button "Check the LE segment assignment"
+              - generic: TASK-008 / L0AUXG
+            - cell "Unassigned No due date":
+              - text: Unassigned
+              - generic: No due date
+            - cell "Created":
+              - generic: Created
+            - cell "Created from the selected saved proposal action. 31 Oct, 14:48:36":
+              - text: Created from the selected saved proposal action.
+              - generic: 31 Oct, 14:48:36
+          - row "Confirm the allocation-base treatment TASK-009 / L0AUXG Unassigned No due date Created Created from the selected saved proposal action. 31 Oct, 14:48:36":
+            - cell "Confirm the allocation-base treatment TASK-009 / L0AUXG":
+              - button "Confirm the allocation-base treatment"
+              - generic: TASK-009 / L0AUXG
+            - cell "Unassigned No due date":
+              - text: Unassigned
+              - generic: No due date
+            - cell "Created":
+              - generic: Created
+            - cell "Created from the selected saved proposal action. 31 Oct, 14:48:36":
+              - text: Created from the selected saved proposal action.
+              - generic: 31 Oct, 14:48:36
+    - status: Tasks and proposal evidence are saved in this browser / Demo feedback only.
+- dialog "Verify the positive counterpart":
+  - heading "Verify the positive counterpart" [level=2]
+  - paragraph: TASK-007 / Alex Chen view
+  - button "Close"
+  - text: Demo perspective
+  - combobox "Demo perspective":
+    - option "Finance reviewer / Proposal owner"
+    - option "yangtt16 / Assignee preview"
+    - option "Alex Chen / Assignee preview" [selected]
+    - option "Maya Patel / Assignee preview"
+    - option "David Kim / Assignee preview"
+  - region "Task lifecycle":
+    - generic: Task lifecycle
+    - generic: In progress
+    - generic: ✓
+    - strong: Created
+    - generic: 31 Oct, 14:48:36
+    - generic: ✓
+    - strong: Assigned
+    - generic: 31 Oct, 14:56:19
+    - generic: ✓
+    - strong: Received
+    - generic: 31 Oct, 14:56:20
+    - generic: "4"
+    - strong: In progress
+    - generic: 31 Oct, 14:56:21
+    - generic: "5"
+    - strong: Completed
+    - generic: Awaiting handoff
+    - paragraph: Implementation status returned by Alex Chen.
+  - paragraph: The action
+  - paragraph: Extend the search if needed. The sample-quarter check does not prove that no offset exists elsewhere.
+  - paragraph: Created 31 Oct, 14:48:36 / Updated 31 Oct, 14:56:21
+  - heading "Revenue-base exclusion / L0AUXG" [level=3]
+  - generic: Saved candidate / business review open
+  - paragraph: ISG Service / ROW / 2026 Q3 / 2026009
+  - generic: Document 5900018271
+  - generic: Reference 5900018392
+  - generic: Candidate saved 31 Oct, 14:48:24
+  - button "Review source proposal"
+  - generic "View cause, evidence and calculation assumptions"
+  - paragraph: Frozen proposal snapshot. Later proposal edits and Reset demo do not rewrite this task history.
+  - heading "Handoff log" [level=3]
+  - generic: 4 events
+  - list:
+    - time: 31 Oct, 14:48:36
+    - strong: Task created
+    - generic: Finance reviewer / Proposal owner
+    - paragraph: Created from the selected saved proposal action.
+    - time: 31 Oct, 14:56:19
+    - strong: Task assigned
+    - generic: Finance reviewer / Proposal owner
+    - paragraph: Assigned to Alex Chen. Waiting for this person to acknowledge the task.
+    - time: 31 Oct, 14:56:20
+    - strong: Task received
+    - generic: Alex Chen / Assignee feedback / Demo
+    - paragraph: Task received and acknowledged.
+    - time: 31 Oct, 14:56:21
+    - strong: Work started
+    - generic: Alex Chen / Assignee feedback / Demo
+    - paragraph: Work started on the assigned action.
+  - complementary:
+    - heading "Task owner" [level=3]
+    - paragraph: Alex Chen
+    - paragraph: "Due: Not set"
+    - text: Assignment is managed from the Finance reviewer view.
+    - heading "Alex Chen / return an update" [level=3]
+    - generic: Assignee feedback / local DEMO
+    - paragraph: Describe the outcome and evidence before completing this action.
+    - text: Completion result / evidence
+    - textbox "Completion result / evidence":
+      - /placeholder: Record what was checked, the result and any remaining follow-up…
+    - button "Mark completed"
+    - alert
+- status: "Task updated: In progress. Handoff recorded locally."

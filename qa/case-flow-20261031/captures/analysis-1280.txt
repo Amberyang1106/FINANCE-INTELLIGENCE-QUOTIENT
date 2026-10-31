@@ -1,0 +1,178 @@
+- link "Skip to main content":
+  - /url: "#main"
+- banner:
+  - button "Finance Exception Intelligence home":
+    - img "Lenovo"
+    - strong: FINANCE EXCEPTION INTELLIGENCE
+    - generic: Finance Workspace
+  - button "Review investigation Ctrl K":
+    - generic: Review investigation
+    - generic: Ctrl K
+  - generic "Finance reviewer / Local demo workspace":
+    - generic: YT
+    - generic: Finance reviewer
+  - generic "Workspace options"
+- complementary "Workspace navigation":
+  - button "Collapse sidebar" [expanded]:
+    - generic: ‹
+    - generic: Collapse sidebar
+  - navigation "Primary navigation":
+    - button "Monitor":
+      - generic: Monitor
+    - button "Analysis" [active]:
+      - generic: Analysis
+    - button "Report Q&A":
+      - generic: Report Q&A
+    - button "Knowledge":
+      - generic: Knowledge
+    - button "Reports":
+      - generic: Reports
+      - generic: "1"
+    - button "Monitor Studio":
+      - generic: Monitor Studio
+    - button "Monitor Market":
+      - generic: Monitor Market
+    - button "Task To-do":
+      - generic: Task To-do
+      - generic: "2"
+  - text: Finance
+  - text: intelligence
+- main:
+  - group "Fixed monitor views":
+    - button "KPI overview"
+    - button "Service allocation 1" [pressed]:
+      - text: Service allocation
+      - generic: "1"
+  - generic: Investigation traced / Review open
+  - text: Analysis/
+  - strong: L0AUXG / Quarter-end
+  - generic: Sample data / Simulated AI / No ledger changes
+  - region "Allocation case journey":
+    - generic: ISG Service / ROW / L0AUXG / 2026 Q3 / USD
+    - generic: Finance review open
+    - navigation "Case steps":
+      - button "1 Review allocation Not started":
+        - generic: "1"
+        - strong: Review allocation
+        - generic: Not started
+      - button "2 Investigate Calculation traced":
+        - generic: "2"
+        - strong: Investigate
+        - generic: Calculation traced
+      - button "3 Compare scenario In progress":
+        - generic: "3"
+        - strong: Compare scenario
+        - generic: In progress
+      - button "4 Report Draft generated":
+        - generic: "4"
+        - strong: Report
+        - generic: Draft generated
+      - button "5 Follow up Tasks created":
+        - generic: "5"
+        - strong: Follow up
+        - generic: Tasks created
+  - region "Why did GA GP turn negative?":
+    - heading "Why did GA GP turn negative?" [level=1]
+    - paragraph: Allocation investigation / A-2026Q3-01
+    - paragraph:
+      - code: L0AUXG
+      - text: / 2026009 / Quarter-end true-up
+    - generic: Calculation traced
+    - generic: 2026 Q3
+    - text: ROW /
+    - code: L0AUXG
+    - generic: GA → all segments
+    - generic: Months 1-2 locked
+    - article:
+      - generic: YT
+      - strong: You
+      - paragraph: Why did GA GP turn negative after the month 3 true-up? Trace the revenue base and source voucher.
+    - article:
+      - generic: F
+      - strong: FINANCE EXCEPTION INTELLIGENCE / Simulated AI
+      - generic: Calculation traced
+      - generic: Finance review open
+      - heading "A negative LE voucher inflates the GA weight." [level=2]
+      - paragraph: The linked cause
+      - paragraph: The quarter base is 2,808,897.00 USD. GA contributes 2,407,626.00 USD, giving it an 85.7143% weight.
+      - term: LE voucher / USD
+      - definition: −1,203,813.00
+      - term: GA quarter weight
+      - definition: 85.7143%
+      - term: GA Month 3 GP / USD
+      - definition: −235,412.32
+      - paragraph:
+        - strong: "Finance review open: posting background, LE segment assignment, positive counterpart and allocation-base eligibility."
+        - text: Counterpart not confirmed in the sample scope. Check reference 5900018392, posting background and segment assignment with the posting user.
+      - paragraph: Manual-entry status is a demo assumption. Source validity, cross-period offsets and eligibility for a base exclusion remain unverified. No FX cause has been established.
+      - button "View voucher"
+      - button "Check the counterpart"
+      - button "Compare scenario"
+      - button "Review actions"
+      - strong: Answer to your question
+      - text: Within this fixed sample, the LE adjustment changes the quarter revenue denominator and therefore the GA allocation. The calculation below traces that effect; entry validity and allocation-policy eligibility still need finance review.
+      - generic "Expand calculation trace / Four checks"
+      - list:
+        - generic: ✓
+        - strong: Check the allocation rules
+        - generic: Copy costs first; hold months 1–2 executed allocations fixed.
+        - emphasis: Checked
+        - generic: ✓
+        - strong: Reconcile the GA true-up
+        - generic: Quarter target 1,444,575.60 less executed 674,135.28 USD.
+        - emphasis: Checked
+        - generic: ✓
+        - strong: Trace the quarter revenue base
+        - generic: LE contributes −401,271.00 USD to the denominator.
+        - emphasis: Checked
+        - generic: ✓
+        - strong: Inspect the negative voucher
+        - generic: 5900018271 / 12 positive records checked in the sample scope.
+        - emphasis: Checked
+      - list:
+        - text: "GA month 3 true-up:"
+        - strong: 1,444,575.60 − 674,135.28 = 770,440.32
+        - text: USD.
+        - listitem: "Add GA copy cost of 267,514.00: total cost is 1,037,954.32 USD."
+        - text: Revenue 802,542.00 less cost gives
+        - strong: GP −235,412.32
+        - text: USD.
+        - text: LE contains voucher
+        - button "5900018271"
+        - text: ", amount"
+        - strong: −1,203,813.00
+        - text: USD, posted by yangtt16.
+      - button "Rerun sample analysis"
+    - generic "Ask a follow-up / Optional sample question"
+- complementary "Investigation inspector":
+  - tablist "Investigation tools":
+    - tab "Evidence" [selected]
+    - tab "Actions"
+    - tab "Scenario"
+  - tabpanel "Evidence":
+    - heading "From GP to the voucher." [level=2]
+    - paragraph: Allocation evidence
+    - paragraph: Calculation traced / Business rationale still needs finance review.
+    - generic: GA / 2026009 gross profit
+    - strong: −235,412.32 USD
+    - generic: "01"
+    - strong: "GA quarter weight: 85.7143%"
+    - text: Quarter target 1,444,575.60
+    - text: "Less executed: 674,135.28"
+    - generic: Sample
+    - generic: "02"
+    - strong: LE reduces the denominator
+    - text: Quarter base −401,271.00
+    - text: Cost pool totals still reconcile.
+    - generic: Sample
+    - button "VOUCHER 5900018271 / LE −1,203,813.00 Open document evidence":
+      - generic: VOUCHER 5900018271 / LE
+      - strong: −1,203,813.00
+      - generic: Open document evidence
+    - generic: "03"
+    - strong: Counterpart not confirmed
+    - generic: 12 positive records in this sample-quarter scope. No matching reference.
+    - generic: Review
+    - paragraph: Negative GP and negative weights are investigation signals. They do not establish that the posting is wrong.
+    - button "Review recommended actions"
+- status: "Task updated: Completed. Handoff recorded locally."

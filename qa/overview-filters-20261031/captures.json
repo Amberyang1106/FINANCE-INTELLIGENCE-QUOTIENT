@@ -1,0 +1,505 @@
+[
+  {
+    "name": "matrix-collapsed-1280",
+    "capturedAt": "2026-10-31T08:18:45.727Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 1265,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Monthly monitor matrix",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend"
+    ],
+    "height": 800,
+    "width": 1280,
+    "x": 0,
+    "y": 924.6666870117188
+  },
+  {
+    "name": "overview-1280",
+    "capturedAt": "2026-10-31T08:18:54.581Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 1265,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Monthly monitor matrix",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend"
+    ],
+    "height": 800,
+    "width": 1280,
+    "x": 0,
+    "y": 0
+  },
+  {
+    "name": "empty-period-1280",
+    "capturedAt": "2026-10-31T08:20:14.106Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 1280,
+    "headings": [
+      "KPI overview",
+      "No data for this scope"
+    ],
+    "height": 800,
+    "width": 1280,
+    "x": 0,
+    "y": 0
+  },
+  {
+    "name": "empty-report-1280",
+    "capturedAt": "2026-10-31T08:20:15.225Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 1280,
+    "headings": [
+      "KPI overview",
+      "No data for this scope"
+    ],
+    "height": 800,
+    "width": 1280,
+    "x": 0,
+    "y": 0
+  },
+  {
+    "name": "empty-bg-1280",
+    "capturedAt": "2026-10-31T08:20:31.697Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 1280,
+    "headings": [
+      "KPI overview",
+      "No data for this scope"
+    ],
+    "height": 800,
+    "width": 1280,
+    "x": 0,
+    "y": 0
+  },
+  {
+    "name": "restored-1280",
+    "capturedAt": "2026-10-31T08:20:33.319Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 1265,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Monthly monitor matrix",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend"
+    ],
+    "height": 800,
+    "width": 1280,
+    "x": 0,
+    "y": 0
+  },
+  {
+    "name": "freight-1280",
+    "capturedAt": "2026-10-31T08:23:01.752Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [
+      "freightAlert"
+    ],
+    "documentWidth": 1265,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Monthly monitor matrix",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend",
+      "Freight Cost Anomaly Detected"
+    ],
+    "height": 800,
+    "width": 1280,
+    "x": 0,
+    "y": 870.6666870117188
+  },
+  {
+    "name": "overview-768",
+    "capturedAt": "2026-10-31T08:23:19.899Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 753,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Monthly monitor matrix",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend"
+    ],
+    "height": 1024,
+    "width": 768,
+    "x": 0,
+    "y": 0
+  },
+  {
+    "name": "matrix-collapsed-768",
+    "capturedAt": "2026-10-31T08:23:27.741Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 753,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Monthly monitor matrix",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend"
+    ],
+    "height": 1024,
+    "width": 768,
+    "x": 0,
+    "y": 1250
+  },
+  {
+    "name": "matrix-expanded-768",
+    "capturedAt": "2026-10-31T08:23:30.102Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 753,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Monthly monitor matrix",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend"
+    ],
+    "height": 1024,
+    "width": 768,
+    "x": 0,
+    "y": 1250
+  },
+  {
+    "name": "empty-768",
+    "capturedAt": "2026-10-31T08:23:42.686Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 768,
+    "headings": [
+      "KPI overview",
+      "No data for this scope"
+    ],
+    "height": 1024,
+    "width": 768,
+    "x": 0,
+    "y": 0
+  },
+  {
+    "name": "ask-finance-768",
+    "capturedAt": "2026-10-31T08:23:44.659Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 753,
+    "headings": [
+      "Ask Finance",
+      "Ask a report question.See the knowledge behind it.",
+      "Sources, alongside the answer."
+    ],
+    "height": 1024,
+    "width": 768,
+    "x": 0,
+    "y": 0
+  },
+  {
+    "name": "reports-768",
+    "capturedAt": "2026-10-31T08:23:46.625Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 753,
+    "headings": [
+      "Investigation Reports",
+      "Save the decision context first.",
+      "From GP to the voucher."
+    ],
+    "height": 1024,
+    "width": 768,
+    "x": 0,
+    "y": 0
+  },
+  {
+    "name": "matrix-collapsed-375",
+    "capturedAt": "2026-10-31T08:24:07.161Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 360,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Monthly monitor matrix",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend"
+    ],
+    "height": 812,
+    "width": 375,
+    "x": 0,
+    "y": 1937.3333740234375
+  },
+  {
+    "name": "matrix-dec-375",
+    "capturedAt": "2026-10-31T08:24:36.682Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 360,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Monthly monitor matrix",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend"
+    ],
+    "height": 812,
+    "width": 375,
+    "x": 0,
+    "y": 1745.3333740234375
+  },
+  {
+    "name": "segment-case-375",
+    "capturedAt": "2026-10-31T08:24:52.146Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 360,
+    "headings": [
+      "Service allocation",
+      "Segment GP needs review",
+      "Allocation base & results",
+      "From GP to the voucher."
+    ],
+    "height": 812,
+    "width": 375,
+    "x": 0,
+    "y": 0
+  },
+  {
+    "name": "matrix-expanded-375",
+    "capturedAt": "2026-10-31T08:25:06.450Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 360,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Monthly monitor matrix",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend"
+    ],
+    "height": 812,
+    "width": 375,
+    "x": 0,
+    "y": 1937.3333740234375
+  },
+  {
+    "name": "reports-375",
+    "capturedAt": "2026-10-31T08:25:12.798Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 360,
+    "headings": [
+      "Investigation Reports",
+      "Save the decision context first.",
+      "From GP to the voucher."
+    ],
+    "height": 812,
+    "width": 375,
+    "x": 0,
+    "y": 0
+  },
+  {
+    "name": "overview-375",
+    "capturedAt": "2026-10-31T08:26:06.066Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 360,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Monthly monitor matrix",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend"
+    ],
+    "height": 812,
+    "width": 375,
+    "x": 0,
+    "y": 0
+  },
+  {
+    "name": "empty-375",
+    "capturedAt": "2026-10-31T08:27:52.032Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 360,
+    "headings": [
+      "KPI overview",
+      "No data for this scope"
+    ],
+    "height": 812,
+    "width": 375,
+    "x": 0,
+    "y": 0
+  },
+  {
+    "name": "empty-geo-1280",
+    "capturedAt": "2026-10-31T08:28:01.566Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 1280,
+    "headings": [
+      "KPI overview",
+      "No data for this scope"
+    ],
+    "height": 800,
+    "width": 1280,
+    "x": 0,
+    "y": 0
+  },
+  {
+    "name": "matrix-expanded-1280",
+    "capturedAt": "2026-10-31T08:28:14.448Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 1265,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Monthly monitor matrix",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend"
+    ],
+    "height": 800,
+    "width": 1280,
+    "x": 0,
+    "y": 924.6666870117188
+  },
+  {
+    "name": "matrix-expanded-bottom-1280",
+    "capturedAt": "2026-10-31T08:28:29.942Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 1265,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Monthly monitor matrix",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend"
+    ],
+    "height": 800,
+    "width": 1280,
+    "x": 0,
+    "y": 1724.6666259765625
+  },
+  {
+    "name": "matrix-recollapsed-1280",
+    "capturedAt": "2026-10-31T08:28:53.866Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 1265,
+    "headings": [
+      "KPI overview",
+      "Segment GP needs review",
+      "Freight",
+      "Monthly monitor matrix",
+      "Revenue trend",
+      "Cost trend",
+      "Cost credit trend"
+    ],
+    "height": 800,
+    "width": 1280,
+    "x": 0,
+    "y": 855.3333129882812
+  },
+  {
+    "name": "ask-finance-1280",
+    "capturedAt": "2026-10-31T08:29:01.862Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 1265,
+    "headings": [
+      "Ask Finance",
+      "Ask a report question.See the knowledge behind it.",
+      "Sources, alongside the answer."
+    ],
+    "height": 800,
+    "width": 1280,
+    "x": 0,
+    "y": 0
+  },
+  {
+    "name": "reports-1280",
+    "capturedAt": "2026-10-31T08:29:13.585Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 1265,
+    "headings": [
+      "Investigation Reports",
+      "Save the decision context first.",
+      "From GP to the voucher."
+    ],
+    "height": 800,
+    "width": 1280,
+    "x": 0,
+    "y": 0
+  },
+  {
+    "name": "segment-case-1280",
+    "capturedAt": "2026-10-31T08:29:30.996Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 1265,
+    "headings": [
+      "Service allocation",
+      "Segment GP needs review",
+      "Allocation base & results",
+      "From GP to the voucher."
+    ],
+    "height": 800,
+    "width": 1280,
+    "x": 0,
+    "y": 0
+  },
+  {
+    "name": "ask-finance-375",
+    "capturedAt": "2026-10-31T08:29:40.217Z",
+    "captureAPI": "native getScreenshot",
+    "dialogs": [],
+    "documentWidth": 360,
+    "headings": [
+      "Ask Finance",
+      "Ask a report question.See the knowledge behind it.",
+      "Sources, alongside the answer."
+    ],
+    "height": 812,
+    "width": 375,
+    "x": 0,
+    "y": 0
+  }
+]

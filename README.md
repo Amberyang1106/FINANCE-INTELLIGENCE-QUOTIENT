@@ -1,5 +1,13 @@
 # FINANCE EXCEPTION INTELLIGENCE
 
+本轮总览已支持 BG / 管理报表 / Geo / 期间选择；目前仅 ISG / ISG Service / ROW / 2026 Q3 连接到既有单中心样例，其他选择显示暂无数据，不代表 BG/Geo 全量汇总。月度矩阵常显 Geo、Region、Segment、RTM、Channel 与 Freight 六行，其余可展开；Dec-26 Segment 灯与案例卡共用入口，它与案例期间 2026009 是演示关联，未进行公历换算。侧栏名称为 **Ask Finance**、**Investigation Reports**，原 chat/reports 路由保留。配置接入契约及本轮验证见 [总览实施记录](docs/overview-scope-execution.md)。
+
+本地案例引导改版位于 `codex/vantage-case-flow`（基于 `517cebb`，尚未提交或发布）。先阅读 [本轮执行与验收记录](docs/ui-case-flow-execution.md) 和 [设计契约](DESIGN.md)；下文远程分支与视频说明保留为历史基线。
+
+新版操作路径：**KPI overview → Review allocation → Analyze cause → Compare scenario → Save candidate → Generate report → Create follow-up tasks**。Analyze cause 一次点击运行固定样例；导航本身不运行分析。Scenario 显示 GA、LE、Total GP 三项影响，保留已保存版本与未保存提示。任务默认本人创建的方案行动（含分派给他人的行动）；Demo samples 为显式切换，List / Kanban board 均保留。Report Q&A 的创建入口为 Ask report rules。
+
+运行验证：`npm test`。示例仍为本地 Sample data / Simulated AI / Local task feedback / No ledger changes；GA 改善属于成本重新分配，总 GP 不变，LE 与业务资格保持待复核。
+
 财务异常监测与调查交互 Demo。最新版本位于 **feature/vantage-ui**；main 保留原版，二者未合并。
 
 ## 快速开始

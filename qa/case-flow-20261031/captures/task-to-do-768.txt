@@ -1,0 +1,171 @@
+- link "Skip to main content":
+  - /url: "#main"
+- banner:
+  - button "Finance Exception Intelligence home":
+    - img "Lenovo"
+    - strong: FINANCE EXCEPTION INTELLIGENCE
+    - generic: Finance Workspace
+  - generic "Workspace options"
+- complementary "Workspace navigation":
+  - navigation "Primary navigation":
+    - button "Monitor":
+    - button "Analysis":
+    - button "Report Q&A":
+    - button "Knowledge":
+    - button "Reports":
+    - button "Monitor Studio":
+    - button "Monitor Market":
+    - button "Task To-do" [active]:
+- main:
+  - group "Fixed monitor views":
+    - button "KPI overview"
+    - button "Service allocation 1" [pressed]:
+      - text: Service allocation
+      - generic: "1"
+  - generic: Investigation traced / Review open
+  - text: Task To-do/
+  - strong: Proposal handoffs
+  - generic: Sample data / Simulated AI / No ledger changes
+  - region "Allocation case journey":
+    - navigation "Case steps":
+      - button "1 Review allocation":
+        - generic: "1"
+        - strong: Review allocation
+      - button "2 Investigate":
+        - generic: "2"
+        - strong: Investigate
+      - button "3 Compare scenario":
+        - generic: "3"
+        - strong: Compare scenario
+      - button "4 Report":
+        - generic: "4"
+        - strong: Report
+      - button "5 Follow up":
+        - generic: "5"
+        - strong: Follow up
+    - status: Actions track local follow-up. Completion does not close finance review or change the ledger.
+  - region "Proposal tasks":
+    - heading "Proposal tasks" [level=1]
+    - paragraph: Saved proposals and accountable actions
+    - paragraph: Assign the action. Follow the handoff. Keep the outcome connected to its evidence.
+    - button "Create from saved proposal"
+    - heading "Revenue-base exclusion / L0AUXG" [level=3]
+    - generic: Saved candidate / business review open
+    - paragraph: ISG Service / ROW / 2026 Q3 / 2026009
+    - generic: Document 5900018271
+    - generic: Reference 5900018392
+    - generic: Candidate saved 31 Oct, 14:48:24
+    - paragraph: Uses last saved candidate / Current form has unsaved changes.
+    - button "Review saved candidate"
+    - button "View all my proposal tasks"
+    - text: Task collection
+    - combobox "Task collection":
+      - option "My proposal tasks" [selected]
+      - option "Demo samples"
+      - option "All tasks"
+    - text: Find a task
+    - searchbox "Find a task"
+    - text: Display
+    - combobox "Display":
+      - option "List" [selected]
+      - option "Kanban board"
+    - generic "Filters & demo role preview"
+    - option "Finance reviewer / Proposal owner" [selected]
+    - option "yangtt16 / Assignee preview"
+    - option "Alex Chen / Assignee preview"
+    - option "Maya Patel / Assignee preview"
+    - option "David Kim / Assignee preview"
+    - option "All people" [selected]
+    - option "Unassigned"
+    - option "yangtt16"
+    - option "Alex Chen"
+    - option "Maya Patel"
+    - option "David Kim"
+    - option "All stages" [selected]
+    - option "Created"
+    - option "Assigned"
+    - option "Received"
+    - option "In progress"
+    - option "Completed"
+    - generic "Task overview":
+      - button "01 2 Created":
+        - generic: "01"
+        - generic: "2"
+        - generic: Created
+      - button "02 0 Assigned":
+        - generic: "02"
+        - generic: "0"
+        - generic: Assigned
+      - button "03 0 Received":
+        - generic: "03"
+        - generic: "0"
+        - generic: Received
+      - button "04 0 In progress":
+        - generic: "04"
+        - generic: "0"
+        - generic: In progress
+      - button "05 2 Completed":
+        - generic: "05"
+        - generic: "2"
+        - generic: Completed
+    - heading "Follow-up actions" [level=2]
+    - paragraph: 4 of 4 tasks / Collection / Finance reviewer view
+    - generic "Proposal task list":
+      - table:
+        - rowgroup:
+          - row "Action Owner / Due Status Latest feedback":
+            - columnheader "Action"
+            - columnheader "Owner / Due"
+            - columnheader "Status"
+            - columnheader "Latest feedback"
+        - rowgroup:
+          - 'row "Contact the posting user TASK-006 / L0AUXG yangtt16 No due date Completed Demo QA: posting context request recorded; finance eligibility and LE review remain open. No ledger changes. 31 Oct, 14:49:04"':
+            - cell "Contact the posting user TASK-006 / L0AUXG":
+              - button "Contact the posting user"
+              - generic: TASK-006 / L0AUXG
+            - cell "yangtt16 No due date":
+              - text: yangtt16
+              - generic: No due date
+            - cell "Completed":
+              - generic: Completed
+            - 'cell "Demo QA: posting context request recorded; finance eligibility and LE review remain open. No ledger changes. 31 Oct, 14:49:04"':
+              - text: "Demo QA: posting context request recorded; finance eligibility and LE review remain open. No ledger changes."
+              - generic: 31 Oct, 14:49:04
+          - row "Verify the positive counterpart TASK-007 / L0AUXG Alex Chen No due date Completed Demo QA sample-scope check recorded; wider counterpart search remains a finance follow-up. No ledger change. 31 Oct, 14:56:31":
+            - cell "Verify the positive counterpart TASK-007 / L0AUXG":
+              - button "Verify the positive counterpart"
+              - generic: TASK-007 / L0AUXG
+            - cell "Alex Chen No due date":
+              - text: Alex Chen
+              - generic: No due date
+            - cell "Completed":
+              - generic: Completed
+            - cell "Demo QA sample-scope check recorded; wider counterpart search remains a finance follow-up. No ledger change. 31 Oct, 14:56:31":
+              - text: Demo QA sample-scope check recorded; wider counterpart search remains a finance follow-up. No ledger change.
+              - generic: 31 Oct, 14:56:31
+          - row "Check the LE segment assignment TASK-008 / L0AUXG Unassigned No due date Created Created from the selected saved proposal action. 31 Oct, 14:48:36":
+            - cell "Check the LE segment assignment TASK-008 / L0AUXG":
+              - button "Check the LE segment assignment"
+              - generic: TASK-008 / L0AUXG
+            - cell "Unassigned No due date":
+              - text: Unassigned
+              - generic: No due date
+            - cell "Created":
+              - generic: Created
+            - cell "Created from the selected saved proposal action. 31 Oct, 14:48:36":
+              - text: Created from the selected saved proposal action.
+              - generic: 31 Oct, 14:48:36
+          - row "Confirm the allocation-base treatment TASK-009 / L0AUXG Unassigned No due date Created Created from the selected saved proposal action. 31 Oct, 14:48:36":
+            - cell "Confirm the allocation-base treatment TASK-009 / L0AUXG":
+              - button "Confirm the allocation-base treatment"
+              - generic: TASK-009 / L0AUXG
+            - cell "Unassigned No due date":
+              - text: Unassigned
+              - generic: No due date
+            - cell "Created":
+              - generic: Created
+            - cell "Created from the selected saved proposal action. 31 Oct, 14:48:36":
+              - text: Created from the selected saved proposal action.
+              - generic: 31 Oct, 14:48:36
+    - status: Tasks and proposal evidence are saved in this browser / Demo feedback only.
+- status: "Task updated: Completed. Handoff recorded locally."

@@ -1,0 +1,146 @@
+- link "Skip to main content":
+  - /url: "#main"
+- banner:
+  - button "Finance Exception Intelligence home":
+    - img "Lenovo"
+    - strong: FINANCE EXCEPTION INTELLIGENCE
+    - generic: Finance Workspace
+  - button "Review investigation Ctrl K":
+    - generic: Review investigation
+    - generic: Ctrl K
+  - generic "Finance reviewer / Local demo workspace":
+    - generic: YT
+    - generic: Finance reviewer
+  - generic "Workspace options"
+- complementary "Workspace navigation":
+  - button "Collapse sidebar" [expanded]:
+    - generic: ‹
+    - generic: Collapse sidebar
+  - navigation "Primary navigation":
+    - button "Monitor":
+      - generic: Monitor
+    - button "Analysis":
+      - generic: Analysis
+    - button "Report Q&A":
+      - generic: Report Q&A
+    - button "Knowledge":
+      - generic: Knowledge
+    - button "Reports":
+      - generic: Reports
+      - generic: "1"
+    - button "Monitor Studio":
+      - generic: Monitor Studio
+    - button "Monitor Market":
+      - generic: Monitor Market
+    - button "Task To-do":
+      - generic: Task To-do
+      - generic: "3"
+  - text: Finance
+  - text: intelligence
+- main:
+  - group "Fixed monitor views":
+    - button "KPI overview"
+    - button "Service allocation 1" [pressed]:
+      - text: Service allocation
+      - generic: "1"
+  - generic: Investigation traced / Review open
+  - text: Analysis/
+  - strong: Scenario comparison
+  - generic: Sample data / Simulated AI / No ledger changes
+  - region "Allocation case journey":
+    - navigation "Case steps":
+      - button "1 Review allocation Not started":
+        - generic: "1"
+        - strong: Review allocation
+        - generic: Not started
+      - button "2 Investigate Calculation traced":
+        - generic: "2"
+        - strong: Investigate
+        - generic: Calculation traced
+      - button "3 Compare scenario In progress":
+        - generic: "3"
+        - strong: Compare scenario
+        - generic: In progress
+      - button "4 Report Draft generated":
+        - generic: "4"
+        - strong: Report
+        - generic: Draft generated
+      - button "5 Follow up Tasks created":
+        - generic: "5"
+        - strong: Follow up
+        - generic: Tasks created
+  - region "Scenario comparison":
+    - heading "Scenario comparison" [level=1]
+    - paragraph: Candidate scenario / Not applied
+    - paragraph: 2026009 / Month 3 true-up / USD
+    - button "Back to investigation"
+    - paragraph: Exclude the voucher from Revenue base only. Posted revenue, cost pool, copy costs and months 1–2 remain unchanged. No ledger changes.
+    - article:
+      - heading "GA GP" [level=2]
+      - paragraph: 2026009 / Month 3 / USD
+      - term: Original
+      - definition: −235,412.32
+      - term: Candidate
+      - definition: 197,960.36
+      - term: Delta
+      - definition: +433,372.68
+      - paragraph: Cost redistribution
+    - article:
+      - heading "LE GP" [level=2]
+      - paragraph: 2026009 / Month 3 / USD
+      - term: Original
+      - definition: −497,576.04
+      - term: Candidate
+      - definition: −1,075,406.28
+      - term: Delta
+      - definition: −577,830.24
+      - paragraph: Finance review open
+    - article:
+      - heading "Total GP" [level=2]
+      - paragraph: 2026009 / Month 3 / USD
+      - term: Original
+      - definition: −727,638.08
+      - term: Candidate
+      - definition: −727,638.08
+      - term: Delta
+      - definition: "0.00"
+      - paragraph: Unchanged / No profit increase
+    - checkbox "Exclude voucher 5900018271 From the revenue base only / Finance eligibility unconfirmed" [checked]
+    - strong: Exclude voucher 5900018271
+    - generic: From the revenue base only / Finance eligibility unconfirmed
+    - button "Save candidate"
+    - button "Generate report"
+    - button "Create follow-up tasks"
+    - status: "Candidate saved 31/10/2026, 14:48:24. Stored in this browser. Unsaved changes. Report and tasks: Uses last saved candidate."
+    - paragraph:
+      - strong: Total GP unchanged / Finance review open.
+      - text: GA improvement redistributes cost. LE retains its negative revenue and remains unresolved.
+    - generic "All segment results / 2026009 / USD"
+    - generic "Calculation details"
+    - text: Decision notes
+    - textbox "Decision notes" [active]:
+      - /placeholder: Record assumptions to verify with finance…
+      - text: "QA UNSAVED: this note must not enter the saved report or old tasks."
+    - region "Selected follow-up actions":
+      - heading "Follow-up actions" [level=2]
+      - article:
+        - checkbox "Contact the posting user" [checked]
+        - generic: Contact the posting user
+        - paragraph: Ask yangtt16 about the entry background and reference 5900018392. Request the expected positive voucher.
+      - article:
+        - checkbox "Verify the positive counterpart" [checked]
+        - generic: Verify the positive counterpart
+        - paragraph: Extend the search if needed. The sample-quarter check does not prove that no offset exists elsewhere.
+      - article:
+        - checkbox "Check the LE segment assignment" [checked]
+        - generic: Check the LE segment assignment
+        - paragraph: Compare the source document and business ownership before deciding whether a segment correction is needed.
+      - article:
+        - checkbox "Check currency differences if relevant"
+        - generic: Check currency differences if relevant
+        - paragraph: No FX residual is evidenced in this USD-only sample. Request original-currency details for a real case.
+      - article:
+        - heading "Evaluate a base exclusion" [level=3]
+        - paragraph: Compare all segments, then save a candidate for finance review.
+        - button "Compare candidate"
+- status: Investigation traced. Review the voucher and candidate actions.

@@ -1,0 +1,137 @@
+- link "Skip to main content":
+  - /url: "#main"
+- banner:
+  - button "Finance Exception Intelligence home":
+    - img "Lenovo"
+    - strong: FINANCE EXCEPTION INTELLIGENCE
+    - generic: Finance Workspace
+  - button "Review allocation case Ctrl K":
+    - generic: Review allocation case
+    - generic: Ctrl K
+  - generic "Finance reviewer / Local demo workspace":
+    - generic: YT
+    - generic: Finance reviewer
+  - generic "Workspace options"
+- complementary "Workspace navigation":
+  - button "Collapse sidebar" [expanded]:
+    - generic: ‹
+    - generic: Collapse sidebar
+  - navigation "Primary navigation":
+    - button "Monitor":
+      - generic: Monitor
+    - button "Analysis":
+      - generic: Analysis
+    - button "Report Q&A":
+      - generic: Report Q&A
+    - button "Knowledge":
+      - generic: Knowledge
+    - button "Reports":
+      - generic: Reports
+      - generic: "1"
+    - button "Monitor Studio":
+      - generic: Monitor Studio
+    - button "Monitor Market":
+      - generic: Monitor Market
+    - button "Task To-do":
+      - generic: Task To-do
+      - generic: "2"
+  - text: Finance
+  - text: intelligence
+- main:
+  - group "Fixed monitor views":
+    - button "KPI overview" [pressed]
+    - button "Service allocation 1":
+      - text: Service allocation
+      - generic: "1"
+  - generic: Ready to investigate
+  - text: Monitor/
+  - strong: KPI overview
+  - generic: Sample data / Simulated AI / No ledger changes
+  - region "KPI overview":
+    - heading "KPI overview" [level=1]
+    - paragraph: Fixed monitors / Business performance
+    - generic: Quarterly pulse
+    - paragraph: ISG Service / ROW / L0AUXG / 2026 Q3 / USD
+    - paragraph: Sample data / Q3 totals reconcile to the reviewed allocation case. Earlier quarters are synthetic demo history.
+    - generic "Latest quarter KPIs":
+      - term: Quarter Revenue / 2026 Q3
+      - definition: 2,808,897.00
+      - paragraph: +6.4% QoQ / USD
+      - term: Quarter net Cost / 2026 Q3
+      - definition: 2,584,185.24
+      - paragraph: +13.6% QoQ / USD
+      - term: Quarter GP / 2026 Q3
+      - definition: 224,711.76
+      - paragraph: Revenue less net Cost / All segments / USD
+    - region "Samples needing finance review":
+      - article:
+        - heading "Segment GP needs review" [level=2]
+        - text: One allocation case / Finance review open
+        - paragraph: GA / 2026009 / Month 3 true-up
+        - paragraph: GP −235,412.32 USD
+        - button "Review allocation"
+        - paragraph: Quarter allocation weight 85.7143% / Reference 60.0000%
+        - paragraph: Quarter totals can hide a segment issue. Review the month-three allocation.
+        - paragraph: "Linked signal: LE negative quarter revenue base"
+      - article:
+        - heading "Freight" [level=2]
+        - text: Independent sample / Jun-26
+        - paragraph: Potential duplicate allocation
+        - paragraph: Separate example / Finance review required
+        - button "View alert"
+    - text: Trend window
+    - combobox "Trend window":
+      - option "Last 5 quarters"
+      - option "Last 3 quarters" [selected]
+    - paragraph: 2026 Q1–2026 Q3 / Quarterly totals / USD / Cost credit 0.00 USD (already included in net Cost)
+    - article:
+      - heading "Revenue trend" [level=2]
+      - paragraph: Allocated revenue / reporting scope
+      - generic: Quarterly trend
+      - img "Revenue trend / 2026 Q1 to 2026 Q3 / USD":
+        - generic: $0k
+        - generic: $1.66m
+        - generic: $3.31m
+        - generic: 2026 Q1
+        - generic: 2026 Q2
+        - generic: 2026 Q3
+        - generic "2026 Q1 / 2,415,651.42 USD"
+        - generic "2026 Q2 / 2,640,363.18 USD"
+        - generic "2026 Q3 / 2,808,897.00 USD"
+      - generic: +6.4% QoQ
+      - generic: Latest quarter / reviewed sample
+    - article:
+      - heading "Cost trend" [level=2]
+      - paragraph: Net eligible cost / positive expense
+      - generic: Quarterly trend
+      - img "Cost trend / 2026 Q1 to 2026 Q3 / USD":
+        - generic: $0k
+        - generic: $1.52m
+        - generic: $3.05m
+        - generic: 2026 Q1
+        - generic: 2026 Q2
+        - generic: 2026 Q3
+        - generic "2026 Q1 / 2,170,715.60 USD"
+        - generic "2026 Q2 / 2,274,083.01 USD"
+        - generic "2026 Q3 / 2,584,185.24 USD"
+      - generic: +13.6% QoQ
+      - generic: Latest quarter / reviewed sample
+    - article:
+      - heading "Cost credit trend" [level=2]
+      - paragraph: Negative source cost / absolute value
+      - generic: Source credits
+      - img "Cost credit trend / 2026 Q1 to 2026 Q3 / USD":
+        - generic: $0k
+        - generic: $14k
+        - generic: $28k
+        - generic: 2026 Q1
+        - generic: 2026 Q2
+        - generic: 2026 Q3
+        - generic "2026 Q1 / 11,428.37 USD"
+        - generic "2026 Q2 / 23,417.69 USD"
+        - generic "2026 Q3 / 0.00 USD"
+      - generic: "-100.0% QoQ"
+      - generic: "Q3: no eligible credit rows"
+    - generic "Explore the complete monthly monitor matrix"
+    - generic "KPI definitions & quarterly values"
+- status

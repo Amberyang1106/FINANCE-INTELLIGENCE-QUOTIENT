@@ -1,0 +1,37 @@
+[
+  {
+    "name": "app.js",
+    "sha256": "75e441c1f453e080b4c4ae6f6135b6b5bdddef4ad0f8d8eaf360a69848fa184b",
+    "modifiedAt": "2026-10-31T07:13:51.568Z"
+  },
+  {
+    "name": "index.html",
+    "sha256": "364cceebd1c96e19be88a7f4e93607c4ab63496a13e0f5e81678eb8d6a77ed39",
+    "modifiedAt": "2026-10-31T06:53:31.469Z"
+  },
+  {
+    "name": "case-ui-model.js",
+    "sha256": "ecac6330c14c7a539be4d82dc7eeb58572a4b3341e461a314445b9d75b691c64",
+    "modifiedAt": "2026-10-31T06:32:06.830Z"
+  },
+  {
+    "name": "kpi-overview.js",
+    "sha256": "f41af71d6e6e72521719d4eef9a8623734b2bf76c41e5adf208a4bde991cc54f",
+    "modifiedAt": "2026-10-31T06:43:59.633Z"
+  },
+  {
+    "name": "task-board.js",
+    "sha256": "b9ba786650178611f157be869b103da8ec9c8bb4cdb665537318de8b266aef87",
+    "modifiedAt": "2026-10-31T06:53:31.437Z"
+  },
+  {
+    "name": "knowledge-ui.js",
+    "sha256": "b4dc59a734021abcbf93a3caad0ae52e2f464ba224173921ac13d626e47f532e",
+    "modifiedAt": "2026-10-31T06:40:40.256Z"
+  },
+  {
+    "name": "vantage.css",
+    "sha256": "bbff7aca3bed63cc8abf51c3945b107b68b9761beb72f48e70dc65b96b422338",
+    "modifiedAt": "2026-10-31T07:22:30.337Z"
+  }
+]

@@ -1,0 +1,102 @@
+- link "Skip to main content":
+  - /url: "#main"
+- banner:
+  - button "Finance Exception Intelligence home":
+    - img "Lenovo"
+    - strong: FINANCE EXCEPTION INTELLIGENCE
+    - generic: Finance Workspace
+  - button "Ask report rules Ctrl K":
+    - generic: Ask report rules
+    - generic: Ctrl K
+  - generic "Finance reviewer / Local demo workspace":
+    - generic: YT
+    - generic: Finance reviewer
+  - generic "Workspace options"
+- complementary "Workspace navigation":
+  - button "Collapse sidebar" [expanded]:
+    - generic: ‹
+    - generic: Collapse sidebar
+  - navigation "Primary navigation":
+    - button "Monitor":
+      - generic: Monitor
+    - button "Analysis":
+      - generic: Analysis
+    - button "Report Q&A":
+      - generic: Report Q&A
+    - button "Knowledge" [active]:
+      - generic: Knowledge
+    - button "Reports":
+      - generic: Reports
+      - generic: "1"
+    - button "Monitor Studio":
+      - generic: Monitor Studio
+    - button "Monitor Market":
+      - generic: Monitor Market
+    - button "Task To-do":
+      - generic: Task To-do
+      - generic: "2"
+  - text: Finance
+  - text: intelligence
+- main:
+  - group "Fixed monitor views":
+    - button "KPI overview"
+    - button "Service allocation 1" [pressed]:
+      - text: Service allocation
+      - generic: "1"
+  - generic: Investigation traced / Review open
+  - text: Knowledge/
+  - strong: Report libraries
+  - generic: Sample data / Simulated AI / No ledger changes
+  - region "Report knowledge":
+    - heading "Report knowledge" [level=1]
+    - paragraph: Search report sources and personal libraries
+    - paragraph: Browse built-in report rules or build a library of your own.
+    - button "+ New knowledge base"
+    - complementary "Knowledge base list":
+      - paragraph: Libraries
+      - button "MR Logic ISG Service / Built-in 2":
+        - generic: ▤
+        - strong: MR Logic
+        - generic: ISG Service / Built-in
+        - generic: "2"
+      - paragraph: Built-in rules are read-only. Personal libraries are stored in this browser.
+    - heading "MR Logic" [level=2]
+    - paragraph: Curated ISG Service allocation rules from the confirmed business story.
+    - generic: Built-in / Read-only
+    - generic: Local text search / Demo
+    - button "Ask this library"
+    - tablist "Knowledge content":
+      - tab "Files 2" [selected]:
+        - text: Files
+        - generic: "2"
+      - tab "Notes 0":
+        - text: Notes
+        - generic: "0"
+      - tab "Links 0":
+        - text: Links
+        - generic: "0"
+      - tab "Cards 11":
+        - text: Cards
+        - generic: "11"
+    - button "Read-only" [disabled]
+    - generic: Search knowledge
+    - searchbox "Search knowledge"
+    - tabpanel "Files 2":
+      - generic: ▤
+      - paragraph:
+        - text: Curated report knowledge
+        - text: Confirmed allocation rules, organized into searchable source sections.
+      - article:
+        - generic: MD
+        - button "Business Logic.md 6 sections / 2026-10-28":
+          - strong: Business Logic.md
+          - generic: 6 sections / 2026-10-28
+        - generic: Ready
+      - article:
+        - generic: MD
+        - button "Data Dictionary & Mapping.md 5 sections / 2026-10-28":
+          - strong: Data Dictionary & Mapping.md
+          - generic: 5 sections / 2026-10-28
+        - generic: Ready
+    - paragraph: Personal libraries and conversations are saved in this browser.
+- status: "Task updated: Completed. Handoff recorded locally."

@@ -1,0 +1,195 @@
+- link "Skip to main content":
+  - /url: "#main"
+- banner:
+  - button "Finance Exception Intelligence home":
+    - img "Lenovo"
+    - strong: FINANCE EXCEPTION INTELLIGENCE
+    - generic: Finance Workspace
+  - button "Focus task search Ctrl K":
+    - generic: Focus task search
+    - generic: Ctrl K
+  - generic "Finance reviewer / Local demo workspace":
+    - generic: YT
+    - generic: Finance reviewer
+  - generic "Workspace options"
+- complementary "Workspace navigation":
+  - button "Collapse sidebar" [expanded]:
+    - generic: ‹
+    - generic: Collapse sidebar
+  - navigation "Primary navigation":
+    - button "Monitor":
+      - generic: Monitor
+    - button "Analysis":
+      - generic: Analysis
+    - button "Report Q&A":
+      - generic: Report Q&A
+    - button "Knowledge":
+      - generic: Knowledge
+    - button "Reports":
+      - generic: Reports
+      - generic: "1"
+    - button "Monitor Studio":
+      - generic: Monitor Studio
+    - button "Monitor Market":
+      - generic: Monitor Market
+    - button "Task To-do" [active]:
+      - generic: Task To-do
+      - generic: "2"
+  - text: Finance
+  - text: intelligence
+- main:
+  - group "Fixed monitor views":
+    - button "KPI overview"
+    - button "Service allocation 1" [pressed]:
+      - text: Service allocation
+      - generic: "1"
+  - generic: Investigation traced / Review open
+  - text: Task To-do/
+  - strong: Proposal handoffs
+  - generic: Sample data / Simulated AI / No ledger changes
+  - region "Allocation case journey":
+    - navigation "Case steps":
+      - button "1 Review allocation Not started":
+        - generic: "1"
+        - strong: Review allocation
+        - generic: Not started
+      - button "2 Investigate Calculation traced":
+        - generic: "2"
+        - strong: Investigate
+        - generic: Calculation traced
+      - button "3 Compare scenario In progress":
+        - generic: "3"
+        - strong: Compare scenario
+        - generic: In progress
+      - button "4 Report Draft generated":
+        - generic: "4"
+        - strong: Report
+        - generic: Draft generated
+      - button "5 Follow up Tasks created":
+        - generic: "5"
+        - strong: Follow up
+        - generic: Tasks created
+    - status: Actions track local follow-up. Completion does not close finance review or change the ledger.
+  - region "Proposal tasks":
+    - heading "Proposal tasks" [level=1]
+    - paragraph: Saved proposals and accountable actions
+    - paragraph: Assign the action. Follow the handoff. Keep the outcome connected to its evidence.
+    - button "Create from saved proposal"
+    - generic: Demo samples / Local role preview
+    - strong: Five handoff stages
+    - paragraph: Independent editable samples. Your proposal tasks remain separate.
+    - text: Task collection
+    - combobox "Task collection":
+      - option "My proposal tasks"
+      - option "Demo samples" [selected]
+      - option "All tasks"
+    - text: Find a task
+    - searchbox "Find a task"
+    - text: Display
+    - combobox "Display":
+      - option "List"
+      - option "Kanban board" [selected]
+    - generic "Filters & demo role preview"
+    - option "Finance reviewer / Proposal owner" [selected]
+    - option "yangtt16 / Assignee preview"
+    - option "Alex Chen / Assignee preview"
+    - option "Maya Patel / Assignee preview"
+    - option "David Kim / Assignee preview"
+    - option "All people" [selected]
+    - option "Unassigned"
+    - option "yangtt16"
+    - option "Alex Chen"
+    - option "Maya Patel"
+    - option "David Kim"
+    - option "All stages" [selected]
+    - option "Created"
+    - option "Assigned"
+    - option "Received"
+    - option "In progress"
+    - option "Completed"
+    - generic "Task overview":
+      - button "01 1 Created":
+        - generic: "01"
+        - generic: "1"
+        - generic: Created
+      - button "02 1 Assigned":
+        - generic: "02"
+        - generic: "1"
+        - generic: Assigned
+      - button "03 1 Received":
+        - generic: "03"
+        - generic: "1"
+        - generic: Received
+      - button "04 1 In progress":
+        - generic: "04"
+        - generic: "1"
+        - generic: In progress
+      - button "05 1 Completed":
+        - generic: "05"
+        - generic: "1"
+        - generic: Completed
+    - heading "Follow-up actions" [level=2]
+    - paragraph: 5 of 5 tasks / Collection / Finance reviewer view
+    - generic "Task status board":
+      - region "Created":
+        - heading "Created" [level=3]
+        - generic: "1"
+        - button "DEMO-005 SAMPLE / L0AUXG Confirm the allocation-base treatment Review entry validity and allocation-policy eligibility, then document the agreed treatment of voucher 5900018271. If an exclusion is a… ＋ Assign an owner No due date Open task":
+          - text: DEMO-005
+          - generic: SAMPLE / L0AUXG
+          - strong: Confirm the allocation-base treatment
+          - paragraph: Review entry validity and allocation-policy eligibility, then document the agreed treatment of voucher 5900018271. If an exclusion is a…
+          - generic: ＋
+          - text: Assign an owner
+          - generic: No due date
+          - generic: Open task
+      - region "Assigned":
+        - heading "Assigned" [level=3]
+        - generic: "1"
+        - button "DEMO-003 SAMPLE / L0AUXG Check the LE segment assignment Compare the source document and business ownership before deciding whether a segment correction is needed. MA Maya Patel Due 2026-11-05 Open task":
+          - text: DEMO-003
+          - generic: SAMPLE / L0AUXG
+          - strong: Check the LE segment assignment
+          - paragraph: Compare the source document and business ownership before deciding whether a segment correction is needed.
+          - generic: MA
+          - text: Maya Patel
+          - generic: Due 2026-11-05
+          - generic: Open task
+      - region "Received":
+        - heading "Received" [level=3]
+        - generic: "1"
+        - button "DEMO-004 SAMPLE / L0AUXG Check currency differences if relevant No FX residual is evidenced in this USD-only sample. Request original-currency details for a real case. DA David Kim Due 2026-11-05 Open task":
+          - text: DEMO-004
+          - generic: SAMPLE / L0AUXG
+          - strong: Check currency differences if relevant
+          - paragraph: No FX residual is evidenced in this USD-only sample. Request original-currency details for a real case.
+          - generic: DA
+          - text: David Kim
+          - generic: Due 2026-11-05
+          - generic: Open task
+      - region "In progress":
+        - heading "In progress" [level=3]
+        - generic: "1"
+        - button "DEMO-002 SAMPLE / L0AUXG Verify the positive counterpart Extend the search if needed. The sample-quarter check does not prove that no offset exists elsewhere. AL Alex Chen Due 2026-11-04 Open task":
+          - text: DEMO-002
+          - generic: SAMPLE / L0AUXG
+          - strong: Verify the positive counterpart
+          - paragraph: Extend the search if needed. The sample-quarter check does not prove that no offset exists elsewhere.
+          - generic: AL
+          - text: Alex Chen
+          - generic: Due 2026-11-04
+          - generic: Open task
+      - region "Completed":
+        - heading "Completed" [level=3]
+        - generic: "1"
+        - button "DEMO-001 SAMPLE / L0AUXG Contact the posting user Ask yangtt16 about the entry background and reference 5900018392. Request the expected positive voucher. YA yangtt16 Due 2026-11-03 Outcome recorded":
+          - text: DEMO-001
+          - generic: SAMPLE / L0AUXG
+          - strong: Contact the posting user
+          - paragraph: Ask yangtt16 about the entry background and reference 5900018392. Request the expected positive voucher.
+          - generic: YA
+          - text: yangtt16
+          - generic: Due 2026-11-03
+          - generic: Outcome recorded
+    - status: Tasks and proposal evidence are saved in this browser / Demo feedback only.
+- status: "Task updated: Completed. Handoff recorded locally."

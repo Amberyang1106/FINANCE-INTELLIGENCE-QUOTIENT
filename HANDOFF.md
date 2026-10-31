@@ -1,5 +1,19 @@
 # 项目交接 · FINANCE EXCEPTION INTELLIGENCE
 
+## 2026-10-31 总览选择器与常显矩阵更新（本地未提交）
+
+新增 `kpi-scope-config.js` 维护范围选项和精确数据集绑定，`kpi-overview.js` 通过 provider 的实际 sourceScope 再次验证范围；错配配置不能把原样例换标签显示。仅 ISG Service / ROW / period-year 2026 Q3 有受支持样例，单中心边界在数据说明披露且总览不显示中心代码。其他 BG/报表/Geo/历史季度为 No data，具体定义与来源数值一并清空，返回可恢复。矩阵前移到趋势前，常显六行并保留两个异常入口，其他16行可展开。Ask Finance / Investigation Reports 名称已同步侧栏、aria、标题、breadcrumb与案例步骤，财务管理报表名未改。
+
+本轮 `npm test` 12 个文件全部通过，0失败；`git diff --check` 通过。父代理已在4197实际确认范围清空/恢复、6→22→6和Dec灯到2026009路线；最终截图和独立审查由父代理写入 `qa/overview-filters-20261031/`。既有4196用户页、浏览器保存状态、财务引擎/fixtures及音视频未修改。详细接入限制与命令见 `docs/overview-scope-execution.md`。
+
+## 2026-10-31 案例引导 UI 改版（本地实施，未提交）
+
+当前实施分支 `codex/vantage-case-flow`，基线 `517cebbdd2b51dab17493ed8849ff165ca4faefa`。主路径为总览 GA 案例 → Service allocation → 一次 Analyze cause → 结论与证据 → 独立 Scenario 三项影响 → 保存候选 → 报告 → 当前方案任务。Freight 保持独立示例。任务默认列表，Demo samples 与看板显式切换；任务来源以 proposal ID 定位，冻结方案/报告证据在来源弹窗回看。
+
+`npm test` 本轮最后执行：10 个测试文件通过，0 失败，原七文件覆盖保留。新增模型、导航/存储/快照、任务集合与历史方案隔离验证。1280×800 中期浏览器检查：总览 Review allocation 全按钮可见（top 654.44 / bottom 694.44），Scenario 三项影响同屏、金额正确。最终全路径与多尺寸验收由主代理写入 `qa/case-flow-20261031/`，详见 `docs/ui-case-flow-execution.md`。
+
+未修改分摊计算引擎、原始数据或视频。既有 `video/voice/S03.wav`–`S14.wav` 与 `narration.wav` 的 Git modified 来自本轮开始前的 LFS pointer/blob 差异；不得当作 UI 变更提交或清理。无 commit / push / merge / deployment。V07 的操作画面、Scenario 入口、任务默认视图与旧视频不同，后续视频工作需重新评估这些镜头，本轮不重录。
+
 ## 2026-10-31 Vantage 视频归档更新
 
 当前继续开发分支仍为 feature/vantage-ui，独立保留，不合并 main。最新成片为原 V07 工程内更新的“产品介绍＋真实操作”融合版，134.5秒、2560×1440/30fps，英文旁白、中英双语字幕，带背景音乐与无背景音乐两版。入口：video/full-operation-v07/README.md、watch.html；正式成片位于video/exports/，名称含Full-Operation-Bilingual-v07。可编辑剪映ZIP与结构验收材料在同工程下；剪映应用内实际打开尚未验证。

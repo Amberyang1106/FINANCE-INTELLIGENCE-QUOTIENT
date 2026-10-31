@@ -1,0 +1,183 @@
+- link "Skip to main content":
+  - /url: "#main"
+- banner:
+  - button "Finance Exception Intelligence home":
+    - img "Lenovo"
+    - strong: FINANCE EXCEPTION INTELLIGENCE
+    - generic: Finance Workspace
+  - button "Review investigation Ctrl K":
+    - generic: Review investigation
+    - generic: Ctrl K
+  - generic "Finance reviewer / Local demo workspace":
+    - generic: YT
+    - generic: Finance reviewer
+  - generic "Workspace options"
+- complementary "Workspace navigation":
+  - button "Collapse sidebar" [expanded]:
+    - generic: ‹
+    - generic: Collapse sidebar
+  - navigation "Primary navigation":
+    - button "Monitor":
+      - generic: Monitor
+    - button "Analysis":
+      - generic: Analysis
+    - button "Report Q&A":
+      - generic: Report Q&A
+    - button "Knowledge":
+      - generic: Knowledge
+    - button "Reports" [active]:
+      - generic: Reports
+      - generic: "1"
+    - button "Monitor Studio":
+      - generic: Monitor Studio
+    - button "Monitor Market":
+      - generic: Monitor Market
+    - button "Task To-do":
+      - generic: Task To-do
+      - generic: "3"
+  - text: Finance
+  - text: intelligence
+- main:
+  - group "Fixed monitor views":
+    - button "KPI overview"
+    - button "Service allocation 1" [pressed]:
+      - text: Service allocation
+      - generic: "1"
+  - generic: Investigation traced / Review open
+  - text: Reports/
+  - strong: Close record
+  - generic: Sample data / Simulated AI / No ledger changes
+  - region "Allocation case journey":
+    - generic: ISG Service / ROW / L0AUXG / 2026 Q3 / USD
+    - generic: Finance review open
+    - navigation "Case steps":
+      - button "1 Review allocation Not started":
+        - generic: "1"
+        - strong: Review allocation
+        - generic: Not started
+      - button "2 Investigate Calculation traced":
+        - generic: "2"
+        - strong: Investigate
+        - generic: Calculation traced
+      - button "3 Compare scenario In progress":
+        - generic: "3"
+        - strong: Compare scenario
+        - generic: In progress
+      - button "4 Report Draft generated":
+        - generic: "4"
+        - strong: Report
+        - generic: Draft generated
+      - button "5 Follow up Tasks created":
+        - generic: "5"
+        - strong: Follow up
+        - generic: Tasks created
+  - region "Investigation report":
+    - heading "Investigation report" [level=1]
+    - paragraph:
+      - code: L0AUXG
+      - text: close record
+    - paragraph: Keep the cause, assumptions and decisions together.
+    - paragraph: Uses last saved candidate / The current form has unsaved changes.
+    - article:
+      - generic: Draft / Finance review open
+      - heading "ISG Service allocation investigation" [level=2]
+      - paragraph:
+        - text: ROW / L0AUXG / 2026 Q3 / Closing period 2026009
+        - text: Generated 31/10/2026, 14:48:24 / From candidate saved 31/10/2026, 14:48:24
+      - button "Create follow-up tasks"
+      - button "Download Markdown"
+      - button "Revisit scenario"
+      - heading "01 / Cause and evidence" [level=3]
+      - paragraph:
+        - text: GA month 3 GP is
+        - strong: −235,412.32 USD
+        - text: . LE voucher
+        - button "5900018271"
+        - text: ", amount −1,203,813.00 USD, reduces the quarter revenue denominator and raises the GA weight to 85.7143%."
+      - paragraph: "Document text: Quarter-end service revenue adjustment — pending positive-entry review"
+      - paragraph: "User: yangtt16 / Reference: 5900018392. No matching positive reference was confirmed in the sample-quarter scope. Manual-entry status is a demo assumption; posting validity remains open."
+      - heading "02 / Calculation assumptions" [level=3]
+      - paragraph: Exclude this voucher from the revenue base only. Keep booked revenue, copy costs, the cost pool and months 1–2 executed allocations unchanged. Recalculate 2026009 true-up.
+      - heading "03 / All-segment impact / USD" [level=3]
+      - generic "Report GP comparison":
+        - table:
+          - rowgroup:
+            - row "Segment Original GP Candidate GP Change":
+              - columnheader "Segment"
+              - columnheader "Original GP"
+              - columnheader "Candidate GP"
+              - columnheader "Change"
+          - rowgroup:
+            - row "B0 2,675.14 74,903.92 +72,228.78":
+              - cell "B0"
+              - cell "2,675.14"
+              - cell "74,903.92"
+              - cell "+72,228.78"
+            - row "GA −235,412.32 197,960.36 +433,372.68":
+              - cell "GA"
+              - cell "−235,412.32"
+              - cell "197,960.36"
+              - cell "+433,372.68"
+            - row "LE −497,576.04 −1,075,406.28 −577,830.24":
+              - cell "LE"
+              - cell "−497,576.04"
+              - cell "−1,075,406.28"
+              - cell "−577,830.24"
+            - row "SMBMM 2,675.14 74,903.92 +72,228.78":
+              - cell "SMBMM"
+              - cell "2,675.14"
+              - cell "74,903.92"
+              - cell "+72,228.78"
+          - rowgroup:
+            - row "Total month 3 GP −727,638.08 −727,638.08 0.00":
+              - cell "Total month 3 GP"
+              - cell "−727,638.08"
+              - cell "−727,638.08"
+              - cell "0.00"
+      - paragraph: LE candidate GP is −1,075,406.28 USD. Month 3 total GP stays −727,638.08 USD; quarter GP stays 224,711.76 USD. This candidate redistributes cost and does not resolve the posted negative revenue.
+      - heading "04 / Selected follow-ups" [level=3]
+      - list:
+        - strong: Contact the posting user
+        - text: — Ask yangtt16 about the entry background and reference 5900018392. Request the expected positive voucher.
+        - emphasis: Pending review.
+        - strong: Verify the positive counterpart
+        - text: — Extend the search if needed. The sample-quarter check does not prove that no offset exists elsewhere.
+        - emphasis: Pending review.
+        - strong: Check the LE segment assignment
+        - text: — Compare the source document and business ownership before deciding whether a segment correction is needed.
+        - emphasis: Pending review.
+      - heading "05 / Decision notes" [level=3]
+      - paragraph: "QA saved candidate: verify entry background and policy eligibility."
+      - paragraph: Saved candidate only. Entry background, segment validity, cross-period offsets and allocation-policy eligibility still require finance review. No journal or actual allocation has been changed.
+- complementary "Investigation inspector":
+  - tablist "Investigation tools":
+    - tab "Evidence" [selected]
+    - tab "Actions"
+    - tab "Scenario"
+  - tabpanel "Evidence":
+    - heading "From GP to the voucher." [level=2]
+    - paragraph: Allocation evidence
+    - paragraph: Calculation traced / Business rationale still needs finance review.
+    - generic: GA / 2026009 gross profit
+    - strong: −235,412.32 USD
+    - generic: "01"
+    - strong: "GA quarter weight: 85.7143%"
+    - text: Quarter target 1,444,575.60
+    - text: "Less executed: 674,135.28"
+    - generic: Sample
+    - generic: "02"
+    - strong: LE reduces the denominator
+    - text: Quarter base −401,271.00
+    - text: Cost pool totals still reconcile.
+    - generic: Sample
+    - button "VOUCHER 5900018271 / LE −1,203,813.00 Open document evidence":
+      - generic: VOUCHER 5900018271 / LE
+      - strong: −1,203,813.00
+      - generic: Open document evidence
+    - generic: "03"
+    - strong: Counterpart not confirmed
+    - generic: 12 positive records in this sample-quarter scope. No matching reference.
+    - generic: Review
+    - paragraph: Negative GP and negative weights are investigation signals. They do not establish that the posting is wrong.
+    - button "Review recommended actions"
+- status: Investigation traced. Review the voucher and candidate actions.

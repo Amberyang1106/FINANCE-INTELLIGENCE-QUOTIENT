@@ -1,0 +1,328 @@
+- link "Skip to main content":
+  - /url: "#main"
+- banner:
+  - button "Finance Exception Intelligence home":
+    - img "Lenovo"
+    - strong: FINANCE EXCEPTION INTELLIGENCE
+    - generic: Finance Workspace
+  - generic "Workspace options"
+- complementary "Workspace navigation":
+  - navigation "Primary navigation":
+    - button "Monitor":
+    - button "Analysis":
+    - button "Ask Finance":
+    - button "Knowledge":
+    - button "Investigation Reports":
+    - button "Monitor Studio":
+    - button "Monitor Market":
+    - button "Task To-do":
+- main:
+  - group "Fixed monitor views":
+    - button "KPI overview" [pressed]
+    - button "Service allocation 1":
+      - text: Service allocation
+      - generic: "1"
+  - generic: Ready to investigate
+  - text: Monitor/
+  - strong: KPI overview
+  - generic: Sample data / Simulated AI / No ledger changes
+  - region "KPI overview":
+    - heading "KPI overview" [level=1]
+    - generic: Sample workspace
+    - group "KPI reporting scope":
+      - text: Business group
+      - combobox "Business group":
+        - option "ISG" [selected]
+        - option "PCSD"
+        - option "MBG"
+        - option "SSG"
+      - text: Management report
+      - combobox "Management report":
+        - option "ISG Service" [selected]
+        - option "ISG HW"
+      - text: Geo
+      - combobox "Geo":
+        - option "ROW" [selected]
+        - option "PRC"
+      - text: Reporting period
+      - combobox "Reporting period":
+        - option "2026 Q3" [selected]
+        - option "2026 Q2"
+        - option "2026 Q1"
+        - option "2025 Q4"
+        - option "2025 Q3"
+    - status: Sample data / Single-profit-center sample, not a BG/Geo total. Trend includes synthetic history.
+    - generic "Selected quarter KPIs":
+      - term: Quarter Revenue / 2026 Q3
+      - definition: 2,808,897.00
+      - paragraph: +6.4% QoQ / USD
+      - term: Quarter net Cost / 2026 Q3
+      - definition: 2,584,185.24
+      - paragraph: +13.6% QoQ / USD
+      - term: Quarter GP / 2026 Q3
+      - definition: 224,711.76
+      - paragraph: Revenue less net Cost / Sample scope / USD
+    - region "Samples needing finance review":
+      - article:
+        - heading "Segment GP needs review" [level=2]
+        - text: One allocation case / Finance review open
+        - paragraph: GA / 2026009 / Month 3 true-up
+        - paragraph: GP −235,412.32 USD
+        - button "Review allocation"
+        - paragraph: Quarter allocation weight 85.7143% / Reference 60.0000%
+        - paragraph: Quarter totals can hide a segment issue. Review the month-three allocation.
+        - paragraph: "Linked signal: LE negative quarter revenue base"
+      - article:
+        - heading "Freight" [level=2]
+        - text: Independent sample / Jun-26
+        - paragraph: Potential duplicate allocation
+        - paragraph: Separate example / Finance review required
+        - button "View alert"
+    - region "Monthly monitor matrix":
+      - heading "Monthly monitor matrix" [level=2]
+      - paragraph: Apr 2026 – Mar 2027 / Sample display months
+      - generic: Illustrative lights
+      - paragraph: Dec-26 sample alert → Case period 2026009. Sample display-month link, not a fiscal-period conversion.
+      - paragraph: No sample alert is not a financial check result.
+      - generic "Illustrative monthly monitor matrix":
+        - table:
+          - rowgroup:
+            - row "Monitor Apr-26 May-26 Jun-26 Jul-26 Aug-26 Sep-26 Oct-26 Nov-26 Dec-26 Jan-27 Feb-27 Mar-27":
+              - columnheader "Monitor"
+              - columnheader "Apr-26"
+              - columnheader "May-26"
+              - columnheader "Jun-26"
+              - columnheader "Jul-26"
+              - columnheader "Aug-26"
+              - columnheader "Sep-26"
+              - columnheader "Oct-26"
+              - columnheader "Nov-26"
+              - columnheader "Dec-26"
+              - columnheader "Jan-27"
+              - columnheader "Feb-27"
+              - columnheader "Mar-27"
+          - rowgroup:
+            - row "Geo No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative":
+              - rowheader "Geo"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+            - row "Region No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative":
+              - rowheader "Region"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+            - row "Segment No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative Segment alert for Dec-26; review case period 2026009 No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative":
+              - rowheader "Segment"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "Segment alert for Dec-26; review case period 2026009":
+                - button "Segment alert for Dec-26; review case period 2026009"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+            - row "RTM No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative":
+              - rowheader "RTM"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+            - row "Channel No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative":
+              - rowheader "Channel"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+            - row "Freight No sample alert / illustrative No sample alert / illustrative Freight alert for Jun-26; open independent sample No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative No sample alert / illustrative":
+              - rowheader "Freight"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "Freight alert for Jun-26; open independent sample":
+                - button "Freight alert for Jun-26; open independent sample"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+              - cell "No sample alert / illustrative":
+                - img "No sample alert / illustrative"
+      - button "Show all 22 monitors"
+    - text: Trend window
+    - combobox "Trend window" [active]:
+      - option "Last 5 quarters" [selected]
+      - option "Last 3 quarters"
+    - paragraph: 2025 Q3–2026 Q3 / Quarterly totals / USD / Cost credit 0.00 USD (already included in net Cost)
+    - article:
+      - heading "Revenue trend" [level=2]
+      - paragraph: Allocated revenue / reporting scope
+      - generic: Quarterly trend
+      - img "Revenue trend / 2025 Q3 to 2026 Q3 / USD":
+        - generic: $0k
+        - generic: $1.66m
+        - generic: $3.31m
+        - generic: 2025 Q3
+        - generic: 2025 Q4
+        - generic: 2026 Q1
+        - generic: 2026 Q2
+        - generic: 2026 Q3
+        - generic "2025 Q3 / 2,022,405.84 USD"
+        - generic "2025 Q4 / 2,219,028.63 USD"
+        - generic "2026 Q1 / 2,415,651.42 USD"
+        - generic "2026 Q2 / 2,640,363.18 USD"
+        - generic "2026 Q3 / 2,808,897.00 USD"
+      - generic: +6.4% QoQ
+      - generic: Earlier quarters / synthetic history
+    - article:
+      - heading "Cost trend" [level=2]
+      - paragraph: Net eligible cost / positive expense
+      - generic: Quarterly trend
+      - img "Cost trend / 2025 Q3 to 2026 Q3 / USD":
+        - generic: $0k
+        - generic: $1.52m
+        - generic: $3.05m
+        - generic: 2025 Q3
+        - generic: 2025 Q4
+        - generic: 2026 Q1
+        - generic: 2026 Q2
+        - generic: 2026 Q3
+        - generic "2025 Q3 / 1,808,929.67 USD"
+        - generic "2025 Q4 / 1,989,822.63 USD"
+        - generic "2026 Q1 / 2,170,715.60 USD"
+        - generic "2026 Q2 / 2,274,083.01 USD"
+        - generic "2026 Q3 / 2,584,185.24 USD"
+      - generic: +13.6% QoQ
+      - generic: Earlier quarters / synthetic history
+    - article:
+      - heading "Cost credit trend" [level=2]
+      - paragraph: Negative source cost / absolute value
+      - generic: Source credits
+      - img "Cost credit trend / 2025 Q3 to 2026 Q3 / USD":
+        - generic: $0k
+        - generic: $14k
+        - generic: $28k
+        - generic: 2025 Q3
+        - generic: 2025 Q4
+        - generic: 2026 Q1
+        - generic: 2026 Q2
+        - generic: 2026 Q3
+        - generic "2025 Q3 / 14,831.52 USD"
+        - generic "2025 Q4 / 19,206.84 USD"
+        - generic "2026 Q1 / 11,428.37 USD"
+        - generic "2026 Q2 / 23,417.69 USD"
+        - generic "2026 Q3 / 0.00 USD"
+      - generic: "-100.0% QoQ"
+      - generic: Selected quarter / source credits
+    - generic "KPI definitions & quarterly values"
+- status

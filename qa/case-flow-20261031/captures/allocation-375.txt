@@ -1,0 +1,196 @@
+- link "Skip to main content":
+  - /url: "#main"
+- banner:
+  - button "Finance Exception Intelligence home":
+    - img "Lenovo"
+    - strong: FINANCE EXCEPTION INTELLIGENCE
+    - generic: Finance Workspace
+  - generic "Workspace options"
+- complementary "Workspace navigation":
+  - navigation "Primary navigation":
+    - button "Monitor":
+    - button "Analysis":
+    - button "Report Q&A":
+    - button "Knowledge":
+    - button "Reports":
+    - button "Monitor Studio":
+    - button "Monitor Market":
+    - button "Task To-do":
+- main:
+  - group "Fixed monitor views":
+    - button "KPI overview"
+    - button "Service allocation 1" [pressed]:
+      - text: Service allocation
+      - generic: "1"
+  - generic: Ready to investigate
+  - text: Monitor/
+  - strong: Service allocation
+  - generic: Sample data / Simulated AI / No ledger changes
+  - region "Allocation case journey":
+    - generic: ISG Service / ROW / L0AUXG / 2026 Q3 / USD
+    - generic: Finance review open
+    - navigation "Case steps":
+      - button "1 Review allocation":
+        - generic: "1"
+        - strong: Review allocation
+      - button "2 Investigate":
+        - generic: "2"
+        - strong: Investigate
+      - button "3 Compare scenario":
+        - generic: "3"
+        - strong: Compare scenario
+      - button "4 Report":
+        - generic: "4"
+        - strong: Report
+      - button "5 Follow up":
+        - generic: "5"
+        - strong: Follow up
+  - region "Service allocation":
+    - heading "Service allocation" [level=1]
+    - paragraph: Quarter close / 2026 Q3
+    - paragraph:
+      - text: ISG Service / ROW / Profit center
+      - strong:
+        - code: L0AUXG
+    - button "Back to overview"
+    - text: Review period
+    - combobox "Review period":
+      - option "2026009 / Month 3 true-up" [selected]
+      - option "2026007 / Month 1 (locked)"
+      - option "2026008 / Month 2 (locked)"
+      - option "2026 Q3 / Quarter total"
+    - paragraph: Quarter weights / Current-period amounts / USD
+    - button "Download CSV"
+    - status: Sample allocation ready / USD
+    - generic "One linked allocation case":
+      - heading "Segment GP needs review" [level=2]
+      - text: One linked allocation case / GA / Month 3 true-up
+      - paragraph:
+        - strong: −235,412.32 USD
+        - text: / 2026009 GP · Quarter allocation weight 85.7143%
+      - paragraph: "Linked signal: LE negative quarter revenue base. Posting validity remains unconfirmed."
+      - button "Inspect linked LE source"
+      - button "Analyze cause"
+    - generic "Financial overview":
+      - term: GA gross profit / period
+      - definition: −235,412.32
+      - paragraph: USD / Revenue less allocated cost
+      - term: GA quarter revenue weight
+      - definition: 85.7143%
+      - paragraph: "Months 1–2 reference: 60.0000%"
+      - term: Total GP / period
+      - definition: −727,638.08
+      - paragraph: Includes the posted LE revenue adjustment
+    - region "Allocation base & results":
+      - heading "Allocation base & results" [level=2]
+      - paragraph: 2026009 / Month 3 true-up / Select a segment to drill down
+      - generic: Pool reconciled
+      - generic "Allocation results, horizontally scrollable":
+        - table:
+          - rowgroup:
+            - row "BPC segment Revenue after allocation Quarter Rev% Cost before allocation Month 3 true-up Cost after allocation GP":
+              - columnheader "BPC segment"
+              - columnheader "Revenue after allocation":
+                - text: Revenue
+                - text: after allocation
+              - columnheader "Quarter Rev%":
+                - text: Quarter
+                - text: Rev%
+              - columnheader "Cost before allocation":
+                - text: Cost
+                - text: before allocation
+              - columnheader "Month 3 true-up":
+                - text: Month 3
+                - text: true-up
+              - columnheader "Cost after allocation":
+                - text: Cost
+                - text: after allocation
+              - columnheader "GP"
+          - rowgroup:
+            - row "To allocate — — 561,779.40 — — —":
+              - cell "To allocate"
+              - cell "—"
+              - cell "—"
+              - cell "561,779.40"
+              - cell "—"
+              - cell "—"
+              - cell "—"
+            - row "Inspect B0 revenue base 133,757.00 14.2857% 2,675.14 128,406.72 131,081.86 2,675.14":
+              - cell "Inspect B0 revenue base":
+                - button "Inspect B0 revenue base": B0
+              - cell "133,757.00"
+              - cell "14.2857%"
+              - cell "2,675.14"
+              - cell "128,406.72"
+              - cell "131,081.86"
+              - cell "2,675.14"
+            - row "Inspect GA revenue base 802,542.00 85.7143% 267,514.00 770,440.32 1,037,954.32 −235,412.32":
+              - cell "Inspect GA revenue base":
+                - button "Inspect GA revenue base": GA
+              - cell "802,542.00"
+              - cell "85.7143%"
+              - cell "267,514.00"
+              - cell "770,440.32"
+              - cell "1,037,954.32"
+              - cell "−235,412.32"
+            - row "Inspect LE revenue base −936,299.00 -14.2857% 26,751.40 −465,474.36 −438,722.96 −497,576.04":
+              - cell "Inspect LE revenue base":
+                - button "Inspect LE revenue base": LE
+              - cell "−936,299.00"
+              - cell "-14.2857%"
+              - cell "26,751.40"
+              - cell "−465,474.36"
+              - cell "−438,722.96"
+              - cell "−497,576.04"
+            - row "Inspect SMBMM revenue base 133,757.00 14.2857% 2,675.14 128,406.72 131,081.86 2,675.14":
+              - cell "Inspect SMBMM revenue base":
+                - button "Inspect SMBMM revenue base": SMBMM
+              - cell "133,757.00"
+              - cell "14.2857%"
+              - cell "2,675.14"
+              - cell "128,406.72"
+              - cell "131,081.86"
+              - cell "2,675.14"
+          - rowgroup:
+            - row "Total 133,757.00 100.0000% 861,395.08 561,779.40 861,395.08 −727,638.08":
+              - cell "Total"
+              - cell "133,757.00"
+              - cell "100.0000%"
+              - cell "861,395.08"
+              - cell "561,779.40"
+              - cell "861,395.08"
+              - cell "−727,638.08"
+      - paragraph: USD / Cost before = copy costs plus the separate unsegmented pool. B0 / SMBMM copy includes SM / MM mapping. True-up deducts executed pool allocations only; a negative true-up can be valid.
+    - generic "How this allocation works"
+- complementary "Investigation inspector":
+  - tablist "Investigation tools":
+    - tab "Evidence" [selected]
+    - tab "Actions"
+    - tab "Scenario"
+  - tabpanel "Evidence":
+    - heading "From GP to the voucher." [level=2]
+    - paragraph: Allocation evidence
+    - paragraph: Available sample evidence / Run the investigation to trace the calculation.
+    - generic: GA / 2026009 gross profit
+    - strong: −235,412.32 USD
+    - generic: "01"
+    - strong: "GA quarter weight: 85.7143%"
+    - text: Quarter target 1,444,575.60
+    - text: "Less executed: 674,135.28"
+    - generic: Sample
+    - generic: "02"
+    - strong: LE reduces the denominator
+    - text: Quarter base −401,271.00
+    - text: Cost pool totals still reconcile.
+    - generic: Sample
+    - button "VOUCHER 5900018271 / LE −1,203,813.00 Open document evidence":
+      - generic: VOUCHER 5900018271 / LE
+      - strong: −1,203,813.00
+      - generic: Open document evidence
+    - generic: "03"
+    - strong: Counterpart not confirmed
+    - generic: 12 positive records in this sample-quarter scope. No matching reference.
+    - generic: Review
+    - paragraph: Negative GP and negative weights are investigation signals. They do not establish that the posting is wrong.
+    - button "Review recommended actions"
+- status

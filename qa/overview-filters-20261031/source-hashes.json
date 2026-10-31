@@ -1,0 +1,42 @@
+[
+  {
+    "name": "index.html",
+    "sha256": "9f31420d582444471025530affeb18283396bf7b3137873de1820db26e0e7a32",
+    "modifiedAt": "2026-10-31T08:08:05.276Z"
+  },
+  {
+    "name": "app.js",
+    "sha256": "029636842880ba600672829bf83de8b4decda4e8bfc6b16ca508af30831c5604",
+    "modifiedAt": "2026-10-31T08:08:05.341Z"
+  },
+  {
+    "name": "knowledge-ui.js",
+    "sha256": "b4cb53976fbbfc2613366e509b271ed8093bb8d6a642eada7475eac4ac0dafce",
+    "modifiedAt": "2026-10-31T08:08:05.374Z"
+  },
+  {
+    "name": "kpi-overview.js",
+    "sha256": "2aba21f06c56f5abce78c354f58e67196541a809cffbe6610ba46f7941e07a61",
+    "modifiedAt": "2026-10-31T08:11:16.895Z"
+  },
+  {
+    "name": "kpi-scope-config.js",
+    "sha256": "e91e2af88d7fd3ad2cc0ade0dd8797501cf97403064e9d5c6e95c2804d061414",
+    "modifiedAt": "2026-10-31T08:04:24.051Z"
+  },
+  {
+    "name": "vantage.css",
+    "sha256": "1bd00807a9411123753d1e43062d3ec5c1648188d604b4c7904a5c7bcbd02ab0",
+    "modifiedAt": "2026-10-31T08:11:16.975Z"
+  },
+  {
+    "name": "DESIGN.md",
+    "sha256": "8bf250173c5864ea6cd32f47bc7fa00357677ae670ccf5bac69ca38a6a497140",
+    "modifiedAt": "2026-10-31T08:14:22.360Z"
+  },
+  {
+    "name": "case-ui-model.js",
+    "sha256": "44ace60013239cf70df4640a335e02ae27215fbc7dcc6298fd53b3272acc37ae",
+    "modifiedAt": "2026-10-31T08:11:16.951Z"
+  }
+]

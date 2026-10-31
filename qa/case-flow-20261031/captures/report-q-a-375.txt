@@ -1,0 +1,68 @@
+- link "Skip to main content":
+  - /url: "#main"
+- banner:
+  - button "Finance Exception Intelligence home":
+    - img "Lenovo"
+    - strong: FINANCE EXCEPTION INTELLIGENCE
+    - generic: Finance Workspace
+  - generic "Workspace options"
+- complementary "Workspace navigation":
+  - button "Ask report rules": +
+  - navigation "Primary navigation":
+    - button "Monitor":
+    - button "Analysis":
+    - button "Report Q&A" [active]:
+    - button "Knowledge":
+    - button "Reports":
+    - button "Monitor Studio":
+    - button "Monitor Market":
+    - button "Task To-do":
+- main:
+  - group "Fixed monitor views":
+    - button "KPI overview" [pressed]
+    - button "Service allocation 1":
+      - text: Service allocation
+      - generic: "1"
+  - generic: Investigation traced / Review open
+  - paragraph: Your report questions will appear here.
+  - text: Report Q&A/
+  - strong: Report rules
+  - generic: Sample data / Simulated AI / No ledger changes
+  - region "Report Q&A":
+    - heading "Report Q&A" [level=1]
+    - paragraph: Management report rules
+    - paragraph: Ask about your management report. Follow every rule back to its knowledge.
+    - button "+ Ask report rules"
+    - text: Management report
+    - combobox "Management report":
+      - option "ISG Service" [selected]
+      - option "ROW PSD"
+    - text: Knowledge base
+    - combobox "Knowledge base for this chat":
+      - option "All knowledge for this report" [selected]
+      - option "MR Logic / Built-in"
+    - button "Manage knowledge"
+    - generic "Report conversation":
+      - heading "Ask a report question. See the knowledge behind it." [level=2]:
+        - text: Ask a report question.
+        - text: See the knowledge behind it.
+      - paragraph: Choose the management report above. I will find relevant source sections and organize the answer with citations.
+      - generic: Built-in knowledge
+      - strong: MR Logic
+      - paragraph: ISG Service / 2 documents / 11 knowledge cards
+      - button "Browse the source rules"
+    - button "pls tell me the allocation logic for ISG Service?"
+    - button "How is month 3 true-up calculated?"
+    - button "What does non_alloc_flg mean?"
+    - generic: Ask about report logic
+    - textbox "Ask about report logic":
+      - /placeholder: pls tell me the allocation logic for ISG Service?
+    - button "Send"
+    - status: Local knowledge retrieval / Simulated answer streaming / Your conversations stay in this browser.
+    - complementary "Answer sources":
+      - heading "Sources, alongside the answer." [level=2]
+      - paragraph: Knowledge trace
+      - text: ↳
+      - paragraph: Retrieved sections will appear here. Click a citation to inspect its exact text.
+      - button "Explore built-in knowledge"
+- status: "Task updated: Completed. Handoff recorded locally."

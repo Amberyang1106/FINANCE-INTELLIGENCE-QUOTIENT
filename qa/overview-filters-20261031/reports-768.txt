@@ -1,0 +1,105 @@
+- link "Skip to main content":
+  - /url: "#main"
+- banner:
+  - button "Finance Exception Intelligence home":
+    - img "Lenovo"
+    - strong: FINANCE EXCEPTION INTELLIGENCE
+    - generic: Finance Workspace
+  - generic "Workspace options"
+- complementary "Workspace navigation":
+  - navigation "Primary navigation":
+    - button "Monitor":
+    - button "Analysis":
+    - button "Ask Finance":
+    - button "Knowledge":
+    - button "Investigation Reports" [active]:
+    - button "Monitor Studio":
+    - button "Monitor Market":
+    - button "Task To-do":
+- main:
+  - group "Fixed monitor views":
+    - button "KPI overview" [pressed]
+    - button "Service allocation 1":
+      - text: Service allocation
+      - generic: "1"
+  - generic: Ready to investigate
+  - text: Investigation Reports/
+  - strong: Close record
+  - generic: Sample data / Simulated AI / No ledger changes
+  - region "Allocation case journey":
+    - generic: ISG Service / ROW / L0AUXG / 2026 Q3 / USD
+    - generic: Finance review open
+    - navigation "Case steps":
+      - button "1 Review allocation":
+        - generic: "1"
+        - strong: Review allocation
+      - button "2 Investigate":
+        - generic: "2"
+        - strong: Investigate
+      - button "3 Compare scenario" [disabled]:
+        - generic: "3"
+        - strong: Compare scenario
+      - button "4 Investigation Reports":
+        - generic: "4"
+        - strong: Investigation Reports
+      - button "5 Follow up":
+        - generic: "5"
+        - strong: Follow up
+    - status: Save a candidate in Scenario, then generate a report.
+  - option "ISG" [selected]
+  - option "PCSD"
+  - option "MBG"
+  - option "SSG"
+  - option "ISG Service" [selected]
+  - option "ISG HW"
+  - option "ROW" [selected]
+  - option "PRC"
+  - option "2026 Q3" [selected]
+  - option "2026 Q2"
+  - option "2026 Q1"
+  - option "2025 Q4"
+  - option "2025 Q3"
+  - option "Last 5 quarters" [selected]
+  - option "Last 3 quarters"
+  - region "Investigation Reports":
+    - heading "Investigation Reports" [level=1]
+    - paragraph:
+      - code: L0AUXG
+      - text: close record
+    - paragraph: Keep the cause, assumptions and decisions together.
+    - generic: No report draft yet
+    - heading "Save the decision context first." [level=2]
+    - paragraph: Review the evidence, compare the base exclusion and save a candidate. The report will retain all segment impacts and the unresolved LE issue.
+    - button "Review the candidate"
+- complementary "Investigation inspector":
+  - tablist "Investigation tools":
+    - tab "Evidence" [selected]
+    - tab "Actions"
+    - tab "Scenario"
+  - tabpanel "Evidence":
+    - heading "From GP to the voucher." [level=2]
+    - paragraph: Allocation evidence
+    - paragraph: Available sample evidence / Run the investigation to trace the calculation.
+    - generic: GA / 2026009 gross profit
+    - strong: −235,412.32 USD
+    - generic: "01"
+    - strong: "GA quarter weight: 85.7143%"
+    - text: Quarter target 1,444,575.60
+    - text: "Less executed: 674,135.28"
+    - generic: Sample
+    - generic: "02"
+    - strong: LE reduces the denominator
+    - text: Quarter base −401,271.00
+    - text: Cost pool totals still reconcile.
+    - generic: Sample
+    - button "VOUCHER 5900018271 / LE −1,203,813.00 Open document evidence":
+      - generic: VOUCHER 5900018271 / LE
+      - strong: −1,203,813.00
+      - generic: Open document evidence
+    - generic: "03"
+    - strong: Counterpart not confirmed
+    - generic: 12 positive records in this sample-quarter scope. No matching reference.
+    - generic: Review
+    - paragraph: Negative GP and negative weights are investigation signals. They do not establish that the posting is wrong.
+    - button "Review recommended actions"
+- status

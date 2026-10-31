@@ -1,0 +1,203 @@
+- link "Skip to main content":
+  - /url: "#main"
+- banner:
+  - button "Finance Exception Intelligence home":
+    - img "Lenovo"
+    - strong: FINANCE EXCEPTION INTELLIGENCE
+    - generic: Finance Workspace
+  - button "Focus task search Ctrl K":
+    - generic: Focus task search
+    - generic: Ctrl K
+  - generic "Finance reviewer / Local demo workspace":
+    - generic: YT
+    - generic: Finance reviewer
+  - generic "Workspace options"
+- complementary "Workspace navigation":
+  - button "Collapse sidebar" [expanded]:
+    - generic: ‹
+    - generic: Collapse sidebar
+  - navigation "Primary navigation":
+    - button "Monitor":
+      - generic: Monitor
+    - button "Analysis":
+      - generic: Analysis
+    - button "Report Q&A":
+      - generic: Report Q&A
+    - button "Knowledge":
+      - generic: Knowledge
+    - button "Reports":
+      - generic: Reports
+      - generic: "1"
+    - button "Monitor Studio":
+      - generic: Monitor Studio
+    - button "Monitor Market":
+      - generic: Monitor Market
+    - button "Task To-do" [active]:
+      - generic: Task To-do
+      - generic: "2"
+  - text: Finance
+  - text: intelligence
+- main:
+  - group "Fixed monitor views":
+    - button "KPI overview"
+    - button "Service allocation 1" [pressed]:
+      - text: Service allocation
+      - generic: "1"
+  - generic: Investigation traced / Review open
+  - text: Task To-do/
+  - strong: Proposal handoffs
+  - generic: Sample data / Simulated AI / No ledger changes
+  - region "Allocation case journey":
+    - navigation "Case steps":
+      - button "1 Review allocation Not started":
+        - generic: "1"
+        - strong: Review allocation
+        - generic: Not started
+      - button "2 Investigate Calculation traced":
+        - generic: "2"
+        - strong: Investigate
+        - generic: Calculation traced
+      - button "3 Compare scenario In progress":
+        - generic: "3"
+        - strong: Compare scenario
+        - generic: In progress
+      - button "4 Report Draft generated":
+        - generic: "4"
+        - strong: Report
+        - generic: Draft generated
+      - button "5 Follow up Tasks created":
+        - generic: "5"
+        - strong: Follow up
+        - generic: Tasks created
+    - status: Actions track local follow-up. Completion does not close finance review or change the ledger.
+  - region "Proposal tasks":
+    - heading "Proposal tasks" [level=1]
+    - paragraph: Saved proposals and accountable actions
+    - paragraph: Assign the action. Follow the handoff. Keep the outcome connected to its evidence.
+    - button "Create from saved proposal"
+    - generic: Demo samples / Local role preview
+    - strong: Five handoff stages
+    - paragraph: Independent editable samples. Your proposal tasks remain separate.
+    - text: Task collection
+    - combobox "Task collection":
+      - option "My proposal tasks"
+      - option "Demo samples" [selected]
+      - option "All tasks"
+    - text: Find a task
+    - searchbox "Find a task"
+    - text: Display
+    - combobox "Display":
+      - option "List" [selected]
+      - option "Kanban board"
+    - generic "Filters & demo role preview"
+    - option "Finance reviewer / Proposal owner" [selected]
+    - option "yangtt16 / Assignee preview"
+    - option "Alex Chen / Assignee preview"
+    - option "Maya Patel / Assignee preview"
+    - option "David Kim / Assignee preview"
+    - option "All people" [selected]
+    - option "Unassigned"
+    - option "yangtt16"
+    - option "Alex Chen"
+    - option "Maya Patel"
+    - option "David Kim"
+    - option "All stages" [selected]
+    - option "Created"
+    - option "Assigned"
+    - option "Received"
+    - option "In progress"
+    - option "Completed"
+    - generic "Task overview":
+      - button "01 1 Created":
+        - generic: "01"
+        - generic: "1"
+        - generic: Created
+      - button "02 1 Assigned":
+        - generic: "02"
+        - generic: "1"
+        - generic: Assigned
+      - button "03 1 Received":
+        - generic: "03"
+        - generic: "1"
+        - generic: Received
+      - button "04 1 In progress":
+        - generic: "04"
+        - generic: "1"
+        - generic: In progress
+      - button "05 1 Completed":
+        - generic: "05"
+        - generic: "1"
+        - generic: Completed
+    - heading "Follow-up actions" [level=2]
+    - paragraph: 5 of 5 tasks / Collection / Finance reviewer view
+    - generic "Proposal task list":
+      - table:
+        - rowgroup:
+          - row "Action Owner / Due Status Latest feedback":
+            - columnheader "Action"
+            - columnheader "Owner / Due"
+            - columnheader "Status"
+            - columnheader "Latest feedback"
+        - rowgroup:
+          - 'row "Contact the posting user DEMO-001 / Sample / L0AUXG yangtt16 Due 2026-11-03 Completed Built-in demo outcome: entry background documented. Wider counterpart and allocation-policy reviews remain open. 28 Oct, 09:40:00"':
+            - cell "Contact the posting user DEMO-001 / Sample / L0AUXG":
+              - button "Contact the posting user"
+              - generic: DEMO-001 / Sample / L0AUXG
+            - cell "yangtt16 Due 2026-11-03":
+              - text: yangtt16
+              - generic: Due 2026-11-03
+            - cell "Completed":
+              - generic: Completed
+            - 'cell "Built-in demo outcome: entry background documented. Wider counterpart and allocation-policy reviews remain open. 28 Oct, 09:40:00"':
+              - text: "Built-in demo outcome: entry background documented. Wider counterpart and allocation-policy reviews remain open."
+              - generic: 28 Oct, 09:40:00
+          - 'row "Verify the positive counterpart DEMO-002 / Sample / L0AUXG Alex Chen Due 2026-11-04 In progress Built-in demo: extending the check across periods and one-to-many offsets. 28 Oct, 09:35:00"':
+            - cell "Verify the positive counterpart DEMO-002 / Sample / L0AUXG":
+              - button "Verify the positive counterpart"
+              - generic: DEMO-002 / Sample / L0AUXG
+            - cell "Alex Chen Due 2026-11-04":
+              - text: Alex Chen
+              - generic: Due 2026-11-04
+            - cell "In progress":
+              - generic: In progress
+            - 'cell "Built-in demo: extending the check across periods and one-to-many offsets. 28 Oct, 09:35:00"':
+              - text: "Built-in demo: extending the check across periods and one-to-many offsets."
+              - generic: 28 Oct, 09:35:00
+          - row "Check the LE segment assignment DEMO-003 / Sample / L0AUXG Maya Patel Due 2026-11-05 Assigned Assigned to Maya Patel. Waiting for this person to acknowledge the task. 28 Oct, 09:07:00":
+            - cell "Check the LE segment assignment DEMO-003 / Sample / L0AUXG":
+              - button "Check the LE segment assignment"
+              - generic: DEMO-003 / Sample / L0AUXG
+            - cell "Maya Patel Due 2026-11-05":
+              - text: Maya Patel
+              - generic: Due 2026-11-05
+            - cell "Assigned":
+              - generic: Assigned
+            - cell "Assigned to Maya Patel. Waiting for this person to acknowledge the task. 28 Oct, 09:07:00":
+              - text: Assigned to Maya Patel. Waiting for this person to acknowledge the task.
+              - generic: 28 Oct, 09:07:00
+          - 'row "Check currency differences if relevant DEMO-004 / Sample / L0AUXG David Kim Due 2026-11-05 Received Built-in demo: received the relevance check. No FX residual is evidenced in this USD-only sample. 28 Oct, 09:18:00"':
+            - cell "Check currency differences if relevant DEMO-004 / Sample / L0AUXG":
+              - button "Check currency differences if relevant"
+              - generic: DEMO-004 / Sample / L0AUXG
+            - cell "David Kim Due 2026-11-05":
+              - text: David Kim
+              - generic: Due 2026-11-05
+            - cell "Received":
+              - generic: Received
+            - 'cell "Built-in demo: received the relevance check. No FX residual is evidenced in this USD-only sample. 28 Oct, 09:18:00"':
+              - text: "Built-in demo: received the relevance check. No FX residual is evidenced in this USD-only sample."
+              - generic: 28 Oct, 09:18:00
+          - row "Confirm the allocation-base treatment DEMO-005 / Sample / L0AUXG Unassigned No due date Created Created from the selected saved proposal action. 28 Oct, 09:00:00":
+            - cell "Confirm the allocation-base treatment DEMO-005 / Sample / L0AUXG":
+              - button "Confirm the allocation-base treatment"
+              - generic: DEMO-005 / Sample / L0AUXG
+            - cell "Unassigned No due date":
+              - text: Unassigned
+              - generic: No due date
+            - cell "Created":
+              - generic: Created
+            - cell "Created from the selected saved proposal action. 28 Oct, 09:00:00":
+              - text: Created from the selected saved proposal action.
+              - generic: 28 Oct, 09:00:00
+    - status: Tasks and proposal evidence are saved in this browser / Demo feedback only.
+- status: "Task updated: Completed. Handoff recorded locally."

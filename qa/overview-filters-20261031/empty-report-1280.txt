@@ -1,0 +1,79 @@
+- link "Skip to main content":
+  - /url: "#main"
+- banner:
+  - button "Finance Exception Intelligence home":
+    - img "Lenovo"
+    - strong: FINANCE EXCEPTION INTELLIGENCE
+    - generic: Finance Workspace
+  - button "Review allocation case Ctrl K":
+    - generic: Review allocation case
+    - generic: Ctrl K
+  - generic "Finance reviewer / Local demo workspace":
+    - generic: YT
+    - generic: Finance reviewer
+  - generic "Workspace options"
+- complementary "Workspace navigation":
+  - button "Collapse sidebar" [expanded]:
+    - generic: ‹
+    - generic: Collapse sidebar
+  - navigation "Primary navigation":
+    - button "Monitor":
+      - generic: Monitor
+    - button "Analysis":
+      - generic: Analysis
+    - button "Ask Finance":
+      - generic: Ask Finance
+    - button "Knowledge":
+      - generic: Knowledge
+    - button "Investigation Reports":
+      - generic: Investigation Reports
+    - button "Monitor Studio":
+      - generic: Monitor Studio
+    - button "Monitor Market":
+      - generic: Monitor Market
+    - button "Task To-do":
+      - generic: Task To-do
+  - text: Finance
+  - text: intelligence
+- main:
+  - group "Fixed monitor views":
+    - button "KPI overview" [pressed]
+    - button "Service allocation 1":
+      - text: Service allocation
+      - generic: "1"
+  - generic: Ready to investigate
+  - text: Monitor/
+  - strong: KPI overview
+  - generic: Sample data / Simulated AI / No ledger changes
+  - region "KPI overview":
+    - heading "KPI overview" [level=1]
+    - generic: Sample workspace
+    - group "KPI reporting scope":
+      - text: Business group
+      - combobox "Business group":
+        - option "ISG" [selected]
+        - option "PCSD"
+        - option "MBG"
+        - option "SSG"
+      - text: Management report
+      - combobox "Management report":
+        - option "ISG Service"
+        - option "ISG HW" [selected]
+      - text: Geo
+      - combobox "Geo":
+        - option "ROW" [selected]
+        - option "PRC"
+      - text: Reporting period
+      - combobox "Reporting period":
+        - option "2026 Q3" [selected]
+        - option "2026 Q2"
+        - option "2026 Q1"
+        - option "2025 Q4"
+        - option "2025 Q3"
+    - status: Select a connected reporting scope to see sample figures.
+    - status:
+      - heading "No data for this scope" [level=2]
+      - paragraph: No reviewed sample is connected. Choose ISG / ISG Service / ROW / 2026 Q3 to review the available sample.
+    - option "Last 5 quarters" [selected]
+    - option "Last 3 quarters"
+- status

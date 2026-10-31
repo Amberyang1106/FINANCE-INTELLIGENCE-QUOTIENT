@@ -1,0 +1,138 @@
+- link "Skip to main content":
+  - /url: "#main"
+- banner:
+  - button "Finance Exception Intelligence home":
+    - img "Lenovo"
+    - strong: FINANCE EXCEPTION INTELLIGENCE
+    - generic: Finance Workspace
+  - button "Focus template search Ctrl K":
+    - generic: Focus template search
+    - generic: Ctrl K
+  - generic "Finance reviewer / Local demo workspace":
+    - generic: YT
+    - generic: Finance reviewer
+  - generic "Workspace options"
+- complementary "Workspace navigation":
+  - button "Collapse sidebar" [expanded]:
+    - generic: ‹
+    - generic: Collapse sidebar
+  - navigation "Primary navigation":
+    - button "Monitor":
+      - generic: Monitor
+    - button "Analysis":
+      - generic: Analysis
+    - button "Report Q&A":
+      - generic: Report Q&A
+    - button "Knowledge":
+      - generic: Knowledge
+    - button "Reports":
+      - generic: Reports
+      - generic: "1"
+    - button "Monitor Studio":
+      - generic: Monitor Studio
+    - button "Monitor Market" [active]:
+      - generic: Monitor Market
+    - button "Task To-do":
+      - generic: Task To-do
+      - generic: "2"
+  - text: Finance
+  - text: intelligence
+- main:
+  - group "Fixed monitor views":
+    - button "KPI overview"
+    - button "Service allocation 1" [pressed]:
+      - text: Service allocation
+      - generic: "1"
+  - generic: Investigation traced / Review open
+  - text: Monitor Market/
+  - strong: Reusable templates
+  - generic: Sample data / Simulated AI / No ledger changes
+  - region "Monitor templates":
+    - heading "Monitor templates" [level=1]
+    - paragraph: Reusable monitor configurations
+    - paragraph: Install a monitor, tune its benchmark, make it yours.
+    - button "Import template"
+    - text: A template marketplace, in preview.
+    - paragraph: Curated templates and your personal collection live in this browser. Download and exchange JSON files; shared hosting and cross-user uploads are not connected.
+    - generic: Search monitor templates
+    - searchbox "Search monitor templates"
+    - generic: ISG Service / Sample library
+    - heading "Curated monitors Built-in" [level=2]
+    - article:
+      - generic: Curated / ISG service
+      - img "Segment gross profit / 2026 Q3 / USD":
+        - generic: −$301k
+        - generic: $0k
+        - generic: $201k
+        - 'generic "B0: 152,483 USD"'
+        - generic: $152k
+        - generic: B0
+        - 'generic "GA: 160,508 USD"'
+        - generic: $161k
+        - generic: GA
+        - 'generic "LE: -240,763 USD"'
+        - generic: −$241k
+        - generic: LE
+        - 'generic "SMBMM: 152,483 USD"'
+        - generic: $152k
+        - generic: SMBMM
+      - heading "Segment gross profit" [level=3]
+      - paragraph: Latest quarter · GP by BPC Segment. Flag losses before close.
+      - button "Install monitor"
+      - button "Download"
+    - article:
+      - generic: Curated / ISG service
+      - img "Revenue momentum / 2025 Q3–2026 Q3 / USD":
+        - generic: $0k
+        - generic: $743k
+        - generic: $1486k
+        - generic: 2025 Q3
+        - generic: 2025 Q4
+        - generic: 2026 Q1
+        - generic: 2026 Q2
+        - generic: 2026 Q3
+        - 'generic "Support Services / 2025 Q3: 955,025 USD"'
+        - 'generic "Support Services / 2025 Q4: 1,011,203 USD / 5.9% QoQ"'
+        - 'generic "Support Services / 2026 Q1: 1,095,470 USD / 8.3% QoQ Growth"'
+        - 'generic "Support Services / 2026 Q2: 1,179,737 USD / 7.7% QoQ"'
+        - 'generic "Support Services / 2026 Q3: 1,292,093 USD / 9.5% QoQ Growth"'
+        - 'generic "Professional Services / 2025 Q3: 674,135 USD"'
+        - 'generic "Professional Services / 2025 Q4: 730,313 USD / 8.3% QoQ Growth"'
+        - 'generic "Professional Services / 2026 Q1: 786,491 USD / 7.7% QoQ"'
+        - 'generic "Professional Services / 2026 Q2: 842,669 USD / 7.1% QoQ"'
+        - 'generic "Professional Services / 2026 Q3: 758,402 USD / -10.0% QoQ Alert"'
+        - 'generic "Managed Services / 2025 Q3: 393,246 USD"'
+        - 'generic "Managed Services / 2025 Q4: 477,512 USD / 21.4% QoQ Growth"'
+        - 'generic "Managed Services / 2026 Q1: 533,690 USD / 11.8% QoQ Growth"'
+        - 'generic "Managed Services / 2026 Q2: 617,957 USD / 15.8% QoQ Growth"'
+        - 'generic "Managed Services / 2026 Q3: 758,402 USD / 22.7% QoQ Growth"'
+      - heading "Revenue momentum" [level=3]
+      - paragraph: Five quarters · Revenue by BPC BU. Follow growth and decline.
+      - button "Install monitor"
+      - button "Download"
+    - article:
+      - generic: Curated / ISG service
+      - img "Segment cost watch / 2026 Q3 / USD":
+        - generic: −$201k
+        - generic: $0k
+        - generic: $2809k
+        - 'generic "B0: 248,788 USD"'
+        - generic: $249k
+        - generic: B0
+        - 'generic "GA: 2,247,118 USD"'
+        - generic: $2247k
+        - generic: GA
+        - 'generic "LE: -160,508 USD"'
+        - generic: −$161k
+        - generic: LE
+        - 'generic "SMBMM: 248,788 USD"'
+        - generic: $249k
+        - generic: SMBMM
+      - heading "Segment cost watch" [level=3]
+      - paragraph: Latest quarter · Cost by BPC Segment. Review high cost exposure.
+      - button "Install monitor"
+      - button "Download"
+    - heading "Your published templates Local collection" [level=2]
+    - paragraph: Save a board as a template or import a JSON file to start your collection.
+    - status
+- status: "Task updated: Completed. Handoff recorded locally."

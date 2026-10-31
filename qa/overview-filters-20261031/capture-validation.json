@@ -1,0 +1,422 @@
+[
+  {
+    "name": "matrix-collapsed-1280",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "actualImage": {
+      "width": 1265,
+      "height": 791
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:18:45.727Z"
+  },
+  {
+    "name": "overview-1280",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "actualImage": {
+      "width": 1265,
+      "height": 791
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:18:54.581Z"
+  },
+  {
+    "name": "empty-period-1280",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "actualImage": {
+      "width": 1280,
+      "height": 800
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:20:14.106Z"
+  },
+  {
+    "name": "empty-report-1280",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "actualImage": {
+      "width": 1280,
+      "height": 800
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:20:15.225Z"
+  },
+  {
+    "name": "empty-bg-1280",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "actualImage": {
+      "width": 1280,
+      "height": 800
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:20:31.697Z"
+  },
+  {
+    "name": "restored-1280",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "actualImage": {
+      "width": 1265,
+      "height": 791
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:20:33.319Z"
+  },
+  {
+    "name": "freight-1280",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "actualImage": {
+      "width": 1265,
+      "height": 791
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:23:01.752Z"
+  },
+  {
+    "name": "overview-768",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "actualImage": {
+      "width": 753,
+      "height": 1004
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:23:19.899Z"
+  },
+  {
+    "name": "matrix-collapsed-768",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "actualImage": {
+      "width": 753,
+      "height": 1004
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:23:27.741Z"
+  },
+  {
+    "name": "matrix-expanded-768",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "actualImage": {
+      "width": 753,
+      "height": 1004
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:23:30.102Z"
+  },
+  {
+    "name": "empty-768",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "actualImage": {
+      "width": 768,
+      "height": 1024
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:23:42.686Z"
+  },
+  {
+    "name": "ask-finance-768",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "actualImage": {
+      "width": 753,
+      "height": 1004
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:23:44.659Z"
+  },
+  {
+    "name": "reports-768",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "actualImage": {
+      "width": 753,
+      "height": 1004
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:23:46.625Z"
+  },
+  {
+    "name": "matrix-collapsed-375",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "actualImage": {
+      "width": 360,
+      "height": 779
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:24:07.161Z"
+  },
+  {
+    "name": "matrix-dec-375",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "actualImage": {
+      "width": 360,
+      "height": 779
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:24:36.682Z"
+  },
+  {
+    "name": "segment-case-375",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "actualImage": {
+      "width": 360,
+      "height": 779
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:24:52.146Z"
+  },
+  {
+    "name": "matrix-expanded-375",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "actualImage": {
+      "width": 360,
+      "height": 779
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:25:06.450Z"
+  },
+  {
+    "name": "reports-375",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "actualImage": {
+      "width": 360,
+      "height": 779
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:25:12.798Z"
+  },
+  {
+    "name": "overview-375",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "actualImage": {
+      "width": 360,
+      "height": 779
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:26:06.066Z"
+  },
+  {
+    "name": "empty-375",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "actualImage": {
+      "width": 360,
+      "height": 779
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:27:52.032Z"
+  },
+  {
+    "name": "empty-geo-1280",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "actualImage": {
+      "width": 1280,
+      "height": 800
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:28:01.566Z"
+  },
+  {
+    "name": "matrix-expanded-1280",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "actualImage": {
+      "width": 1265,
+      "height": 791
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:28:14.448Z"
+  },
+  {
+    "name": "matrix-expanded-bottom-1280",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "actualImage": {
+      "width": 1265,
+      "height": 791
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:28:29.942Z"
+  },
+  {
+    "name": "matrix-recollapsed-1280",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "actualImage": {
+      "width": 1265,
+      "height": 791
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:28:53.866Z"
+  },
+  {
+    "name": "ask-finance-1280",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "actualImage": {
+      "width": 1265,
+      "height": 791
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:29:01.862Z"
+  },
+  {
+    "name": "reports-1280",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "actualImage": {
+      "width": 1265,
+      "height": 791
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:29:13.585Z"
+  },
+  {
+    "name": "segment-case-1280",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "actualImage": {
+      "width": 1265,
+      "height": 791
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:29:30.996Z"
+  },
+  {
+    "name": "ask-finance-375",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "actualImage": {
+      "width": 360,
+      "height": 779
+    },
+    "jpeg": true,
+    "documentFits": true,
+    "aspectRatioMatches": true,
+    "capturedAt": "2026-10-31T08:29:40.217Z"
+  }
+]
