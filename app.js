@@ -84,27 +84,37 @@
   new ResizeObserver(updateNavIndicator).observe(document.querySelector('.primary-nav'));
   window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',function(){finishMonitorMotion();if(navMotion)navMotion.cancel();});
   function switchView(name) {
-    if (!['kpi','monitor','analysis','reports','chat','knowledge','studio','market','tasks'].includes(name)) return;
+    if (!['kpi','monitor','analysis','scenario','reports','chat','knowledge','studio','market','tasks'].includes(name)) return;
     var enterMonitor = name === 'monitor' && (state.view !== 'monitor' || !monitorShown);
     if (name !== 'monitor') finishMonitorMotion();
     state.view = name;
     if(name==='kpi'||name==='monitor')state.monitorBranch=name;
     document.querySelectorAll('.context-pinned [data-view]').forEach(function(b){var selected=b.dataset.view===state.monitorBranch;b.classList.toggle('active',selected);b.setAttribute('aria-pressed',String(selected));});
     document.querySelector('.app-body').classList.toggle('kpi-mode',name==='kpi');
-    ['kpi','monitor','analysis','reports','chat','knowledge','studio','market','tasks'].forEach(function (v) { var el = $(v + 'View'); el.hidden = v !== name; el.classList.toggle('active', v === name); });
-    document.querySelectorAll('.nav-item').forEach(function (b) { var yes = b.dataset.view === (name==='kpi'?'monitor':name); b.classList.toggle('active', yes); if (yes) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
-    var titles = {kpi:['Monitor','KPI overview'],monitor:['Monitor','Service allocation'],analysis:['Analysis','L0AUXG / Quarter-end'],reports:['Reports','Close record'],chat:['Chat','Report logic'],knowledge:['Knowledge','Report libraries'],studio:['Monitor Studio','Your canvas'],market:['Monitor Market','Reusable templates'],tasks:['Task To-do','Proposal handoffs']};
+    ['kpi','monitor','analysis','scenario','reports','chat','knowledge','studio','market','tasks'].forEach(function (v) { var el = $(v + 'View'); el.hidden = v !== name; el.classList.toggle('active', v === name); });
+    document.querySelectorAll('.nav-item').forEach(function (b) { var yes = b.dataset.view === (name==='kpi'?'monitor':name==='scenario'?'analysis':name); b.classList.toggle('active', yes); if (yes) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
+    var titles = {kpi:['Monitor','KPI overview'],monitor:['Monitor','Service allocation'],analysis:['Analysis','L0AUXG / Quarter-end'],scenario:['Analysis','Scenario comparison'],reports:['Investigation Reports','Close record'],chat:['Ask Report Rules','Report rules'],knowledge:['Knowledge','Report libraries'],studio:['Monitor Studio','Your canvas'],market:['Monitor Market','Reusable templates'],tasks:['Task To-do','Proposal handoffs']};
     $('breadcrumb').innerHTML = '<span>' + titles[name][0] + '</span><b>/</b><strong>' + titles[name][1] + '</strong>';
     if (name === 'reports') renderReport();
-    var isKnowledge = ['kpi','chat','knowledge','studio','market','tasks'].includes(name);
+    var isKnowledge = ['kpi','scenario','chat','knowledge','studio','market','tasks'].includes(name);
     document.querySelector('.app-body').classList.toggle('knowledge-mode', isKnowledge);
     document.querySelector('.inspector').hidden = isKnowledge;
-    $('commandSearch').querySelector('span').textContent = name === 'kpi' ? 'Explore performance / Review exceptions' : name === 'tasks' ? 'Find a proposal task' : name === 'studio' ? 'Describe a monitor' : name === 'market' ? 'Find a monitor template' : isKnowledge ? 'Ask about report logic' : 'Ask about this allocation';
+    $('commandSearch').querySelector('span').textContent = name === 'kpi' ? 'Review allocation case' : name === 'tasks' ? 'Focus task search' : name === 'studio' ? 'Focus monitor request' : name === 'market' ? 'Focus template search' : ['chat','knowledge'].includes(name) ? 'Ask report Rules' : 'Review investigation';
+    document.querySelector('.context-conversations').hidden = name !== 'chat';
+    $('sidebarNewChat').hidden = name !== 'chat';
+    renderCaseNavigation();
     document.dispatchEvent(new CustomEvent('workspace:view', {detail:{name:name}}));
     requestAnimationFrame(updateNavIndicator);
     if (enterMonitor) { monitorShown=true; animateMonitor('entry'); }
   }
+  function openScenarioActions(focus) {
+    switchView('scenario');
+    if (focus) $('scenarioActions').focus({preventScroll:true});
+    $('scenarioActions').scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+  }
   function tab(name, focus) {
+    if (name === 'actions') { openScenarioActions(true); return; }
+    if (name === 'scenario') { switchView('scenario'); if (focus) $('scenarioTitle').focus({preventScroll:true}); return; }
     if (window.FPAStoryMotion) window.FPAStoryMotion.cancel('scenario');
     document.querySelectorAll('[data-tab]').forEach(function (b) { var yes = b.dataset.tab === name; b.setAttribute('aria-selected',String(yes)); b.tabIndex = yes ? 0 : -1; $(b.getAttribute('aria-controls')).hidden = !yes; if (yes && focus) b.focus(); });
   }
@@ -128,7 +138,7 @@
     $('ledgerTable').innerHTML = table(['BPC segment','Revenue<br>after allocation',(isClose || isQuarter ? 'Quarter' : 'Monthly') + '<br>Rev%','Cost<br>before allocation',isClose ? 'Month 3<br>true-up' : 'Pool<br>allocated','Cost<br>after allocation','GP'],body,foot);
     $('ledgerFootnote').textContent = 'USD / Cost before = copy costs plus the separate unsegmented pool. B0 / SMBMM copy includes SM / MM mapping. ' + (isClose ? 'True-up deducts executed pool allocations only; a negative true-up can be valid.' : isQuarter ? 'Quarter GP is the sum of all three months. The GA negative-GP alert relates to month 3.' : 'Historical results are locked and will not change in the candidate scenario.');
     if (isClose || isQuarter) {
-      $('monitorAlerts').innerHTML = '<button type="button" class="alert-card" data-analyze="GA"><span>01 / Negative GP at close</span><strong>GA / ' + money(original.gp.GA) + ' USD</strong><p>2026009 GP is negative. Quarter weight is 85.7143%, up 25.7143pp from months 1–2.</p><b>Investigate GA</b></button><button type="button" class="alert-card" data-analyze="LE"><span>02 / Linked revenue-base signal</span><strong>LE / Negative quarter base</strong><p>' + money(baseline.quarter.base.LE) + ' USD base. Trace the negative voucher and check its positive counterpart.</p><b>Inspect the linked cause</b></button>';
+      $('monitorAlerts').innerHTML = '<div><span class="screen-context">One linked allocation case / GA / Month 3 true-up</span><h2>Segment GP needs review</h2><p><strong class="negative">' + money(original.gp.GA) + ' USD</strong> / 2026009 GP · Quarter allocation weight ' + rate(baseline.quarter.rates.GA) + '</p><p class="small muted">Linked signal: LE negative quarter revenue base. Posting validity remains unconfirmed.</p><button type="button" class="row-link" data-segment="LE">Inspect linked LE source</button></div><button type="button" class="key key-primary" data-analyze="GA">Analyze cause</button>';
     } else $('monitorAlerts').innerHTML = '<div class="info-box">No negative segment GP in this locked period. The linked case occurs in 2026009.<br><button type="button" class="row-link" data-period-close>Review month 3 true-up</button></div>';
     $('segmentPanel').hidden = true;
   }
@@ -170,11 +180,25 @@
     $('excludeBase').checked = state.exclude;
     function pair(before,after) { return '<span class="scenario-before"><small>Original</small>' + before + '</span><strong class="scenario-after"><small>' + (state.exclude?'Candidate':'Selected') + '</small>' + after + '</strong>'; }
     $('scenarioContent').innerHTML = '<div class="scenario-result"><span>GA / 2026009 GP / ' + (state.exclude ? 'candidate' : 'original') + '</span><strong>' + money(m.gp.GA) + '</strong><small>USD / ' + (state.exclude ? signed(m.gp.GA-original.gp.GA) + ' change from original' : 'Select the exclusion to compare') + '</small></div><dl class="mini-comparison"><div><dt>GA quarter weight</dt><dd>' + pair('85.7143%',rate(active.quarter.rates.GA)) + '</dd></div><div><dt>GA month 3 true-up / USD</dt><dd>' + pair(money(original.allocation.GA),money(m.allocation.GA)) + '</dd></div><div><dt>GA total cost / USD</dt><dd>' + pair(money(original.cost.GA),money(m.cost.GA)) + '</dd></div><div><dt>LE month 3 GP / USD</dt><dd class="negative">' + pair(money(original.gp.LE),money(m.gp.LE)) + '</dd></div><div><dt>Total month 3 GP / USD</dt><dd>' + money(sum(m.gp)) + ' / unchanged</dd></div></dl><p class="scenario-note"><strong>Months 1–2 locked / Total GP unchanged.</strong><br>Posted revenue stays unchanged. LE remains unresolved. The candidate reallocates cost across segments; it does not increase total profit.</p>';
+    var summary = window.FPACaseUI.summary(data,baseline,active);
+    $('scenarioImpact').innerHTML = [
+      {label:'GA GP',before:summary.originalGA,after:summary.candidateGA,note:'Cost redistribution'},
+      {label:'LE GP',before:summary.originalLE,after:summary.candidateLE,note:'Finance review open'},
+      {label:'Total GP',before:summary.originalTotal,after:summary.candidateTotal,note:'Unchanged / No profit increase'}
+    ].map(function(item){return '<article class="impact-card"><h2>' + item.label + '</h2><p class="small muted">2026009 / Month 3 / USD</p><dl><div><dt>Original</dt><dd class="' + cls(item.before) + '">' + money(item.before) + '</dd></div><div><dt>Candidate</dt><dd class="' + cls(item.after) + '">' + money(item.after) + '</dd></div><div><dt>Delta</dt><dd>' + signed(item.after-item.before) + '</dd></div></dl><p class="small muted">' + item.note + '</p></article>';}).join('');
+    $('scenarioAllSegments').innerHTML = comparisonTable();
     $('decisionNotes').value = state.notes;
-    $('savePlan').disabled = !state.exclude;
-    $('saveStatus').textContent = state.plan ? ('Candidate saved ' + new Date(state.plan.savedAt).toLocaleString('en-GB') + '. ' + (storageAvailable ? 'Stored in this browser.' : 'Session only; browser storage is unavailable.') + (planChanged() ? ' Current selections have unsaved changes.' : '')) : (state.exclude ? 'Save the candidate with its assumptions and selected follow-ups.' : 'Select the exclusion to save this candidate.');
+    updateScenarioSaveState();
+  }
+  function updateScenarioSaveState() {
+    var changed = !state.plan || planChanged();
+    $('savePlan').disabled = !state.exclude || !changed;
+    $('savePlan').className = changed ? 'key key-primary' : 'quiet-key';
+    $('generateReport').className = state.plan && !changed ? 'key key-primary' : 'quiet-key';
+    $('saveStatus').textContent = state.plan ? ('Candidate saved ' + new Date(state.plan.savedAt).toLocaleString('en-GB') + '. ' + (storageAvailable ? 'Stored in this browser.' : 'Session only; browser storage is unavailable.') + (planChanged() ? ' Unsaved changes. Report and tasks: Uses last saved candidate.' : '')) : (state.exclude ? 'Save this candidate for finance review.' : 'Select the base exclusion to compare and save a candidate.');
     $('generateReport').disabled = !state.plan;
     $('createProposalTasks').disabled = !state.plan;
+    renderCaseNavigation();
   }
   function planChanged() { return state.plan && (state.exclude !== state.plan.exclude || state.notes !== state.plan.notes || JSON.stringify(state.actions) !== JSON.stringify(state.plan.actions)); }
   function comparisonTable() {
@@ -184,8 +208,36 @@
     return table(['Segment','Original<br>quarter Rev%','Selected<br>quarter Rev%','Original<br>Cost','Selected<br>Cost','Original<br>GP','Selected<br>GP','GP change'],body,'<tr><td>Total</td>' + td('100%') + td('100%') + td(money(sum(original.cost))) + td(money(sum(m.cost))) + td(money(sum(original.gp)),cls(sum(original.gp))) + td(money(sum(m.gp)),cls(sum(m.gp))) + td('0.00') + '</tr>');
   }
   function showComparison() {
+    $('comparisonTitle').textContent='Every segment. The same total GP.';
     $('comparisonContent').innerHTML = '<p class="small muted">L0AUXG / 2026009 amounts / USD / ' + (state.exclude ? 'Voucher excluded from the base only' : 'Original base retained') + '</p><div class="table-scroll" tabindex="0" aria-label="All segment scenario results">' + comparisonTable() + '</div><div class="info-box">Months 1–2 stay locked. Booked revenue stays unchanged. Quarter total GP remains ' + money(sum(baseline.quarter.gp)) + ' USD.</div><p class="small">LE retains its posted negative revenue. Its lower GP in the exclusion candidate must remain visible in the close review.</p>';
     $('comparisonDialog').showModal();
+  }
+  function alignCurrentCaseStep() {
+    if (!window.matchMedia('(max-width: 40rem)').matches) return;
+    var nav=$('caseSteps'),current=nav.querySelector('[aria-current="step"]');
+    if (!current || !nav.clientWidth) return;
+    var left=current.offsetLeft,right=left+current.offsetWidth;
+    if (left<nav.scrollLeft) nav.scrollLeft=left;
+    else if (right>nav.scrollLeft+nav.clientWidth) nav.scrollLeft=right-nav.clientWidth;
+  }
+  function renderCaseNavigation() {
+    var visible = ['monitor','analysis','scenario','reports','tasks'].includes(state.view);
+    $('caseNavigation').hidden = !visible;
+    if (!visible) return;
+    var count = window.FPATasks ? window.FPATasks.countForCurrentProposal() : 0;
+    var steps = window.FPACaseUI.steps({view:state.view,analysisStatus:state.status,hasSavedPlan:!!state.plan,hasReport:!!state.report,hasUnsavedChanges:!!planChanged(),taskCount:count});
+    var labels = {not_started:'Not started',in_progress:'In progress',calculated:'Calculation traced',saved:'Candidate saved',generated:'Draft generated',tasks_created:'Tasks created'};
+    $('caseSteps').innerHTML = steps.map(function(step,index){return '<button type="button" class="case-step' + (step.current?' current':'') + '" data-case-step="' + step.id + '" aria-current="' + (step.current?'step':'false') + '" aria-disabled="' + !step.available + '"><span>' + (index+1) + '</span><strong>' + step.label + '</strong><small>' + labels[step.status] + '</small></button>';}).join('');
+    alignCurrentCaseStep();
+    $('caseStepHint').textContent = state.view==='reports'&&!state.report?'Save a candidate in Scenario, then generate a report.':state.view==='tasks'?'Actions track local follow-up. Completion does not close finance review or change the ledger.':'';
+  }
+  function reviewAllocation() {
+    if (window.FPAKpiOverview && !window.FPAKpiOverview.hasCase()) { notify('No allocation case for the selected KPI scope.'); return; }
+    state.segment='GA';state.period=closing;renderMonitor();switchView('monitor');
+  }
+  function startCaseAnalysis(segment,rerun) {
+    prepareAnalysis(segment);
+    if (state.status==='idle'||rerun) runAnalysis($('analysisPrompt').value);
   }
   function prepareAnalysis(segment) {
     state.segment = segment || 'GA'; state.period = closing; renderMonitor();
@@ -203,14 +255,22 @@
     return 'Within this fixed sample, the LE adjustment changes the quarter revenue denominator and therefore the GA allocation. The calculation below traces that effect; entry validity and allocation-policy eligibility still need finance review.';
   }
   function renderAnalysis() {
-    $('runStatus').textContent = state.status === 'running' ? 'Tracing ' + Math.min(state.stage+1,4) + ' / 4' : state.status === 'complete' ? 'Traced / Review open' : 'Ready';
-    $('runStatus').className = 'pill' + (state.status === 'complete' ? ' success' : '');
+    $('runStatus').textContent = state.status === 'running' ? 'Tracing ' + Math.min(state.stage+1,4) + ' / 4' : state.status === 'complete' ? 'Calculation traced' : 'Ready';
+    $('runStatus').className = 'pill';
+    renderCaseNavigation();
     $('sendButton').disabled = state.status === 'running';
     if (state.status === 'idle') return;
     var steps = [['Check the allocation rules','Copy costs first; hold months 1–2 executed allocations fixed.'],['Reconcile the GA true-up','Quarter target ' + money(baseline.quarter.allocation.GA) + ' less executed ' + money(baseline.prior.GA) + ' USD.'],['Trace the quarter revenue base','LE contributes ' + money(baseline.quarter.base.LE) + ' USD to the denominator.'],['Inspect the negative voucher','5900018271 / ' + positiveRows().length + ' positive records checked in the sample scope.']];
     var list = steps.map(function (s,i) { var done = state.status === 'complete' || i < state.stage; return '<li class="' + (done ? 'done' : i === state.stage ? 'current' : '') + '"><span>' + (done ? '✓' : i+1) + '</span><div><strong>' + s[0] + '</strong><small>' + s[1] + '</small></div><em>' + (done ? 'Checked' : i === state.stage ? 'Tracing' : 'Queued') + '</em></li>'; }).join('');
-    var result = state.status === 'complete' ? '<div class="finding-ledger"><p class="screen-context">THE LINKED CAUSE</p><h2>A negative LE voucher inflates the GA weight.</h2><p>The quarter base is ' + money(sum(baseline.quarter.base)) + ' USD. GA contributes ' + money(baseline.quarter.base.GA) + ' USD, giving it an 85.7143% weight.</p></div><ol class="trace-list"><li>GA month 3 true-up: <strong>' + money(baseline.quarter.allocation.GA) + ' − ' + money(baseline.prior.GA) + ' = ' + money(original.allocation.GA) + '</strong> USD.</li><li>Add GA copy cost of ' + money(original.copy.GA) + ': total cost is ' + money(original.cost.GA) + ' USD.</li><li>Revenue ' + money(original.revenue.GA) + ' less cost gives <strong class="negative">GP ' + money(original.gp.GA) + '</strong> USD.</li><li>LE contains voucher <button type="button" class="row-link" data-document="' + esc(voucher.record_id) + '">' + esc(voucher.document_number) + '</button>, amount <strong>' + money(voucher.amt_cents) + '</strong> USD, posted by ' + esc(voucher.user_info) + '.</li></ol><p><strong>Counterpart not confirmed in the sample scope.</strong> Check reference 5900018392, posting background and segment assignment with the posting user.</p><p class="small muted">Manual-entry status is a demo assumption. Source validity, cross-period offsets and eligibility for a base exclusion remain unverified. No FX cause has been established.</p><div class="suggested-prompts"><button type="button" data-document="' + esc(voucher.record_id) + '">Open voucher</button><button type="button" data-followup="Check the positive counterpart and reference">Check the counterpart</button><button type="button" data-open-scenario>Compare base exclusion</button><button type="button" data-open-actions>Review actions</button></div><div class="info-box"><strong>Answer to your question</strong><br>' + esc(state.followup) + '</div>' : '<p class="muted small" role="status">Running the predefined investigation against the sample records…</p>';
-    $('analysisThread').innerHTML = '<article class="message"><div class="avatar" aria-hidden="true">YT</div><div class="message-body"><strong>You</strong><p>' + esc(state.lastQuestion) + '</p></div></article><article class="message"><div class="avatar" aria-hidden="true">F</div><div class="message-body"><strong>FINANCE EXCEPTION INTELLIGENCE <span class="muted small">· Simulated investigation</span></strong><ol class="execution-stack">' + list + '</ol>' + result + '</div></article>';
+    var result = state.status === 'complete' ? '<div class="finding-ledger"><p class="screen-context">THE LINKED CAUSE</p><h2>A negative LE voucher inflates the GA weight.</h2><p>The quarter base is ' + money(sum(baseline.quarter.base)) + ' USD. GA contributes ' + money(baseline.quarter.base.GA) + ' USD, giving it an 85.7143% weight.</p></div><ol class="trace-list"><li>GA month 3 true-up: <strong>' + money(baseline.quarter.allocation.GA) + ' − ' + money(baseline.prior.GA) + ' = ' + money(original.allocation.GA) + '</strong> USD.</li><li>Add GA copy cost of ' + money(original.copy.GA) + ': total cost is ' + money(original.cost.GA) + ' USD.</li><li>Revenue ' + money(original.revenue.GA) + ' less cost gives <strong class="negative">GP ' + money(original.gp.GA) + '</strong> USD.</li><li>LE contains voucher <button type="button" class="row-link" data-document="' + esc(voucher.record_id) + '">' + esc(voucher.document_number) + '</button>, amount <strong>' + money(voucher.amt_cents) + '</strong> USD, posted by ' + esc(voucher.user_info) + '.</li></ol><dl class="analysis-key-evidence"><div><dt>LE voucher / USD</dt><dd>' + money(voucher.amt_cents) + '</dd></div><div><dt>GA quarter weight</dt><dd>' + rate(baseline.quarter.rates.GA) + '</dd></div><div><dt>GA Month 3 GP / USD</dt><dd class="negative">' + money(original.gp.GA) + '</dd></div></dl><p><strong>Finance review open: posting background, LE segment assignment, positive counterpart and allocation-base eligibility.</strong> Counterpart not confirmed in the sample scope. Check reference 5900018392, posting background and segment assignment with the posting user.</p><p class="small muted">Manual-entry status is a demo assumption. Source validity, cross-period offsets and eligibility for a base exclusion remain unverified. No FX cause has been established.</p><div class="suggested-prompts"><button type="button" data-document="' + esc(voucher.record_id) + '">View voucher</button><button type="button" data-followup="Check the positive counterpart and reference">Check the counterpart</button><button type="button" class="key key-primary" data-open-scenario>Compare scenario</button><button type="button" data-open-actions>Review actions</button></div><div class="info-box"><strong>Answer to your question</strong><br>' + esc(state.followup) + '</div>' : '<p class="muted small" role="status">Running the predefined investigation against the sample records…</p>';
+    var trace = '<ol class="execution-stack">' + list + '</ol>';
+    if (state.status==='complete') {
+      var traceStart=result.indexOf('<ol class="trace-list">'),traceEnd=result.indexOf('</ol>',traceStart)+5;
+      var calculation=result.slice(traceStart,traceEnd);
+      result=result.slice(0,traceStart)+result.slice(traceEnd);
+      result='<div class="case-result-status"><span class="pill">Calculation traced</span><span class="pill warning">Finance review open</span></div>'+result+'<details class="calculation-trace"><summary>Expand calculation trace / Four checks</summary>'+trace+calculation+'</details><button type="button" class="row-link" data-rerun-analysis>Rerun sample analysis</button>';
+    }
+    $('analysisThread').innerHTML = '<article class="message"><div class="avatar" aria-hidden="true">YT</div><div class="message-body"><strong>You</strong><p>' + esc(state.lastQuestion) + '</p></div></article><article class="message"><div class="avatar" aria-hidden="true">F</div><div class="message-body"><strong>FINANCE EXCEPTION INTELLIGENCE <span class="muted small">/ Simulated AI</span></strong>' + (state.status==='complete'?result:trace+result) + '</div></article>';
     $('recentStatus').textContent = state.status === 'complete' ? 'Investigation traced / Review open' : 'Tracing sample evidence…';
     renderEvidence();
     if (window.FPAStoryMotion) window.FPAStoryMotion.investigation(state.stage,state.status === 'complete');
@@ -233,7 +293,7 @@
     notify(ok ? 'Candidate saved in this browser. Business review remains open.' : 'Candidate saved for this session only; browser storage is unavailable.');
   }
   function generateReport() {
-    if (!state.plan) { tab('scenario',true); notify('Save a candidate plan before generating the report.'); return; }
+    if (!state.plan) { switchView('scenario'); notify('Save a candidate plan before generating the report.'); return; }
     state.report = {plan:JSON.parse(JSON.stringify(state.plan)),generatedAt:new Date().toISOString()}; persist(); renderReport(); switchView('reports');
     $('reportsTitle').focus({preventScroll:true}); notify('Report draft generated from the saved candidate.');
   }
@@ -244,12 +304,13 @@
   }
   function renderReport() {
     $('reportCount').hidden = !state.report;
+    var savedNotice = planChanged() ? '<p class="info-box">Uses last saved candidate / The current form has unsaved changes.</p>' : '';
     if (!state.report) {
       $('reportContent').innerHTML = '<div class="report-empty"><span class="pill">No report draft yet</span><h2 style="margin-top:1rem">Save the decision context first.</h2><p>Review the evidence, compare the base exclusion and save a candidate. The report will retain all segment impacts and the unresolved LE issue.</p><button type="button" class="key key-primary" data-open-scenario>Review the candidate</button>' + (state.plan ? '<button type="button" class="quiet-key" data-generate-report>Generate from saved candidate</button>' : '') + '</div>'; return;
     }
     var p = state.report.plan;
     var rows = segments.map(function (s) { return '<tr><td>' + s + '</td>' + td(money(original.gp[s]),cls(original.gp[s])) + td(money(revised.gp[s]),cls(revised.gp[s])) + td(signed(revised.gp[s]-original.gp[s])) + '</tr>'; }).join('');
-    $('reportContent').innerHTML = '<article class="report-document"><header><span class="pill warning">Draft / Finance review open</span><h2>ISG Service allocation investigation</h2><p>ROW / L0AUXG / 2026 Q3 / Closing period 2026009<br>Generated ' + esc(new Date(state.report.generatedAt).toLocaleString('en-GB')) + ' / From candidate saved ' + esc(new Date(p.savedAt).toLocaleString('en-GB')) + '</p><div class="report-actions"><button type="button" class="quiet-key" data-create-proposal-tasks>Create proposal tasks</button><button type="button" class="key key-primary" id="downloadReport">Download Markdown</button><button type="button" class="quiet-key" data-open-scenario>Revisit scenario</button></div></header><section class="report-section"><h3>01 / Cause and evidence</h3><p>GA month 3 GP is <strong class="negative">' + money(original.gp.GA) + ' USD</strong>. LE voucher <button type="button" class="row-link" data-document="' + esc(voucher.record_id) + '">5900018271</button>, amount ' + money(voucher.amt_cents) + ' USD, reduces the quarter revenue denominator and raises the GA weight to 85.7143%.</p><p>Document text: ' + esc(voucher.document_text) + '</p><p>User: yangtt16 / Reference: 5900018392. No matching positive reference was confirmed in the sample-quarter scope. Manual-entry status is a demo assumption; posting validity remains open.</p></section><section class="report-section"><h3>02 / Calculation assumptions</h3><p>Exclude this voucher from the revenue base only. Keep booked revenue, copy costs, the cost pool and months 1–2 executed allocations unchanged. Recalculate 2026009 true-up.</p></section><section class="report-section"><h3>03 / All-segment impact / USD</h3><div class="table-scroll" tabindex="0" aria-label="Report GP comparison">' + table(['Segment','Original GP','Candidate GP','Change'],rows,'<tr><td>Total month 3 GP</td>' + td(money(sum(original.gp))) + td(money(sum(revised.gp))) + td('0.00') + '</tr>') + '</div><p class="scenario-note">LE candidate GP is ' + money(revised.gp.LE) + ' USD. Month 3 total GP stays ' + money(sum(original.gp)) + ' USD; quarter GP stays ' + money(sum(baseline.quarter.gp)) + ' USD. This candidate redistributes cost and does not resolve the posted negative revenue.</p></section><section class="report-section"><h3>04 / Selected follow-ups</h3><ul>' + actionDefinitions.filter(function (a) { return p.actions.includes(a.id); }).map(function (a) { return '<li><strong>' + a.title + '</strong> — ' + a.text + ' <em>Pending review.</em></li>'; }).join('') + (p.actions.length ? '' : '<li>No follow-up selected; finance needs to define the next action.</li>') + '</ul></section><section class="report-section"><h3>05 / Decision notes</h3><p>' + esc(p.notes || 'No additional notes recorded.') + '</p><p class="small muted">Saved candidate only. Entry background, segment validity, cross-period offsets and allocation-policy eligibility still require finance review. No journal or actual allocation has been changed.</p></section></article>';
+    $('reportContent').innerHTML = savedNotice + '<article class="report-document"><header><span class="pill warning">Draft / Finance review open</span><h2>ISG Service allocation investigation</h2><p>ROW / L0AUXG / 2026 Q3 / Closing period 2026009<br>Generated ' + esc(new Date(state.report.generatedAt).toLocaleString('en-GB')) + ' / From candidate saved ' + esc(new Date(p.savedAt).toLocaleString('en-GB')) + '</p><div class="report-actions"><button type="button" class="key key-primary" data-create-proposal-tasks>Create follow-up tasks</button><button type="button" class="quiet-key" id="downloadReport">Download Markdown</button><button type="button" class="quiet-key" data-open-scenario>Revisit scenario</button></div></header><section class="report-section"><h3>01 / Cause and evidence</h3><p>GA month 3 GP is <strong class="negative">' + money(original.gp.GA) + ' USD</strong>. LE voucher <button type="button" class="row-link" data-document="' + esc(voucher.record_id) + '">5900018271</button>, amount ' + money(voucher.amt_cents) + ' USD, reduces the quarter revenue denominator and raises the GA weight to 85.7143%.</p><p>Document text: ' + esc(voucher.document_text) + '</p><p>User: yangtt16 / Reference: 5900018392. No matching positive reference was confirmed in the sample-quarter scope. Manual-entry status is a demo assumption; posting validity remains open.</p></section><section class="report-section"><h3>02 / Calculation assumptions</h3><p>Exclude this voucher from the revenue base only. Keep booked revenue, copy costs, the cost pool and months 1–2 executed allocations unchanged. Recalculate 2026009 true-up.</p></section><section class="report-section"><h3>03 / All-segment impact / USD</h3><div class="table-scroll" tabindex="0" aria-label="Report GP comparison">' + table(['Segment','Original GP','Candidate GP','Change'],rows,'<tr><td>Total month 3 GP</td>' + td(money(sum(original.gp))) + td(money(sum(revised.gp))) + td('0.00') + '</tr>') + '</div><p class="scenario-note">LE candidate GP is ' + money(revised.gp.LE) + ' USD. Month 3 total GP stays ' + money(sum(original.gp)) + ' USD; quarter GP stays ' + money(sum(baseline.quarter.gp)) + ' USD. This candidate redistributes cost and does not resolve the posted negative revenue.</p></section><section class="report-section"><h3>04 / Selected follow-ups</h3><ul>' + actionDefinitions.filter(function (a) { return p.actions.includes(a.id); }).map(function (a) { return '<li><strong>' + a.title + '</strong> — ' + a.text + ' <em>Pending review.</em></li>'; }).join('') + (p.actions.length ? '' : '<li>No follow-up selected; finance needs to define the next action.</li>') + '</ul></section><section class="report-section"><h3>05 / Decision notes</h3><p>' + esc(p.notes || 'No additional notes recorded.') + '</p><p class="small muted">Saved candidate only. Entry background, segment validity, cross-period offsets and allocation-policy eligibility still require finance review. No journal or actual allocation has been changed.</p></section></article>';
   }
   function download(name, content, type) {
     var blob = new Blob([content],{type:type}); var url = URL.createObjectURL(blob); var a = document.createElement('a'); a.href=url; a.download=name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(function () { URL.revokeObjectURL(url); },1000);
@@ -265,26 +326,40 @@
     if (b.dataset.view) switchView(b.classList.contains('nav-item')&&b.dataset.view==='monitor'?state.monitorBranch:b.dataset.view);
     if (b.dataset.tab) tab(b.dataset.tab,false);
     if (b.dataset.segment) showSegment(b.dataset.segment);
-    if (b.dataset.analyze) prepareAnalysis(b.dataset.analyze);
+    if (b.hasAttribute('data-review-allocation')) reviewAllocation();
+    if (b.dataset.analyze) startCaseAnalysis(b.dataset.analyze);
+    if (b.hasAttribute('data-rerun-analysis')) startCaseAnalysis(state.segment,true);
+    if (b.dataset.caseStep) {
+      var step=window.FPACaseUI.steps({view:state.view,analysisStatus:state.status,hasSavedPlan:!!state.plan}).find(function(s){return s.id===b.dataset.caseStep;});
+      if(step.available) switchView(step.id);
+      else { $('caseStepHint').textContent='Run the sample investigation first, or open a saved candidate.'; notify('Start the investigation to trace this candidate.'); }
+    }
     if (b.dataset.document) openVoucher(b.dataset.document);
     if (b.hasAttribute('data-period-close')) { state.period=closing; renderMonitor(); animateMonitor('entry'); }
     if (b.dataset.close) $(b.dataset.close).close();
-    if (b.hasAttribute('data-open-actions')) tab('actions',true);
-    if (b.hasAttribute('data-open-scenario') || b.hasAttribute('data-voucher-scenario')) { if ($('voucherDialog').open) $('voucherDialog').close(); tab('scenario',true); $('scenarioTab').scrollIntoView({block:'nearest',behavior:'smooth'}); }
+    if (b.hasAttribute('data-open-actions')) openScenarioActions(true);
+    if (b.hasAttribute('data-open-scenario') || b.hasAttribute('data-voucher-scenario')) { if ($('voucherDialog').open) $('voucherDialog').close(); if ($('comparisonDialog').open) $('comparisonDialog').close(); if (b.hasAttribute('data-return-current-candidate') && $('taskDetailDialog').open) $('taskDetailDialog').close(); tab('scenario',true); }
     if (b.dataset.followup) { $('analysisPrompt').value=b.dataset.followup; $('analysisPrompt').focus(); }
     if (b.hasAttribute('data-generate-report')) generateReport();
     if (b.id==='downloadReport') download('L0AUXG-2026Q3-investigation.md',reportText(),'text/markdown;charset=utf-8');
   });
   $('periodSelect').addEventListener('change',function (e) { state.period=e.target.value; renderMonitor(); animateMonitor('entry'); });
   $('closeSegment').addEventListener('click',function () { $('segmentPanel').hidden=true; });
-  $('newAnalysis').addEventListener('click',function () { prepareAnalysis('GA'); });
   $('recentCase').addEventListener('click',function () { prepareAnalysis('GA'); });
-  $('commandSearch').addEventListener('click',function () { if(state.view === 'kpi') { switchView('monitor'); } else if(state.view === 'tasks') $('taskSearch').focus(); else if (state.view === 'studio') $('monitorRequest').focus(); else if(state.view === 'market') $('marketSearch').focus(); else if ((state.view === 'chat' || state.view === 'knowledge') && window.FPAKnowledge) window.FPAKnowledge.focusChat(); else prepareAnalysis(state.segment); });
+  function commandAction() {
+    if(state.view==='kpi')reviewAllocation();
+    else if(state.view==='tasks')$('taskSearch').focus();
+    else if(state.view==='studio')$('monitorRequest').focus();
+    else if(state.view==='market')$('marketSearch').focus();
+    else if(['chat','knowledge'].includes(state.view)&&window.FPAKnowledge)window.FPAKnowledge.focusChat();
+    else prepareAnalysis(state.segment);
+  }
+  $('commandSearch').addEventListener('click',commandAction);
   $('analysisForm').addEventListener('submit',function (e) { e.preventDefault(); runAnalysis($('analysisPrompt').value); });
   $('startInvestigation').addEventListener('click',function () { runAnalysis('Why did GA GP turn negative after the month 3 true-up? Trace the revenue base and source voucher.'); });
   $('analysisPrompt').addEventListener('keydown',function (e) { if (e.key==='Enter'&&!e.shiftKey&&!e.isComposing) { e.preventDefault(); $('analysisForm').requestSubmit(); } });
   $('excludeBase').addEventListener('change',function (e) { state.exclude=e.target.checked; renderScenario(); if (window.FPAStoryMotion) window.FPAStoryMotion.scenario(); });
-  $('decisionNotes').addEventListener('input',function (e) { state.notes=e.target.value; $('saveStatus').textContent=state.plan?'Current notes have unsaved changes. Save the candidate again to update the report inputs.':'Notes will be saved with the candidate.'; });
+  $('decisionNotes').addEventListener('input',function (e) { state.notes=e.target.value; updateScenarioSaveState(); });
   $('actionsContent').addEventListener('change',function (e) { if (!e.target.dataset.action) return; state.actions=Array.from(document.querySelectorAll('[data-action]:checked')).map(function (b) { return b.dataset.action; }); renderScenario(); });
   $('fullComparison').addEventListener('click',showComparison);
   $('savePlan').addEventListener('click',savePlan);
@@ -296,7 +371,7 @@
     try { localStorage.removeItem(storageKey); } catch (_) { storageAvailable=false; }
     $('resetDialog').close(); location.reload();
   });
-  document.addEventListener('keydown',function (e) { if ((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k') { e.preventDefault(); if(state.view === 'tasks') $('taskSearch').focus(); else if (state.view === 'studio') $('monitorRequest').focus(); else if(state.view === 'market') $('marketSearch').focus(); else if ((state.view === 'chat' || state.view === 'knowledge') && window.FPAKnowledge) window.FPAKnowledge.focusChat(); else prepareAnalysis(state.segment); } });
+  document.addEventListener('keydown',function (e) { if ((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k') { e.preventDefault(); commandAction(); } });
   document.querySelector('.inspector-tabs').addEventListener('keydown',function (e) {
     var tabs=Array.from(document.querySelectorAll('[data-tab]'));var index=tabs.indexOf(document.activeElement);if(index<0)return;
     var next=e.key==='ArrowRight'?(index+1)%3:e.key==='ArrowLeft'?(index+2)%3:e.key==='Home'?0:e.key==='End'?2:null;
@@ -305,8 +380,16 @@
   function getProposalSnapshot(sample) {
     var plan=sample?{exclude:true,excludedRecord:voucher.record_id,document:voucher.document_number,scope:data.scope.profit_center,period:closing,notes:'Built-in demo proposal: verify posting background, counterpart, segment and policy eligibility before recording an allocation-base decision.',actions:['contact','offset','segment','fx'],savedAt:'2026-10-28T01:00:00.000Z'}:state.plan;
     if(!plan)return null;
-    return JSON.parse(JSON.stringify({plan:plan,sample:!!sample,case:{business:'ISG Service',geo:'ROW',profitCenter:data.scope.profit_center,quarter:'2026 Q3',period:closing,document:voucher.document_number,reference:voucher.reference},evidence:{document:voucher.document_number,recordId:voucher.record_id,segment:voucher.bpc_seg_cd,user:voucher.user_info,amount:money(voucher.amt_cents)+' USD',text:voucher.document_text,counterpart:'No matching positive reference confirmed within the sample quarter; wider checks remain open.'},cause:'The negative LE revenue voucher reduces the quarter denominator and raises the GA allocation weight.',assumptions:'Exclude the voucher from the allocation base only; preserve posted revenue, copy costs, cost pool and months 1–2. Recalculate month 3 true-up only. Business eligibility is not yet verified.',impact:{originalGPGa:money(original.gp.GA)+' USD',candidateGPGa:money(revised.gp.GA)+' USD',totalGP:money(sum(original.gp))+' USD / unchanged',leCandidateGP:money(revised.gp.LE)+' USD'},actions:actionDefinitions.filter(function(a){return plan.actions.includes(a.id);}),hasUnsavedChanges:!sample&&!!planChanged()}));
+    return JSON.parse(JSON.stringify({plan:plan,sample:!!sample,case:{business:'ISG Service',geo:'ROW',profitCenter:data.scope.profit_center,quarter:'2026 Q3',period:closing,document:voucher.document_number,reference:voucher.reference},evidence:{document:voucher.document_number,recordId:voucher.record_id,segment:voucher.bpc_seg_cd,user:voucher.user_info,amount:money(voucher.amt_cents)+' USD',text:voucher.document_text,counterpart:'No matching positive reference confirmed within the sample quarter; wider checks remain open.'},cause:'The negative LE revenue voucher reduces the quarter denominator and raises the GA allocation weight.',assumptions:'Exclude the voucher from the allocation base only; preserve posted revenue, copy costs, cost pool and months 1–2. Recalculate month 3 true-up only. Business eligibility is not yet verified.',impact:{originalGPGa:money(original.gp.GA)+' USD',candidateGPGa:money(revised.gp.GA)+' USD',totalGP:money(sum(original.gp))+' USD / unchanged',leCandidateGP:money(revised.gp.LE)+' USD'},actions:actionDefinitions.filter(function(a){return plan.actions.includes(a.id);}),reportGeneratedAt:!sample&&state.report&&state.report.plan.savedAt===plan.savedAt?state.report.generatedAt:null,reportMarkdown:!sample&&state.report&&state.report.plan.savedAt===plan.savedAt?reportText():null,hasUnsavedChanges:!sample&&!!planChanged()}));
   }
-  window.FPAWorkspace = {showView:switchView, notify:notify, getProposal:getProposalSnapshot, getSampleProposal:function(){return getProposalSnapshot(true);}, refreshNavigation:updateNavIndicator, reviewProposal:function(){switchView('analysis');tab('scenario',true);}};
-  renderMonitor();renderEvidence();renderActions();renderScenario();renderReport();switchView('kpi');
+  function reviewProposal(source) {
+    if (!source) { switchView('scenario'); return; }
+    $('comparisonTitle').textContent='Saved proposal / Source evidence';
+    $('comparisonContent').innerHTML='<p class="pill">Frozen proposal snapshot</p><h3>' + esc(source.case.business+' / '+source.case.profitCenter+' / '+source.case.period) + '</h3><p>Candidate saved ' + esc(source.plan.savedAt) + ' / Document ' + esc(source.plan.document) + '</p><p>' + esc(source.assumptions) + '</p><p>GA GP ' + esc(source.impact.originalGPGa) + ' → ' + esc(source.impact.candidateGPGa) + '<br>LE candidate GP ' + esc(source.impact.leCandidateGP) + '<br>Total GP ' + esc(source.impact.totalGP) + '</p><h3>Decision notes</h3><p>' + esc(source.plan.notes||'No additional notes recorded.') + '</p><h3>Saved follow-ups</h3><ul>' + source.actions.map(function(a){return '<li>'+esc(a.title)+'</li>';}).join('') + '</ul>' + (source.reportMarkdown?'<details class="rules-panel"><summary>Source report draft / '+esc(source.reportGeneratedAt)+'</summary><pre class="source-report-text">'+esc(source.reportMarkdown)+'</pre></details>':'<p class="small muted">No report snapshot was attached when these tasks were created. The saved proposal is the source.</p>') + '<p class="scenario-note">Finance review open / No ledger changes. Later edits do not rewrite this source snapshot.</p><button type="button" class="quiet-key" data-open-scenario data-return-current-candidate>Return to current candidate</button>';
+    $('comparisonDialog').showModal();
+  }
+  window.FPAWorkspace = {showView:switchView, notify:notify, getProposal:getProposalSnapshot, getSampleProposal:function(){return getProposalSnapshot(true);}, refreshNavigation:updateNavIndicator, refreshCaseNavigation:renderCaseNavigation, getCaseSummary:function(){return window.FPACaseUI.summary(data,baseline,adjusted);}, startCaseAnalysis:startCaseAnalysis, reviewProposal:reviewProposal};
+  $('scenarioActions').appendChild($('actionsContent'));
+  new ResizeObserver(alignCurrentCaseStep).observe($('caseSteps'));
+  renderMonitor();renderEvidence();renderActions();renderScenario();renderReport();renderAnalysis();switchView('kpi');
 })();

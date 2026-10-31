@@ -11,8 +11,13 @@ assert.equal(rows.slice(-3)[0].label,'2026 Q1');assert.equal(rows[4].costCents-r
 console.log('KPI reconciliation, source-credit eligibility, BU history consistency and zero-base comparison checks passed.');
 
 // Execute the production renderer with a minimal document, then check the emitted bar geometry.
-const controls={};for(const id of ['kpiRange','kpiWindowLabel','kpiMetrics','kpiCharts','kpiQuarterTable'])controls[id]={value:'5',innerHTML:'',textContent:'',addEventListener(){}};
+vm.runInContext(fs.readFileSync(__dirname+'/case-ui-model.js','utf8'),c);
+vm.runInContext(fs.readFileSync(__dirname+'/kpi-scope-config.js','utf8'),c);
+c.FPAWorkspace={getCaseSummary:()=>c.FPACaseUI.summary(c.ISG_DEMO,base,c.ISGAllocation.calculate(c.ISG_DEMO,c.ISG_DEMO.scenario.excluded_revenue_base_record_ids))};
+const controls={};for(const id of ['kpiRange','kpiWindowLabel','kpiMetrics','kpiCharts','kpiQuarterTable','allocationCaseCard','kpiBG','kpiReport','kpiGeo','kpiPeriod','kpiDataPanel','kpiEmptyState','kpiDataNote','kpiDefinitionNote','statusGrid','matrixToggle','monthlyMatrix','kpiDefinitions','closeFreight'])controls[id]={value:'5',innerHTML:'',textContent:'',setAttribute(){},addEventListener(){}};
 c.document={getElementById:id=>controls[id],addEventListener(){}};
 function checkPlot(count){controls.kpiRange.value=String(count);vm.runInContext(fs.readFileSync(__dirname+'/kpi-overview.js','utf8'),c);const svg=controls.kpiCharts.innerHTML.match(/<svg[^>]*aria-label="Cost credit trend[\s\S]*?<\/svg>/)[0];const bars=[...svg.matchAll(/<rect class="kpi-bar" x="([\d.]+)" y="([\d.]+)" width="([\d.]+)" height="([\d.]+)"/g)].map(m=>({x:+m[1],y:+m[2],w:+m[3],h:+m[4]}));assert.equal(bars.length,count);bars.forEach(b=>{assert.ok(b.x>=75,'Bar must stay right of the axis gutter');assert.ok(b.x+b.w<=610,'Bar must stay inside the plot');assert.ok(Number.isFinite(b.y)&&b.h>=2);});assert.ok(bars[0].x-63>=12,'Keep a visible gap from the right edge of y-axis labels');for(let i=1;i<bars.length;i++)assert.ok(bars[i].x>bars[i-1].x+bars[i-1].w);assert.equal(bars.at(-1).h,2,'Zero credit remains a baseline indicator');}
 checkPlot(5);checkPlot(3);
+assert.match(controls.kpiMetrics.innerHTML,/Quarter GP/);assert.match(controls.kpiMetrics.innerHTML,/224,711.76/);
+assert.match(controls.allocationCaseCard.innerHTML,/235,412.32/);assert.match(controls.allocationCaseCard.innerHTML,/Review allocation/);assert.match(controls.allocationCaseCard.innerHTML,/85.7143%/);
 console.log('Rendered Cost credit chart: 3/5-quarter bars stay inside the plot and clear the y-axis labels.');

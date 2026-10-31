@@ -50,7 +50,7 @@
     $('chatLibrary').value=c?c.library:'all';
     var busy=!!(running && c && running.chatId===c.id);
     $('chatReport').disabled=busy; $('chatLibrary').disabled=busy; $('knowledgeSend').hidden=busy; $('knowledgeStop').hidden=!busy;
-    $('chatTitle').textContent=c && c.messages.length?c.title:'Report logic';
+    $('chatTitle').textContent='Ask Report Rules';
     $('chatSuggestions').innerHTML=(report==='isg-service'?['pls tell me the allocation logic for ISG Service?','How is month 3 true-up calculated?','What does non_alloc_flg mean?']:['What rules are documented for ROW PSD?']).map(function (q) { return '<button type="button" data-knowledge-prompt="'+esc(q)+'">'+esc(q)+'</button>'; }).join('');
     renderMessages(); renderSources(); renderChatList();
   }

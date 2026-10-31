@@ -4,7 +4,7 @@
   "private": true,
   "description": "Static finance exception intelligence demo; Vantage independent branch.",
   "scripts": {
-    "test": "node --test allocation.test.cjs knowledge.test.cjs monitor-model.test.cjs task-model.test.cjs motion.test.cjs story-motion.test.cjs kpi-overview.test.cjs",
+    "test": "node --test allocation.test.cjs knowledge.test.cjs monitor-model.test.cjs task-model.test.cjs motion.test.cjs story-motion.test.cjs kpi-overview.test.cjs case-ui-model.test.cjs case-flow.test.cjs task-board.test.cjs kpi-scope.test.cjs kpi-scope-ui.test.cjs",
     "sync-data": "node sync-demo-data.cjs"
   },
   "engines": {

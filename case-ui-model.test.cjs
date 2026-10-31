@@ -1,0 +1,20 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const c=vm.createContext({});c.window=c;for(const f of ['demo-data.js','allocation.js'])vm.runInContext(fs.readFileSync(__dirname+'/'+f,'utf8'),c);
+assert.ok(fs.existsSync(__dirname+'/case-ui-model.js'),'presentation model must exist');
+vm.runInContext(fs.readFileSync(__dirname+'/case-ui-model.js','utf8'),c);
+const a=c.ISGAllocation,b=a.calculate(c.ISG_DEMO),d=a.calculate(c.ISG_DEMO,c.ISG_DEMO.scenario.excluded_revenue_base_record_ids),s=c.FPACaseUI.summary(c.ISG_DEMO,b,d);
+assert.equal(s.quarterlyGP,a.total(b.quarter.gp));assert.equal(s.quarterlyGP,22471176);
+assert.equal(s.originalGA,b.months[2].gp.GA);assert.equal(s.candidateGA,d.months[2].gp.GA);
+assert.equal(s.originalLE,b.months[2].gp.LE);assert.equal(s.candidateLE,d.months[2].gp.LE);
+assert.equal(s.originalTotal,a.total(b.months[2].gp));assert.equal(s.originalTotal,s.candidateTotal);assert.equal(s.closingPeriod,'2026009');
+const steps=p=>c.FPACaseUI.steps(Object.assign({view:'monitor',analysisStatus:'idle',hasSavedPlan:false,hasReport:false,hasUnsavedChanges:false,taskCount:0},p));
+for(const view of ['analysis','scenario','reports','tasks']){const x=steps({view});assert.equal(x.find(t=>t.id==='analysis').status,'not_started');assert.equal(x.find(t=>t.id==='reports').status,'not_started');assert.equal(x.find(t=>t.id==='tasks').status,'not_started');assert.equal(x.filter(t=>t.current).length,1);}
+assert.equal(steps({analysisStatus:'running'})[1].status,'in_progress');
+assert.equal(steps({analysisStatus:'complete'})[1].status,'calculated');
+assert.equal(steps({analysisStatus:'complete'})[2].available,true);
+assert.equal(steps({hasSavedPlan:true})[2].status,'saved');
+assert.equal(steps({hasSavedPlan:true,hasUnsavedChanges:true})[2].status,'in_progress');
+assert.equal(steps({hasReport:true})[3].status,'generated');
+assert.equal(steps({taskCount:2})[4].status,'tasks_created');
+assert.equal(steps({view:'chat'}).filter(t=>t.current).length,0);
+console.log('Case summary and evidence-based step states passed.');
