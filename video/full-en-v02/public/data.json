@@ -1,0 +1,98 @@
+{
+  "gp": {
+    "labels": [
+      "B0",
+      "GA",
+      "LE",
+      "SMBMM"
+    ],
+    "values": [
+      152482.98,
+      160508.4,
+      -240762.6,
+      152482.98
+    ],
+    "period": "2026 Q3",
+    "source": "Reviewed allocation sample · Quarter total"
+  },
+  "trend": {
+    "labels": [
+      "2025 Q3",
+      "2025 Q4",
+      "2026 Q1",
+      "2026 Q2",
+      "2026 Q3"
+    ],
+    "series": [
+      {
+        "name": "Support Services",
+        "values": [
+          955024.98,
+          1011202.92,
+          1095469.83,
+          1179736.74,
+          1292092.62
+        ]
+      },
+      {
+        "name": "Professional Services",
+        "values": [
+          674135.28,
+          730313.22,
+          786491.16,
+          842669.1,
+          758402.19
+        ]
+      },
+      {
+        "name": "Managed Services",
+        "values": [
+          393245.58,
+          477512.49,
+          533690.43,
+          617957.34,
+          758402.19
+        ]
+      }
+    ],
+    "period": "2025 Q3–2026 Q3",
+    "source": "Synthetic BPC BU history · Demo only"
+  },
+  "overview": [
+    {
+      "label": "2025 Q3",
+      "revenueCents": 202240584,
+      "costCents": 180892967,
+      "creditCents": 1483152,
+      "reviewed": false
+    },
+    {
+      "label": "2025 Q4",
+      "revenueCents": 221902863,
+      "costCents": 198982263,
+      "creditCents": 1920684,
+      "reviewed": false
+    },
+    {
+      "label": "2026 Q1",
+      "revenueCents": 241565142,
+      "costCents": 217071560,
+      "creditCents": 1142837,
+      "reviewed": false
+    },
+    {
+      "label": "2026 Q2",
+      "revenueCents": 264036318,
+      "costCents": 227408301,
+      "creditCents": 2341769,
+      "reviewed": false
+    },
+    {
+      "label": "2026 Q3",
+      "revenueCents": 280889700,
+      "costCents": 258418524,
+      "creditCents": 0,
+      "reviewed": true
+    }
+  ]
+}

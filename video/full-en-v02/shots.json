@@ -1,0 +1,137 @@
+[
+  {
+    "id": "01",
+    "time": "00:00–00:06",
+    "duration": 6,
+    "operation": "Lenovo logo, exact full product name, Finance Workspace; lime marker leads into the actual workbench.",
+    "text": "Finance Exception Intelligence. From signals to actions.",
+    "start": 0,
+    "voiceStart": 0.4
+  },
+  {
+    "id": "02",
+    "time": "00:06–00:18",
+    "duration": 12,
+    "operation": "Monitor → KPI overview, last 5 quarters. Reveal Revenue, Cost and Cost credit charts; one clear wide view, then a readable detail. Q3 values and synthetic-history notice stay visible.",
+    "text": "Track revenue, cost, and cost credits. Current-quarter totals match the sample; earlier history is illustrative.",
+    "start": 6,
+    "voiceStart": 6.4
+  },
+  {
+    "id": "03",
+    "time": "00:18–00:30",
+    "duration": 12,
+    "operation": "Click Review Service allocation or adjacent tab. Show 2026009, GA loss, LE base and warning. Keep loading/stagger/focus sequence at original speed.",
+    "text": "Switch to Service allocation for a specific close check. GA shows negative month-three gross profit, while LE's negative revenue base signals a linked allocation issue.",
+    "start": 18,
+    "voiceStart": 18.4
+  },
+  {
+    "id": "04",
+    "time": "00:30–00:42",
+    "duration": 12,
+    "operation": "Alert → Analysis → Analyze negative GP. Retain all four native investigation steps, about 4.4 seconds, then conclusion.",
+    "text": "The investigation carries the scope forward, checking the rules, quarter-end true-up, revenue base, and source documents across segments.",
+    "start": 30,
+    "voiceStart": 30.4
+  },
+  {
+    "id": "05",
+    "time": "00:42–00:57",
+    "duration": 15,
+    "operation": "Open voucher. Readable document number, amount, LE, user and reference. Show Positive-entry check scope and manual-entry caveat.",
+    "text": "Trace the negative revenue voucher to its amount, segment, posting information, and reference. No positive counterpart is confirmed in this sample scope. Finance must still verify the business context.",
+    "start": 42,
+    "voiceStart": 42.4
+  },
+  {
+    "id": "06",
+    "time": "00:57–01:17",
+    "duration": 20,
+    "operation": "Actions → Scenario. Show before/candidate, months 1–2 lock, base-only exclusion, LE impact and total GP. No cropped-away residual loss.",
+    "text": "Compare a candidate that excludes the voucher from the allocation base only. Keep posted revenue and the first two months unchanged. Recalculate month three: GA improves, but total gross profit is unchanged, and LE remains under review.",
+    "start": 57,
+    "voiceStart": 57.4
+  },
+  {
+    "id": "07",
+    "time": "01:17–01:25",
+    "duration": 8,
+    "operation": "Save candidate plan → Generate report draft. Record same proposal timestamp and selected actions for later tasks.",
+    "text": "Save the candidate and generate a report draft with causes, evidence, assumptions, and selected follow-ups.",
+    "start": 77,
+    "voiceStart": 77.4
+  },
+  {
+    "id": "08",
+    "time": "01:25–01:35",
+    "duration": 10,
+    "operation": "Continue directly from shot 07 in Reports → same saved proposal → Create proposal tasks → Contact the posting user → My proposal tasks. Preserve proposal timestamp and actual task number.",
+    "text": "From this saved proposal, turn the selected action into a task, retaining its evidence, calculation assumptions, and source context.",
+    "start": 85,
+    "voiceStart": 85.4
+  },
+  {
+    "id": "09",
+    "time": "01:35–01:49",
+    "duration": 14,
+    "operation": "Finance reviewer assigns Alex Chen. Show role switch → Receive task → Start work. Display lifecycle/log and actual board movement after closing detail.",
+    "text": "Assign the action to its owner. In the assignee preview, receipt and progress updates build a visible handoff history, so finance can follow execution.",
+    "start": 95,
+    "voiceStart": 95.4
+  },
+  {
+    "id": "10",
+    "time": "01:49–01:55",
+    "duration": 6,
+    "operation": "Enter outcome, Mark completed, chain/log, Completed column. Same task and proposal throughout.",
+    "text": "Record the outcome. No ledger change.",
+    "start": 109,
+    "voiceStart": 109.4
+  },
+  {
+    "id": "11",
+    "time": "01:55–02:09",
+    "duration": 14,
+    "operation": "After completing the case follow-up, introduce a separate report-logic question. New chat → ISG Service / MR Logic → retrieval → real streaming excerpt → completed answer → Business Logic.md / Month 3 true-up citation.",
+    "text": "Beyond case follow-up, ask about report logic. The answer draws on the selected knowledge base, streams into view, and links each rule to its source for review.",
+    "start": 115,
+    "voiceStart": 115.4
+  },
+  {
+    "id": "12",
+    "time": "02:09–02:17",
+    "duration": 8,
+    "operation": "Knowledge → Files / Cards, built-in library and personal-library creation entry.",
+    "text": "Built-in rules and personal knowledge libraries keep reporting definitions easy to find and reuse.",
+    "start": 129,
+    "voiceStart": 129.4
+  },
+  {
+    "id": "13",
+    "time": "02:17–02:30",
+    "duration": 13,
+    "operation": "Studio scope ISG / ISG Service / BPC Segment / GP → natural-language request → simulated routing → quarter GP bar chart → Benchmark GP below zero.",
+    "text": "Choose the report, dimension, and metric. Describe a monitor in natural language, inspect the sample field routing, and set a gross-profit threshold for the generated chart.",
+    "start": 137,
+    "voiceStart": 137.4
+  },
+  {
+    "id": "14",
+    "time": "02:30–02:43",
+    "duration": 13,
+    "operation": "Five-quarter revenue trend by BPC BU; curve reveal, growth/decline benchmark; one real drag and landing; short Market template view.",
+    "text": "Add a revenue trend, configure growth and decline signals, and arrange the cards. Reuse common monitoring patterns through the local template market.",
+    "start": 150,
+    "voiceStart": 150.4
+  },
+  {
+    "id": "15",
+    "time": "02:43–02:50",
+    "duration": 7,
+    "operation": "Exact product name and tagline; prototype disclosure visible at least 5 seconds. No fictitious deployment URL.",
+    "text": "Finance Exception Intelligence. From signals to actions.",
+    "start": 163,
+    "voiceStart": 163.4
+  }
+]

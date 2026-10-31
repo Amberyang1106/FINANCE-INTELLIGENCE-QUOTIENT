@@ -1,0 +1,42 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 2560
+PlayResY: 1440
+WrapStyle: 0
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: EN,Arial,42,&H00FFFFFF,&H00FFFFFF,&H00100B07,&H80000000,0,0,0,0,100,100,0,0,1,3,0,2,160,160,106,1
+Style: ZH,Microsoft YaHei,36,&H00CCDBDF,&H00FFFFFF,&H00100B07,&H80000000,0,0,0,0,100,100,0,0,1,3,0,2,160,160,35,1
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 1,0:00:03.25,0:00:03.80,EN,,0,0,0,,{\an5\pos(1208,726)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:00:11.89,0:00:12.44,EN,,0,0,0,,{\an5\pos(1515,425)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:00:21.77,0:00:22.32,EN,,0,0,0,,{\an5\pos(878,138)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:00:26.09,0:00:26.64,EN,,0,0,0,,{\an5\pos(2040,56)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:00:28.17,0:00:28.72,EN,,0,0,0,,{\an5\pos(1114,850)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:00:31.78,0:00:32.33,EN,,0,0,0,,{\an5\pos(1677,850)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:00:39.25,0:00:39.80,EN,,0,0,0,,{\an5\pos(949,734)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:00:46.83,0:00:47.38,EN,,0,0,0,,{\an5\pos(971,1051)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:00:50.43,0:00:50.98,EN,,0,0,0,,{\an5\pos(1826,348)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:00:55.39,0:00:55.94,EN,,0,0,0,,{\an5\pos(1946,743)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:01:00.98,0:01:01.53,EN,,0,0,0,,{\an5\pos(1946,954)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:01:03.08,0:01:03.63,EN,,0,0,0,,{\an5\pos(1946,1072)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:01:07.19,0:01:07.74,EN,,0,0,0,,{\an5\pos(808,589)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:01:09.28,0:01:09.83,EN,,0,0,0,,{\an5\pos(1620,1006)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:01:11.73,0:01:12.28,EN,,0,0,0,,{\an5\pos(814,734)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:01:13.94,0:01:14.49,EN,,0,0,0,,{\an5\pos(1520,810)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:01:16.29,0:01:16.84,EN,,0,0,0,,{\an5\pos(1523,878)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:01:18.57,0:01:19.12,EN,,0,0,0,,{\an5\pos(1517,776)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:01:20.83,0:01:21.38,EN,,0,0,0,,{\an5\pos(1673,620)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:01:25.18,0:01:25.73,EN,,0,0,0,,{\an5\pos(1536,699)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:01:29.11,0:01:29.66,EN,,0,0,0,,{\an5\pos(538,208)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:01:31.21,0:01:31.76,EN,,0,0,0,,{\an5\pos(1175,1119)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:01:34.90,0:01:35.45,EN,,0,0,0,,{\an5\pos(1704,1130)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:01:44.99,0:01:45.54,EN,,0,0,0,,{\an5\pos(512,439)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:01:49.58,0:01:50.13,EN,,0,0,0,,{\an5\pos(527,547)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:01:51.67,0:01:52.22,EN,,0,0,0,,{\an5\pos(895,644)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:01:53.76,0:01:54.31,EN,,0,0,0,,{\an5\pos(1984,587)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:01:59.13,0:01:59.68,EN,,0,0,0,,{\an5\pos(1224,765)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:02:01.27,0:02:01.82,EN,,0,0,0,,{\an5\pos(1638,774)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:02:03.37,0:02:03.92,EN,,0,0,0,,{\an5\pos(1094,644)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯
+Dialogue: 1,0:02:05.47,0:02:06.02,EN,,0,0,0,,{\an5\pos(1984,587)\fnSegoe UI Symbol\fs50\c&H004AF5C6&\bord0\shad0\fad(0,450)}◯

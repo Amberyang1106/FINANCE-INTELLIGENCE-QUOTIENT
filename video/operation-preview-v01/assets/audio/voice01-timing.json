@@ -1,0 +1,62 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  5,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Start"
+    },
+    {
+        "Index":  6,
+        "Count":  4,
+        "Seconds":  0.485,
+        "Text":  "with"
+    },
+    {
+        "Index":  11,
+        "Count":  3,
+        "Seconds":  0.635,
+        "Text":  "the"
+    },
+    {
+        "Index":  15,
+        "Count":  8,
+        "Seconds":  0.72,
+        "Text":  "negative"
+    },
+    {
+        "Index":  24,
+        "Count":  1,
+        "Seconds":  1.1199999999999999,
+        "Text":  "G"
+    },
+    {
+        "Index":  26,
+        "Count":  1,
+        "Seconds":  1.3499999999999999,
+        "Text":  "P"
+    },
+    {
+        "Index":  28,
+        "Count":  5,
+        "Seconds":  1.655,
+        "Text":  "alert"
+    },
+    {
+        "Index":  35,
+        "Count":  4,
+        "Seconds":  2.465,
+        "Text":  "then"
+    },
+    {
+        "Index":  40,
+        "Count":  4,
+        "Seconds":  2.67,
+        "Text":  "open"
+    },
+    {
+        "Index":  45,
+        "Count":  8,
+        "Seconds":  2.925,
+        "Text":  "Analysis"
+    }
+]

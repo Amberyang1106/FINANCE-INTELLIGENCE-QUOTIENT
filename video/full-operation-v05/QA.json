@@ -1,0 +1,26 @@
+{
+  "decode_pass": true,
+  "decode_errors": "",
+  "source_viewport": [
+    1920,
+    1080
+  ],
+  "display_rect": [
+    200,
+    12,
+    2160,
+    1215
+  ],
+  "caption_top": 1240,
+  "all_recorded_viewport_frames_within_bounds": true,
+  "missing_media": [],
+  "tracks": 5,
+  "segments": [
+    15,
+    1,
+    1,
+    32,
+    32
+  ],
+  "jianying_open_verified": false
+}

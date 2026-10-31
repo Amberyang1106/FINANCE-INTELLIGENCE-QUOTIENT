@@ -1,0 +1,50 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  3,
+        "Seconds":  0.099999999999999992,
+        "Text":  "The"
+    },
+    {
+        "Index":  4,
+        "Count":  8,
+        "Seconds":  0.235,
+        "Text":  "assignee"
+    },
+    {
+        "Index":  13,
+        "Count":  8,
+        "Seconds":  0.80999999999999994,
+        "Text":  "receives"
+    },
+    {
+        "Index":  22,
+        "Count":  3,
+        "Seconds":  1.29,
+        "Text":  "the"
+    },
+    {
+        "Index":  26,
+        "Count":  4,
+        "Seconds":  1.39,
+        "Text":  "task"
+    },
+    {
+        "Index":  31,
+        "Count":  3,
+        "Seconds":  1.7999999999999998,
+        "Text":  "and"
+    },
+    {
+        "Index":  35,
+        "Count":  6,
+        "Seconds":  1.9249999999999998,
+        "Text":  "starts"
+    },
+    {
+        "Index":  42,
+        "Count":  4,
+        "Seconds":  2.34,
+        "Text":  "work"
+    }
+]

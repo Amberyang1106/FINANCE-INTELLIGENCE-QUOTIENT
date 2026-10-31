@@ -1,0 +1,80 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  3,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Now"
+    },
+    {
+        "Index":  4,
+        "Count":  4,
+        "Seconds":  0.33999999999999997,
+        "Text":  "open"
+    },
+    {
+        "Index":  9,
+        "Count":  1,
+        "Seconds":  0.585,
+        "Text":  "a"
+    },
+    {
+        "Index":  11,
+        "Count":  8,
+        "Seconds":  0.64,
+        "Text":  "separate"
+    },
+    {
+        "Index":  20,
+        "Count":  7,
+        "Seconds":  1.065,
+        "Text":  "Service"
+    },
+    {
+        "Index":  28,
+        "Count":  10,
+        "Seconds":  1.49,
+        "Text":  "allocation"
+    },
+    {
+        "Index":  39,
+        "Count":  4,
+        "Seconds":  2.15,
+        "Text":  "case"
+    },
+    {
+        "Index":  45,
+        "Count":  2,
+        "Seconds":  3.4749999999999996,
+        "Text":  "GA"
+    },
+    {
+        "Index":  48,
+        "Count":  5,
+        "Seconds":  3.8699999999999997,
+        "Text":  "shows"
+    },
+    {
+        "Index":  54,
+        "Count":  8,
+        "Seconds":  4.2349999999999994,
+        "Text":  "negative"
+    },
+    {
+        "Index":  63,
+        "Count":  11,
+        "Seconds":  4.63,
+        "Text":  "month-three"
+    },
+    {
+        "Index":  75,
+        "Count":  5,
+        "Seconds":  5.1099999999999994,
+        "Text":  "gross"
+    },
+    {
+        "Index":  81,
+        "Count":  6,
+        "Seconds":  5.42,
+        "Text":  "profit"
+    }
+]

@@ -1,0 +1,62 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  6,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Record"
+    },
+    {
+        "Index":  7,
+        "Count":  3,
+        "Seconds":  0.525,
+        "Text":  "the"
+    },
+    {
+        "Index":  11,
+        "Count":  7,
+        "Seconds":  0.695,
+        "Text":  "outcome"
+    },
+    {
+        "Index":  20,
+        "Count":  4,
+        "Seconds":  2.12,
+        "Text":  "Task"
+    },
+    {
+        "Index":  25,
+        "Count":  10,
+        "Seconds":  2.48,
+        "Text":  "completion"
+    },
+    {
+        "Index":  36,
+        "Count":  4,
+        "Seconds":  3.085,
+        "Text":  "does"
+    },
+    {
+        "Index":  41,
+        "Count":  3,
+        "Seconds":  3.3249999999999997,
+        "Text":  "not"
+    },
+    {
+        "Index":  45,
+        "Count":  6,
+        "Seconds":  3.5799999999999996,
+        "Text":  "change"
+    },
+    {
+        "Index":  52,
+        "Count":  3,
+        "Seconds":  3.9699999999999998,
+        "Text":  "the"
+    },
+    {
+        "Index":  56,
+        "Count":  6,
+        "Seconds":  4.08,
+        "Text":  "ledger"
+    }
+]

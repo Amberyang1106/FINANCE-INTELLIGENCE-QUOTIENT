@@ -1,0 +1,50 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  3,
+        "Seconds":  0.099999999999999992,
+        "Text":  "One"
+    },
+    {
+        "Index":  4,
+        "Count":  9,
+        "Seconds":  0.32,
+        "Text":  "workspace"
+    },
+    {
+        "Index":  15,
+        "Count":  4,
+        "Seconds":  1.91,
+        "Text":  "From"
+    },
+    {
+        "Index":  20,
+        "Count":  9,
+        "Seconds":  2.155,
+        "Text":  "reporting"
+    },
+    {
+        "Index":  30,
+        "Count":  7,
+        "Seconds":  2.65,
+        "Text":  "signals"
+    },
+    {
+        "Index":  38,
+        "Count":  2,
+        "Seconds":  3.145,
+        "Text":  "to"
+    },
+    {
+        "Index":  41,
+        "Count":  11,
+        "Seconds":  3.28,
+        "Text":  "accountable"
+    },
+    {
+        "Index":  53,
+        "Count":  6,
+        "Seconds":  3.855,
+        "Text":  "action"
+    }
+]

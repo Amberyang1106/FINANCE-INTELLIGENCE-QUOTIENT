@@ -1,0 +1,11 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 2560
+PlayResY: 1440
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Cursor,Segoe UI Symbol,60,&H00FFFFFF,&H00FFFFFF,&H00100B07,&H00000000,0,0,0,0,100,100,0,0,1,2,1,7,0,0,0,1
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 2,0:00:07.00,0:00:09.86,Cursor,,0,0,0,,{\move(1450,900,1204,1140,0,2100)}↖
+Dialogue: 1,0:00:09.60,0:00:09.86,Cursor,,0,0,0,,{\an5\pos(1204,1140)\fs66\c&H004AF5C6&}◯

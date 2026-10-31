@@ -1,0 +1,140 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  4,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Open"
+    },
+    {
+        "Index":  5,
+        "Count":  3,
+        "Seconds":  0.365,
+        "Text":  "the"
+    },
+    {
+        "Index":  9,
+        "Count":  8,
+        "Seconds":  0.44,
+        "Text":  "negative"
+    },
+    {
+        "Index":  18,
+        "Count":  7,
+        "Seconds":  0.845,
+        "Text":  "revenue"
+    },
+    {
+        "Index":  26,
+        "Count":  7,
+        "Seconds":  1.26,
+        "Text":  "voucher"
+    },
+    {
+        "Index":  35,
+        "Count":  6,
+        "Seconds":  2.6199999999999997,
+        "Text":  "Review"
+    },
+    {
+        "Index":  42,
+        "Count":  3,
+        "Seconds":  2.9499999999999997,
+        "Text":  "the"
+    },
+    {
+        "Index":  46,
+        "Count":  6,
+        "Seconds":  3.085,
+        "Text":  "amount"
+    },
+    {
+        "Index":  54,
+        "Count":  7,
+        "Seconds":  3.665,
+        "Text":  "segment"
+    },
+    {
+        "Index":  63,
+        "Count":  7,
+        "Seconds":  4.35,
+        "Text":  "posting"
+    },
+    {
+        "Index":  71,
+        "Count":  4,
+        "Seconds":  4.785,
+        "Text":  "user"
+    },
+    {
+        "Index":  76,
+        "Count":  3,
+        "Seconds":  5.33,
+        "Text":  "and"
+    },
+    {
+        "Index":  80,
+        "Count":  9,
+        "Seconds":  5.4849999999999994,
+        "Text":  "reference"
+    },
+    {
+        "Index":  91,
+        "Count":  1,
+        "Seconds":  6.96,
+        "Text":  "A"
+    },
+    {
+        "Index":  93,
+        "Count":  8,
+        "Seconds":  7.09,
+        "Text":  "matching"
+    },
+    {
+        "Index":  102,
+        "Count":  8,
+        "Seconds":  7.5299999999999994,
+        "Text":  "positive"
+    },
+    {
+        "Index":  111,
+        "Count":  5,
+        "Seconds":  8.03,
+        "Text":  "entry"
+    },
+    {
+        "Index":  117,
+        "Count":  2,
+        "Seconds":  8.395,
+        "Text":  "is"
+    },
+    {
+        "Index":  120,
+        "Count":  3,
+        "Seconds":  8.555,
+        "Text":  "not"
+    },
+    {
+        "Index":  124,
+        "Count":  9,
+        "Seconds":  8.7999999999999989,
+        "Text":  "confirmed"
+    },
+    {
+        "Index":  134,
+        "Count":  2,
+        "Seconds":  9.305,
+        "Text":  "in"
+    },
+    {
+        "Index":  137,
+        "Count":  4,
+        "Seconds":  9.415,
+        "Text":  "this"
+    },
+    {
+        "Index":  142,
+        "Count":  6,
+        "Seconds":  9.5849999999999991,
+        "Text":  "sample"
+    }
+]

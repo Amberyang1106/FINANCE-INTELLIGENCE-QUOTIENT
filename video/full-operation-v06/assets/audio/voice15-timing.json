@@ -1,0 +1,74 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  1,
+        "Seconds":  0.099999999999999992,
+        "Text":  "L"
+    },
+    {
+        "Index":  2,
+        "Count":  3,
+        "Seconds":  0.295,
+        "Text":  "E\u0027s"
+    },
+    {
+        "Index":  6,
+        "Count":  8,
+        "Seconds":  0.5,
+        "Text":  "negative"
+    },
+    {
+        "Index":  15,
+        "Count":  4,
+        "Seconds":  0.89999999999999991,
+        "Text":  "base"
+    },
+    {
+        "Index":  20,
+        "Count":  6,
+        "Seconds":  1.23,
+        "Text":  "raises"
+    },
+    {
+        "Index":  27,
+        "Count":  1,
+        "Seconds":  1.635,
+        "Text":  "G"
+    },
+    {
+        "Index":  29,
+        "Count":  3,
+        "Seconds":  1.9049999999999998,
+        "Text":  "A\u0027s"
+    },
+    {
+        "Index":  33,
+        "Count":  5,
+        "Seconds":  2.17,
+        "Text":  "share"
+    },
+    {
+        "Index":  39,
+        "Count":  3,
+        "Seconds":  2.52,
+        "Text":  "and"
+    },
+    {
+        "Index":  43,
+        "Count":  9,
+        "Seconds":  2.6599999999999997,
+        "Text":  "pressures"
+    },
+    {
+        "Index":  53,
+        "Count":  1,
+        "Seconds":  3.17,
+        "Text":  "G"
+    },
+    {
+        "Index":  55,
+        "Count":  1,
+        "Seconds":  3.4,
+        "Text":  "P"
+    }
+]

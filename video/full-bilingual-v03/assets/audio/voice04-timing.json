@@ -1,0 +1,92 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  3,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Ask"
+    },
+    {
+        "Index":  4,
+        "Count":  3,
+        "Seconds":  0.435,
+        "Text":  "why"
+    },
+    {
+        "Index":  8,
+        "Count":  5,
+        "Seconds":  0.625,
+        "Text":  "gross"
+    },
+    {
+        "Index":  14,
+        "Count":  6,
+        "Seconds":  0.93499999999999994,
+        "Text":  "profit"
+    },
+    {
+        "Index":  21,
+        "Count":  6,
+        "Seconds":  1.39,
+        "Text":  "turned"
+    },
+    {
+        "Index":  28,
+        "Count":  8,
+        "Seconds":  1.72,
+        "Text":  "negative"
+    },
+    {
+        "Index":  38,
+        "Count":  6,
+        "Seconds":  3.0749999999999997,
+        "Text":  "Follow"
+    },
+    {
+        "Index":  45,
+        "Count":  3,
+        "Seconds":  3.435,
+        "Text":  "the"
+    },
+    {
+        "Index":  49,
+        "Count":  5,
+        "Seconds":  3.5749999999999997,
+        "Text":  "rules"
+    },
+    {
+        "Index":  56,
+        "Count":  7,
+        "Seconds":  4.43,
+        "Text":  "true-up"
+    },
+    {
+        "Index":  65,
+        "Count":  7,
+        "Seconds":  5.295,
+        "Text":  "revenue"
+    },
+    {
+        "Index":  73,
+        "Count":  4,
+        "Seconds":  5.725,
+        "Text":  "base"
+    },
+    {
+        "Index":  79,
+        "Count":  3,
+        "Seconds":  6.555,
+        "Text":  "and"
+    },
+    {
+        "Index":  83,
+        "Count":  6,
+        "Seconds":  6.685,
+        "Text":  "source"
+    },
+    {
+        "Index":  90,
+        "Count":  8,
+        "Seconds":  7.06,
+        "Text":  "evidence"
+    }
+]

@@ -1,0 +1,92 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  5,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Track"
+    },
+    {
+        "Index":  6,
+        "Count":  7,
+        "Seconds":  0.44,
+        "Text":  "revenue"
+    },
+    {
+        "Index":  15,
+        "Count":  4,
+        "Seconds":  1.055,
+        "Text":  "cost"
+    },
+    {
+        "Index":  21,
+        "Count":  3,
+        "Seconds":  1.68,
+        "Text":  "and"
+    },
+    {
+        "Index":  25,
+        "Count":  4,
+        "Seconds":  1.8099999999999998,
+        "Text":  "cost"
+    },
+    {
+        "Index":  30,
+        "Count":  7,
+        "Seconds":  2.175,
+        "Text":  "credits"
+    },
+    {
+        "Index":  39,
+        "Count":  15,
+        "Seconds":  3.625,
+        "Text":  "Current-quarter"
+    },
+    {
+        "Index":  55,
+        "Count":  6,
+        "Seconds":  4.37,
+        "Text":  "totals"
+    },
+    {
+        "Index":  62,
+        "Count":  5,
+        "Seconds":  4.795,
+        "Text":  "match"
+    },
+    {
+        "Index":  68,
+        "Count":  3,
+        "Seconds":  5.12,
+        "Text":  "the"
+    },
+    {
+        "Index":  72,
+        "Count":  6,
+        "Seconds":  5.215,
+        "Text":  "sample"
+    },
+    {
+        "Index":  80,
+        "Count":  7,
+        "Seconds":  6.145,
+        "Text":  "earlier"
+    },
+    {
+        "Index":  88,
+        "Count":  7,
+        "Seconds":  6.56,
+        "Text":  "history"
+    },
+    {
+        "Index":  96,
+        "Count":  2,
+        "Seconds":  7.005,
+        "Text":  "is"
+    },
+    {
+        "Index":  99,
+        "Count":  12,
+        "Seconds":  7.165,
+        "Text":  "illustrative"
+    }
+]

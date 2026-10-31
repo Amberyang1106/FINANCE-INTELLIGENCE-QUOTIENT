@@ -1,0 +1,248 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  3,
+        "Seconds":  0.099999999999999992,
+        "Text":  "See"
+    },
+    {
+        "Index":  4,
+        "Count":  7,
+        "Seconds":  0.33499999999999996,
+        "Text":  "monthly"
+    },
+    {
+        "Index":  12,
+        "Count":  7,
+        "Seconds":  0.755,
+        "Text":  "monitor"
+    },
+    {
+        "Index":  20,
+        "Count":  6,
+        "Seconds":  1.175,
+        "Text":  "status"
+    },
+    {
+        "Index":  27,
+        "Count":  2,
+        "Seconds":  1.66,
+        "Text":  "at"
+    },
+    {
+        "Index":  30,
+        "Count":  1,
+        "Seconds":  1.765,
+        "Text":  "a"
+    },
+    {
+        "Index":  32,
+        "Count":  6,
+        "Seconds":  1.8199999999999998,
+        "Text":  "glance"
+    },
+    {
+        "Index":  40,
+        "Count":  5,
+        "Seconds":  3.25,
+        "Text":  "Click"
+    },
+    {
+        "Index":  46,
+        "Count":  3,
+        "Seconds":  3.525,
+        "Text":  "the"
+    },
+    {
+        "Index":  50,
+        "Count":  7,
+        "Seconds":  3.6149999999999998,
+        "Text":  "Freight"
+    },
+    {
+        "Index":  58,
+        "Count":  5,
+        "Seconds":  3.9299999999999997,
+        "Text":  "alert"
+    },
+    {
+        "Index":  65,
+        "Count":  1,
+        "Seconds":  5.2299999999999995,
+        "Text":  "A"
+    },
+    {
+        "Index":  67,
+        "Count":  8,
+        "Seconds":  5.31,
+        "Text":  "possible"
+    },
+    {
+        "Index":  76,
+        "Count":  9,
+        "Seconds":  5.84,
+        "Text":  "duplicate"
+    },
+    {
+        "Index":  86,
+        "Count":  10,
+        "Seconds":  6.3999999999999995,
+        "Text":  "allocation"
+    },
+    {
+        "Index":  97,
+        "Count":  5,
+        "Seconds":  7.045,
+        "Text":  "needs"
+    },
+    {
+        "Index":  103,
+        "Count":  7,
+        "Seconds":  7.31,
+        "Text":  "finance"
+    },
+    {
+        "Index":  111,
+        "Count":  6,
+        "Seconds":  7.84,
+        "Text":  "review"
+    },
+    {
+        "Index":  119,
+        "Count":  8,
+        "Seconds":  9.155,
+        "Text":  "Identify"
+    },
+    {
+        "Index":  128,
+        "Count":  8,
+        "Seconds":  9.78,
+        "Text":  "impacted"
+    },
+    {
+        "Index":  137,
+        "Count":  7,
+        "Seconds":  10.34,
+        "Text":  "records"
+    },
+    {
+        "Index":  146,
+        "Count":  7,
+        "Seconds":  11.245,
+        "Text":  "correct"
+    },
+    {
+        "Index":  154,
+        "Count":  3,
+        "Seconds":  11.604999999999999,
+        "Text":  "the"
+    },
+    {
+        "Index":  158,
+        "Count":  11,
+        "Seconds":  11.709999999999999,
+        "Text":  "duplication"
+    },
+    {
+        "Index":  171,
+        "Count":  5,
+        "Seconds":  12.94,
+        "Text":  "rerun"
+    },
+    {
+        "Index":  177,
+        "Count":  3,
+        "Seconds":  13.295,
+        "Text":  "the"
+    },
+    {
+        "Index":  181,
+        "Count":  5,
+        "Seconds":  13.37,
+        "Text":  "scope"
+    },
+    {
+        "Index":  188,
+        "Count":  3,
+        "Seconds":  14.229999999999999,
+        "Text":  "and"
+    },
+    {
+        "Index":  192,
+        "Count":  8,
+        "Seconds":  14.37,
+        "Text":  "validate"
+    },
+    {
+        "Index":  201,
+        "Count":  7,
+        "Seconds":  14.865,
+        "Text":  "Freight"
+    },
+    {
+        "Index":  209,
+        "Count":  3,
+        "Seconds":  15.16,
+        "Text":  "and"
+    },
+    {
+        "Index":  213,
+        "Count":  5,
+        "Seconds":  15.325,
+        "Text":  "gross"
+    },
+    {
+        "Index":  219,
+        "Count":  6,
+        "Seconds":  15.625,
+        "Text":  "profit"
+    },
+    {
+        "Index":  227,
+        "Count":  4,
+        "Seconds":  17.02,
+        "Text":  "Then"
+    },
+    {
+        "Index":  232,
+        "Count":  6,
+        "Seconds":  17.215,
+        "Text":  "review"
+    },
+    {
+        "Index":  239,
+        "Count":  7,
+        "Seconds":  17.564999999999998,
+        "Text":  "revenue"
+    },
+    {
+        "Index":  248,
+        "Count":  4,
+        "Seconds":  18.16,
+        "Text":  "cost"
+    },
+    {
+        "Index":  254,
+        "Count":  3,
+        "Seconds":  18.785,
+        "Text":  "and"
+    },
+    {
+        "Index":  258,
+        "Count":  4,
+        "Seconds":  18.915,
+        "Text":  "cost"
+    },
+    {
+        "Index":  263,
+        "Count":  6,
+        "Seconds":  19.275,
+        "Text":  "credit"
+    },
+    {
+        "Index":  270,
+        "Count":  6,
+        "Seconds":  19.64,
+        "Text":  "trends"
+    }
+]

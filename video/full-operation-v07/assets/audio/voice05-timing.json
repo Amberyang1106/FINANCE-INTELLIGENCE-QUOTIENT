@@ -1,0 +1,44 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  1,
+        "Seconds":  0.099999999999999992,
+        "Text":  "A"
+    },
+    {
+        "Index":  2,
+        "Count":  8,
+        "Seconds":  0.18,
+        "Text":  "possible"
+    },
+    {
+        "Index":  11,
+        "Count":  9,
+        "Seconds":  0.71,
+        "Text":  "duplicate"
+    },
+    {
+        "Index":  21,
+        "Count":  10,
+        "Seconds":  1.27,
+        "Text":  "allocation"
+    },
+    {
+        "Index":  32,
+        "Count":  5,
+        "Seconds":  1.9149999999999998,
+        "Text":  "needs"
+    },
+    {
+        "Index":  38,
+        "Count":  7,
+        "Seconds":  2.1799999999999997,
+        "Text":  "finance"
+    },
+    {
+        "Index":  46,
+        "Count":  6,
+        "Seconds":  2.71,
+        "Text":  "review"
+    }
+]

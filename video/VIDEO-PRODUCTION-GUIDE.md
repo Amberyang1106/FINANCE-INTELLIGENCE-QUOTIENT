@@ -1,6 +1,54 @@
 # FINANCE EXCEPTION INTELLIGENCE · Video production guide v0.4
 
+## v07 产品介绍与操作融合版（2026-10-31，当前交付）
+
+直接更新V07，不另建V08。**134.5秒／4035帧，2560×1440、30fps**，135秒硬上限。开场“价值主张→五项能力→Monitor”，中段真实操作证明，结尾能力聚合。V07原操作底片作为可复用输入保存在full-operation-v07/inputs/；不新增独立发布版本。
+
+| 时间 | 内容与主动作 |
+|---|---|
+|0–4|价值主张＋侧斜的真实Monitor界面|
+|4–10|五项能力卡片聚合、扇形展开、Monitor转正进入完整界面|
+|10–28|KPI总览→Freight红灯及建议→趋势图|
+|28–73|独立分摊异常→Analysis提问→调查→凭证→因果→Scenario→报告|
+|73–90|Proposal转任务→Assign→接收/进行中/完成反馈|
+|90–105|Understand标题收拢→报表问答/引用/知识库|
+|105–127.5|Customize标题收拢→Studio/阈值/趋势/真实拖拽/Market|
+|127.5–134.5|真实页面围绕品牌聚合，稳定落定|
+
+参考用户提供的48.23秒短片，借鉴其“价值主张＋真实界面”“一句功能总结→操作证明”“品牌聚合收尾”。沿用Vantage字体与色板；悬浮与侧斜仅用于产品概览，财务证据镜头保持完整正视视口，不遮挡数据。Gallery使用card-stack/default（真实页面替换卡面）与既有title-demote-to-label/A适配。
+
+关键阅读段：凭证7.1秒、因果4秒、Scenario13.13秒、真实拖拽3.17秒，均保持原速；KPI、任务、问答和Studio适度压缩，具体速度由product-timeline.json源/目标帧推导。Freight与GA是独立案例；建议尚需财务审核，GA改善≠总GP增加，LE仍待核查；任务完成≠账务修正。
+
+英文旁白，英文上/中文下字幕，Cipher背景音乐避让人声，另交付无BGM版；同一V07预览URL及文件名更新。原生界面占(200,12,2160,1215)，价值总结/导航在下方留白。双语字幕沿用用户认可的桌面展示字号EN42/ZH36；未按手机小窗的Shotcraft Q11大字阈值制作。
+
+### 当前制作入口
+
+full-operation-v07/prepare-product.mjs生成唯一帧时间线和字幕→render-product-cards.mjs生成开场/结尾→narrate.ps1→audio.py→build-product-overlays.py→music-stem.py→produce-product.py。run-product.mjs负责依赖顺序。Remotion生成产品卡片，FFmpeg精剪原有真实操作底片、合成ASS与音频；原生操作不再叠加相机变换。
+
+剪映导出：20画面段、独立旁白/音乐、35英文及35中文字幕。镜头内动效烘焙；剪辑、字幕与音轨可编辑。Windows剪映实际打开尚未验证。src/workbench.ts提供同源时间线拆解清单；浏览器工作台已通过加载/导入检查；预览有1秒编辑余量，实际导出采用4035帧精确内容长度。交付验收证据见QA.json、FINAL-MEDIA.json、browser-playback.json、REVIEW.md。
+
+## v06 叙事增强版（2026-10-31，历史交付）
+
+成片148.5秒、2560×1440/30fps。保留v05完整录屏视口，新增3秒品牌开场、4秒分摊因果解释、知识问答/自建监控各1秒章节卡。调查与任务保持连续；Freight与GA为独立案例。底部章节导航及Scenario三结论不覆盖UI；任务接收、拖拽和模板字幕逐步对时。原速操作未加速。最新工程 full-operation-v06，实际配音与字幕以 narration-cues.json 和 captions.json 为准。预览 http://127.0.0.1:4187/video/full-operation-v06/watch.html 支持章节跳转。
+
+制作顺序：render-cards.mjs → narrate.ps1（必要时narrate-refined.ps1）→ audio.py / music-stem.py → produce.py。底片4455帧，音轨148.5秒；剪映20画面段、34英文及34中文字幕。ASS导航烘焙在底片，双语字幕使用原生文本轨。MP4音乐自动避让人声，草稿保留独立音乐stem及最终参考混音。验收资料见QA.json、FINAL-MEDIA.json、browser-playback.json和REVIEW.md。Windows剪映应用内打开未验证。
+
+
+## v05 构图修正（2026-10-31，覆盖 v04 运镜方案）
+
+用户要求动效不得影响整体展示。所有操作镜头固定保留完整1920×1080录屏视口，等比适配到2160×1215并放在(200,12)；字幕从1240开始。取消超出适配框的放大、局部移镜、遮罩压暗、叠加凭证标题和扫过表格的装饰层。保留真实光标移动、轻量点击反馈及页面已有的调查步骤、数值变化、流式输出、曲线描画和拖拽重排。旧版镜头表中的急推/特写/遮罩仅是历史参考，不得未经全视口边界验收重新用于成片。时长、旁白与双语字幕沿用139.5秒已核对时间线。
+
+
+## 当前完整操作版 v04（2026-10-31）
+
+最新交付为139.5秒、2560×1440/30fps的真实操作版。工程见 full-operation-v04；以该工程 timeline.json、actions.json、narration-cues.json 和 captions.json 作为实际剪辑/旁白/字幕对时依据。英文字幕在上，中文在下；原速调查、实际勾选、同方案任务链和真实卡片拖拽保留。Remotion负责镜头，FFmpeg负责音轨及字幕，pyJianYingDraft负责可编辑草稿。完整解码、关键帧和浏览器播放通过；Windows剪映打开尚未验证。原170秒计划与v03保留为历史资料，不得作为最新成片说明。
+
+
 Updated: 2026-10-30. The five-chapter viewing order has been approved by the user. Companion: [master script](PRODUCT-VIDEO-SCRIPT.md). This is the plan for the next full English film, not a claim that it is already produced. [Previous guide v0.3](archive/VIDEO-PRODUCTION-GUIDE-v0.3.md).
+
+## Production update: KPI overview
+
+Capture the actual Vantage UI: establish the matrix and June column, move the cursor to the Freight red light, click and hold the card long enough to read the potential cause and four proposed actions, then close and reveal the three trends before switching to Service allocation. Use a restrained focus and readable crop; keep the click and result visible. Record the matrix and alert as sample data and a potential cause requiring finance review. Treat Freight and the subsequent GA investigation as separate illustrative cases. Use the revised chapter 1 timing and narration in the master script; check pacing against the under-three-minute limit. Existing rendered videos remain historical assets and must not be represented as including this update.
 
 ## 1. Current baseline and required changes
 
@@ -25,7 +73,7 @@ This v0.4 update changes documentation only; the earlier chart fix remains in th
 
 | Chapter | Shots | Time | Visible entry → result |
 | --- | --- | --- | --- |
-| 1 · Quarterly pulse | 02 | 00:06–00:18 | Monitor / KPI overview → Revenue, Cost and Cost credit quarterly charts. |
+| 1 · Quarterly pulse | 02 | 00:06–00:18 | Monitor / KPI overview → monthly status matrix → Jun-26 Freight alert card → Revenue, Cost and Cost credit quarterly charts. |
 | 2 · Exception investigation and proposal | 03–07 | 00:18–01:25 | Service allocation alert → Analysis → voucher → Actions / Scenario → saved candidate and report. |
 | 3 · Proposal execution and task follow-up | 08–10 | 01:25–01:55 | That same saved proposal → task creation → assign → recipient receipt / progress → completed follow-up and handoff log. |
 | 4 · Report-logic Q&A and knowledge | 11–12 | 01:55–02:17 | New chat / selected report and library → streaming answer → source citation → library management. |
@@ -162,3 +210,12 @@ The old video/edit/manifest.json and launch-preview voice/timing files describe 
 - [Historic 10-second preview](launch-preview/README.md)
 - [Chart fix and readiness review](../qa/KPI-CHART-AND-VIDEO-READINESS.md)
 - [Approved order and timing verification](../qa/VIDEO-STORY-ORDER-VERIFICATION.md)
+
+
+## 12. Local v02 production result / 2026-10-30
+
+The next-film brief above has now been executed locally. See [full-en-v02/README.md](full-en-v02/README.md), [review](full-en-v02/REVIEW.md), [final measured narration](full-en-v02/shots.json), [verification](full-en-v02/verification.json) and the export Finance-Exception-Intelligence-Vantage-Overview-en-US-v02.mp4 under exports/.
+
+Final: 170.000s, 3840×2160, 60fps, H.264/stereo AAC, English narration/captions and Cipher instrumental (credit retained). The five-chapter order is unchanged. Spoken copy was shortened against measured TTS durations, not sped up. Use explicit 16kHz System.Speech output to align word marks.
+
+Accepted routing is native Remotion picture + HyperFrames rendered voice/music mix + libass captions. The browser-rendered subtitle band showed residual letters at sequential capture; random seek/checks alone did not catch it. Its pixels are rejected. Preserve the source and evidence, but reproduce the final export using captions.ass / finalize.py. Native product Geologica remains; final subtitle fallback is ArialMT. Full decode and final frame inspection are required after every re-encode. Source stills are held UI states; detail motion is a cinematic reconstruction. Audio was measured, not human-auditioned. No main merge, GitHub push, Sites deployment or online publication occurred in this production pass.

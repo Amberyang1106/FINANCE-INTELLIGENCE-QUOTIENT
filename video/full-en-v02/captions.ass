@@ -1,0 +1,59 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 3840
+PlayResY: 2160
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,66,&H00F4F3ED,&H00F4F3ED,&H00130F07,&H00130F07,0,0,0,0,100,100,0,0,3,7,0,2,390,390,140,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.50,0:00:05.40,Default,,0,0,0,,Finance Exception Intelligence. From signals to actions.
+Dialogue: 0,0:00:06.50,0:00:10.03,Default,,0,0,0,,Track revenue, cost, and cost credits.
+Dialogue: 0,0:00:10.03,0:00:12.55,Default,,0,0,0,,Current-quarter totals match the sample;
+Dialogue: 0,0:00:12.55,0:00:15.04,Default,,0,0,0,,earlier history is illustrative.
+Dialogue: 0,0:00:18.50,0:00:21.24,Default,,0,0,0,,Switch to Service allocation for a specific close
+Dialogue: 0,0:00:21.24,0:00:25.65,Default,,0,0,0,,check. GA shows negative month-three gross profit, while
+Dialogue: 0,0:00:25.65,0:00:28.46,Default,,0,0,0,,LE's negative revenue base signals a linked allocation
+Dialogue: 0,0:00:28.46,0:00:29.60,Default,,0,0,0,,issue.
+Dialogue: 0,0:00:30.50,0:00:33.73,Default,,0,0,0,,The investigation carries the scope forward, checking the
+Dialogue: 0,0:00:33.73,0:00:37.55,Default,,0,0,0,,rules, quarter-end true-up, revenue base, and source documents
+Dialogue: 0,0:00:37.55,0:00:39.31,Default,,0,0,0,,across segments.
+Dialogue: 0,0:00:42.50,0:00:45.08,Default,,0,0,0,,Trace the negative revenue voucher to its amount,
+Dialogue: 0,0:00:45.08,0:00:48.67,Default,,0,0,0,,segment, posting information, and reference.
+Dialogue: 0,0:00:48.67,0:00:51.40,Default,,0,0,0,,No positive counterpart is confirmed in this sample
+Dialogue: 0,0:00:51.40,0:00:56.27,Default,,0,0,0,,scope. Finance must still verify the business context.
+Dialogue: 0,0:00:57.50,0:00:59.93,Default,,0,0,0,,Compare a candidate that excludes the voucher from
+Dialogue: 0,0:00:59.93,0:01:02.34,Default,,0,0,0,,the allocation base only.
+Dialogue: 0,0:01:02.34,0:01:04.67,Default,,0,0,0,,Keep posted revenue and the first two months
+Dialogue: 0,0:01:04.67,0:01:10.04,Default,,0,0,0,,unchanged. Recalculate month three: GA improves, but total
+Dialogue: 0,0:01:10.04,0:01:13.32,Default,,0,0,0,,gross profit is unchanged, and LE remains under
+Dialogue: 0,0:01:13.32,0:01:14.53,Default,,0,0,0,,review.
+Dialogue: 0,0:01:17.50,0:01:19.94,Default,,0,0,0,,Save the candidate and generate a report draft
+Dialogue: 0,0:01:19.94,0:01:24.67,Default,,0,0,0,,with causes, evidence, assumptions, and selected follow-ups.
+Dialogue: 0,0:01:25.50,0:01:28.55,Default,,0,0,0,,From this saved proposal, turn the selected action
+Dialogue: 0,0:01:28.55,0:01:32.61,Default,,0,0,0,,into a task, retaining its evidence, calculation assumptions,
+Dialogue: 0,0:01:32.61,0:01:34.56,Default,,0,0,0,,and source context.
+Dialogue: 0,0:01:35.50,0:01:37.92,Default,,0,0,0,,Assign the action to its owner.
+Dialogue: 0,0:01:37.92,0:01:41.17,Default,,0,0,0,,In the assignee preview, receipt and progress updates
+Dialogue: 0,0:01:41.17,0:01:44.17,Default,,0,0,0,,build a visible handoff history, so finance can
+Dialogue: 0,0:01:44.17,0:01:46.08,Default,,0,0,0,,follow execution.
+Dialogue: 0,0:01:49.50,0:01:53.43,Default,,0,0,0,,Record the outcome. No ledger change.
+Dialogue: 0,0:01:55.50,0:01:59.56,Default,,0,0,0,,Beyond case follow-up, ask about report logic.
+Dialogue: 0,0:01:59.56,0:02:02.36,Default,,0,0,0,,The answer draws on the selected knowledge base,
+Dialogue: 0,0:02:02.36,0:02:04.93,Default,,0,0,0,,streams into view, and links each rule to
+Dialogue: 0,0:02:04.93,0:02:06.84,Default,,0,0,0,,its source for review.
+Dialogue: 0,0:02:09.50,0:02:12.63,Default,,0,0,0,,Built-in rules and personal knowledge libraries keep reporting
+Dialogue: 0,0:02:12.63,0:02:15.61,Default,,0,0,0,,definitions easy to find and reuse.
+Dialogue: 0,0:02:17.50,0:02:20.68,Default,,0,0,0,,Choose the report, dimension, and metric.
+Dialogue: 0,0:02:20.68,0:02:23.88,Default,,0,0,0,,Describe a monitor in natural language, inspect the
+Dialogue: 0,0:02:23.88,0:02:27.13,Default,,0,0,0,,sample field routing, and set a gross-profit threshold
+Dialogue: 0,0:02:27.13,0:02:29.12,Default,,0,0,0,,for the generated chart.
+Dialogue: 0,0:02:30.50,0:02:33.49,Default,,0,0,0,,Add a revenue trend, configure growth and decline
+Dialogue: 0,0:02:33.49,0:02:36.44,Default,,0,0,0,,signals, and arrange the cards.
+Dialogue: 0,0:02:36.44,0:02:39.31,Default,,0,0,0,,Reuse common monitoring patterns through the local template
+Dialogue: 0,0:02:39.31,0:02:40.51,Default,,0,0,0,,market.
+Dialogue: 0,0:02:43.50,0:02:48.40,Default,,0,0,0,,Finance Exception Intelligence. From signals to actions.

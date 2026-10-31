@@ -1,0 +1,68 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  4,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Next"
+    },
+    {
+        "Index":  6,
+        "Count":  10,
+        "Seconds":  0.96,
+        "Text":  "understand"
+    },
+    {
+        "Index":  17,
+        "Count":  3,
+        "Seconds":  1.585,
+        "Text":  "the"
+    },
+    {
+        "Index":  21,
+        "Count":  5,
+        "Seconds":  1.7049999999999998,
+        "Text":  "rules"
+    },
+    {
+        "Index":  27,
+        "Count":  6,
+        "Seconds":  2.0349999999999997,
+        "Text":  "behind"
+    },
+    {
+        "Index":  34,
+        "Count":  3,
+        "Seconds":  2.44,
+        "Text":  "the"
+    },
+    {
+        "Index":  38,
+        "Count":  7,
+        "Seconds":  2.5149999999999997,
+        "Text":  "numbers"
+    },
+    {
+        "Index":  47,
+        "Count":  3,
+        "Seconds":  3.94,
+        "Text":  "Ask"
+    },
+    {
+        "Index":  51,
+        "Count":  5,
+        "Seconds":  4.2349999999999994,
+        "Text":  "about"
+    },
+    {
+        "Index":  57,
+        "Count":  6,
+        "Seconds":  4.5299999999999994,
+        "Text":  "report"
+    },
+    {
+        "Index":  64,
+        "Count":  5,
+        "Seconds":  4.955,
+        "Text":  "logic"
+    }
+]

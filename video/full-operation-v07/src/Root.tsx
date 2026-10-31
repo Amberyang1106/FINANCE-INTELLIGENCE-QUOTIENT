@@ -1,0 +1,1 @@
+import React from'react';import{Composition}from'remotion';import{ProductFilm}from'./ProductFilm';export const Root=()=> <Composition id="FinanceV07" component={ProductFilm} width={2560} height={1440} fps={30} durationInFrames={4035} defaultProps={{bgm:true,plate:false}}/>;

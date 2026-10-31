@@ -1,0 +1,12 @@
+{
+  "name": "vantage-operation-pilot",
+  "private": true,
+  "scripts": {
+    "render": "node render.mjs"
+  },
+  "dependencies": {
+    "react": "19.2.0",
+    "remotion": "4.0.539",
+    "@remotion/cli": "4.0.539"
+  }
+}

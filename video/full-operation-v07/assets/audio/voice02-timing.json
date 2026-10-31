@@ -1,0 +1,38 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  3,
+        "Seconds":  0.099999999999999992,
+        "Text":  "See"
+    },
+    {
+        "Index":  4,
+        "Count":  10,
+        "Seconds":  0.32999999999999996,
+        "Text":  "exceptions"
+    },
+    {
+        "Index":  16,
+        "Count":  5,
+        "Seconds":  1.93,
+        "Text":  "Trace"
+    },
+    {
+        "Index":  22,
+        "Count":  8,
+        "Seconds":  2.26,
+        "Text":  "evidence"
+    },
+    {
+        "Index":  32,
+        "Count":  10,
+        "Seconds":  3.685,
+        "Text":  "Coordinate"
+    },
+    {
+        "Index":  43,
+        "Count":  6,
+        "Seconds":  4.38,
+        "Text":  "action"
+    }
+]

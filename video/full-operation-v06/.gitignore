@@ -1,0 +1,5 @@
+node_modules/
+python-lib/
+assets/trim/
+renders/
+__pycache__/

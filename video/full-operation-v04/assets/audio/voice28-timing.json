@@ -1,0 +1,50 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  8,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Describe"
+    },
+    {
+        "Index":  9,
+        "Count":  1,
+        "Seconds":  0.55499999999999994,
+        "Text":  "a"
+    },
+    {
+        "Index":  11,
+        "Count":  7,
+        "Seconds":  0.61,
+        "Text":  "monitor"
+    },
+    {
+        "Index":  20,
+        "Count":  4,
+        "Seconds":  1.53,
+        "Text":  "then"
+    },
+    {
+        "Index":  25,
+        "Count":  9,
+        "Seconds":  1.71,
+        "Text":  "configure"
+    },
+    {
+        "Index":  35,
+        "Count":  1,
+        "Seconds":  2.2649999999999997,
+        "Text":  "a"
+    },
+    {
+        "Index":  37,
+        "Count":  12,
+        "Seconds":  2.31,
+        "Text":  "gross-profit"
+    },
+    {
+        "Index":  50,
+        "Count":  9,
+        "Seconds":  3.08,
+        "Text":  "benchmark"
+    }
+]

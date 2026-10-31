@@ -1,0 +1,44 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  4,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Turn"
+    },
+    {
+        "Index":  5,
+        "Count":  4,
+        "Seconds":  0.355,
+        "Text":  "this"
+    },
+    {
+        "Index":  10,
+        "Count":  5,
+        "Seconds":  0.535,
+        "Text":  "saved"
+    },
+    {
+        "Index":  16,
+        "Count":  8,
+        "Seconds":  0.89,
+        "Text":  "proposal"
+    },
+    {
+        "Index":  25,
+        "Count":  4,
+        "Seconds":  1.48,
+        "Text":  "into"
+    },
+    {
+        "Index":  30,
+        "Count":  11,
+        "Seconds":  1.7149999999999999,
+        "Text":  "accountable"
+    },
+    {
+        "Index":  42,
+        "Count":  9,
+        "Seconds":  2.2649999999999997,
+        "Text":  "follow-up"
+    }
+]

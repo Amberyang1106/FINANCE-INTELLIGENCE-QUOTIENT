@@ -1,0 +1,1859 @@
+{
+  "engine": "Microsoft Zira Desktop / Offline synthetic English",
+  "rate": 0,
+  "shots": [
+    {
+      "id": "01",
+      "start": 0.4,
+      "speechSeconds": 4.995,
+      "shotSeconds": 6,
+      "fits": true
+    },
+    {
+      "id": "02",
+      "start": 6.4,
+      "speechSeconds": 8.635,
+      "shotSeconds": 12,
+      "fits": true
+    },
+    {
+      "id": "03",
+      "start": 18.4,
+      "speechSeconds": 11.205,
+      "shotSeconds": 12,
+      "fits": true
+    },
+    {
+      "id": "04",
+      "start": 30.4,
+      "speechSeconds": 8.905,
+      "shotSeconds": 12,
+      "fits": true
+    },
+    {
+      "id": "05",
+      "start": 42.4,
+      "speechSeconds": 13.865,
+      "shotSeconds": 15,
+      "fits": true
+    },
+    {
+      "id": "06",
+      "start": 57.4,
+      "speechSeconds": 17.125,
+      "shotSeconds": 20,
+      "fits": true
+    },
+    {
+      "id": "07",
+      "start": 77.4,
+      "speechSeconds": 7.27,
+      "shotSeconds": 8,
+      "fits": true
+    },
+    {
+      "id": "08",
+      "start": 85.4,
+      "speechSeconds": 9.155,
+      "shotSeconds": 10,
+      "fits": true
+    },
+    {
+      "id": "09",
+      "start": 95.4,
+      "speechSeconds": 10.68,
+      "shotSeconds": 14,
+      "fits": true
+    },
+    {
+      "id": "10",
+      "start": 109.4,
+      "speechSeconds": 4.03,
+      "shotSeconds": 6,
+      "fits": true
+    },
+    {
+      "id": "11",
+      "start": 115.4,
+      "speechSeconds": 11.44,
+      "shotSeconds": 14,
+      "fits": true
+    },
+    {
+      "id": "12",
+      "start": 129.4,
+      "speechSeconds": 6.21,
+      "shotSeconds": 8,
+      "fits": true
+    },
+    {
+      "id": "13",
+      "start": 137.4,
+      "speechSeconds": 11.715,
+      "shotSeconds": 13,
+      "fits": true
+    },
+    {
+      "id": "14",
+      "start": 150.4,
+      "speechSeconds": 10.11,
+      "shotSeconds": 13,
+      "fits": true
+    },
+    {
+      "id": "15",
+      "start": 163.4,
+      "speechSeconds": 4.995,
+      "shotSeconds": 7,
+      "fits": true
+    }
+  ],
+  "words": [
+    {
+      "word": "Finance",
+      "start": 0.5,
+      "end": 0.98,
+      "shot": "01"
+    },
+    {
+      "word": "Exception",
+      "start": 0.98,
+      "end": 1.5,
+      "shot": "01"
+    },
+    {
+      "word": "Intelligence.",
+      "start": 1.5,
+      "end": 3.1599999999999997,
+      "shot": "01"
+    },
+    {
+      "word": "From",
+      "start": 3.1599999999999997,
+      "end": 3.4149999999999996,
+      "shot": "01"
+    },
+    {
+      "word": "signals",
+      "start": 3.4149999999999996,
+      "end": 3.905,
+      "shot": "01"
+    },
+    {
+      "word": "to",
+      "start": 3.905,
+      "end": 4.06,
+      "shot": "01"
+    },
+    {
+      "word": "actions.",
+      "start": 4.06,
+      "end": 5.3950000000000005,
+      "shot": "01"
+    },
+    {
+      "word": "Track",
+      "start": 6.5,
+      "end": 6.840000000000001,
+      "shot": "02"
+    },
+    {
+      "word": "revenue,",
+      "start": 6.840000000000001,
+      "end": 7.455,
+      "shot": "02"
+    },
+    {
+      "word": "cost,",
+      "start": 7.455,
+      "end": 8.08,
+      "shot": "02"
+    },
+    {
+      "word": "and",
+      "start": 8.08,
+      "end": 8.21,
+      "shot": "02"
+    },
+    {
+      "word": "cost",
+      "start": 8.21,
+      "end": 8.575,
+      "shot": "02"
+    },
+    {
+      "word": "credits.",
+      "start": 8.575,
+      "end": 10.025,
+      "shot": "02"
+    },
+    {
+      "word": "Current-quarter",
+      "start": 10.025,
+      "end": 10.77,
+      "shot": "02"
+    },
+    {
+      "word": "totals",
+      "start": 10.77,
+      "end": 11.195,
+      "shot": "02"
+    },
+    {
+      "word": "match",
+      "start": 11.195,
+      "end": 11.52,
+      "shot": "02"
+    },
+    {
+      "word": "the",
+      "start": 11.52,
+      "end": 11.615,
+      "shot": "02"
+    },
+    {
+      "word": "sample;",
+      "start": 11.615,
+      "end": 12.545,
+      "shot": "02"
+    },
+    {
+      "word": "earlier",
+      "start": 12.545,
+      "end": 12.96,
+      "shot": "02"
+    },
+    {
+      "word": "history",
+      "start": 12.96,
+      "end": 13.405000000000001,
+      "shot": "02"
+    },
+    {
+      "word": "is",
+      "start": 13.405000000000001,
+      "end": 13.565000000000001,
+      "shot": "02"
+    },
+    {
+      "word": "illustrative.",
+      "start": 13.565000000000001,
+      "end": 15.035,
+      "shot": "02"
+    },
+    {
+      "word": "Switch",
+      "start": 18.5,
+      "end": 18.884999999999998,
+      "shot": "03"
+    },
+    {
+      "word": "to",
+      "start": 18.884999999999998,
+      "end": 18.985,
+      "shot": "03"
+    },
+    {
+      "word": "Service",
+      "start": 18.985,
+      "end": 19.424999999999997,
+      "shot": "03"
+    },
+    {
+      "word": "allocation",
+      "start": 19.424999999999997,
+      "end": 20.09,
+      "shot": "03"
+    },
+    {
+      "word": "for",
+      "start": 20.09,
+      "end": 20.27,
+      "shot": "03"
+    },
+    {
+      "word": "a",
+      "start": 20.27,
+      "end": 20.32,
+      "shot": "03"
+    },
+    {
+      "word": "specific",
+      "start": 20.32,
+      "end": 20.869999999999997,
+      "shot": "03"
+    },
+    {
+      "word": "close",
+      "start": 20.869999999999997,
+      "end": 21.235,
+      "shot": "03"
+    },
+    {
+      "word": "check.",
+      "start": 21.235,
+      "end": 22.485,
+      "shot": "03"
+    },
+    {
+      "word": "GA",
+      "start": 22.485,
+      "end": 22.88,
+      "shot": "03"
+    },
+    {
+      "word": "shows",
+      "start": 22.88,
+      "end": 23.25,
+      "shot": "03"
+    },
+    {
+      "word": "negative",
+      "start": 23.25,
+      "end": 23.639999999999997,
+      "shot": "03"
+    },
+    {
+      "word": "month-three",
+      "start": 23.639999999999997,
+      "end": 24.119999999999997,
+      "shot": "03"
+    },
+    {
+      "word": "gross",
+      "start": 24.119999999999997,
+      "end": 24.43,
+      "shot": "03"
+    },
+    {
+      "word": "profit,",
+      "start": 24.43,
+      "end": 25.354999999999997,
+      "shot": "03"
+    },
+    {
+      "word": "while",
+      "start": 25.354999999999997,
+      "end": 25.645,
+      "shot": "03"
+    },
+    {
+      "word": "LE's",
+      "start": 25.645,
+      "end": 25.924999999999997,
+      "shot": "03"
+    },
+    {
+      "word": "negative",
+      "start": 25.924999999999997,
+      "end": 26.325,
+      "shot": "03"
+    },
+    {
+      "word": "revenue",
+      "start": 26.325,
+      "end": 26.744999999999997,
+      "shot": "03"
+    },
+    {
+      "word": "base",
+      "start": 26.744999999999997,
+      "end": 27.009999999999998,
+      "shot": "03"
+    },
+    {
+      "word": "signals",
+      "start": 27.009999999999998,
+      "end": 27.445,
+      "shot": "03"
+    },
+    {
+      "word": "a",
+      "start": 27.445,
+      "end": 27.515,
+      "shot": "03"
+    },
+    {
+      "word": "linked",
+      "start": 27.515,
+      "end": 27.814999999999998,
+      "shot": "03"
+    },
+    {
+      "word": "allocation",
+      "start": 27.814999999999998,
+      "end": 28.464999999999996,
+      "shot": "03"
+    },
+    {
+      "word": "issue.",
+      "start": 28.464999999999996,
+      "end": 29.604999999999997,
+      "shot": "03"
+    },
+    {
+      "word": "The",
+      "start": 30.5,
+      "end": 30.615,
+      "shot": "04"
+    },
+    {
+      "word": "investigation",
+      "start": 30.615,
+      "end": 31.455,
+      "shot": "04"
+    },
+    {
+      "word": "carries",
+      "start": 31.455,
+      "end": 31.849999999999998,
+      "shot": "04"
+    },
+    {
+      "word": "the",
+      "start": 31.849999999999998,
+      "end": 31.935,
+      "shot": "04"
+    },
+    {
+      "word": "scope",
+      "start": 31.935,
+      "end": 32.345,
+      "shot": "04"
+    },
+    {
+      "word": "forward,",
+      "start": 32.345,
+      "end": 33.239999999999995,
+      "shot": "04"
+    },
+    {
+      "word": "checking",
+      "start": 33.239999999999995,
+      "end": 33.605,
+      "shot": "04"
+    },
+    {
+      "word": "the",
+      "start": 33.605,
+      "end": 33.725,
+      "shot": "04"
+    },
+    {
+      "word": "rules,",
+      "start": 33.725,
+      "end": 34.3,
+      "shot": "04"
+    },
+    {
+      "word": "quarter-end",
+      "start": 34.3,
+      "end": 34.89,
+      "shot": "04"
+    },
+    {
+      "word": "true-up,",
+      "start": 34.89,
+      "end": 35.485,
+      "shot": "04"
+    },
+    {
+      "word": "revenue",
+      "start": 35.485,
+      "end": 35.92,
+      "shot": "04"
+    },
+    {
+      "word": "base,",
+      "start": 35.92,
+      "end": 36.464999999999996,
+      "shot": "04"
+    },
+    {
+      "word": "and",
+      "start": 36.464999999999996,
+      "end": 36.589999999999996,
+      "shot": "04"
+    },
+    {
+      "word": "source",
+      "start": 36.589999999999996,
+      "end": 36.97,
+      "shot": "04"
+    },
+    {
+      "word": "documents",
+      "start": 36.97,
+      "end": 37.545,
+      "shot": "04"
+    },
+    {
+      "word": "across",
+      "start": 37.545,
+      "end": 37.93,
+      "shot": "04"
+    },
+    {
+      "word": "segments.",
+      "start": 37.93,
+      "end": 39.305,
+      "shot": "04"
+    },
+    {
+      "word": "Trace",
+      "start": 42.5,
+      "end": 42.835,
+      "shot": "05"
+    },
+    {
+      "word": "the",
+      "start": 42.835,
+      "end": 42.925,
+      "shot": "05"
+    },
+    {
+      "word": "negative",
+      "start": 42.925,
+      "end": 43.324999999999996,
+      "shot": "05"
+    },
+    {
+      "word": "revenue",
+      "start": 43.324999999999996,
+      "end": 43.745,
+      "shot": "05"
+    },
+    {
+      "word": "voucher",
+      "start": 43.745,
+      "end": 44.15,
+      "shot": "05"
+    },
+    {
+      "word": "to",
+      "start": 44.15,
+      "end": 44.33,
+      "shot": "05"
+    },
+    {
+      "word": "its",
+      "start": 44.33,
+      "end": 44.504999999999995,
+      "shot": "05"
+    },
+    {
+      "word": "amount,",
+      "start": 44.504999999999995,
+      "end": 45.074999999999996,
+      "shot": "05"
+    },
+    {
+      "word": "segment,",
+      "start": 45.074999999999996,
+      "end": 45.76,
+      "shot": "05"
+    },
+    {
+      "word": "posting",
+      "start": 45.76,
+      "end": 46.175,
+      "shot": "05"
+    },
+    {
+      "word": "information,",
+      "start": 46.175,
+      "end": 47.045,
+      "shot": "05"
+    },
+    {
+      "word": "and",
+      "start": 47.045,
+      "end": 47.195,
+      "shot": "05"
+    },
+    {
+      "word": "reference.",
+      "start": 47.195,
+      "end": 48.67,
+      "shot": "05"
+    },
+    {
+      "word": "No",
+      "start": 48.67,
+      "end": 48.89,
+      "shot": "05"
+    },
+    {
+      "word": "positive",
+      "start": 48.89,
+      "end": 49.405,
+      "shot": "05"
+    },
+    {
+      "word": "counterpart",
+      "start": 49.405,
+      "end": 50.085,
+      "shot": "05"
+    },
+    {
+      "word": "is",
+      "start": 50.085,
+      "end": 50.22,
+      "shot": "05"
+    },
+    {
+      "word": "confirmed",
+      "start": 50.22,
+      "end": 50.73,
+      "shot": "05"
+    },
+    {
+      "word": "in",
+      "start": 50.73,
+      "end": 50.839999999999996,
+      "shot": "05"
+    },
+    {
+      "word": "this",
+      "start": 50.839999999999996,
+      "end": 51.01,
+      "shot": "05"
+    },
+    {
+      "word": "sample",
+      "start": 51.01,
+      "end": 51.394999999999996,
+      "shot": "05"
+    },
+    {
+      "word": "scope.",
+      "start": 51.394999999999996,
+      "end": 52.72,
+      "shot": "05"
+    },
+    {
+      "word": "Finance",
+      "start": 52.72,
+      "end": 53.224999999999994,
+      "shot": "05"
+    },
+    {
+      "word": "must",
+      "start": 53.224999999999994,
+      "end": 53.48,
+      "shot": "05"
+    },
+    {
+      "word": "still",
+      "start": 53.48,
+      "end": 53.754999999999995,
+      "shot": "05"
+    },
+    {
+      "word": "verify",
+      "start": 53.754999999999995,
+      "end": 54.275,
+      "shot": "05"
+    },
+    {
+      "word": "the",
+      "start": 54.275,
+      "end": 54.37,
+      "shot": "05"
+    },
+    {
+      "word": "business",
+      "start": 54.37,
+      "end": 54.795,
+      "shot": "05"
+    },
+    {
+      "word": "context.",
+      "start": 54.795,
+      "end": 56.265,
+      "shot": "05"
+    },
+    {
+      "word": "Compare",
+      "start": 57.5,
+      "end": 57.89,
+      "shot": "06"
+    },
+    {
+      "word": "a",
+      "start": 57.89,
+      "end": 57.934999999999995,
+      "shot": "06"
+    },
+    {
+      "word": "candidate",
+      "start": 57.934999999999995,
+      "end": 58.519999999999996,
+      "shot": "06"
+    },
+    {
+      "word": "that",
+      "start": 58.519999999999996,
+      "end": 58.695,
+      "shot": "06"
+    },
+    {
+      "word": "excludes",
+      "start": 58.695,
+      "end": 59.235,
+      "shot": "06"
+    },
+    {
+      "word": "the",
+      "start": 59.235,
+      "end": 59.32,
+      "shot": "06"
+    },
+    {
+      "word": "voucher",
+      "start": 59.32,
+      "end": 59.73,
+      "shot": "06"
+    },
+    {
+      "word": "from",
+      "start": 59.73,
+      "end": 59.93,
+      "shot": "06"
+    },
+    {
+      "word": "the",
+      "start": 59.93,
+      "end": 60.07,
+      "shot": "06"
+    },
+    {
+      "word": "allocation",
+      "start": 60.07,
+      "end": 60.745,
+      "shot": "06"
+    },
+    {
+      "word": "base",
+      "start": 60.745,
+      "end": 61.07,
+      "shot": "06"
+    },
+    {
+      "word": "only.",
+      "start": 61.07,
+      "end": 62.335,
+      "shot": "06"
+    },
+    {
+      "word": "Keep",
+      "start": 62.335,
+      "end": 62.589999999999996,
+      "shot": "06"
+    },
+    {
+      "word": "posted",
+      "start": 62.589999999999996,
+      "end": 63.025,
+      "shot": "06"
+    },
+    {
+      "word": "revenue",
+      "start": 63.025,
+      "end": 63.48,
+      "shot": "06"
+    },
+    {
+      "word": "and",
+      "start": 63.48,
+      "end": 63.599999999999994,
+      "shot": "06"
+    },
+    {
+      "word": "the",
+      "start": 63.599999999999994,
+      "end": 63.675,
+      "shot": "06"
+    },
+    {
+      "word": "first",
+      "start": 63.675,
+      "end": 64.05499999999999,
+      "shot": "06"
+    },
+    {
+      "word": "two",
+      "start": 64.05499999999999,
+      "end": 64.285,
+      "shot": "06"
+    },
+    {
+      "word": "months",
+      "start": 64.285,
+      "end": 64.67,
+      "shot": "06"
+    },
+    {
+      "word": "unchanged.",
+      "start": 64.67,
+      "end": 66.28,
+      "shot": "06"
+    },
+    {
+      "word": "Recalculate",
+      "start": 66.28,
+      "end": 67.075,
+      "shot": "06"
+    },
+    {
+      "word": "month",
+      "start": 67.075,
+      "end": 67.35,
+      "shot": "06"
+    },
+    {
+      "word": "three:",
+      "start": 67.35,
+      "end": 68.13499999999999,
+      "shot": "06"
+    },
+    {
+      "word": "GA",
+      "start": 68.13499999999999,
+      "end": 68.505,
+      "shot": "06"
+    },
+    {
+      "word": "improves,",
+      "start": 68.505,
+      "end": 69.53999999999999,
+      "shot": "06"
+    },
+    {
+      "word": "but",
+      "start": 69.53999999999999,
+      "end": 69.7,
+      "shot": "06"
+    },
+    {
+      "word": "total",
+      "start": 69.7,
+      "end": 70.035,
+      "shot": "06"
+    },
+    {
+      "word": "gross",
+      "start": 70.035,
+      "end": 70.35,
+      "shot": "06"
+    },
+    {
+      "word": "profit",
+      "start": 70.35,
+      "end": 70.81,
+      "shot": "06"
+    },
+    {
+      "word": "is",
+      "start": 70.81,
+      "end": 70.95,
+      "shot": "06"
+    },
+    {
+      "word": "unchanged,",
+      "start": 70.95,
+      "end": 72.085,
+      "shot": "06"
+    },
+    {
+      "word": "and",
+      "start": 72.085,
+      "end": 72.215,
+      "shot": "06"
+    },
+    {
+      "word": "LE",
+      "start": 72.215,
+      "end": 72.55499999999999,
+      "shot": "06"
+    },
+    {
+      "word": "remains",
+      "start": 72.55499999999999,
+      "end": 73.02,
+      "shot": "06"
+    },
+    {
+      "word": "under",
+      "start": 73.02,
+      "end": 73.32,
+      "shot": "06"
+    },
+    {
+      "word": "review.",
+      "start": 73.32,
+      "end": 74.525,
+      "shot": "06"
+    },
+    {
+      "word": "Save",
+      "start": 77.5,
+      "end": 77.81,
+      "shot": "07"
+    },
+    {
+      "word": "the",
+      "start": 77.81,
+      "end": 77.905,
+      "shot": "07"
+    },
+    {
+      "word": "candidate",
+      "start": 77.905,
+      "end": 78.49000000000001,
+      "shot": "07"
+    },
+    {
+      "word": "and",
+      "start": 78.49000000000001,
+      "end": 78.64500000000001,
+      "shot": "07"
+    },
+    {
+      "word": "generate",
+      "start": 78.64500000000001,
+      "end": 79.08000000000001,
+      "shot": "07"
+    },
+    {
+      "word": "a",
+      "start": 79.08000000000001,
+      "end": 79.17500000000001,
+      "shot": "07"
+    },
+    {
+      "word": "report",
+      "start": 79.17500000000001,
+      "end": 79.60000000000001,
+      "shot": "07"
+    },
+    {
+      "word": "draft",
+      "start": 79.60000000000001,
+      "end": 79.935,
+      "shot": "07"
+    },
+    {
+      "word": "with",
+      "start": 79.935,
+      "end": 80.08500000000001,
+      "shot": "07"
+    },
+    {
+      "word": "causes,",
+      "start": 80.08500000000001,
+      "end": 80.765,
+      "shot": "07"
+    },
+    {
+      "word": "evidence,",
+      "start": 80.765,
+      "end": 81.39500000000001,
+      "shot": "07"
+    },
+    {
+      "word": "assumptions,",
+      "start": 81.39500000000001,
+      "end": 82.25,
+      "shot": "07"
+    },
+    {
+      "word": "and",
+      "start": 82.25,
+      "end": 82.375,
+      "shot": "07"
+    },
+    {
+      "word": "selected",
+      "start": 82.375,
+      "end": 82.875,
+      "shot": "07"
+    },
+    {
+      "word": "follow-ups.",
+      "start": 82.875,
+      "end": 84.67,
+      "shot": "07"
+    },
+    {
+      "word": "From",
+      "start": 85.5,
+      "end": 85.735,
+      "shot": "08"
+    },
+    {
+      "word": "this",
+      "start": 85.735,
+      "end": 85.915,
+      "shot": "08"
+    },
+    {
+      "word": "saved",
+      "start": 85.915,
+      "end": 86.27000000000001,
+      "shot": "08"
+    },
+    {
+      "word": "proposal,",
+      "start": 86.27000000000001,
+      "end": 87.325,
+      "shot": "08"
+    },
+    {
+      "word": "turn",
+      "start": 87.325,
+      "end": 87.58000000000001,
+      "shot": "08"
+    },
+    {
+      "word": "the",
+      "start": 87.58000000000001,
+      "end": 87.655,
+      "shot": "08"
+    },
+    {
+      "word": "selected",
+      "start": 87.655,
+      "end": 88.17500000000001,
+      "shot": "08"
+    },
+    {
+      "word": "action",
+      "start": 88.17500000000001,
+      "end": 88.545,
+      "shot": "08"
+    },
+    {
+      "word": "into",
+      "start": 88.545,
+      "end": 88.78,
+      "shot": "08"
+    },
+    {
+      "word": "a",
+      "start": 88.78,
+      "end": 88.845,
+      "shot": "08"
+    },
+    {
+      "word": "task,",
+      "start": 88.845,
+      "end": 89.76,
+      "shot": "08"
+    },
+    {
+      "word": "retaining",
+      "start": 89.76,
+      "end": 90.22,
+      "shot": "08"
+    },
+    {
+      "word": "its",
+      "start": 90.22,
+      "end": 90.39500000000001,
+      "shot": "08"
+    },
+    {
+      "word": "evidence,",
+      "start": 90.39500000000001,
+      "end": 91.03,
+      "shot": "08"
+    },
+    {
+      "word": "calculation",
+      "start": 91.03,
+      "end": 91.77000000000001,
+      "shot": "08"
+    },
+    {
+      "word": "assumptions,",
+      "start": 91.77000000000001,
+      "end": 92.61,
+      "shot": "08"
+    },
+    {
+      "word": "and",
+      "start": 92.61,
+      "end": 92.74000000000001,
+      "shot": "08"
+    },
+    {
+      "word": "source",
+      "start": 92.74000000000001,
+      "end": 93.08500000000001,
+      "shot": "08"
+    },
+    {
+      "word": "context.",
+      "start": 93.08500000000001,
+      "end": 94.555,
+      "shot": "08"
+    },
+    {
+      "word": "Assign",
+      "start": 95.5,
+      "end": 95.88000000000001,
+      "shot": "09"
+    },
+    {
+      "word": "the",
+      "start": 95.88000000000001,
+      "end": 96.02000000000001,
+      "shot": "09"
+    },
+    {
+      "word": "action",
+      "start": 96.02000000000001,
+      "end": 96.4,
+      "shot": "09"
+    },
+    {
+      "word": "to",
+      "start": 96.4,
+      "end": 96.54,
+      "shot": "09"
+    },
+    {
+      "word": "its",
+      "start": 96.54,
+      "end": 96.715,
+      "shot": "09"
+    },
+    {
+      "word": "owner.",
+      "start": 96.715,
+      "end": 97.92,
+      "shot": "09"
+    },
+    {
+      "word": "In",
+      "start": 97.92,
+      "end": 98.03,
+      "shot": "09"
+    },
+    {
+      "word": "the",
+      "start": 98.03,
+      "end": 98.17,
+      "shot": "09"
+    },
+    {
+      "word": "assignee",
+      "start": 98.17,
+      "end": 98.76,
+      "shot": "09"
+    },
+    {
+      "word": "preview,",
+      "start": 98.76,
+      "end": 99.415,
+      "shot": "09"
+    },
+    {
+      "word": "receipt",
+      "start": 99.415,
+      "end": 100.025,
+      "shot": "09"
+    },
+    {
+      "word": "and",
+      "start": 100.025,
+      "end": 100.155,
+      "shot": "09"
+    },
+    {
+      "word": "progress",
+      "start": 100.155,
+      "end": 100.70500000000001,
+      "shot": "09"
+    },
+    {
+      "word": "updates",
+      "start": 100.70500000000001,
+      "end": 101.165,
+      "shot": "09"
+    },
+    {
+      "word": "build",
+      "start": 101.165,
+      "end": 101.42,
+      "shot": "09"
+    },
+    {
+      "word": "a",
+      "start": 101.42,
+      "end": 101.47500000000001,
+      "shot": "09"
+    },
+    {
+      "word": "visible",
+      "start": 101.47500000000001,
+      "end": 101.89,
+      "shot": "09"
+    },
+    {
+      "word": "handoff",
+      "start": 101.89,
+      "end": 102.34,
+      "shot": "09"
+    },
+    {
+      "word": "history,",
+      "start": 102.34,
+      "end": 103.245,
+      "shot": "09"
+    },
+    {
+      "word": "so",
+      "start": 103.245,
+      "end": 103.485,
+      "shot": "09"
+    },
+    {
+      "word": "finance",
+      "start": 103.485,
+      "end": 103.96000000000001,
+      "shot": "09"
+    },
+    {
+      "word": "can",
+      "start": 103.96000000000001,
+      "end": 104.165,
+      "shot": "09"
+    },
+    {
+      "word": "follow",
+      "start": 104.165,
+      "end": 104.53500000000001,
+      "shot": "09"
+    },
+    {
+      "word": "execution.",
+      "start": 104.53500000000001,
+      "end": 106.08000000000001,
+      "shot": "09"
+    },
+    {
+      "word": "Record",
+      "start": 109.5,
+      "end": 109.92500000000001,
+      "shot": "10"
+    },
+    {
+      "word": "the",
+      "start": 109.92500000000001,
+      "end": 110.095,
+      "shot": "10"
+    },
+    {
+      "word": "outcome.",
+      "start": 110.095,
+      "end": 111.52000000000001,
+      "shot": "10"
+    },
+    {
+      "word": "No",
+      "start": 111.52000000000001,
+      "end": 111.74000000000001,
+      "shot": "10"
+    },
+    {
+      "word": "ledger",
+      "start": 111.74000000000001,
+      "end": 112.075,
+      "shot": "10"
+    },
+    {
+      "word": "change.",
+      "start": 112.075,
+      "end": 113.43,
+      "shot": "10"
+    },
+    {
+      "word": "Beyond",
+      "start": 115.5,
+      "end": 115.94500000000001,
+      "shot": "11"
+    },
+    {
+      "word": "case",
+      "start": 115.94500000000001,
+      "end": 116.25,
+      "shot": "11"
+    },
+    {
+      "word": "follow-up,",
+      "start": 116.25,
+      "end": 117.22500000000001,
+      "shot": "11"
+    },
+    {
+      "word": "ask",
+      "start": 117.22500000000001,
+      "end": 117.52000000000001,
+      "shot": "11"
+    },
+    {
+      "word": "about",
+      "start": 117.52000000000001,
+      "end": 117.81500000000001,
+      "shot": "11"
+    },
+    {
+      "word": "report",
+      "start": 117.81500000000001,
+      "end": 118.24000000000001,
+      "shot": "11"
+    },
+    {
+      "word": "logic.",
+      "start": 118.24000000000001,
+      "end": 119.56,
+      "shot": "11"
+    },
+    {
+      "word": "The",
+      "start": 119.56,
+      "end": 119.69500000000001,
+      "shot": "11"
+    },
+    {
+      "word": "answer",
+      "start": 119.69500000000001,
+      "end": 120.05000000000001,
+      "shot": "11"
+    },
+    {
+      "word": "draws",
+      "start": 120.05000000000001,
+      "end": 120.385,
+      "shot": "11"
+    },
+    {
+      "word": "on",
+      "start": 120.385,
+      "end": 120.525,
+      "shot": "11"
+    },
+    {
+      "word": "the",
+      "start": 120.525,
+      "end": 120.60000000000001,
+      "shot": "11"
+    },
+    {
+      "word": "selected",
+      "start": 120.60000000000001,
+      "end": 121.135,
+      "shot": "11"
+    },
+    {
+      "word": "knowledge",
+      "start": 121.135,
+      "end": 121.5,
+      "shot": "11"
+    },
+    {
+      "word": "base,",
+      "start": 121.5,
+      "end": 122.355,
+      "shot": "11"
+    },
+    {
+      "word": "streams",
+      "start": 122.355,
+      "end": 122.825,
+      "shot": "11"
+    },
+    {
+      "word": "into",
+      "start": 122.825,
+      "end": 123.045,
+      "shot": "11"
+    },
+    {
+      "word": "view,",
+      "start": 123.045,
+      "end": 123.80000000000001,
+      "shot": "11"
+    },
+    {
+      "word": "and",
+      "start": 123.80000000000001,
+      "end": 123.95500000000001,
+      "shot": "11"
+    },
+    {
+      "word": "links",
+      "start": 123.95500000000001,
+      "end": 124.25,
+      "shot": "11"
+    },
+    {
+      "word": "each",
+      "start": 124.25,
+      "end": 124.52000000000001,
+      "shot": "11"
+    },
+    {
+      "word": "rule",
+      "start": 124.52000000000001,
+      "end": 124.75,
+      "shot": "11"
+    },
+    {
+      "word": "to",
+      "start": 124.75,
+      "end": 124.93,
+      "shot": "11"
+    },
+    {
+      "word": "its",
+      "start": 124.93,
+      "end": 125.12,
+      "shot": "11"
+    },
+    {
+      "word": "source",
+      "start": 125.12,
+      "end": 125.44,
+      "shot": "11"
+    },
+    {
+      "word": "for",
+      "start": 125.44,
+      "end": 125.63000000000001,
+      "shot": "11"
+    },
+    {
+      "word": "review.",
+      "start": 125.63000000000001,
+      "end": 126.84,
+      "shot": "11"
+    },
+    {
+      "word": "Built-in",
+      "start": 129.5,
+      "end": 129.865,
+      "shot": "12"
+    },
+    {
+      "word": "rules",
+      "start": 129.865,
+      "end": 130.195,
+      "shot": "12"
+    },
+    {
+      "word": "and",
+      "start": 130.195,
+      "end": 130.335,
+      "shot": "12"
+    },
+    {
+      "word": "personal",
+      "start": 130.335,
+      "end": 130.81,
+      "shot": "12"
+    },
+    {
+      "word": "knowledge",
+      "start": 130.81,
+      "end": 131.21,
+      "shot": "12"
+    },
+    {
+      "word": "libraries",
+      "start": 131.21,
+      "end": 131.84,
+      "shot": "12"
+    },
+    {
+      "word": "keep",
+      "start": 131.84,
+      "end": 132.11,
+      "shot": "12"
+    },
+    {
+      "word": "reporting",
+      "start": 132.11,
+      "end": 132.625,
+      "shot": "12"
+    },
+    {
+      "word": "definitions",
+      "start": 132.625,
+      "end": 133.29500000000002,
+      "shot": "12"
+    },
+    {
+      "word": "easy",
+      "start": 133.29500000000002,
+      "end": 133.595,
+      "shot": "12"
+    },
+    {
+      "word": "to",
+      "start": 133.595,
+      "end": 133.71,
+      "shot": "12"
+    },
+    {
+      "word": "find",
+      "start": 133.71,
+      "end": 134.08,
+      "shot": "12"
+    },
+    {
+      "word": "and",
+      "start": 134.08,
+      "end": 134.245,
+      "shot": "12"
+    },
+    {
+      "word": "reuse.",
+      "start": 134.245,
+      "end": 135.61,
+      "shot": "12"
+    },
+    {
+      "word": "Choose",
+      "start": 137.5,
+      "end": 137.81,
+      "shot": "13"
+    },
+    {
+      "word": "the",
+      "start": 137.81,
+      "end": 137.92000000000002,
+      "shot": "13"
+    },
+    {
+      "word": "report,",
+      "start": 137.92000000000002,
+      "end": 138.555,
+      "shot": "13"
+    },
+    {
+      "word": "dimension,",
+      "start": 138.555,
+      "end": 139.235,
+      "shot": "13"
+    },
+    {
+      "word": "and",
+      "start": 139.235,
+      "end": 139.35500000000002,
+      "shot": "13"
+    },
+    {
+      "word": "metric.",
+      "start": 139.35500000000002,
+      "end": 140.675,
+      "shot": "13"
+    },
+    {
+      "word": "Describe",
+      "start": 140.675,
+      "end": 141.13500000000002,
+      "shot": "13"
+    },
+    {
+      "word": "a",
+      "start": 141.13500000000002,
+      "end": 141.19,
+      "shot": "13"
+    },
+    {
+      "word": "monitor",
+      "start": 141.19,
+      "end": 141.66,
+      "shot": "13"
+    },
+    {
+      "word": "in",
+      "start": 141.66,
+      "end": 141.79500000000002,
+      "shot": "13"
+    },
+    {
+      "word": "natural",
+      "start": 141.79500000000002,
+      "end": 142.3,
+      "shot": "13"
+    },
+    {
+      "word": "language,",
+      "start": 142.3,
+      "end": 143.32,
+      "shot": "13"
+    },
+    {
+      "word": "inspect",
+      "start": 143.32,
+      "end": 143.78,
+      "shot": "13"
+    },
+    {
+      "word": "the",
+      "start": 143.78,
+      "end": 143.875,
+      "shot": "13"
+    },
+    {
+      "word": "sample",
+      "start": 143.875,
+      "end": 144.29500000000002,
+      "shot": "13"
+    },
+    {
+      "word": "field",
+      "start": 144.29500000000002,
+      "end": 144.625,
+      "shot": "13"
+    },
+    {
+      "word": "routing,",
+      "start": 144.625,
+      "end": 145.415,
+      "shot": "13"
+    },
+    {
+      "word": "and",
+      "start": 145.415,
+      "end": 145.54,
+      "shot": "13"
+    },
+    {
+      "word": "set",
+      "start": 145.54,
+      "end": 145.75,
+      "shot": "13"
+    },
+    {
+      "word": "a",
+      "start": 145.75,
+      "end": 145.81,
+      "shot": "13"
+    },
+    {
+      "word": "gross-profit",
+      "start": 145.81,
+      "end": 146.57500000000002,
+      "shot": "13"
+    },
+    {
+      "word": "threshold",
+      "start": 146.57500000000002,
+      "end": 147.125,
+      "shot": "13"
+    },
+    {
+      "word": "for",
+      "start": 147.125,
+      "end": 147.255,
+      "shot": "13"
+    },
+    {
+      "word": "the",
+      "start": 147.255,
+      "end": 147.365,
+      "shot": "13"
+    },
+    {
+      "word": "generated",
+      "start": 147.365,
+      "end": 147.92000000000002,
+      "shot": "13"
+    },
+    {
+      "word": "chart.",
+      "start": 147.92000000000002,
+      "end": 149.115,
+      "shot": "13"
+    },
+    {
+      "word": "Add",
+      "start": 150.5,
+      "end": 150.695,
+      "shot": "14"
+    },
+    {
+      "word": "a",
+      "start": 150.695,
+      "end": 150.79,
+      "shot": "14"
+    },
+    {
+      "word": "revenue",
+      "start": 150.79,
+      "end": 151.225,
+      "shot": "14"
+    },
+    {
+      "word": "trend,",
+      "start": 151.225,
+      "end": 151.79,
+      "shot": "14"
+    },
+    {
+      "word": "configure",
+      "start": 151.79,
+      "end": 152.32500000000002,
+      "shot": "14"
+    },
+    {
+      "word": "growth",
+      "start": 152.32500000000002,
+      "end": 152.895,
+      "shot": "14"
+    },
+    {
+      "word": "and",
+      "start": 152.895,
+      "end": 153.005,
+      "shot": "14"
+    },
+    {
+      "word": "decline",
+      "start": 153.005,
+      "end": 153.485,
+      "shot": "14"
+    },
+    {
+      "word": "signals,",
+      "start": 153.485,
+      "end": 154.445,
+      "shot": "14"
+    },
+    {
+      "word": "and",
+      "start": 154.445,
+      "end": 154.55,
+      "shot": "14"
+    },
+    {
+      "word": "arrange",
+      "start": 154.55,
+      "end": 154.95000000000002,
+      "shot": "14"
+    },
+    {
+      "word": "the",
+      "start": 154.95000000000002,
+      "end": 155.05,
+      "shot": "14"
+    },
+    {
+      "word": "cards.",
+      "start": 155.05,
+      "end": 156.435,
+      "shot": "14"
+    },
+    {
+      "word": "Reuse",
+      "start": 156.435,
+      "end": 156.85500000000002,
+      "shot": "14"
+    },
+    {
+      "word": "common",
+      "start": 156.85500000000002,
+      "end": 157.21,
+      "shot": "14"
+    },
+    {
+      "word": "monitoring",
+      "start": 157.21,
+      "end": 157.715,
+      "shot": "14"
+    },
+    {
+      "word": "patterns",
+      "start": 157.715,
+      "end": 158.22,
+      "shot": "14"
+    },
+    {
+      "word": "through",
+      "start": 158.22,
+      "end": 158.43,
+      "shot": "14"
+    },
+    {
+      "word": "the",
+      "start": 158.43,
+      "end": 158.53,
+      "shot": "14"
+    },
+    {
+      "word": "local",
+      "start": 158.53,
+      "end": 158.85500000000002,
+      "shot": "14"
+    },
+    {
+      "word": "template",
+      "start": 158.85500000000002,
+      "end": 159.305,
+      "shot": "14"
+    },
+    {
+      "word": "market.",
+      "start": 159.305,
+      "end": 160.51,
+      "shot": "14"
+    },
+    {
+      "word": "Finance",
+      "start": 163.5,
+      "end": 163.98000000000002,
+      "shot": "15"
+    },
+    {
+      "word": "Exception",
+      "start": 163.98000000000002,
+      "end": 164.5,
+      "shot": "15"
+    },
+    {
+      "word": "Intelligence.",
+      "start": 164.5,
+      "end": 166.16,
+      "shot": "15"
+    },
+    {
+      "word": "From",
+      "start": 166.16,
+      "end": 166.415,
+      "shot": "15"
+    },
+    {
+      "word": "signals",
+      "start": 166.415,
+      "end": 166.905,
+      "shot": "15"
+    },
+    {
+      "word": "to",
+      "start": 166.905,
+      "end": 167.06,
+      "shot": "15"
+    },
+    {
+      "word": "actions.",
+      "start": 167.06,
+      "end": 168.395,
+      "shot": "15"
+    }
+  ]
+}

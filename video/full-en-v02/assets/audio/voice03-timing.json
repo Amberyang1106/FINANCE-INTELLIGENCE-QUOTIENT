@@ -1,0 +1,152 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  6,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Switch"
+    },
+    {
+        "Index":  7,
+        "Count":  2,
+        "Seconds":  0.485,
+        "Text":  "to"
+    },
+    {
+        "Index":  10,
+        "Count":  7,
+        "Seconds":  0.585,
+        "Text":  "Service"
+    },
+    {
+        "Index":  18,
+        "Count":  10,
+        "Seconds":  1.025,
+        "Text":  "allocation"
+    },
+    {
+        "Index":  29,
+        "Count":  3,
+        "Seconds":  1.69,
+        "Text":  "for"
+    },
+    {
+        "Index":  33,
+        "Count":  1,
+        "Seconds":  1.8699999999999999,
+        "Text":  "a"
+    },
+    {
+        "Index":  35,
+        "Count":  8,
+        "Seconds":  1.92,
+        "Text":  "specific"
+    },
+    {
+        "Index":  44,
+        "Count":  5,
+        "Seconds":  2.4699999999999998,
+        "Text":  "close"
+    },
+    {
+        "Index":  50,
+        "Count":  5,
+        "Seconds":  2.835,
+        "Text":  "check"
+    },
+    {
+        "Index":  57,
+        "Count":  2,
+        "Seconds":  4.085,
+        "Text":  "GA"
+    },
+    {
+        "Index":  60,
+        "Count":  5,
+        "Seconds":  4.4799999999999995,
+        "Text":  "shows"
+    },
+    {
+        "Index":  66,
+        "Count":  8,
+        "Seconds":  4.85,
+        "Text":  "negative"
+    },
+    {
+        "Index":  75,
+        "Count":  11,
+        "Seconds":  5.2399999999999993,
+        "Text":  "month-three"
+    },
+    {
+        "Index":  87,
+        "Count":  5,
+        "Seconds":  5.72,
+        "Text":  "gross"
+    },
+    {
+        "Index":  93,
+        "Count":  6,
+        "Seconds":  6.0299999999999994,
+        "Text":  "profit"
+    },
+    {
+        "Index":  101,
+        "Count":  5,
+        "Seconds":  6.955,
+        "Text":  "while"
+    },
+    {
+        "Index":  107,
+        "Count":  4,
+        "Seconds":  7.245,
+        "Text":  "LE\u0027s"
+    },
+    {
+        "Index":  112,
+        "Count":  8,
+        "Seconds":  7.5249999999999995,
+        "Text":  "negative"
+    },
+    {
+        "Index":  121,
+        "Count":  7,
+        "Seconds":  7.925,
+        "Text":  "revenue"
+    },
+    {
+        "Index":  129,
+        "Count":  4,
+        "Seconds":  8.3449999999999989,
+        "Text":  "base"
+    },
+    {
+        "Index":  134,
+        "Count":  7,
+        "Seconds":  8.61,
+        "Text":  "signals"
+    },
+    {
+        "Index":  142,
+        "Count":  1,
+        "Seconds":  9.045,
+        "Text":  "a"
+    },
+    {
+        "Index":  144,
+        "Count":  6,
+        "Seconds":  9.115,
+        "Text":  "linked"
+    },
+    {
+        "Index":  151,
+        "Count":  10,
+        "Seconds":  9.415,
+        "Text":  "allocation"
+    },
+    {
+        "Index":  162,
+        "Count":  5,
+        "Seconds":  10.065,
+        "Text":  "issue"
+    }
+]

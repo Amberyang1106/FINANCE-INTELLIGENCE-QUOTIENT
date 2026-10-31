@@ -1,0 +1,142 @@
+{
+  "log": [
+    {
+      "name": "open-analysis",
+      "time": 3.924794200000004,
+      "selector": ".close-badge[data-analyze=GA]",
+      "rect": {
+        "x": 1276.75,
+        "y": 227.375,
+        "width": 83.25,
+        "height": 29.1875,
+        "top": 227.375,
+        "right": 1360,
+        "bottom": 256.5625,
+        "left": 1276.75
+      }
+    },
+    {
+      "name": "type-question",
+      "time": 5.058631800000003,
+      "selector": "#analysisPrompt",
+      "rect": {
+        "x": 438,
+        "y": 714.703125,
+        "width": 748.1875,
+        "height": 60.78125,
+        "top": 714.703125,
+        "right": 1186.1875,
+        "bottom": 775.484375,
+        "left": 438
+      }
+    },
+    {
+      "name": "send-question",
+      "time": 7.308251499999998,
+      "selector": "#sendButton",
+      "rect": {
+        "x": 1278.515625,
+        "y": 724.890625,
+        "width": 68.484375,
+        "height": 40.390625,
+        "top": 724.890625,
+        "right": 1347,
+        "bottom": 765.28125,
+        "left": 1278.515625
+      }
+    },
+    {
+      "name": "open-voucher",
+      "time": 12.713105200000005,
+      "selector": ".evidence-voucher",
+      "rect": {
+        "x": 1416,
+        "y": 654.984375,
+        "width": 272,
+        "height": 113.96875,
+        "top": 654.984375,
+        "right": 1688,
+        "bottom": 768.953125,
+        "left": 1416
+      }
+    },
+    {
+      "name": "voucher-evidence",
+      "time": 13.6121688,
+      "selector": "#voucherDialog",
+      "rect": {
+        "x": 544,
+        "y": 110.90625,
+        "width": 832,
+        "height": 858.1875,
+        "top": 110.90625,
+        "right": 1376,
+        "bottom": 969.09375,
+        "left": 544
+      }
+    },
+    {
+      "name": "open-scenario",
+      "time": 19.604801900000005,
+      "selector": "[data-voucher-scenario]",
+      "rect": {
+        "x": 569,
+        "y": 903.703125,
+        "width": 233.015625,
+        "height": 40.390625,
+        "top": 903.703125,
+        "right": 802.015625,
+        "bottom": 944.09375,
+        "left": 569
+      }
+    },
+    {
+      "name": "exclude-base",
+      "time": 21.614613700000003,
+      "selector": "#excludeBase",
+      "rect": {
+        "x": 1437,
+        "y": 290.953125,
+        "width": 16,
+        "height": 16,
+        "top": 290.953125,
+        "right": 1453,
+        "bottom": 306.953125,
+        "left": 1437
+      }
+    },
+    {
+      "name": "all-segments",
+      "time": 25.320218600000008,
+      "selector": "#fullComparison",
+      "rect": {
+        "x": 1416,
+        "y": 629.734375,
+        "width": 272,
+        "height": 40.390625,
+        "top": 629.734375,
+        "right": 1688,
+        "bottom": 670.125,
+        "left": 1416
+      }
+    },
+    {
+      "name": "comparison-result",
+      "time": 26.00987389999999,
+      "selector": "#comparisonDialog",
+      "rect": {
+        "x": 448,
+        "y": 258.25,
+        "width": 1024,
+        "height": 563.5,
+        "top": 258.25,
+        "right": 1472,
+        "bottom": 821.75,
+        "left": 448
+      }
+    }
+  ],
+  "question": "Why did GA GP turn negative after the month 3 true-up?",
+  "elapsed": 32.33243399999999,
+  "errors": []
+}

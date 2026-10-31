@@ -1,0 +1,56 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  6,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Follow"
+    },
+    {
+        "Index":  7,
+        "Count":  3,
+        "Seconds":  0.45999999999999996,
+        "Text":  "the"
+    },
+    {
+        "Index":  11,
+        "Count":  5,
+        "Seconds":  0.6,
+        "Text":  "rules"
+    },
+    {
+        "Index":  18,
+        "Count":  7,
+        "Seconds":  1.4549999999999998,
+        "Text":  "true-up"
+    },
+    {
+        "Index":  27,
+        "Count":  7,
+        "Seconds":  2.32,
+        "Text":  "revenue"
+    },
+    {
+        "Index":  35,
+        "Count":  4,
+        "Seconds":  2.75,
+        "Text":  "base"
+    },
+    {
+        "Index":  41,
+        "Count":  3,
+        "Seconds":  3.5799999999999996,
+        "Text":  "and"
+    },
+    {
+        "Index":  45,
+        "Count":  6,
+        "Seconds":  3.71,
+        "Text":  "source"
+    },
+    {
+        "Index":  52,
+        "Count":  8,
+        "Seconds":  4.085,
+        "Text":  "evidence"
+    }
+]

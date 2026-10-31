@@ -1,0 +1,107 @@
+[
+  {
+    "id": "01",
+    "start": 0,
+    "duration": 5,
+    "text": "Finance Exception Intelligence. From signals to accountable action.",
+    "zh": "财务异常智能：从监测信号走向可追踪的行动。"
+  },
+  {
+    "id": "02",
+    "start": 5,
+    "duration": 27,
+    "text": "See monthly monitor status at a glance. Click the Freight alert. A possible duplicate allocation needs finance review. Identify impacted records, correct the duplication, rerun the scope, and validate Freight and gross profit. Then review revenue, cost, and cost credit trends.",
+    "zh": "查看月度监控状态，点击 Freight 预警。可能存在重复分摊，需财务核实。识别受影响记录、修正重复分摊、重新运行并验证 Freight 与毛利；随后查看收入、成本与成本抵减趋势。"
+  },
+  {
+    "id": "03",
+    "start": 32,
+    "duration": 8,
+    "text": "Now open a separate Service allocation case. GA shows negative month-three gross profit.",
+    "zh": "进入独立的 Service allocation 案例：GA 第三个月毛利为负。"
+  },
+  {
+    "id": "04",
+    "start": 40,
+    "duration": 8,
+    "text": "Ask why gross profit turned negative. Follow the rules, true-up, revenue base, and source evidence.",
+    "zh": "询问负毛利原因，依次追踪规则、轧差、收入基数与源凭证。"
+  },
+  {
+    "id": "05",
+    "start": 48,
+    "duration": 10,
+    "text": "Open the negative revenue voucher. Review the amount, segment, posting user and reference. A matching positive entry is not confirmed in this sample.",
+    "zh": "打开负收入凭证，核对金额、segment、入账人和参考号。本样例尚未确认匹配的正向凭证。"
+  },
+  {
+    "id": "06",
+    "start": 58,
+    "duration": 14,
+    "text": "Compare excluding the voucher from the allocation base only. Posted revenue and months one and two stay unchanged. GA improves, total gross profit is unchanged, and LE remains under review.",
+    "zh": "仅从分摊基数排除凭证，保留入账收入及前两个月结果。GA 改善，但总毛利不变，LE 仍待核查。"
+  },
+  {
+    "id": "07",
+    "start": 72,
+    "duration": 6,
+    "text": "Save the candidate and generate a report with evidence, assumptions, and actions.",
+    "zh": "保存候选方案，生成包含证据、假设和行动的报告。"
+  },
+  {
+    "id": "08",
+    "start": 78,
+    "duration": 6,
+    "text": "Create a follow-up task from the same saved proposal.",
+    "zh": "从同一已保存方案创建后续任务。"
+  },
+  {
+    "id": "09",
+    "start": 84,
+    "duration": 9,
+    "text": "Assign an owner. The assignee receives the task and starts work. Track each handoff.",
+    "zh": "分派负责人，由被指派人接收并开始工作，追踪各次交接。"
+  },
+  {
+    "id": "10",
+    "start": 93,
+    "duration": 5,
+    "text": "Record the outcome. Task completion does not change the ledger.",
+    "zh": "记录处理结果；任务完成不改变账务。"
+  },
+  {
+    "id": "11",
+    "start": 98,
+    "duration": 10,
+    "text": "Ask about report logic. The simulated answer streams from the selected knowledge base and links to its source.",
+    "zh": "询问报表逻辑：模拟答案从所选知识库流式展示，并链接原文。"
+  },
+  {
+    "id": "12",
+    "start": 108,
+    "duration": 6,
+    "text": "Explore built-in rules and personal knowledge libraries.",
+    "zh": "查看内置规则和个人知识库。"
+  },
+  {
+    "id": "13",
+    "start": 114,
+    "duration": 9,
+    "text": "Choose a report, dimension and metric. Describe a monitor, then configure a gross-profit benchmark.",
+    "zh": "选择报表、维度和指标，描述监控需求并设置毛利阈值。"
+  },
+  {
+    "id": "14",
+    "start": 123,
+    "duration": 10,
+    "text": "Add revenue trends, configure signals, rearrange cards, and reuse templates in Monitor Market.",
+    "zh": "添加收入趋势、配置信号、拖动卡片，并从 Monitor Market 复用模板。"
+  },
+  {
+    "id": "15",
+    "start": 133,
+    "duration": 5,
+    "text": "Finance Exception Intelligence. Sample data. Simulated AI.",
+    "zh": "财务异常智能。样例数据，模拟 AI。"
+  }
+]

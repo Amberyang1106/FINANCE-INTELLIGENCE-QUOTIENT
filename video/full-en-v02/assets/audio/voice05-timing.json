@@ -1,0 +1,176 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  5,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Trace"
+    },
+    {
+        "Index":  6,
+        "Count":  3,
+        "Seconds":  0.435,
+        "Text":  "the"
+    },
+    {
+        "Index":  10,
+        "Count":  8,
+        "Seconds":  0.525,
+        "Text":  "negative"
+    },
+    {
+        "Index":  19,
+        "Count":  7,
+        "Seconds":  0.92499999999999993,
+        "Text":  "revenue"
+    },
+    {
+        "Index":  27,
+        "Count":  7,
+        "Seconds":  1.345,
+        "Text":  "voucher"
+    },
+    {
+        "Index":  35,
+        "Count":  2,
+        "Seconds":  1.75,
+        "Text":  "to"
+    },
+    {
+        "Index":  38,
+        "Count":  3,
+        "Seconds":  1.93,
+        "Text":  "its"
+    },
+    {
+        "Index":  42,
+        "Count":  6,
+        "Seconds":  2.105,
+        "Text":  "amount"
+    },
+    {
+        "Index":  50,
+        "Count":  7,
+        "Seconds":  2.675,
+        "Text":  "segment"
+    },
+    {
+        "Index":  59,
+        "Count":  7,
+        "Seconds":  3.36,
+        "Text":  "posting"
+    },
+    {
+        "Index":  67,
+        "Count":  11,
+        "Seconds":  3.775,
+        "Text":  "information"
+    },
+    {
+        "Index":  80,
+        "Count":  3,
+        "Seconds":  4.645,
+        "Text":  "and"
+    },
+    {
+        "Index":  84,
+        "Count":  9,
+        "Seconds":  4.795,
+        "Text":  "reference"
+    },
+    {
+        "Index":  95,
+        "Count":  2,
+        "Seconds":  6.27,
+        "Text":  "No"
+    },
+    {
+        "Index":  98,
+        "Count":  8,
+        "Seconds":  6.4899999999999993,
+        "Text":  "positive"
+    },
+    {
+        "Index":  107,
+        "Count":  11,
+        "Seconds":  7.005,
+        "Text":  "counterpart"
+    },
+    {
+        "Index":  119,
+        "Count":  2,
+        "Seconds":  7.685,
+        "Text":  "is"
+    },
+    {
+        "Index":  122,
+        "Count":  9,
+        "Seconds":  7.8199999999999994,
+        "Text":  "confirmed"
+    },
+    {
+        "Index":  132,
+        "Count":  2,
+        "Seconds":  8.33,
+        "Text":  "in"
+    },
+    {
+        "Index":  135,
+        "Count":  4,
+        "Seconds":  8.44,
+        "Text":  "this"
+    },
+    {
+        "Index":  140,
+        "Count":  6,
+        "Seconds":  8.61,
+        "Text":  "sample"
+    },
+    {
+        "Index":  147,
+        "Count":  5,
+        "Seconds":  8.995,
+        "Text":  "scope"
+    },
+    {
+        "Index":  154,
+        "Count":  7,
+        "Seconds":  10.32,
+        "Text":  "Finance"
+    },
+    {
+        "Index":  162,
+        "Count":  4,
+        "Seconds":  10.825,
+        "Text":  "must"
+    },
+    {
+        "Index":  167,
+        "Count":  5,
+        "Seconds":  11.08,
+        "Text":  "still"
+    },
+    {
+        "Index":  173,
+        "Count":  6,
+        "Seconds":  11.354999999999999,
+        "Text":  "verify"
+    },
+    {
+        "Index":  180,
+        "Count":  3,
+        "Seconds":  11.875,
+        "Text":  "the"
+    },
+    {
+        "Index":  184,
+        "Count":  8,
+        "Seconds":  11.969999999999999,
+        "Text":  "business"
+    },
+    {
+        "Index":  193,
+        "Count":  7,
+        "Seconds":  12.395,
+        "Text":  "context"
+    }
+]

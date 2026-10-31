@@ -1,0 +1,20 @@
+{
+  "same_picture_BGM_noBGM": true,
+  "video_stream_hashes": [
+    "SHA256=b9265f8d54f508fe760ba80903d7ac00defbf0cb72de2953ff73d0282c414f89",
+    "SHA256=b9265f8d54f508fe760ba80903d7ac00defbf0cb72de2953ff73d0282c414f89"
+  ],
+  "loudness_measurement": {
+    "input_i": "-15.95",
+    "input_tp": "-2.80",
+    "input_lra": "4.80",
+    "input_thresh": "-27.52",
+    "output_i": "-16.01",
+    "output_tp": "-2.00",
+    "output_lra": "4.70",
+    "output_thresh": "-27.51",
+    "normalization_type": "dynamic",
+    "target_offset": "0.01"
+  },
+  "subjective_listening_verified": false
+}

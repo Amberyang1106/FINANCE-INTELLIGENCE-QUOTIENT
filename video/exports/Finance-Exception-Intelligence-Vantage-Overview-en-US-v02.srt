@@ -1,0 +1,183 @@
+1
+00:00:00,500 --> 00:00:05,395
+Finance Exception Intelligence. From signals to actions.
+
+2
+00:00:06,500 --> 00:00:10,025
+Track revenue, cost, and cost credits.
+
+3
+00:00:10,025 --> 00:00:12,545
+Current-quarter totals match the sample;
+
+4
+00:00:12,545 --> 00:00:15,035
+earlier history is illustrative.
+
+5
+00:00:18,500 --> 00:00:21,235
+Switch to Service allocation for a specific close
+
+6
+00:00:21,235 --> 00:00:25,645
+check. GA shows negative month-three gross profit, while
+
+7
+00:00:25,645 --> 00:00:28,465
+LE's negative revenue base signals a linked allocation
+
+8
+00:00:28,465 --> 00:00:29,605
+issue.
+
+9
+00:00:30,500 --> 00:00:33,725
+The investigation carries the scope forward, checking the
+
+10
+00:00:33,725 --> 00:00:37,545
+rules, quarter-end true-up, revenue base, and source documents
+
+11
+00:00:37,545 --> 00:00:39,305
+across segments.
+
+12
+00:00:42,500 --> 00:00:45,075
+Trace the negative revenue voucher to its amount,
+
+13
+00:00:45,075 --> 00:00:48,670
+segment, posting information, and reference.
+
+14
+00:00:48,670 --> 00:00:51,395
+No positive counterpart is confirmed in this sample
+
+15
+00:00:51,395 --> 00:00:56,265
+scope. Finance must still verify the business context.
+
+16
+00:00:57,500 --> 00:00:59,930
+Compare a candidate that excludes the voucher from
+
+17
+00:00:59,930 --> 00:01:02,335
+the allocation base only.
+
+18
+00:01:02,335 --> 00:01:04,670
+Keep posted revenue and the first two months
+
+19
+00:01:04,670 --> 00:01:10,035
+unchanged. Recalculate month three: GA improves, but total
+
+20
+00:01:10,035 --> 00:01:13,320
+gross profit is unchanged, and LE remains under
+
+21
+00:01:13,320 --> 00:01:14,525
+review.
+
+22
+00:01:17,500 --> 00:01:19,935
+Save the candidate and generate a report draft
+
+23
+00:01:19,935 --> 00:01:24,670
+with causes, evidence, assumptions, and selected follow-ups.
+
+24
+00:01:25,500 --> 00:01:28,545
+From this saved proposal, turn the selected action
+
+25
+00:01:28,545 --> 00:01:32,610
+into a task, retaining its evidence, calculation assumptions,
+
+26
+00:01:32,610 --> 00:01:34,555
+and source context.
+
+27
+00:01:35,500 --> 00:01:37,920
+Assign the action to its owner.
+
+28
+00:01:37,920 --> 00:01:41,165
+In the assignee preview, receipt and progress updates
+
+29
+00:01:41,165 --> 00:01:44,165
+build a visible handoff history, so finance can
+
+30
+00:01:44,165 --> 00:01:46,080
+follow execution.
+
+31
+00:01:49,500 --> 00:01:53,430
+Record the outcome. No ledger change.
+
+32
+00:01:55,500 --> 00:01:59,560
+Beyond case follow-up, ask about report logic.
+
+33
+00:01:59,560 --> 00:02:02,355
+The answer draws on the selected knowledge base,
+
+34
+00:02:02,355 --> 00:02:04,930
+streams into view, and links each rule to
+
+35
+00:02:04,930 --> 00:02:06,840
+its source for review.
+
+36
+00:02:09,500 --> 00:02:12,625
+Built-in rules and personal knowledge libraries keep reporting
+
+37
+00:02:12,625 --> 00:02:15,610
+definitions easy to find and reuse.
+
+38
+00:02:17,500 --> 00:02:20,675
+Choose the report, dimension, and metric.
+
+39
+00:02:20,675 --> 00:02:23,875
+Describe a monitor in natural language, inspect the
+
+40
+00:02:23,875 --> 00:02:27,125
+sample field routing, and set a gross-profit threshold
+
+41
+00:02:27,125 --> 00:02:29,115
+for the generated chart.
+
+42
+00:02:30,500 --> 00:02:33,485
+Add a revenue trend, configure growth and decline
+
+43
+00:02:33,485 --> 00:02:36,435
+signals, and arrange the cards.
+
+44
+00:02:36,435 --> 00:02:39,305
+Reuse common monitoring patterns through the local template
+
+45
+00:02:39,305 --> 00:02:40,510
+market.
+
+46
+00:02:43,500 --> 00:02:48,395
+Finance Exception Intelligence. From signals to actions.

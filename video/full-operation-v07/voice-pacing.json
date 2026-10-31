@@ -1,0 +1,247 @@
+[
+  {
+    "id": "01",
+    "duration": 1.7636875,
+    "window": 2.5,
+    "tempo": 1,
+    "text": "Finance Exception Intelligence."
+  },
+  {
+    "id": "02",
+    "duration": 4.73025,
+    "window": 4.5,
+    "tempo": 1.1000581395348836,
+    "text": "See exceptions. Trace evidence. Coordinate action."
+  },
+  {
+    "id": "03",
+    "duration": 3.5905625,
+    "window": 3,
+    "tempo": 1.2823437500000001,
+    "text": "Five capabilities. One finance workspace."
+  },
+  {
+    "id": "04",
+    "duration": 3.211,
+    "window": 3.833333333333334,
+    "tempo": 1,
+    "text": "Review reporting health. Open the Freight alert."
+  },
+  {
+    "id": "05",
+    "duration": 3.05325,
+    "window": 2.8666666666666654,
+    "tempo": 1.1449687500000005,
+    "text": "A possible duplicate allocation needs finance review."
+  },
+  {
+    "id": "06",
+    "duration": 4.7214375,
+    "window": 4.699999999999999,
+    "tempo": 1.0492083333333335,
+    "text": "Identify records, correct duplicates, rerun, and validate Freight and GP."
+  },
+  {
+    "id": "07",
+    "duration": 3.3426875,
+    "window": 6.600000000000001,
+    "tempo": 1,
+    "text": "Review revenue, cost and source cost-credit trends."
+  },
+  {
+    "id": "08",
+    "duration": 2.05325,
+    "window": 3.133333333333333,
+    "tempo": 1,
+    "text": "Trace a separate allocation exception."
+  },
+  {
+    "id": "09",
+    "duration": 2.4225625,
+    "window": 2.6000000000000014,
+    "tempo": 1.009401041666666,
+    "text": "GA's month-three gross profit is negative."
+  },
+  {
+    "id": "10",
+    "duration": 2.0945625,
+    "window": 4.666666666666664,
+    "tempo": 1,
+    "text": "Ask why gross profit turned negative."
+  },
+  {
+    "id": "11",
+    "duration": 4.4904375,
+    "window": 5.366666666666667,
+    "tempo": 1,
+    "text": "Follow the rules, true-up, revenue base, and source evidence."
+  },
+  {
+    "id": "12",
+    "duration": 1.6500625,
+    "window": 2.1000000000000014,
+    "tempo": 1,
+    "text": "Open the negative revenue voucher."
+  },
+  {
+    "id": "13",
+    "duration": 2.860625,
+    "window": 3,
+    "tempo": 1.021651785714286,
+    "text": "Check amount, segment, user and reference."
+  },
+  {
+    "id": "14",
+    "duration": 1.7359375,
+    "window": 2,
+    "tempo": 1,
+    "text": "No confirmed sample offset."
+  },
+  {
+    "id": "15",
+    "duration": 3.598625,
+    "window": 4,
+    "tempo": 1,
+    "text": "LE's negative base raises GA's share and pressures GP."
+  },
+  {
+    "id": "16",
+    "duration": 3.129375,
+    "window": 3.700000000000003,
+    "tempo": 1,
+    "text": "Compare excluding the voucher from the allocation base only."
+  },
+  {
+    "id": "17",
+    "duration": 2.93275,
+    "window": 4.733333333333327,
+    "tempo": 1,
+    "text": "Posted revenue and months one and two stay unchanged."
+  },
+  {
+    "id": "18",
+    "duration": 4.5428125,
+    "window": 4.700000000000003,
+    "tempo": 1.0095138888888884,
+    "text": "GA improves; total GP unchanged; LE needs review."
+  },
+  {
+    "id": "19",
+    "duration": 4.411625,
+    "window": 5,
+    "tempo": 1,
+    "text": "Save the candidate and generate a report with evidence, assumptions, and actions."
+  },
+  {
+    "id": "20",
+    "duration": 2.291125,
+    "window": 5.13333333333334,
+    "tempo": 1,
+    "text": "Turn proposals into accountable actions."
+  },
+  {
+    "id": "21",
+    "duration": 0.834,
+    "window": 1.9666666666666544,
+    "tempo": 1,
+    "text": "Assign an owner."
+  },
+  {
+    "id": "22",
+    "duration": 0.9320625,
+    "window": 2.13333333333334,
+    "tempo": 1,
+    "text": "Confirm receipt."
+  },
+  {
+    "id": "23",
+    "duration": 1.7765625,
+    "window": 5,
+    "tempo": 1,
+    "text": "Start work and track the handoff."
+  },
+  {
+    "id": "24",
+    "duration": 1.1455625,
+    "window": 1.1666666666666714,
+    "tempo": 1.185064655172408,
+    "text": "Record the outcome."
+  },
+  {
+    "id": "25",
+    "duration": 1.0769375,
+    "window": 1.5999999999999943,
+    "tempo": 1,
+    "text": "Ledger unchanged."
+  },
+  {
+    "id": "26",
+    "duration": 3.925625,
+    "window": 7.533333333333331,
+    "tempo": 1,
+    "text": "Understand the logic behind the numbers. Ask the report."
+  },
+  {
+    "id": "27",
+    "duration": 3.1623125,
+    "window": 4.966666666666669,
+    "tempo": 1,
+    "text": "The simulated answer excerpt includes source citations."
+  },
+  {
+    "id": "28",
+    "duration": 1.99825,
+    "window": 2.5,
+    "tempo": 1,
+    "text": "Explore built-in and personal knowledge."
+  },
+  {
+    "id": "29",
+    "duration": 4.1345625,
+    "window": 7.36666666666666,
+    "tempo": 1,
+    "text": "Build monitors around your questions. Choose scope and metrics."
+  },
+  {
+    "id": "30",
+    "duration": 3.0839375,
+    "window": 4.933333333333337,
+    "tempo": 1,
+    "text": "Review the chart, then set a gross-profit threshold."
+  },
+  {
+    "id": "31",
+    "duration": 1.1341875,
+    "window": 4.700000000000003,
+    "tempo": 1,
+    "text": "Add a revenue trend."
+  },
+  {
+    "id": "32",
+    "duration": 1.6156875,
+    "window": 3.1666666666666714,
+    "tempo": 1,
+    "text": "Drag to arrange your monitors."
+  },
+  {
+    "id": "33",
+    "duration": 1.1159375,
+    "window": 2.3333333333333286,
+    "tempo": 1,
+    "text": "Reuse templates."
+  },
+  {
+    "id": "34",
+    "duration": 4.1913125,
+    "window": 4,
+    "tempo": 1.1029769736842108,
+    "text": "One workspace. From reporting signals to accountable action."
+  },
+  {
+    "id": "35",
+    "duration": 1.7636875,
+    "window": 3,
+    "tempo": 1,
+    "text": "Finance Exception Intelligence."
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "complete": true,
+  "outputs": [
+    {
+      "file": "C:\\Users\\yangtt16\\OneDrive - Lenovo\\\u5c0f\u5f3a\u521b\u65b0\\fpa-agent-demo\\video\\exports\\Finance-Exception-Intelligence-Vantage-Operation-Pilot-EN-2K-30s-v01.mp4",
+      "bytes": 44826420,
+      "sha256": "56e78bc66b76c264df1db79b537b8bab6c71d6db9fa197f3e502d36df7950bd2",
+      "videoStreamHash": "SHA256=f4250ce9e515bb2aac6bd30a5f958881a3ff9fd46e42c5c9c68f2aad4b56418f",
+      "width": 2560,
+      "height": 1440,
+      "frames": 900,
+      "fps": "30/1",
+      "duration": 30.0,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "fullDecodePassed": true
+    },
+    {
+      "file": "C:\\Users\\yangtt16\\OneDrive - Lenovo\\\u5c0f\u5f3a\u521b\u65b0\\fpa-agent-demo\\video\\exports\\Finance-Exception-Intelligence-Vantage-Operation-Pilot-EN-2K-30s-v01-no-BGM.mp4",
+      "bytes": 44536481,
+      "sha256": "e979b7237d39513dfae11df5d70c838cb0f9b6e2fde2c50dcfed0dded9b8149f",
+      "videoStreamHash": "SHA256=f4250ce9e515bb2aac6bd30a5f958881a3ff9fd46e42c5c9c68f2aad4b56418f",
+      "width": 2560,
+      "height": 1440,
+      "frames": 900,
+      "fps": "30/1",
+      "duration": 30.0,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "fullDecodePassed": true
+    }
+  ],
+  "sameVideoStreamBothVersions": true,
+  "fullFilmUnchanged": true,
+  "applicationUnchanged": true
+}

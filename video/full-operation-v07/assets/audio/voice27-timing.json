@@ -1,0 +1,44 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  3,
+        "Seconds":  0.099999999999999992,
+        "Text":  "The"
+    },
+    {
+        "Index":  4,
+        "Count":  9,
+        "Seconds":  0.18,
+        "Text":  "simulated"
+    },
+    {
+        "Index":  14,
+        "Count":  6,
+        "Seconds":  0.77999999999999992,
+        "Text":  "answer"
+    },
+    {
+        "Index":  21,
+        "Count":  7,
+        "Seconds":  1.165,
+        "Text":  "excerpt"
+    },
+    {
+        "Index":  29,
+        "Count":  8,
+        "Seconds":  1.66,
+        "Text":  "includes"
+    },
+    {
+        "Index":  38,
+        "Count":  6,
+        "Seconds":  2.17,
+        "Text":  "source"
+    },
+    {
+        "Index":  45,
+        "Count":  9,
+        "Seconds":  2.48,
+        "Text":  "citations"
+    }
+]

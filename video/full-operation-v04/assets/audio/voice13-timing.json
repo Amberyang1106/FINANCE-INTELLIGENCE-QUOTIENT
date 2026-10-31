@@ -1,0 +1,38 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  2,
+        "Seconds":  0.099999999999999992,
+        "Text":  "No"
+    },
+    {
+        "Index":  3,
+        "Count":  8,
+        "Seconds":  0.32,
+        "Text":  "matching"
+    },
+    {
+        "Index":  12,
+        "Count":  8,
+        "Seconds":  0.755,
+        "Text":  "positive"
+    },
+    {
+        "Index":  21,
+        "Count":  5,
+        "Seconds":  1.255,
+        "Text":  "entry"
+    },
+    {
+        "Index":  27,
+        "Count":  2,
+        "Seconds":  1.6199999999999999,
+        "Text":  "is"
+    },
+    {
+        "Index":  30,
+        "Count":  9,
+        "Seconds":  1.78,
+        "Text":  "confirmed"
+    }
+]

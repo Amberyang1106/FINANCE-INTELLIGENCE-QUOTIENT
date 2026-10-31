@@ -1,0 +1,158 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  6,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Choose"
+    },
+    {
+        "Index":  7,
+        "Count":  3,
+        "Seconds":  0.41,
+        "Text":  "the"
+    },
+    {
+        "Index":  11,
+        "Count":  6,
+        "Seconds":  0.52,
+        "Text":  "report"
+    },
+    {
+        "Index":  19,
+        "Count":  9,
+        "Seconds":  1.155,
+        "Text":  "dimension"
+    },
+    {
+        "Index":  30,
+        "Count":  3,
+        "Seconds":  1.835,
+        "Text":  "and"
+    },
+    {
+        "Index":  34,
+        "Count":  6,
+        "Seconds":  1.9549999999999998,
+        "Text":  "metric"
+    },
+    {
+        "Index":  42,
+        "Count":  8,
+        "Seconds":  3.275,
+        "Text":  "Describe"
+    },
+    {
+        "Index":  51,
+        "Count":  1,
+        "Seconds":  3.735,
+        "Text":  "a"
+    },
+    {
+        "Index":  53,
+        "Count":  7,
+        "Seconds":  3.79,
+        "Text":  "monitor"
+    },
+    {
+        "Index":  61,
+        "Count":  2,
+        "Seconds":  4.26,
+        "Text":  "in"
+    },
+    {
+        "Index":  64,
+        "Count":  7,
+        "Seconds":  4.395,
+        "Text":  "natural"
+    },
+    {
+        "Index":  72,
+        "Count":  8,
+        "Seconds":  4.8999999999999995,
+        "Text":  "language"
+    },
+    {
+        "Index":  82,
+        "Count":  7,
+        "Seconds":  5.92,
+        "Text":  "inspect"
+    },
+    {
+        "Index":  90,
+        "Count":  3,
+        "Seconds":  6.38,
+        "Text":  "the"
+    },
+    {
+        "Index":  94,
+        "Count":  6,
+        "Seconds":  6.475,
+        "Text":  "sample"
+    },
+    {
+        "Index":  101,
+        "Count":  5,
+        "Seconds":  6.895,
+        "Text":  "field"
+    },
+    {
+        "Index":  107,
+        "Count":  7,
+        "Seconds":  7.225,
+        "Text":  "routing"
+    },
+    {
+        "Index":  116,
+        "Count":  3,
+        "Seconds":  8.0149999999999988,
+        "Text":  "and"
+    },
+    {
+        "Index":  120,
+        "Count":  3,
+        "Seconds":  8.1399999999999988,
+        "Text":  "set"
+    },
+    {
+        "Index":  124,
+        "Count":  1,
+        "Seconds":  8.35,
+        "Text":  "a"
+    },
+    {
+        "Index":  126,
+        "Count":  12,
+        "Seconds":  8.41,
+        "Text":  "gross-profit"
+    },
+    {
+        "Index":  139,
+        "Count":  9,
+        "Seconds":  9.1749999999999989,
+        "Text":  "threshold"
+    },
+    {
+        "Index":  149,
+        "Count":  3,
+        "Seconds":  9.725,
+        "Text":  "for"
+    },
+    {
+        "Index":  153,
+        "Count":  3,
+        "Seconds":  9.855,
+        "Text":  "the"
+    },
+    {
+        "Index":  157,
+        "Count":  9,
+        "Seconds":  9.965,
+        "Text":  "generated"
+    },
+    {
+        "Index":  167,
+        "Count":  5,
+        "Seconds":  10.52,
+        "Text":  "chart"
+    }
+]

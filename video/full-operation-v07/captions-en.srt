@@ -1,0 +1,139 @@
+1
+00:00:00,000 --> 00:00:02,500
+Finance Exception Intelligence.
+
+2
+00:00:02,500 --> 00:00:07,000
+See exceptions. Trace evidence. Coordinate action.
+
+3
+00:00:07,000 --> 00:00:10,000
+Five capabilities. One finance workspace.
+
+4
+00:00:10,000 --> 00:00:13,833
+Review reporting health. Open the Freight alert.
+
+5
+00:00:13,833 --> 00:00:16,700
+A possible duplicate allocation needs finance review.
+
+6
+00:00:16,700 --> 00:00:21,400
+Identify records, correct duplicates, rerun, and validate Freight and GP.
+
+7
+00:00:21,400 --> 00:00:28,000
+Review revenue, cost and source cost-credit trends.
+
+8
+00:00:28,000 --> 00:00:31,133
+Trace a separate allocation exception.
+
+9
+00:00:31,133 --> 00:00:33,733
+GA's month-three gross profit is negative.
+
+10
+00:00:33,733 --> 00:00:38,400
+Ask why gross profit turned negative.
+
+11
+00:00:38,400 --> 00:00:43,767
+Follow the rules, true-up, revenue base, and source evidence.
+
+12
+00:00:43,767 --> 00:00:45,867
+Open the negative revenue voucher.
+
+13
+00:00:45,867 --> 00:00:48,867
+Check amount, segment, user and reference.
+
+14
+00:00:48,867 --> 00:00:50,867
+No confirmed sample offset.
+
+15
+00:00:50,867 --> 00:00:54,867
+LE's negative base raises GA's share and pressures GP.
+
+16
+00:00:54,867 --> 00:00:58,567
+Compare excluding the voucher from the allocation base only.
+
+17
+00:00:58,567 --> 00:01:03,300
+Posted revenue and months one and two stay unchanged.
+
+18
+00:01:03,300 --> 00:01:08,000
+GA improves; total GP unchanged; LE needs review.
+
+19
+00:01:08,000 --> 00:01:13,000
+Save the candidate and generate a report with evidence, assumptions, and actions.
+
+20
+00:01:13,000 --> 00:01:18,133
+Turn proposals into accountable actions.
+
+21
+00:01:18,133 --> 00:01:20,100
+Assign an owner.
+
+22
+00:01:20,100 --> 00:01:22,233
+Confirm receipt.
+
+23
+00:01:22,233 --> 00:01:27,233
+Start work and track the handoff.
+
+24
+00:01:27,233 --> 00:01:28,400
+Record the outcome.
+
+25
+00:01:28,400 --> 00:01:30,000
+Ledger unchanged.
+
+26
+00:01:30,000 --> 00:01:37,533
+Understand the logic behind the numbers. Ask the report.
+
+27
+00:01:37,533 --> 00:01:42,500
+The simulated answer excerpt includes source citations.
+
+28
+00:01:42,500 --> 00:01:45,000
+Explore built-in and personal knowledge.
+
+29
+00:01:45,000 --> 00:01:52,367
+Build monitors around your questions. Choose scope and metrics.
+
+30
+00:01:52,367 --> 00:01:57,300
+Review the chart, then set a gross-profit threshold.
+
+31
+00:01:57,300 --> 00:02:02,000
+Add a revenue trend.
+
+32
+00:02:02,000 --> 00:02:05,167
+Drag to arrange your monitors.
+
+33
+00:02:05,167 --> 00:02:07,500
+Reuse templates.
+
+34
+00:02:07,500 --> 00:02:11,500
+One workspace. From reporting signals to accountable action.
+
+35
+00:02:11,500 --> 00:02:14,500
+Finance Exception Intelligence.

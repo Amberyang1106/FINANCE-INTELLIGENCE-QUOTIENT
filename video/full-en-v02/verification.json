@@ -1,0 +1,21 @@
+{
+  "sourceChecks": true,
+  "shots": 15,
+  "seconds": 170,
+  "captions": 46,
+  "voiceFits": true,
+  "quarterReconciliation": true,
+  "scope": "Model, timing and authored copy. Visual review and final encoded-media checks are separate.",
+  "media": {
+    "file": "Finance-Exception-Intelligence-Vantage-Overview-en-US-v02.mp4",
+    "bytes": 138863439,
+    "sha256": "4bd554b2bb8e1ba9da4c3c300f0f6dd07dca130d6530b6e9143d462764ab7c3e",
+    "width": 3840,
+    "height": 2160,
+    "fps": 60,
+    "seconds": 170.0,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "channels": 2
+  }
+}

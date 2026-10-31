@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-30",
+  "sourceBranch": "feature/vantage-ui",
+  "applicationSourceCommit": "5a126df03160f4b27b6fb6269ab19e97022113c9",
+  "productionState": "Local uncommitted video production. No main merge or remote push.",
+  "chapters": [
+    "Quarterly KPI",
+    "Allocation investigation and proposal",
+    "Proposal tasks",
+    "Report knowledge",
+    "Custom monitors and templates"
+  ],
+  "picture": "Native 4K60 Remotion, real captured UI states plus cinematic detail reconstruction",
+  "composition": "HyperFrames 0.8.216 voice/music mix; libass draws clean 46 measured English captions. HyperFrames caption pixels rejected for sequential-capture residue.",
+  "voice": "Microsoft Zira Desktop / offline synthetic English / explicit 16kHz mono input, 48kHz stereo final mix",
+  "music": {
+    "title": "Cipher",
+    "artist": "Kevin MacLeod",
+    "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Cipher2.mp3",
+    "license": "CC BY 4.0",
+    "edits": "excerpt, fades, attenuation, sidechain ducking",
+    "sha256": "d3d0614535a61d748e2fd8d5117fc4d781022a7624794802a2462d8af3fdd522"
+  },
+  "media": {
+    "file": "Finance-Exception-Intelligence-Vantage-Overview-en-US-v02.mp4",
+    "bytes": 138863439,
+    "sha256": "4bd554b2bb8e1ba9da4c3c300f0f6dd07dca130d6530b6e9143d462764ab7c3e",
+    "width": 3840,
+    "height": 2160,
+    "fps": 60,
+    "seconds": 170,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "channels": 2
+  },
+  "sourceAssets": [
+    {
+      "file": "src/index.tsx",
+      "sha256": "9733e9550e7d6aede69aafb04ac9766f9e58c4369932a45c1ce098a32b5cd435"
+    },
+    {
+      "file": "render.mjs",
+      "sha256": "07d6197f2bd63714d6c2e751797b56028117fdf6e9aea6cc317a513e117b6e83"
+    },
+    {
+      "file": "shots.json",
+      "sha256": "277c5555e816f1b292c206e29c777998d93f511e34abc8d8351a31bb7e99f032"
+    },
+    {
+      "file": "narrate.ps1",
+      "sha256": "9d44e338dc60eae90cc2f3ab54dec9e115ac4da2988ad01d400b7ceedb4d3f97"
+    },
+    {
+      "file": "audio.py",
+      "sha256": "e5a2e83e782e465dc495877905c3a8be1ac7951ec284340eb786b05dac4b9a62"
+    },
+    {
+      "file": "captions.json",
+      "sha256": "b50858c40a0c1b9e1f0e4a957fe226a377ce2789c87dc2bad9a9882ea8eee59b"
+    },
+    {
+      "file": "captions.ass",
+      "sha256": "a842ca387c040be546733c20a4fdb8109dc45e73d2116f2df1efb9d244d3cbb9"
+    },
+    {
+      "file": "narration.srt",
+      "sha256": "ad22d8e9835e4f2bc9db2d3d83ffe22f4ed51f27045865c6b499bf2c5149115a"
+    },
+    {
+      "file": "finalize.py",
+      "sha256": "6ca91f2c7ce36b24c4d2be7857933fb76b7eb0b44066a29d72710a393ebe17c2"
+    },
+    {
+      "file": "film/index.html",
+      "sha256": "d7ef57f062e786aebec485eb7aa2bfdde7dc9cd87f51f79a769933c496f7e806"
+    },
+    {
+      "file": "film/captions-band.html",
+      "sha256": "9690d2e9d38d68a131c7106e14b9f01aa7be214fabc6df0cb6a3a9ed65b106b1"
+    },
+    {
+      "file": "public/data.json",
+      "sha256": "cf0b6e05e7505be813b1df2c2f2345a0cf56ae5af82ea332d602d8a6645c9a36"
+    },
+    {
+      "file": "public/geologica.woff2",
+      "sha256": "3688f2351fe14885bdf739641607bdc455d92918c9fffadf05f09d69e9f3d87e"
+    },
+    {
+      "file": "MUSIC-ATTRIBUTION.md",
+      "sha256": "441bbe86d4cbf6cb084452485771a14409c2e95bcaf1ee970c2891c86f15b489"
+    }
+  ]
+}

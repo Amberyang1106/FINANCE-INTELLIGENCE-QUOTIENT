@@ -1,0 +1,56 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  10,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Understand"
+    },
+    {
+        "Index":  11,
+        "Count":  3,
+        "Seconds":  0.725,
+        "Text":  "the"
+    },
+    {
+        "Index":  15,
+        "Count":  5,
+        "Seconds":  0.82,
+        "Text":  "logic"
+    },
+    {
+        "Index":  21,
+        "Count":  6,
+        "Seconds":  1.21,
+        "Text":  "behind"
+    },
+    {
+        "Index":  28,
+        "Count":  3,
+        "Seconds":  1.5899999999999999,
+        "Text":  "the"
+    },
+    {
+        "Index":  32,
+        "Count":  7,
+        "Seconds":  1.67,
+        "Text":  "numbers"
+    },
+    {
+        "Index":  41,
+        "Count":  3,
+        "Seconds":  3.0749999999999997,
+        "Text":  "Ask"
+    },
+    {
+        "Index":  45,
+        "Count":  3,
+        "Seconds":  3.395,
+        "Text":  "the"
+    },
+    {
+        "Index":  49,
+        "Count":  6,
+        "Seconds":  3.51,
+        "Text":  "report"
+    }
+]

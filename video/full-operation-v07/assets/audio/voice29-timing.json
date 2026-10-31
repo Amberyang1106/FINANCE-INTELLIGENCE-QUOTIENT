@@ -1,0 +1,56 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  5,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Build"
+    },
+    {
+        "Index":  6,
+        "Count":  8,
+        "Seconds":  0.33499999999999996,
+        "Text":  "monitors"
+    },
+    {
+        "Index":  15,
+        "Count":  6,
+        "Seconds":  0.78499999999999992,
+        "Text":  "around"
+    },
+    {
+        "Index":  22,
+        "Count":  4,
+        "Seconds":  1.185,
+        "Text":  "your"
+    },
+    {
+        "Index":  27,
+        "Count":  9,
+        "Seconds":  1.345,
+        "Text":  "questions"
+    },
+    {
+        "Index":  38,
+        "Count":  6,
+        "Seconds":  2.92,
+        "Text":  "Choose"
+    },
+    {
+        "Index":  45,
+        "Count":  5,
+        "Seconds":  3.215,
+        "Text":  "scope"
+    },
+    {
+        "Index":  51,
+        "Count":  3,
+        "Seconds":  3.55,
+        "Text":  "and"
+    },
+    {
+        "Index":  55,
+        "Count":  7,
+        "Seconds":  3.685,
+        "Text":  "metrics"
+    }
+]

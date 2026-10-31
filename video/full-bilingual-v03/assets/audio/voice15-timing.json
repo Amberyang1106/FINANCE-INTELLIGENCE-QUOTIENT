@@ -1,0 +1,44 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  7,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Finance"
+    },
+    {
+        "Index":  8,
+        "Count":  9,
+        "Seconds":  0.58,
+        "Text":  "Exception"
+    },
+    {
+        "Index":  18,
+        "Count":  12,
+        "Seconds":  1.0999999999999999,
+        "Text":  "Intelligence"
+    },
+    {
+        "Index":  32,
+        "Count":  6,
+        "Seconds":  2.76,
+        "Text":  "Sample"
+    },
+    {
+        "Index":  39,
+        "Count":  4,
+        "Seconds":  3.2199999999999998,
+        "Text":  "data"
+    },
+    {
+        "Index":  45,
+        "Count":  9,
+        "Seconds":  4.4849999999999994,
+        "Text":  "Simulated"
+    },
+    {
+        "Index":  55,
+        "Count":  2,
+        "Seconds":  5.1499999999999995,
+        "Text":  "AI"
+    }
+]

@@ -1,0 +1,134 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  3,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Add"
+    },
+    {
+        "Index":  4,
+        "Count":  1,
+        "Seconds":  0.295,
+        "Text":  "a"
+    },
+    {
+        "Index":  6,
+        "Count":  7,
+        "Seconds":  0.38999999999999996,
+        "Text":  "revenue"
+    },
+    {
+        "Index":  14,
+        "Count":  5,
+        "Seconds":  0.825,
+        "Text":  "trend"
+    },
+    {
+        "Index":  21,
+        "Count":  9,
+        "Seconds":  1.39,
+        "Text":  "configure"
+    },
+    {
+        "Index":  31,
+        "Count":  6,
+        "Seconds":  1.9249999999999998,
+        "Text":  "growth"
+    },
+    {
+        "Index":  38,
+        "Count":  3,
+        "Seconds":  2.495,
+        "Text":  "and"
+    },
+    {
+        "Index":  42,
+        "Count":  7,
+        "Seconds":  2.605,
+        "Text":  "decline"
+    },
+    {
+        "Index":  50,
+        "Count":  7,
+        "Seconds":  3.085,
+        "Text":  "signals"
+    },
+    {
+        "Index":  59,
+        "Count":  3,
+        "Seconds":  4.045,
+        "Text":  "and"
+    },
+    {
+        "Index":  63,
+        "Count":  7,
+        "Seconds":  4.1499999999999995,
+        "Text":  "arrange"
+    },
+    {
+        "Index":  71,
+        "Count":  3,
+        "Seconds":  4.55,
+        "Text":  "the"
+    },
+    {
+        "Index":  75,
+        "Count":  5,
+        "Seconds":  4.6499999999999995,
+        "Text":  "cards"
+    },
+    {
+        "Index":  82,
+        "Count":  5,
+        "Seconds":  6.035,
+        "Text":  "Reuse"
+    },
+    {
+        "Index":  88,
+        "Count":  6,
+        "Seconds":  6.455,
+        "Text":  "common"
+    },
+    {
+        "Index":  95,
+        "Count":  10,
+        "Seconds":  6.81,
+        "Text":  "monitoring"
+    },
+    {
+        "Index":  106,
+        "Count":  8,
+        "Seconds":  7.3149999999999995,
+        "Text":  "patterns"
+    },
+    {
+        "Index":  115,
+        "Count":  7,
+        "Seconds":  7.8199999999999994,
+        "Text":  "through"
+    },
+    {
+        "Index":  123,
+        "Count":  3,
+        "Seconds":  8.03,
+        "Text":  "the"
+    },
+    {
+        "Index":  127,
+        "Count":  5,
+        "Seconds":  8.129999999999999,
+        "Text":  "local"
+    },
+    {
+        "Index":  133,
+        "Count":  8,
+        "Seconds":  8.455,
+        "Text":  "template"
+    },
+    {
+        "Index":  142,
+        "Count":  6,
+        "Seconds":  8.905,
+        "Text":  "market"
+    }
+]

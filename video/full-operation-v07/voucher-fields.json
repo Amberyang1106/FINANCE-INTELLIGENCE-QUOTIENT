@@ -1,0 +1,62 @@
+{
+  "amount": {
+    "x": 569,
+    "y": 228.6875,
+    "width": 782,
+    "height": 51.1875
+  },
+  "Company / year / line": {
+    "x": 569,
+    "y": 303.875,
+    "width": 383,
+    "height": 52.78125
+  },
+  "Period": {
+    "x": 968,
+    "y": 303.875,
+    "width": 383,
+    "height": 52.78125
+  },
+  "Profit center": {
+    "x": 569,
+    "y": 372.65625,
+    "width": 383,
+    "height": 52.78125
+  },
+  "BPC segment": {
+    "x": 968,
+    "y": 372.65625,
+    "width": 383,
+    "height": 52.78125
+  },
+  "Category / allocation flag": {
+    "x": 569,
+    "y": 441.4375,
+    "width": 383,
+    "height": 52.78125
+  },
+  "User info": {
+    "x": 968,
+    "y": 441.4375,
+    "width": 383,
+    "height": 52.78125
+  },
+  "Reference": {
+    "x": 569,
+    "y": 510.21875,
+    "width": 383,
+    "height": 52.78125
+  },
+  "Checking / non-allocation flag": {
+    "x": 968,
+    "y": 510.21875,
+    "width": 383,
+    "height": 52.78125
+  },
+  "Document text": {
+    "x": 569,
+    "y": 579,
+    "width": 782,
+    "height": 52.78125
+  }
+}

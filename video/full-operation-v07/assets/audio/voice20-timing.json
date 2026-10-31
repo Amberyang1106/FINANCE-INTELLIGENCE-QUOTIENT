@@ -1,0 +1,32 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  4,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Turn"
+    },
+    {
+        "Index":  5,
+        "Count":  9,
+        "Seconds":  0.39499999999999996,
+        "Text":  "proposals"
+    },
+    {
+        "Index":  15,
+        "Count":  4,
+        "Seconds":  1.04,
+        "Text":  "into"
+    },
+    {
+        "Index":  20,
+        "Count":  11,
+        "Seconds":  1.26,
+        "Text":  "accountable"
+    },
+    {
+        "Index":  32,
+        "Count":  7,
+        "Seconds":  1.835,
+        "Text":  "actions"
+    }
+]

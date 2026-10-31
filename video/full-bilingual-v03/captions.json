@@ -1,0 +1,200 @@
+[
+  {
+    "start": 0,
+    "end": 2.5,
+    "en": "Finance Exception Intelligence.",
+    "zh": "财务异常智能：从监测信号走向可追踪的行动。"
+  },
+  {
+    "start": 2.5,
+    "end": 5,
+    "en": "From signals to accountable action.",
+    "zh": "财务异常智能：从监测信号走向可追踪的行动。"
+  },
+  {
+    "start": 5,
+    "end": 10.4,
+    "en": "See monthly monitor status at a glance.",
+    "zh": "一眼查看各项监控的月度状态。"
+  },
+  {
+    "start": 10.4,
+    "end": 15.8,
+    "en": "Click the Freight alert.",
+    "zh": "点击 Freight 预警。"
+  },
+  {
+    "start": 15.8,
+    "end": 21.2,
+    "en": "A possible duplicate allocation needs finance review.",
+    "zh": "可能存在重复分摊，仍需财务核实。"
+  },
+  {
+    "start": 21.2,
+    "end": 26.6,
+    "en": "Identify impacted records, correct the duplication, rerun the scope, and validate Freight and gross profit.",
+    "zh": "识别受影响记录，修正重复分摊，重新运行，并验证 Freight 与毛利。"
+  },
+  {
+    "start": 26.6,
+    "end": 32,
+    "en": "Then review revenue, cost, and cost credit trends.",
+    "zh": "随后查看收入、成本和成本抵减趋势。"
+  },
+  {
+    "start": 32,
+    "end": 36,
+    "en": "Now open a separate Service allocation case.",
+    "zh": "进入独立的 Service allocation 案例：GA 第三个月毛利为负。"
+  },
+  {
+    "start": 36,
+    "end": 40,
+    "en": "GA shows negative month-three gross profit.",
+    "zh": "进入独立的 Service allocation 案例：GA 第三个月毛利为负。"
+  },
+  {
+    "start": 40,
+    "end": 44,
+    "en": "Ask why gross profit turned negative.",
+    "zh": "询问负毛利原因，依次追踪规则、轧差、收入基数与源凭证。"
+  },
+  {
+    "start": 44,
+    "end": 48,
+    "en": "Follow the rules, true-up, revenue base, and source evidence.",
+    "zh": "询问负毛利原因，依次追踪规则、轧差、收入基数与源凭证。"
+  },
+  {
+    "start": 48,
+    "end": 51.333333333333336,
+    "en": "Open the negative revenue voucher.",
+    "zh": "打开负收入凭证，核对金额、segment、入账人和参考号。"
+  },
+  {
+    "start": 51.333333333333336,
+    "end": 54.666666666666664,
+    "en": "Review the amount, segment, posting user and reference.",
+    "zh": "打开负收入凭证，核对金额、segment、入账人和参考号。"
+  },
+  {
+    "start": 54.666666666666664,
+    "end": 58,
+    "en": "A matching positive entry is not confirmed in this sample.",
+    "zh": "本样例尚未确认匹配的正向凭证。"
+  },
+  {
+    "start": 58,
+    "end": 62.666666666666664,
+    "en": "Compare excluding the voucher from the allocation base only.",
+    "zh": "仅从分摊基数排除凭证，保留入账收入及前两个月结果。"
+  },
+  {
+    "start": 62.666666666666664,
+    "end": 67.33333333333333,
+    "en": "Posted revenue and months one and two stay unchanged.",
+    "zh": "仅从分摊基数排除凭证，保留入账收入及前两个月结果。"
+  },
+  {
+    "start": 67.33333333333333,
+    "end": 72,
+    "en": "GA improves, total gross profit is unchanged, and LE remains under review.",
+    "zh": "GA 改善，但总毛利不变，LE 仍待核查。"
+  },
+  {
+    "start": 72,
+    "end": 78,
+    "en": "Save the candidate and generate a report with evidence, assumptions, and actions.",
+    "zh": "保存候选方案，生成包含证据、假设和行动的报告。"
+  },
+  {
+    "start": 78,
+    "end": 84,
+    "en": "Create a follow-up task from the same saved proposal.",
+    "zh": "从同一已保存方案创建后续任务。"
+  },
+  {
+    "start": 84,
+    "end": 87,
+    "en": "Assign an owner.",
+    "zh": "分派负责人，由被指派人接收并开始工作，追踪各次交接。"
+  },
+  {
+    "start": 87,
+    "end": 90,
+    "en": "The assignee receives the task and starts work.",
+    "zh": "分派负责人，由被指派人接收并开始工作，追踪各次交接。"
+  },
+  {
+    "start": 90,
+    "end": 93,
+    "en": "Track each handoff.",
+    "zh": "分派负责人，由被指派人接收并开始工作，追踪各次交接。"
+  },
+  {
+    "start": 93,
+    "end": 95.5,
+    "en": "Record the outcome.",
+    "zh": "记录处理结果；"
+  },
+  {
+    "start": 95.5,
+    "end": 98,
+    "en": "Task completion does not change the ledger.",
+    "zh": "任务完成不改变账务。"
+  },
+  {
+    "start": 98,
+    "end": 103,
+    "en": "Ask about report logic.",
+    "zh": "询问报表逻辑：模拟答案从所选知识库流式展示，并链接原文。"
+  },
+  {
+    "start": 103,
+    "end": 108,
+    "en": "The simulated answer streams from the selected knowledge base and links to its source.",
+    "zh": "询问报表逻辑：模拟答案从所选知识库流式展示，并链接原文。"
+  },
+  {
+    "start": 108,
+    "end": 114,
+    "en": "Explore built-in rules and personal knowledge libraries.",
+    "zh": "查看内置规则和个人知识库。"
+  },
+  {
+    "start": 114,
+    "end": 118.5,
+    "en": "Choose a report, dimension and metric.",
+    "zh": "选择报表、维度和指标，描述监控需求并设置毛利阈值。"
+  },
+  {
+    "start": 118.5,
+    "end": 123,
+    "en": "Describe a monitor, then configure a gross-profit benchmark.",
+    "zh": "选择报表、维度和指标，描述监控需求并设置毛利阈值。"
+  },
+  {
+    "start": 123,
+    "end": 133,
+    "en": "Add revenue trends, configure signals, rearrange cards, and reuse templates in Monitor Market.",
+    "zh": "添加收入趋势、配置信号、拖动卡片，并从 Monitor Market 复用模板。"
+  },
+  {
+    "start": 133,
+    "end": 134.66666666666666,
+    "en": "Finance Exception Intelligence.",
+    "zh": "财务异常智能。"
+  },
+  {
+    "start": 134.66666666666666,
+    "end": 136.33333333333334,
+    "en": "Sample data.",
+    "zh": "财务异常智能。"
+  },
+  {
+    "start": 136.33333333333334,
+    "end": 138,
+    "en": "Simulated AI.",
+    "zh": "样例数据，模拟 AI。"
+  }
+]

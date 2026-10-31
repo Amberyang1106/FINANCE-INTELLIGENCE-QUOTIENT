@@ -1,0 +1,8 @@
+{
+  "duration": 30,
+  "sampleRate": 48000,
+  "voice": "Microsoft Zira Desktop / synthetic",
+  "musicLinearGain": 0.055,
+  "peak": 0.5806620121002197,
+  "narrationOnlySameTimeline": true
+}

@@ -1,0 +1,32 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  4,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Five"
+    },
+    {
+        "Index":  5,
+        "Count":  12,
+        "Seconds":  0.43,
+        "Text":  "capabilities"
+    },
+    {
+        "Index":  19,
+        "Count":  3,
+        "Seconds":  2.23,
+        "Text":  "One"
+    },
+    {
+        "Index":  23,
+        "Count":  7,
+        "Seconds":  2.485,
+        "Text":  "finance"
+    },
+    {
+        "Index":  31,
+        "Count":  9,
+        "Seconds":  2.985,
+        "Text":  "workspace"
+    }
+]

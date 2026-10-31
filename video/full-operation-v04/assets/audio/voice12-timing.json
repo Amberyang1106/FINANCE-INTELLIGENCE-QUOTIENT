@@ -1,0 +1,38 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  5,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Check"
+    },
+    {
+        "Index":  6,
+        "Count":  6,
+        "Seconds":  0.365,
+        "Text":  "amount"
+    },
+    {
+        "Index":  14,
+        "Count":  7,
+        "Seconds":  0.93499999999999994,
+        "Text":  "segment"
+    },
+    {
+        "Index":  23,
+        "Count":  4,
+        "Seconds":  1.6199999999999999,
+        "Text":  "user"
+    },
+    {
+        "Index":  28,
+        "Count":  3,
+        "Seconds":  2.215,
+        "Text":  "and"
+    },
+    {
+        "Index":  32,
+        "Count":  9,
+        "Seconds":  2.37,
+        "Text":  "reference"
+    }
+]

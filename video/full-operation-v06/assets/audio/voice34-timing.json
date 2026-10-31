@@ -1,0 +1,50 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  7,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Finance"
+    },
+    {
+        "Index":  8,
+        "Count":  9,
+        "Seconds":  0.58,
+        "Text":  "Exception"
+    },
+    {
+        "Index":  18,
+        "Count":  12,
+        "Seconds":  1.0999999999999999,
+        "Text":  "Intelligence"
+    },
+    {
+        "Index":  32,
+        "Count":  4,
+        "Seconds":  2.76,
+        "Text":  "From"
+    },
+    {
+        "Index":  37,
+        "Count":  7,
+        "Seconds":  3.0149999999999997,
+        "Text":  "signals"
+    },
+    {
+        "Index":  45,
+        "Count":  2,
+        "Seconds":  3.505,
+        "Text":  "to"
+    },
+    {
+        "Index":  48,
+        "Count":  11,
+        "Seconds":  3.645,
+        "Text":  "accountable"
+    },
+    {
+        "Index":  60,
+        "Count":  6,
+        "Seconds":  4.22,
+        "Text":  "action"
+    }
+]

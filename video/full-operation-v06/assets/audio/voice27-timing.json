@@ -1,0 +1,86 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  3,
+        "Seconds":  0.099999999999999992,
+        "Text":  "The"
+    },
+    {
+        "Index":  4,
+        "Count":  9,
+        "Seconds":  0.18,
+        "Text":  "simulated"
+    },
+    {
+        "Index":  14,
+        "Count":  6,
+        "Seconds":  0.77999999999999992,
+        "Text":  "answer"
+    },
+    {
+        "Index":  21,
+        "Count":  7,
+        "Seconds":  1.13,
+        "Text":  "streams"
+    },
+    {
+        "Index":  29,
+        "Count":  4,
+        "Seconds":  1.5899999999999999,
+        "Text":  "from"
+    },
+    {
+        "Index":  34,
+        "Count":  3,
+        "Seconds":  1.7899999999999998,
+        "Text":  "the"
+    },
+    {
+        "Index":  38,
+        "Count":  8,
+        "Seconds":  1.865,
+        "Text":  "selected"
+    },
+    {
+        "Index":  47,
+        "Count":  9,
+        "Seconds":  2.405,
+        "Text":  "knowledge"
+    },
+    {
+        "Index":  57,
+        "Count":  4,
+        "Seconds":  2.77,
+        "Text":  "base"
+    },
+    {
+        "Index":  62,
+        "Count":  3,
+        "Seconds":  3.09,
+        "Text":  "and"
+    },
+    {
+        "Index":  66,
+        "Count":  5,
+        "Seconds":  3.26,
+        "Text":  "links"
+    },
+    {
+        "Index":  72,
+        "Count":  2,
+        "Seconds":  3.53,
+        "Text":  "to"
+    },
+    {
+        "Index":  75,
+        "Count":  3,
+        "Seconds":  3.6799999999999997,
+        "Text":  "its"
+    },
+    {
+        "Index":  79,
+        "Count":  6,
+        "Seconds":  3.8699999999999997,
+        "Text":  "source"
+    }
+]

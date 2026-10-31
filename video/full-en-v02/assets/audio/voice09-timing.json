@@ -1,0 +1,146 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  6,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Assign"
+    },
+    {
+        "Index":  7,
+        "Count":  3,
+        "Seconds":  0.48,
+        "Text":  "the"
+    },
+    {
+        "Index":  11,
+        "Count":  6,
+        "Seconds":  0.62,
+        "Text":  "action"
+    },
+    {
+        "Index":  18,
+        "Count":  2,
+        "Seconds":  1,
+        "Text":  "to"
+    },
+    {
+        "Index":  21,
+        "Count":  3,
+        "Seconds":  1.14,
+        "Text":  "its"
+    },
+    {
+        "Index":  25,
+        "Count":  5,
+        "Seconds":  1.315,
+        "Text":  "owner"
+    },
+    {
+        "Index":  32,
+        "Count":  2,
+        "Seconds":  2.52,
+        "Text":  "In"
+    },
+    {
+        "Index":  35,
+        "Count":  3,
+        "Seconds":  2.63,
+        "Text":  "the"
+    },
+    {
+        "Index":  39,
+        "Count":  8,
+        "Seconds":  2.77,
+        "Text":  "assignee"
+    },
+    {
+        "Index":  48,
+        "Count":  7,
+        "Seconds":  3.36,
+        "Text":  "preview"
+    },
+    {
+        "Index":  57,
+        "Count":  7,
+        "Seconds":  4.015,
+        "Text":  "receipt"
+    },
+    {
+        "Index":  65,
+        "Count":  3,
+        "Seconds":  4.625,
+        "Text":  "and"
+    },
+    {
+        "Index":  69,
+        "Count":  8,
+        "Seconds":  4.755,
+        "Text":  "progress"
+    },
+    {
+        "Index":  78,
+        "Count":  7,
+        "Seconds":  5.305,
+        "Text":  "updates"
+    },
+    {
+        "Index":  86,
+        "Count":  5,
+        "Seconds":  5.765,
+        "Text":  "build"
+    },
+    {
+        "Index":  92,
+        "Count":  1,
+        "Seconds":  6.02,
+        "Text":  "a"
+    },
+    {
+        "Index":  94,
+        "Count":  7,
+        "Seconds":  6.0749999999999993,
+        "Text":  "visible"
+    },
+    {
+        "Index":  102,
+        "Count":  7,
+        "Seconds":  6.4899999999999993,
+        "Text":  "handoff"
+    },
+    {
+        "Index":  110,
+        "Count":  7,
+        "Seconds":  6.9399999999999995,
+        "Text":  "history"
+    },
+    {
+        "Index":  119,
+        "Count":  2,
+        "Seconds":  7.845,
+        "Text":  "so"
+    },
+    {
+        "Index":  122,
+        "Count":  7,
+        "Seconds":  8.0849999999999991,
+        "Text":  "finance"
+    },
+    {
+        "Index":  130,
+        "Count":  3,
+        "Seconds":  8.56,
+        "Text":  "can"
+    },
+    {
+        "Index":  134,
+        "Count":  6,
+        "Seconds":  8.7649999999999988,
+        "Text":  "follow"
+    },
+    {
+        "Index":  141,
+        "Count":  9,
+        "Seconds":  9.135,
+        "Text":  "execution"
+    }
+]

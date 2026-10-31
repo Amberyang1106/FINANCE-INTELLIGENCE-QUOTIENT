@@ -1,0 +1,15 @@
+{
+  "name": "finance-vantage-v07",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render:cards": "node render-product-cards.mjs",
+    "prepare:timeline": "node prepare-product.mjs",
+    "render": "node run-product.mjs"
+  },
+  "dependencies": {
+    "react": "19.2.0",
+    "remotion": "4.0.539",
+    "@remotion/cli": "4.0.539"
+  }
+}

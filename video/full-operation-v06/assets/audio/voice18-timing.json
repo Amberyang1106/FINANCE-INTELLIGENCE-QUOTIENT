@@ -1,0 +1,68 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  1,
+        "Seconds":  0.099999999999999992,
+        "Text":  "G"
+    },
+    {
+        "Index":  2,
+        "Count":  1,
+        "Seconds":  0.37,
+        "Text":  "A"
+    },
+    {
+        "Index":  4,
+        "Count":  8,
+        "Seconds":  0.525,
+        "Text":  "improves"
+    },
+    {
+        "Index":  14,
+        "Count":  5,
+        "Seconds":  1.555,
+        "Text":  "total"
+    },
+    {
+        "Index":  20,
+        "Count":  1,
+        "Seconds":  1.9,
+        "Text":  "G"
+    },
+    {
+        "Index":  22,
+        "Count":  1,
+        "Seconds":  2.13,
+        "Text":  "P"
+    },
+    {
+        "Index":  24,
+        "Count":  9,
+        "Seconds":  2.44,
+        "Text":  "unchanged"
+    },
+    {
+        "Index":  35,
+        "Count":  1,
+        "Seconds":  3.5749999999999997,
+        "Text":  "L"
+    },
+    {
+        "Index":  37,
+        "Count":  1,
+        "Seconds":  3.77,
+        "Text":  "E"
+    },
+    {
+        "Index":  39,
+        "Count":  5,
+        "Seconds":  3.915,
+        "Text":  "needs"
+    },
+    {
+        "Index":  45,
+        "Count":  6,
+        "Seconds":  4.21,
+        "Text":  "review"
+    }
+]

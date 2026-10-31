@@ -1,0 +1,56 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  6,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Posted"
+    },
+    {
+        "Index":  7,
+        "Count":  7,
+        "Seconds":  0.495,
+        "Text":  "revenue"
+    },
+    {
+        "Index":  15,
+        "Count":  3,
+        "Seconds":  0.97,
+        "Text":  "and"
+    },
+    {
+        "Index":  19,
+        "Count":  6,
+        "Seconds":  1.0999999999999999,
+        "Text":  "months"
+    },
+    {
+        "Index":  26,
+        "Count":  3,
+        "Seconds":  1.45,
+        "Text":  "one"
+    },
+    {
+        "Index":  30,
+        "Count":  3,
+        "Seconds":  1.6749999999999998,
+        "Text":  "and"
+    },
+    {
+        "Index":  34,
+        "Count":  3,
+        "Seconds":  1.8199999999999998,
+        "Text":  "two"
+    },
+    {
+        "Index":  38,
+        "Count":  4,
+        "Seconds":  2.045,
+        "Text":  "stay"
+    },
+    {
+        "Index":  43,
+        "Count":  9,
+        "Seconds":  2.3249999999999997,
+        "Text":  "unchanged"
+    }
+]

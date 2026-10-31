@@ -1,0 +1,44 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  6,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Review"
+    },
+    {
+        "Index":  7,
+        "Count":  7,
+        "Seconds":  0.44999999999999996,
+        "Text":  "revenue"
+    },
+    {
+        "Index":  16,
+        "Count":  4,
+        "Seconds":  1.065,
+        "Text":  "cost"
+    },
+    {
+        "Index":  21,
+        "Count":  3,
+        "Seconds":  1.69,
+        "Text":  "and"
+    },
+    {
+        "Index":  25,
+        "Count":  6,
+        "Seconds":  1.8199999999999998,
+        "Text":  "source"
+    },
+    {
+        "Index":  32,
+        "Count":  11,
+        "Seconds":  2.165,
+        "Text":  "cost-credit"
+    },
+    {
+        "Index":  44,
+        "Count":  6,
+        "Seconds":  2.895,
+        "Text":  "trends"
+    }
+]

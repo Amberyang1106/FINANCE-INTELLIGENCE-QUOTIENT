@@ -1,0 +1,40 @@
+{
+  "scenario_onsets": [
+    63.3,
+    64.82128774850382,
+    66.8222508082823,
+    68
+  ],
+  "values": [
+    [
+      10,
+      13.83,
+      "Reporting health, at a glance"
+    ],
+    [
+      28,
+      31.13,
+      "From an alert to traceable evidence"
+    ],
+    [
+      73,
+      78.13,
+      "Proposals into accountable actions"
+    ],
+    [
+      91.5,
+      96.5,
+      "The logic behind the numbers"
+    ],
+    [
+      106.5,
+      112.37,
+      "Monitors built around your questions"
+    ]
+  ],
+  "field_markers": "baked real-DOM-aligned V07 markers retained at original speed",
+  "handoff": [
+    72.6,
+    73.4
+  ]
+}

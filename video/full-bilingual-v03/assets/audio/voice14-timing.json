@@ -1,0 +1,80 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  3,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Add"
+    },
+    {
+        "Index":  4,
+        "Count":  7,
+        "Seconds":  0.32,
+        "Text":  "revenue"
+    },
+    {
+        "Index":  12,
+        "Count":  6,
+        "Seconds":  0.76,
+        "Text":  "trends"
+    },
+    {
+        "Index":  20,
+        "Count":  9,
+        "Seconds":  1.405,
+        "Text":  "configure"
+    },
+    {
+        "Index":  30,
+        "Count":  7,
+        "Seconds":  1.9249999999999998,
+        "Text":  "signals"
+    },
+    {
+        "Index":  39,
+        "Count":  9,
+        "Seconds":  2.625,
+        "Text":  "rearrange"
+    },
+    {
+        "Index":  49,
+        "Count":  5,
+        "Seconds":  3.145,
+        "Text":  "cards"
+    },
+    {
+        "Index":  56,
+        "Count":  3,
+        "Seconds":  3.7449999999999997,
+        "Text":  "and"
+    },
+    {
+        "Index":  60,
+        "Count":  5,
+        "Seconds":  3.9,
+        "Text":  "reuse"
+    },
+    {
+        "Index":  66,
+        "Count":  9,
+        "Seconds":  4.295,
+        "Text":  "templates"
+    },
+    {
+        "Index":  76,
+        "Count":  2,
+        "Seconds":  4.7799999999999994,
+        "Text":  "in"
+    },
+    {
+        "Index":  79,
+        "Count":  7,
+        "Seconds":  4.895,
+        "Text":  "Monitor"
+    },
+    {
+        "Index":  87,
+        "Count":  6,
+        "Seconds":  5.285,
+        "Text":  "Market"
+    }
+]

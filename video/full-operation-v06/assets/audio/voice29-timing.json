@@ -1,0 +1,80 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  3,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Use"
+    },
+    {
+        "Index":  4,
+        "Count":  4,
+        "Seconds":  0.38,
+        "Text":  "that"
+    },
+    {
+        "Index":  9,
+        "Count":  13,
+        "Seconds":  0.58,
+        "Text":  "understanding"
+    },
+    {
+        "Index":  23,
+        "Count":  2,
+        "Seconds":  1.295,
+        "Text":  "to"
+    },
+    {
+        "Index":  26,
+        "Count":  6,
+        "Seconds":  1.425,
+        "Text":  "define"
+    },
+    {
+        "Index":  33,
+        "Count":  4,
+        "Seconds":  1.8299999999999998,
+        "Text":  "your"
+    },
+    {
+        "Index":  38,
+        "Count":  7,
+        "Seconds":  1.98,
+        "Text":  "monitor"
+    },
+    {
+        "Index":  47,
+        "Count":  6,
+        "Seconds":  3.3499999999999996,
+        "Text":  "Choose"
+    },
+    {
+        "Index":  54,
+        "Count":  3,
+        "Seconds":  3.6599999999999997,
+        "Text":  "the"
+    },
+    {
+        "Index":  58,
+        "Count":  6,
+        "Seconds":  3.77,
+        "Text":  "report"
+    },
+    {
+        "Index":  66,
+        "Count":  9,
+        "Seconds":  4.4049999999999994,
+        "Text":  "dimension"
+    },
+    {
+        "Index":  76,
+        "Count":  3,
+        "Seconds":  5.085,
+        "Text":  "and"
+    },
+    {
+        "Index":  80,
+        "Count":  6,
+        "Seconds":  5.205,
+        "Text":  "metric"
+    }
+]

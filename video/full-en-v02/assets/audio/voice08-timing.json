@@ -1,0 +1,116 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  4,
+        "Seconds":  0.099999999999999992,
+        "Text":  "From"
+    },
+    {
+        "Index":  5,
+        "Count":  4,
+        "Seconds":  0.33499999999999996,
+        "Text":  "this"
+    },
+    {
+        "Index":  10,
+        "Count":  5,
+        "Seconds":  0.515,
+        "Text":  "saved"
+    },
+    {
+        "Index":  16,
+        "Count":  8,
+        "Seconds":  0.87,
+        "Text":  "proposal"
+    },
+    {
+        "Index":  26,
+        "Count":  4,
+        "Seconds":  1.9249999999999998,
+        "Text":  "turn"
+    },
+    {
+        "Index":  31,
+        "Count":  3,
+        "Seconds":  2.1799999999999997,
+        "Text":  "the"
+    },
+    {
+        "Index":  35,
+        "Count":  8,
+        "Seconds":  2.255,
+        "Text":  "selected"
+    },
+    {
+        "Index":  44,
+        "Count":  6,
+        "Seconds":  2.775,
+        "Text":  "action"
+    },
+    {
+        "Index":  51,
+        "Count":  4,
+        "Seconds":  3.145,
+        "Text":  "into"
+    },
+    {
+        "Index":  56,
+        "Count":  1,
+        "Seconds":  3.38,
+        "Text":  "a"
+    },
+    {
+        "Index":  58,
+        "Count":  4,
+        "Seconds":  3.445,
+        "Text":  "task"
+    },
+    {
+        "Index":  64,
+        "Count":  9,
+        "Seconds":  4.3599999999999994,
+        "Text":  "retaining"
+    },
+    {
+        "Index":  74,
+        "Count":  3,
+        "Seconds":  4.8199999999999994,
+        "Text":  "its"
+    },
+    {
+        "Index":  78,
+        "Count":  8,
+        "Seconds":  4.995,
+        "Text":  "evidence"
+    },
+    {
+        "Index":  88,
+        "Count":  11,
+        "Seconds":  5.63,
+        "Text":  "calculation"
+    },
+    {
+        "Index":  100,
+        "Count":  11,
+        "Seconds":  6.37,
+        "Text":  "assumptions"
+    },
+    {
+        "Index":  113,
+        "Count":  3,
+        "Seconds":  7.21,
+        "Text":  "and"
+    },
+    {
+        "Index":  117,
+        "Count":  6,
+        "Seconds":  7.34,
+        "Text":  "source"
+    },
+    {
+        "Index":  124,
+        "Count":  7,
+        "Seconds":  7.685,
+        "Text":  "context"
+    }
+]

@@ -1,0 +1,38 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  2,
+        "Seconds":  0.099999999999999992,
+        "Text":  "GA"
+    },
+    {
+        "Index":  3,
+        "Count":  5,
+        "Seconds":  0.495,
+        "Text":  "shows"
+    },
+    {
+        "Index":  9,
+        "Count":  8,
+        "Seconds":  0.86,
+        "Text":  "negative"
+    },
+    {
+        "Index":  18,
+        "Count":  11,
+        "Seconds":  1.255,
+        "Text":  "month-three"
+    },
+    {
+        "Index":  30,
+        "Count":  5,
+        "Seconds":  1.7349999999999999,
+        "Text":  "gross"
+    },
+    {
+        "Index":  36,
+        "Count":  6,
+        "Seconds":  2.045,
+        "Text":  "profit"
+    }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "from": 10,
+    "to": 145,
+    "text": "Start with the negative GP alert, then open Analysis."
+  },
+  {
+    "from": 153,
+    "to": 246,
+    "text": "Ask why GP turned negative."
+  },
+  {
+    "from": 246,
+    "to": 371,
+    "text": "Trace the allocation and revenue base."
+  },
+  {
+    "from": 396,
+    "to": 473,
+    "text": "Open the source voucher."
+  },
+  {
+    "from": 473,
+    "to": 574,
+    "text": "Review the amount, posting user, and reference."
+  },
+  {
+    "from": 600,
+    "to": 699,
+    "text": "Exclude the voucher from the allocation base only."
+  },
+  {
+    "from": 699,
+    "to": 792,
+    "text": "GA improves. Total month 3 GP stays unchanged."
+  },
+  {
+    "from": 792,
+    "to": 900,
+    "text": "LE remains unresolved. Finance review is still required."
+  }
+]

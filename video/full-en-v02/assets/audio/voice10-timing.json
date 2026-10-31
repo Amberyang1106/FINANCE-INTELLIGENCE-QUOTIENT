@@ -1,0 +1,38 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  6,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Record"
+    },
+    {
+        "Index":  7,
+        "Count":  3,
+        "Seconds":  0.525,
+        "Text":  "the"
+    },
+    {
+        "Index":  11,
+        "Count":  7,
+        "Seconds":  0.695,
+        "Text":  "outcome"
+    },
+    {
+        "Index":  20,
+        "Count":  2,
+        "Seconds":  2.12,
+        "Text":  "No"
+    },
+    {
+        "Index":  23,
+        "Count":  6,
+        "Seconds":  2.34,
+        "Text":  "ledger"
+    },
+    {
+        "Index":  30,
+        "Count":  6,
+        "Seconds":  2.675,
+        "Text":  "change"
+    }
+]

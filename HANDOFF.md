@@ -1,5 +1,13 @@
 # 项目交接 · FINANCE EXCEPTION INTELLIGENCE
 
+## 2026-10-31 Vantage 视频归档更新
+
+当前继续开发分支仍为 feature/vantage-ui，独立保留，不合并 main。最新成片为原 V07 工程内更新的“产品介绍＋真实操作”融合版，134.5秒、2560×1440/30fps，英文旁白、中英双语字幕，带背景音乐与无背景音乐两版。入口：video/full-operation-v07/README.md、watch.html；正式成片位于video/exports/，名称含Full-Operation-Bilingual-v07。可编辑剪映ZIP与结构验收材料在同工程下；剪映应用内实际打开尚未验证。
+
+同步存档此前未提交的Freight总览、KPI图表修复、故事线、视频脚本/指南、V02–V07素材和交付结果。MP4/WAV/MP3/ZIP使用Git LFS；新机器需安装Git LFS并运行git lfs pull恢复大文件。node_modules、python-lib、video/.tools、临时trim音频及已有忽略规则内的渲染缓存不入库，按工程文档安装/重建。浏览器localStorage状态和本机全局skill安装不是仓库内容。
+
+新版V07保留完整证据视口：Freight与分摊异常为独立案例，GA改善、总GP不变、LE待核查；任务反馈不代表账务已修正。产品与视频的具体验收限制见video/full-operation-v07/REVIEW.md。以下原交接记录保留为历史状态。
+
 更新：2026-10-30。面向后续开发者、财务业务负责人及视频制作人员。
 
 ## 当前交付状态
@@ -86,3 +94,10 @@ Cost credit 柱状图已改为按分类带宽居中放置柱子，使第一根�
 ## 打包与恢复
 
 详见 [PACKAGE-CONTENTS.md](docs/PACKAGE-CONTENTS.md)。GitHub 保存所有分支；本地另提供当前 Vantage 文件 ZIP 与包含所有分支和标签的 Git bundle。无需合并即可共享完整开发历史。浏览器个人状态、凭据、可重装依赖、缓存及系统字体不在交付范围。
+
+
+## 本地进度更新 · 2026-10-30 / 英文影片 v02
+
+最新品牌的 170 秒 4K/60fps 全英文影片已在本地完成，位置 video/exports/Finance-Exception-Intelligence-Vantage-Overview-en-US-v02.mp4。源码、英文配音、字幕、配乐署名、可编辑 HyperFrames 工程和验收在 video/full-en-v02/。它 supersedes 上文“完整英文影片尚未产出”的制作状态；此前历史成片仍保留。
+
+完整解码、画幅/帧率/时长、字幕区间和数据核对通过，最终关键帧已复核；声音只做技术测量，音色与配乐听感待人试听。HyperFrames 字幕画面曾出现残影，最终采用其混音并由 libass 稳定绘制字幕，详见 REVIEW.md。当前制作文件尚未提交或推送；继续保留 feature/vantage-ui 与 main 独立。

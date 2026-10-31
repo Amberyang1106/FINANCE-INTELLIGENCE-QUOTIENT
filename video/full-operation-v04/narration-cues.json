@@ -1,0 +1,226 @@
+[
+  {
+    "id": "01",
+    "start": 0,
+    "duration": 2,
+    "text": "Finance Exception Intelligence.",
+    "zh": "财务异常智能。"
+  },
+  {
+    "id": "02",
+    "start": 2,
+    "duration": 1,
+    "text": "Review monthly status.",
+    "zh": "查看月度监控状态。"
+  },
+  {
+    "id": "03",
+    "start": 3,
+    "duration": 1,
+    "text": "Open Freight.",
+    "zh": "打开 Freight 预警。"
+  },
+  {
+    "id": "04",
+    "start": 4,
+    "duration": 3,
+    "text": "A possible duplicate allocation needs finance review.",
+    "zh": "可能存在重复分摊，需财务核实。"
+  },
+  {
+    "id": "05",
+    "start": 7,
+    "duration": 4.8870000000000005,
+    "text": "Identify records, correct duplicates, rerun, and validate Freight and GP.",
+    "zh": "识别记录，修正重复分摊，重新运行，并验证 Freight 与毛利。"
+  },
+  {
+    "id": "06",
+    "start": 11.887,
+    "duration": 9.881999999999998,
+    "text": "Review revenue, cost, and cost credit trends.",
+    "zh": "查看收入、成本和成本抵减趋势。"
+  },
+  {
+    "id": "07",
+    "start": 21.769,
+    "duration": 2.1580000000000013,
+    "text": "Open Service allocation.",
+    "zh": "打开 Service allocation。"
+  },
+  {
+    "id": "08",
+    "start": 23.927,
+    "duration": 2.1580000000000013,
+    "text": "GA shows negative month-three gross profit.",
+    "zh": "GA 第三个月毛利为负。"
+  },
+  {
+    "id": "09",
+    "start": 26.085,
+    "duration": 6.582000000000001,
+    "text": "Ask why gross profit turned negative.",
+    "zh": "询问毛利为什么转为负数。"
+  },
+  {
+    "id": "10",
+    "start": 32.667,
+    "duration": 6.582000000000001,
+    "text": "Follow the rules, true-up, revenue base, and source evidence.",
+    "zh": "依次追踪规则、轧差、收入基数和源凭证。"
+  },
+  {
+    "id": "11",
+    "start": 39.249,
+    "duration": 2.5276666666666685,
+    "text": "Open the negative revenue voucher.",
+    "zh": "打开负收入凭证。"
+  },
+  {
+    "id": "12",
+    "start": 41.77666666666667,
+    "duration": 2.5276666666666614,
+    "text": "Check amount, segment, user and reference.",
+    "zh": "核对金额、segment、入账人和参考号。"
+  },
+  {
+    "id": "13",
+    "start": 44.30433333333333,
+    "duration": 2.5276666666666685,
+    "text": "No matching positive entry is confirmed.",
+    "zh": "本样例尚未确认匹配的正向凭证。"
+  },
+  {
+    "id": "14",
+    "start": 46.832,
+    "duration": 4.716666666666669,
+    "text": "Compare excluding the voucher from the allocation base only.",
+    "zh": "比较仅将凭证排除在分摊基数之外的方案。"
+  },
+  {
+    "id": "15",
+    "start": 51.54866666666667,
+    "duration": 4.7166666666666615,
+    "text": "Posted revenue and months one and two stay unchanged.",
+    "zh": "已入账收入和前两个月的分摊结果不变。"
+  },
+  {
+    "id": "16",
+    "start": 56.26533333333333,
+    "duration": 4.716666666666669,
+    "text": "GA improves, total gross profit is unchanged, and LE remains under review.",
+    "zh": "GA 改善，但总毛利不变，LE 仍待核查。"
+  },
+  {
+    "id": "17",
+    "start": 60.982,
+    "duration": 6.207999999999998,
+    "text": "Save the candidate and generate a report with evidence, assumptions, and actions.",
+    "zh": "保存候选方案，生成包含证据、假设和行动的报告。"
+  },
+  {
+    "id": "18",
+    "start": 67.19,
+    "duration": 6.748999999999995,
+    "text": "Create a follow-up task from the same saved proposal.",
+    "zh": "从同一已保存方案创建后续任务。"
+  },
+  {
+    "id": "19",
+    "start": 73.939,
+    "duration": 3.7476666666666745,
+    "text": "Assign an owner.",
+    "zh": "分派负责人。"
+  },
+  {
+    "id": "20",
+    "start": 77.68666666666667,
+    "duration": 3.7476666666666603,
+    "text": "The assignee receives the task and starts work.",
+    "zh": "被指派人接收任务并开始工作。"
+  },
+  {
+    "id": "21",
+    "start": 81.43433333333333,
+    "duration": 3.7476666666666745,
+    "text": "Track each handoff.",
+    "zh": "追踪每次交接。"
+  },
+  {
+    "id": "22",
+    "start": 85.182,
+    "duration": 1.9639999999999986,
+    "text": "Record the outcome.",
+    "zh": "记录处理结果。"
+  },
+  {
+    "id": "23",
+    "start": 87.146,
+    "duration": 1.9639999999999986,
+    "text": "Task completion does not change the ledger.",
+    "zh": "任务完成不改变账务。"
+  },
+  {
+    "id": "24",
+    "start": 89.11,
+    "duration": 7.938499999999991,
+    "text": "Ask about report logic.",
+    "zh": "询问报表逻辑。"
+  },
+  {
+    "id": "25",
+    "start": 97.04849999999999,
+    "duration": 7.938500000000005,
+    "text": "The simulated answer streams from the selected knowledge base and links to its source.",
+    "zh": "模拟答案从所选知识库流式展示，并链接原文。"
+  },
+  {
+    "id": "26",
+    "start": 104.987,
+    "duration": 4.013000000000005,
+    "text": "Explore built-in and personal knowledge.",
+    "zh": "查看内置和个人知识库。"
+  },
+  {
+    "id": "27",
+    "start": 109,
+    "duration": 7.185000000000002,
+    "text": "Choose a report, dimension and metric.",
+    "zh": "选择报表、维度和指标。"
+  },
+  {
+    "id": "28",
+    "start": 116.185,
+    "duration": 7.185000000000002,
+    "text": "Describe a monitor, then configure a gross-profit benchmark.",
+    "zh": "描述监控需求，再设置毛利阈值。"
+  },
+  {
+    "id": "29",
+    "start": 123.37,
+    "duration": 11.096666999999997,
+    "text": "Add revenue trends, configure signals, rearrange cards, and reuse templates in Monitor Market.",
+    "zh": "添加收入趋势、配置信号、拖动卡片，并从 Monitor Market 复用模板。"
+  },
+  {
+    "id": "30",
+    "start": 134.466667,
+    "duration": 1.6666666666666572,
+    "text": "Finance Exception Intelligence.",
+    "zh": "财务异常智能。"
+  },
+  {
+    "id": "31",
+    "start": 136.13333366666666,
+    "duration": 1.6666666666666856,
+    "text": "Sample data.",
+    "zh": "样例数据。"
+  },
+  {
+    "id": "32",
+    "start": 137.80000033333334,
+    "duration": 1.6666666666666572,
+    "text": "Simulated AI.",
+    "zh": "模拟 AI。"
+  }
+]

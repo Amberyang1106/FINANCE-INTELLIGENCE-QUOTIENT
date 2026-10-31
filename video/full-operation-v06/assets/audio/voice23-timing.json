@@ -1,0 +1,38 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  5,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Start"
+    },
+    {
+        "Index":  6,
+        "Count":  4,
+        "Seconds":  0.48,
+        "Text":  "work"
+    },
+    {
+        "Index":  11,
+        "Count":  3,
+        "Seconds":  0.76,
+        "Text":  "and"
+    },
+    {
+        "Index":  15,
+        "Count":  5,
+        "Seconds":  0.88,
+        "Text":  "track"
+    },
+    {
+        "Index":  21,
+        "Count":  3,
+        "Seconds":  1.2049999999999998,
+        "Text":  "the"
+    },
+    {
+        "Index":  25,
+        "Count":  7,
+        "Seconds":  1.3099999999999998,
+        "Text":  "handoff"
+    }
+]

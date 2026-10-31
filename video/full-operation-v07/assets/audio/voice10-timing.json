@@ -1,0 +1,38 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  3,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Ask"
+    },
+    {
+        "Index":  4,
+        "Count":  3,
+        "Seconds":  0.435,
+        "Text":  "why"
+    },
+    {
+        "Index":  8,
+        "Count":  5,
+        "Seconds":  0.625,
+        "Text":  "gross"
+    },
+    {
+        "Index":  14,
+        "Count":  6,
+        "Seconds":  0.93499999999999994,
+        "Text":  "profit"
+    },
+    {
+        "Index":  21,
+        "Count":  6,
+        "Seconds":  1.39,
+        "Text":  "turned"
+    },
+    {
+        "Index":  28,
+        "Count":  8,
+        "Seconds":  1.72,
+        "Text":  "negative"
+    }
+]

@@ -1,0 +1,131 @@
+1
+00:00:00,000 --> 00:00:02,500
+Finance Exception Intelligence.
+
+2
+00:00:02,500 --> 00:00:05,000
+From signals to accountable action.
+
+3
+00:00:05,000 --> 00:00:10,400
+See monthly monitor status at a glance.
+
+4
+00:00:10,400 --> 00:00:15,800
+Click the Freight alert.
+
+5
+00:00:15,800 --> 00:00:21,200
+A possible duplicate allocation needs finance review.
+
+6
+00:00:21,200 --> 00:00:26,600
+Identify impacted records, correct the duplication, rerun the scope, and validate Freight and gross profit.
+
+7
+00:00:26,600 --> 00:00:32,000
+Then review revenue, cost, and cost credit trends.
+
+8
+00:00:32,000 --> 00:00:36,000
+Now open a separate Service allocation case.
+
+9
+00:00:36,000 --> 00:00:40,000
+GA shows negative month-three gross profit.
+
+10
+00:00:40,000 --> 00:00:44,000
+Ask why gross profit turned negative.
+
+11
+00:00:44,000 --> 00:00:48,000
+Follow the rules, true-up, revenue base, and source evidence.
+
+12
+00:00:48,000 --> 00:00:51,333
+Open the negative revenue voucher.
+
+13
+00:00:51,333 --> 00:00:54,667
+Review the amount, segment, posting user and reference.
+
+14
+00:00:54,667 --> 00:00:58,000
+A matching positive entry is not confirmed in this sample.
+
+15
+00:00:58,000 --> 00:01:02,667
+Compare excluding the voucher from the allocation base only.
+
+16
+00:01:02,667 --> 00:01:07,333
+Posted revenue and months one and two stay unchanged.
+
+17
+00:01:07,333 --> 00:01:12,000
+GA improves, total gross profit is unchanged, and LE remains under review.
+
+18
+00:01:12,000 --> 00:01:18,000
+Save the candidate and generate a report with evidence, assumptions, and actions.
+
+19
+00:01:18,000 --> 00:01:24,000
+Create a follow-up task from the same saved proposal.
+
+20
+00:01:24,000 --> 00:01:27,000
+Assign an owner.
+
+21
+00:01:27,000 --> 00:01:30,000
+The assignee receives the task and starts work.
+
+22
+00:01:30,000 --> 00:01:33,000
+Track each handoff.
+
+23
+00:01:33,000 --> 00:01:35,500
+Record the outcome.
+
+24
+00:01:35,500 --> 00:01:38,000
+Task completion does not change the ledger.
+
+25
+00:01:38,000 --> 00:01:43,000
+Ask about report logic.
+
+26
+00:01:43,000 --> 00:01:48,000
+The simulated answer streams from the selected knowledge base and links to its source.
+
+27
+00:01:48,000 --> 00:01:54,000
+Explore built-in rules and personal knowledge libraries.
+
+28
+00:01:54,000 --> 00:01:58,500
+Choose a report, dimension and metric.
+
+29
+00:01:58,500 --> 00:02:03,000
+Describe a monitor, then configure a gross-profit benchmark.
+
+30
+00:02:03,000 --> 00:02:13,000
+Add revenue trends, configure signals, rearrange cards, and reuse templates in Monitor Market.
+
+31
+00:02:13,000 --> 00:02:14,667
+Finance Exception Intelligence.
+
+32
+00:02:14,667 --> 00:02:16,333
+Sample data.
+
+33
+00:02:16,333 --> 00:02:18,000
+Simulated AI.

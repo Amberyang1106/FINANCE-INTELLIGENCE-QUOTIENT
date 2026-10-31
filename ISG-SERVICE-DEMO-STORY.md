@@ -3,13 +3,17 @@
 更新日期：2026-10-30（原分摊数据于 2026-10-27 确认）
 状态：用户已确认，作为阶段二实现依据
 
+### KPI 月度状态总览补充
+
+总览覆盖 Apr-26–Mar-27，状态均为演示样例。Jun-26 Freight 红灯可点击，弹出异常说明、重复分摊的潜在原因及四项建议；原因尚待财务核实。关闭弹窗后展示三项季度趋势，再切换至 Service allocation 专项案例。Freight 示例与 GA 凭证案例是独立情景，不暗示两者存在因果关系。
+
 ## 当前产品故事地图（2026-10-30 更新）
 
 产品名称：**FINANCE EXCEPTION INTELLIGENCE**；副标题：**Finance Workspace**。保留 Vantage 独立分支，不合并 main。下文原分摊规则、凭证和测算数据继续有效。
 
 | 故事线 | 用户路径 | 演示目的 |
 | --- | --- | --- |
-| 固定 Monitor / 日常 KPI 分支 | Monitor → KPI overview → Revenue、Cost、Cost credit 图表；最近 5／3 个季度 | 财务先看整体趋势和季度口径，信息一目了然 |
+| 固定 Monitor / 日常 KPI 分支 | Monitor → KPI overview → 月度状态总览 → 点击 Jun-26 Freight 红灯查看预警、潜在原因与建议 → Revenue、Cost、Cost credit 图表；最近 5／3 个季度 | 财务先看整体趋势和季度口径，信息一目了然 |
 | 固定 Monitor / 专项场景分支 | KPI overview 的 Review Service allocation 或旁边同名按钮 → Service allocation → GA 预警 → Analysis → 凭证 → Scenario → Report | 从特定场景信号追到证据与可供人工决策的方案 |
 | 任务跟进 | 同一已保存 proposal → Task To-do → 创建 / 分派 / 接收 / 进行 / 完成 / 日志 | 保存证据、假设、负责人反馈和后续结果，五个 Sample 继续保留 |
 | 知识问答 | New chat → Report / Knowledge base → 提问 → 模拟流式答复 → 引用原文；Knowledge 管理内置和个人资料 | 解释报表字段与业务规则，答案可以溯源 |

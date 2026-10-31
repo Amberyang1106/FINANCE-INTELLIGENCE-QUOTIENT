@@ -1,0 +1,232 @@
+[
+  {
+    "text": "Finance Exception Intelligence. From signals to actions.",
+    "start": 0.5,
+    "end": 5.3950000000000005
+  },
+  {
+    "text": "Track revenue, cost, and cost credits.",
+    "start": 6.5,
+    "end": 10.025
+  },
+  {
+    "text": "Current-quarter totals match the sample;",
+    "start": 10.025,
+    "end": 12.545
+  },
+  {
+    "text": "earlier history is illustrative.",
+    "start": 12.545,
+    "end": 15.035
+  },
+  {
+    "text": "Switch to Service allocation for a specific close",
+    "start": 18.5,
+    "end": 21.235
+  },
+  {
+    "text": "check. GA shows negative month-three gross profit, while",
+    "start": 21.235,
+    "end": 25.645
+  },
+  {
+    "text": "LE's negative revenue base signals a linked allocation",
+    "start": 25.645,
+    "end": 28.464999999999996
+  },
+  {
+    "text": "issue.",
+    "start": 28.464999999999996,
+    "end": 29.604999999999997
+  },
+  {
+    "text": "The investigation carries the scope forward, checking the",
+    "start": 30.5,
+    "end": 33.725
+  },
+  {
+    "text": "rules, quarter-end true-up, revenue base, and source documents",
+    "start": 33.725,
+    "end": 37.545
+  },
+  {
+    "text": "across segments.",
+    "start": 37.545,
+    "end": 39.305
+  },
+  {
+    "text": "Trace the negative revenue voucher to its amount,",
+    "start": 42.5,
+    "end": 45.074999999999996
+  },
+  {
+    "text": "segment, posting information, and reference.",
+    "start": 45.074999999999996,
+    "end": 48.67
+  },
+  {
+    "text": "No positive counterpart is confirmed in this sample",
+    "start": 48.67,
+    "end": 51.394999999999996
+  },
+  {
+    "text": "scope. Finance must still verify the business context.",
+    "start": 51.394999999999996,
+    "end": 56.265
+  },
+  {
+    "text": "Compare a candidate that excludes the voucher from",
+    "start": 57.5,
+    "end": 59.93
+  },
+  {
+    "text": "the allocation base only.",
+    "start": 59.93,
+    "end": 62.335
+  },
+  {
+    "text": "Keep posted revenue and the first two months",
+    "start": 62.335,
+    "end": 64.67
+  },
+  {
+    "text": "unchanged. Recalculate month three: GA improves, but total",
+    "start": 64.67,
+    "end": 70.035
+  },
+  {
+    "text": "gross profit is unchanged, and LE remains under",
+    "start": 70.035,
+    "end": 73.32
+  },
+  {
+    "text": "review.",
+    "start": 73.32,
+    "end": 74.525
+  },
+  {
+    "text": "Save the candidate and generate a report draft",
+    "start": 77.5,
+    "end": 79.935
+  },
+  {
+    "text": "with causes, evidence, assumptions, and selected follow-ups.",
+    "start": 79.935,
+    "end": 84.67
+  },
+  {
+    "text": "From this saved proposal, turn the selected action",
+    "start": 85.5,
+    "end": 88.545
+  },
+  {
+    "text": "into a task, retaining its evidence, calculation assumptions,",
+    "start": 88.545,
+    "end": 92.61
+  },
+  {
+    "text": "and source context.",
+    "start": 92.61,
+    "end": 94.555
+  },
+  {
+    "text": "Assign the action to its owner.",
+    "start": 95.5,
+    "end": 97.92
+  },
+  {
+    "text": "In the assignee preview, receipt and progress updates",
+    "start": 97.92,
+    "end": 101.165
+  },
+  {
+    "text": "build a visible handoff history, so finance can",
+    "start": 101.165,
+    "end": 104.165
+  },
+  {
+    "text": "follow execution.",
+    "start": 104.165,
+    "end": 106.08000000000001
+  },
+  {
+    "text": "Record the outcome. No ledger change.",
+    "start": 109.5,
+    "end": 113.43
+  },
+  {
+    "text": "Beyond case follow-up, ask about report logic.",
+    "start": 115.5,
+    "end": 119.56
+  },
+  {
+    "text": "The answer draws on the selected knowledge base,",
+    "start": 119.56,
+    "end": 122.355
+  },
+  {
+    "text": "streams into view, and links each rule to",
+    "start": 122.355,
+    "end": 124.93
+  },
+  {
+    "text": "its source for review.",
+    "start": 124.93,
+    "end": 126.84
+  },
+  {
+    "text": "Built-in rules and personal knowledge libraries keep reporting",
+    "start": 129.5,
+    "end": 132.625
+  },
+  {
+    "text": "definitions easy to find and reuse.",
+    "start": 132.625,
+    "end": 135.61
+  },
+  {
+    "text": "Choose the report, dimension, and metric.",
+    "start": 137.5,
+    "end": 140.675
+  },
+  {
+    "text": "Describe a monitor in natural language, inspect the",
+    "start": 140.675,
+    "end": 143.875
+  },
+  {
+    "text": "sample field routing, and set a gross-profit threshold",
+    "start": 143.875,
+    "end": 147.125
+  },
+  {
+    "text": "for the generated chart.",
+    "start": 147.125,
+    "end": 149.115
+  },
+  {
+    "text": "Add a revenue trend, configure growth and decline",
+    "start": 150.5,
+    "end": 153.485
+  },
+  {
+    "text": "signals, and arrange the cards.",
+    "start": 153.485,
+    "end": 156.435
+  },
+  {
+    "text": "Reuse common monitoring patterns through the local template",
+    "start": 156.435,
+    "end": 159.305
+  },
+  {
+    "text": "market.",
+    "start": 159.305,
+    "end": 160.51
+  },
+  {
+    "text": "Finance Exception Intelligence. From signals to actions.",
+    "start": 163.5,
+    "end": 168.395
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "width": 3840,
+    "height": 2160,
+    "duration": 170,
+    "readyState": 4,
+    "error": null
+  },
+  "played": {
+    "time": 1.064199,
+    "paused": false,
+    "decoded": 71
+  },
+  "errors": [],
+  "pass": true,
+  "note": "Headless muted playback/seek verification. This is not an audible listening review."
+}

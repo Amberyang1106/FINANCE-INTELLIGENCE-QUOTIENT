@@ -1,0 +1,44 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  7,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Explore"
+    },
+    {
+        "Index":  8,
+        "Count":  8,
+        "Seconds":  0.59,
+        "Text":  "built-in"
+    },
+    {
+        "Index":  17,
+        "Count":  5,
+        "Seconds":  1,
+        "Text":  "rules"
+    },
+    {
+        "Index":  23,
+        "Count":  3,
+        "Seconds":  1.325,
+        "Text":  "and"
+    },
+    {
+        "Index":  27,
+        "Count":  8,
+        "Seconds":  1.47,
+        "Text":  "personal"
+    },
+    {
+        "Index":  36,
+        "Count":  9,
+        "Seconds":  1.94,
+        "Text":  "knowledge"
+    },
+    {
+        "Index":  46,
+        "Count":  9,
+        "Seconds":  2.34,
+        "Text":  "libraries"
+    }
+]

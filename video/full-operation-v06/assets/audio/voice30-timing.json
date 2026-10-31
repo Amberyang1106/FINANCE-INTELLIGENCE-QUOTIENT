@@ -1,0 +1,50 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  6,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Review"
+    },
+    {
+        "Index":  7,
+        "Count":  3,
+        "Seconds":  0.43,
+        "Text":  "the"
+    },
+    {
+        "Index":  11,
+        "Count":  5,
+        "Seconds":  0.54999999999999993,
+        "Text":  "chart"
+    },
+    {
+        "Index":  18,
+        "Count":  4,
+        "Seconds":  1.3699999999999999,
+        "Text":  "then"
+    },
+    {
+        "Index":  23,
+        "Count":  3,
+        "Seconds":  1.575,
+        "Text":  "set"
+    },
+    {
+        "Index":  27,
+        "Count":  1,
+        "Seconds":  1.7999999999999998,
+        "Text":  "a"
+    },
+    {
+        "Index":  29,
+        "Count":  12,
+        "Seconds":  1.855,
+        "Text":  "gross-profit"
+    },
+    {
+        "Index":  42,
+        "Count":  9,
+        "Seconds":  2.6199999999999997,
+        "Text":  "threshold"
+    }
+]

@@ -1,0 +1,194 @@
+[
+  {
+    "start": 0,
+    "end": 2,
+    "en": "Finance Exception Intelligence.",
+    "zh": "财务异常智能。"
+  },
+  {
+    "start": 2,
+    "end": 3,
+    "en": "Review monthly status.",
+    "zh": "查看月度监控状态。"
+  },
+  {
+    "start": 3,
+    "end": 4,
+    "en": "Open Freight.",
+    "zh": "打开 Freight 预警。"
+  },
+  {
+    "start": 4,
+    "end": 7,
+    "en": "A possible duplicate allocation needs finance review.",
+    "zh": "可能存在重复分摊，需财务核实。"
+  },
+  {
+    "start": 7,
+    "end": 11.887,
+    "en": "Identify records, correct duplicates, rerun, and validate Freight and GP.",
+    "zh": "识别记录，修正重复分摊，重新运行，并验证 Freight 与毛利。"
+  },
+  {
+    "start": 11.887,
+    "end": 21.769,
+    "en": "Review revenue, cost, and cost credit trends.",
+    "zh": "查看收入、成本和成本抵减趋势。"
+  },
+  {
+    "start": 21.769,
+    "end": 23.927,
+    "en": "Open Service allocation.",
+    "zh": "打开 Service allocation。"
+  },
+  {
+    "start": 23.927,
+    "end": 26.085,
+    "en": "GA shows negative month-three gross profit.",
+    "zh": "GA 第三个月毛利为负。"
+  },
+  {
+    "start": 26.085,
+    "end": 32.667,
+    "en": "Ask why gross profit turned negative.",
+    "zh": "询问毛利为什么转为负数。"
+  },
+  {
+    "start": 32.667,
+    "end": 39.249,
+    "en": "Follow the rules, true-up, revenue base, and source evidence.",
+    "zh": "依次追踪规则、轧差、收入基数和源凭证。"
+  },
+  {
+    "start": 39.249,
+    "end": 41.77666666666667,
+    "en": "Open the negative revenue voucher.",
+    "zh": "打开负收入凭证。"
+  },
+  {
+    "start": 41.77666666666667,
+    "end": 44.30433333333333,
+    "en": "Check amount, segment, user and reference.",
+    "zh": "核对金额、segment、入账人和参考号。"
+  },
+  {
+    "start": 44.30433333333333,
+    "end": 46.832,
+    "en": "No matching positive entry is confirmed.",
+    "zh": "本样例尚未确认匹配的正向凭证。"
+  },
+  {
+    "start": 46.832,
+    "end": 51.54866666666667,
+    "en": "Compare excluding the voucher from the allocation base only.",
+    "zh": "比较仅将凭证排除在分摊基数之外的方案。"
+  },
+  {
+    "start": 51.54866666666667,
+    "end": 56.26533333333333,
+    "en": "Posted revenue and months one and two stay unchanged.",
+    "zh": "已入账收入和前两个月的分摊结果不变。"
+  },
+  {
+    "start": 56.26533333333333,
+    "end": 60.982,
+    "en": "GA improves, total gross profit is unchanged, and LE remains under review.",
+    "zh": "GA 改善，但总毛利不变，LE 仍待核查。"
+  },
+  {
+    "start": 60.982,
+    "end": 67.19,
+    "en": "Save the candidate and generate a report with evidence, assumptions, and actions.",
+    "zh": "保存候选方案，生成包含证据、假设和行动的报告。"
+  },
+  {
+    "start": 67.19,
+    "end": 73.939,
+    "en": "Create a follow-up task from the same saved proposal.",
+    "zh": "从同一已保存方案创建后续任务。"
+  },
+  {
+    "start": 73.939,
+    "end": 77.68666666666667,
+    "en": "Assign an owner.",
+    "zh": "分派负责人。"
+  },
+  {
+    "start": 77.68666666666667,
+    "end": 81.43433333333333,
+    "en": "The assignee receives the task and starts work.",
+    "zh": "被指派人接收任务并开始工作。"
+  },
+  {
+    "start": 81.43433333333333,
+    "end": 85.182,
+    "en": "Track each handoff.",
+    "zh": "追踪每次交接。"
+  },
+  {
+    "start": 85.182,
+    "end": 87.146,
+    "en": "Record the outcome.",
+    "zh": "记录处理结果。"
+  },
+  {
+    "start": 87.146,
+    "end": 89.11,
+    "en": "Task completion does not change the ledger.",
+    "zh": "任务完成不改变账务。"
+  },
+  {
+    "start": 89.11,
+    "end": 97.04849999999999,
+    "en": "Ask about report logic.",
+    "zh": "询问报表逻辑。"
+  },
+  {
+    "start": 97.04849999999999,
+    "end": 104.987,
+    "en": "The simulated answer streams from the selected knowledge base and links to its source.",
+    "zh": "模拟答案从所选知识库流式展示，并链接原文。"
+  },
+  {
+    "start": 104.987,
+    "end": 109,
+    "en": "Explore built-in and personal knowledge.",
+    "zh": "查看内置和个人知识库。"
+  },
+  {
+    "start": 109,
+    "end": 116.185,
+    "en": "Choose a report, dimension and metric.",
+    "zh": "选择报表、维度和指标。"
+  },
+  {
+    "start": 116.185,
+    "end": 123.37,
+    "en": "Describe a monitor, then configure a gross-profit benchmark.",
+    "zh": "描述监控需求，再设置毛利阈值。"
+  },
+  {
+    "start": 123.37,
+    "end": 134.466667,
+    "en": "Add revenue trends, configure signals, rearrange cards, and reuse templates in Monitor Market.",
+    "zh": "添加收入趋势、配置信号、拖动卡片，并从 Monitor Market 复用模板。"
+  },
+  {
+    "start": 134.466667,
+    "end": 136.13333366666666,
+    "en": "Finance Exception Intelligence.",
+    "zh": "财务异常智能。"
+  },
+  {
+    "start": 136.13333366666666,
+    "end": 137.80000033333334,
+    "en": "Sample data.",
+    "zh": "样例数据。"
+  },
+  {
+    "start": 137.80000033333334,
+    "end": 139.466667,
+    "en": "Simulated AI.",
+    "zh": "模拟 AI。"
+  }
+]

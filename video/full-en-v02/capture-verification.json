@@ -1,0 +1,16 @@
+{
+  "viewport": 1160,
+  "barLeft": 106.5,
+  "yLabelRight": 63.470947265625,
+  "gap": 43.029052734375,
+  "pass": true,
+  "selects": [
+    {
+      "id": "kpiRange",
+      "options": [
+        "5",
+        "3"
+      ]
+    }
+  ]
+}

@@ -81,3 +81,26 @@
 - Keep the saved-proposal handoff and task follow-through directly after the investigation/report. Knowledge and custom monitors follow the completed action narrative.
 - Whenever scenes move, update shot IDs, timestamps, chapter budgets, capture order, transition instructions and continuity references together; do not only reorder a high-level feature list.
 - Editing transition notes are not additional spoken copy; retain the 170-second total and measure future English voice timing separately.
+
+
+## 2026-10-30 · Video word timing
+
+Windows System.Speech may return word AudioPosition values on a 16 kHz timebase while its default WAV output is 22.05 kHz. Specify a 16 kHz mono SpeechAudioFormatInfo in SetOutputToWaveFile, then assert every word/caption interval against actual WAV duration. Do not stretch invalid timestamps to fit a scene or trim away spoken words. Preserve original script punctuation using character offsets when generating captions.
+
+
+## 2026-10-30 · Encoded captions need sequential review
+
+A passing HyperFrames check and clean random-seek snapshot did not catch residual letters in the sequential subtitle-band MP4. Inspect decoded final frames at caption changes before delivery. Preserve the correct narration/music mix; if browser-captured caption pixels accumulate, use a stateless libass subtitle pass from the measured caption intervals and rerun full decode and frame review.
+
+
+## 2026-10-30 · Product films must show the operation chain
+
+User feedback: the v02 film did not clearly convey operation steps and workflow. For the next revision, show entry point → actual input/click → visible UI response → readable result → next action in one spatially continuous sequence. Preserve real navigation and the same proposal/task identity. Large headings and reconstructed result panels cannot substitute for those steps. Review a 20–30s core interaction sequence before another full 4K render; this feedback pass changes no video or production script.
+
+- 2026-10-31：用户已明确要求制作成片时，必须推进实际录制、配音、渲染与验证；不得用制作计划替代交付，也不得把可绕过的单个依赖错误作为停止整项工作的理由。
+
+- 2026-10-31：视频验收必须逐镜对照已批准的动效和操作链；技术参数与图表完整不等于达成镜头方案。用户要求流程演示时，必须显示真实点击、响应和连续上下文，不得以旧图解替代。
+
+- 2026-10-31：操作演示的动效不得裁掉录屏视口、弹窗边缘、表头或关键字段。默认使用完整视口适配；强调优先使用轻量点击和外框反馈。验收需检查整个变换范围，而非只抽取内容可读的个别帧。
+
+- 2026-10-31 产品介绍与操作演示应在同片衔接：价值主张解释为什么看，真实操作提供证明；整体135秒上限须包含开场/总览/收尾。用户指定原版本更新时直接修改V07，不自行另建V08。

@@ -1,0 +1,202 @@
+[
+  {
+    "id": "01",
+    "name": "Brand opening",
+    "start": 0,
+    "duration": 10,
+    "from": 0,
+    "frames": 300,
+    "sourceFrom": 0,
+    "sourceTo": 90
+  },
+  {
+    "id": "02",
+    "name": "KPI and Freight",
+    "start": 10,
+    "duration": 18,
+    "from": 300,
+    "frames": 540,
+    "sourceFrom": 90,
+    "sourceTo": 653
+  },
+  {
+    "id": "03",
+    "name": "Separate allocation case",
+    "start": 28,
+    "duration": 4.333333333333333,
+    "from": 840,
+    "frames": 130,
+    "sourceFrom": 653,
+    "sourceTo": 783
+  },
+  {
+    "id": "04",
+    "name": "Investigation",
+    "start": 32.333333333333336,
+    "duration": 11.433333333333334,
+    "from": 970,
+    "frames": 343,
+    "sourceFrom": 783,
+    "sourceTo": 1126
+  },
+  {
+    "id": "05",
+    "name": "Voucher",
+    "start": 43.766666666666666,
+    "duration": 7.1,
+    "from": 1313,
+    "frames": 213,
+    "sourceFrom": 1126,
+    "sourceTo": 1339
+  },
+  {
+    "id": "06",
+    "name": "Causal explanation",
+    "start": 50.86666666666667,
+    "duration": 4,
+    "from": 1526,
+    "frames": 120,
+    "sourceFrom": 1339,
+    "sourceTo": 1459
+  },
+  {
+    "id": "07",
+    "name": "Scenario",
+    "start": 54.86666666666667,
+    "duration": 13.133333333333333,
+    "from": 1646,
+    "frames": 394,
+    "sourceFrom": 1459,
+    "sourceTo": 1853
+  },
+  {
+    "id": "08",
+    "name": "Report",
+    "start": 68,
+    "duration": 5,
+    "from": 2040,
+    "frames": 150,
+    "sourceFrom": 1853,
+    "sourceTo": 2004
+  },
+  {
+    "id": "09",
+    "name": "Proposal to tasks",
+    "start": 73,
+    "duration": 5.133333333333334,
+    "from": 2190,
+    "frames": 154,
+    "sourceFrom": 2004,
+    "sourceTo": 2167
+  },
+  {
+    "id": "10",
+    "name": "Assignment and receipt",
+    "start": 78.13333333333334,
+    "duration": 9.1,
+    "from": 2344,
+    "frames": 273,
+    "sourceFrom": 2167,
+    "sourceTo": 2456
+  },
+  {
+    "id": "11",
+    "name": "Outcome",
+    "start": 87.23333333333333,
+    "duration": 2.7666666666666666,
+    "from": 2617,
+    "frames": 83,
+    "sourceFrom": 2456,
+    "sourceTo": 2544
+  },
+  {
+    "id": "12",
+    "name": "Knowledge chapter",
+    "start": 90,
+    "duration": 1.5,
+    "from": 2700,
+    "frames": 45,
+    "sourceFrom": 2544,
+    "sourceTo": 2589
+  },
+  {
+    "id": "13",
+    "name": "Report Q&A",
+    "start": 91.5,
+    "duration": 11,
+    "from": 2745,
+    "frames": 330,
+    "sourceFrom": 2589,
+    "sourceTo": 2985
+  },
+  {
+    "id": "14",
+    "name": "Knowledge library",
+    "start": 102.5,
+    "duration": 2.5,
+    "from": 3075,
+    "frames": 75,
+    "sourceFrom": 2985,
+    "sourceTo": 3075
+  },
+  {
+    "id": "15",
+    "name": "Custom chapter",
+    "start": 105,
+    "duration": 1.5,
+    "from": 3150,
+    "frames": 45,
+    "sourceFrom": 3075,
+    "sourceTo": 3120
+  },
+  {
+    "id": "16",
+    "name": "Monitor Studio",
+    "start": 106.5,
+    "duration": 10.8,
+    "from": 3195,
+    "frames": 324,
+    "sourceFrom": 3120,
+    "sourceTo": 3485
+  },
+  {
+    "id": "17",
+    "name": "Revenue trend",
+    "start": 117.3,
+    "duration": 4.7,
+    "from": 3519,
+    "frames": 141,
+    "sourceFrom": 3485,
+    "sourceTo": 3639
+  },
+  {
+    "id": "18",
+    "name": "Real drag",
+    "start": 122,
+    "duration": 3.1666666666666665,
+    "from": 3660,
+    "frames": 95,
+    "sourceFrom": 3639,
+    "sourceTo": 3734
+  },
+  {
+    "id": "19",
+    "name": "Market",
+    "start": 125.16666666666667,
+    "duration": 2.3333333333333335,
+    "from": 3755,
+    "frames": 70,
+    "sourceFrom": 3734,
+    "sourceTo": 3824
+  },
+  {
+    "id": "20",
+    "name": "Ending",
+    "start": 127.5,
+    "duration": 7,
+    "from": 3825,
+    "frames": 210,
+    "sourceFrom": 3824,
+    "sourceTo": 3975
+  }
+]

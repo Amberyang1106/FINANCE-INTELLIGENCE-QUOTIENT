@@ -1,0 +1,74 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  2,
+        "Seconds":  0.099999999999999992,
+        "Text":  "GA"
+    },
+    {
+        "Index":  3,
+        "Count":  8,
+        "Seconds":  0.47,
+        "Text":  "improves"
+    },
+    {
+        "Index":  13,
+        "Count":  5,
+        "Seconds":  1.5,
+        "Text":  "total"
+    },
+    {
+        "Index":  19,
+        "Count":  5,
+        "Seconds":  1.8199999999999998,
+        "Text":  "gross"
+    },
+    {
+        "Index":  25,
+        "Count":  6,
+        "Seconds":  2.135,
+        "Text":  "profit"
+    },
+    {
+        "Index":  32,
+        "Count":  2,
+        "Seconds":  2.5949999999999998,
+        "Text":  "is"
+    },
+    {
+        "Index":  35,
+        "Count":  9,
+        "Seconds":  2.735,
+        "Text":  "unchanged"
+    },
+    {
+        "Index":  46,
+        "Count":  3,
+        "Seconds":  3.8699999999999997,
+        "Text":  "and"
+    },
+    {
+        "Index":  50,
+        "Count":  2,
+        "Seconds":  4,
+        "Text":  "LE"
+    },
+    {
+        "Index":  53,
+        "Count":  7,
+        "Seconds":  4.335,
+        "Text":  "remains"
+    },
+    {
+        "Index":  61,
+        "Count":  5,
+        "Seconds":  4.805,
+        "Text":  "under"
+    },
+    {
+        "Index":  67,
+        "Count":  6,
+        "Seconds":  5.1,
+        "Text":  "review"
+    }
+]

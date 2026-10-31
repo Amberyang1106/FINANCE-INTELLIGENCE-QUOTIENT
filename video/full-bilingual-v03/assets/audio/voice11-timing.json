@@ -1,0 +1,110 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  3,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Ask"
+    },
+    {
+        "Index":  4,
+        "Count":  5,
+        "Seconds":  0.39499999999999996,
+        "Text":  "about"
+    },
+    {
+        "Index":  10,
+        "Count":  6,
+        "Seconds":  0.69,
+        "Text":  "report"
+    },
+    {
+        "Index":  17,
+        "Count":  5,
+        "Seconds":  1.115,
+        "Text":  "logic"
+    },
+    {
+        "Index":  24,
+        "Count":  3,
+        "Seconds":  2.435,
+        "Text":  "The"
+    },
+    {
+        "Index":  28,
+        "Count":  9,
+        "Seconds":  2.5149999999999997,
+        "Text":  "simulated"
+    },
+    {
+        "Index":  38,
+        "Count":  6,
+        "Seconds":  3.1149999999999998,
+        "Text":  "answer"
+    },
+    {
+        "Index":  45,
+        "Count":  7,
+        "Seconds":  3.465,
+        "Text":  "streams"
+    },
+    {
+        "Index":  53,
+        "Count":  4,
+        "Seconds":  3.925,
+        "Text":  "from"
+    },
+    {
+        "Index":  58,
+        "Count":  3,
+        "Seconds":  4.125,
+        "Text":  "the"
+    },
+    {
+        "Index":  62,
+        "Count":  8,
+        "Seconds":  4.2,
+        "Text":  "selected"
+    },
+    {
+        "Index":  71,
+        "Count":  9,
+        "Seconds":  4.74,
+        "Text":  "knowledge"
+    },
+    {
+        "Index":  81,
+        "Count":  4,
+        "Seconds":  5.1049999999999995,
+        "Text":  "base"
+    },
+    {
+        "Index":  86,
+        "Count":  3,
+        "Seconds":  5.425,
+        "Text":  "and"
+    },
+    {
+        "Index":  90,
+        "Count":  5,
+        "Seconds":  5.595,
+        "Text":  "links"
+    },
+    {
+        "Index":  96,
+        "Count":  2,
+        "Seconds":  5.8649999999999993,
+        "Text":  "to"
+    },
+    {
+        "Index":  99,
+        "Count":  3,
+        "Seconds":  6.015,
+        "Text":  "its"
+    },
+    {
+        "Index":  103,
+        "Count":  6,
+        "Seconds":  6.205,
+        "Text":  "source"
+    }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "01",
+    "name": "Brand opening",
+    "start": 0,
+    "duration": 3
+  },
+  {
+    "id": "02",
+    "name": "KPI and Freight",
+    "start": 3,
+    "duration": 21.769
+  },
+  {
+    "id": "03",
+    "name": "Separate allocation case",
+    "start": 24.769,
+    "duration": 4.3160000000000025
+  },
+  {
+    "id": "04",
+    "name": "Investigation",
+    "start": 29.085,
+    "duration": 13.164000000000001
+  },
+  {
+    "id": "05",
+    "name": "Voucher",
+    "start": 42.249,
+    "duration": 7.584333000000001
+  },
+  {
+    "id": "06",
+    "name": "Causal explanation",
+    "start": 49.833333,
+    "duration": 4
+  },
+  {
+    "id": "07",
+    "name": "Scenario",
+    "start": 53.833333,
+    "duration": 14.148666999999996
+  },
+  {
+    "id": "08",
+    "name": "Report",
+    "start": 67.982,
+    "duration": 6.207999999999998
+  },
+  {
+    "id": "09",
+    "name": "Proposal to tasks",
+    "start": 74.19,
+    "duration": 6.748999999999995
+  },
+  {
+    "id": "10",
+    "name": "Assignment and receipt",
+    "start": 80.939,
+    "duration": 11.24300000000001
+  },
+  {
+    "id": "11",
+    "name": "Outcome",
+    "start": 92.182,
+    "duration": 3.917999999999992
+  },
+  {
+    "id": "12",
+    "name": "Knowledge chapter",
+    "start": 96.1,
+    "duration": 1
+  },
+  {
+    "id": "13",
+    "name": "Report Q&A",
+    "start": 97.1,
+    "duration": 15.887
+  },
+  {
+    "id": "14",
+    "name": "Knowledge library",
+    "start": 112.987,
+    "duration": 4.013000000000005
+  },
+  {
+    "id": "15",
+    "name": "Custom chapter",
+    "start": 117,
+    "duration": 1
+  },
+  {
+    "id": "16",
+    "name": "Monitor Studio",
+    "start": 118,
+    "duration": 14.370000000000005
+  },
+  {
+    "id": "17",
+    "name": "Revenue trend",
+    "start": 132.37,
+    "duration": 6.1299999999999955
+  },
+  {
+    "id": "18",
+    "name": "Real drag",
+    "start": 138.5,
+    "duration": 3.1666669999999897
+  },
+  {
+    "id": "19",
+    "name": "Market",
+    "start": 141.666667,
+    "duration": 1.8000000000000114
+  },
+  {
+    "id": "20",
+    "name": "Ending",
+    "start": 143.466667,
+    "duration": 5.033332999999999
+  }
+]

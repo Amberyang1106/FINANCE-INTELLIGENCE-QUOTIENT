@@ -1,0 +1,32 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  4,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Drag"
+    },
+    {
+        "Index":  5,
+        "Count":  2,
+        "Seconds":  0.38999999999999996,
+        "Text":  "to"
+    },
+    {
+        "Index":  8,
+        "Count":  7,
+        "Seconds":  0.51,
+        "Text":  "arrange"
+    },
+    {
+        "Index":  16,
+        "Count":  4,
+        "Seconds":  0.89499999999999991,
+        "Text":  "your"
+    },
+    {
+        "Index":  21,
+        "Count":  8,
+        "Seconds":  1.1199999999999999,
+        "Text":  "monitors"
+    }
+]

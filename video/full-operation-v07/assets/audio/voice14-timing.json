@@ -1,0 +1,26 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  2,
+        "Seconds":  0.099999999999999992,
+        "Text":  "No"
+    },
+    {
+        "Index":  3,
+        "Count":  9,
+        "Seconds":  0.32,
+        "Text":  "confirmed"
+    },
+    {
+        "Index":  13,
+        "Count":  6,
+        "Seconds":  0.845,
+        "Text":  "sample"
+    },
+    {
+        "Index":  20,
+        "Count":  6,
+        "Seconds":  1.275,
+        "Text":  "offset"
+    }
+]

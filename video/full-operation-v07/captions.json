@@ -1,0 +1,237 @@
+[
+  {
+    "start": 0,
+    "end": 2.5,
+    "en": "Finance Exception Intelligence.",
+    "zh": "财务异常智能。"
+  },
+  {
+    "start": 2.5,
+    "end": 7,
+    "en": "See exceptions. Trace evidence. Coordinate action.",
+    "zh": "发现异常，追溯证据，协同行动。"
+  },
+  {
+    "start": 7,
+    "end": 10,
+    "en": "Five capabilities. One finance workspace.",
+    "zh": "五项相互衔接的能力，一个财务工作空间。"
+  },
+  {
+    "start": 10,
+    "end": 13.833333333333334,
+    "en": "Review reporting health. Open the Freight alert.",
+    "zh": "总览报表状况，打开 Freight 预警。"
+  },
+  {
+    "start": 13.833333333333334,
+    "end": 16.7,
+    "en": "A possible duplicate allocation needs finance review.",
+    "zh": "可能存在重复分摊，需财务核实。",
+    "sourceIndex": 3
+  },
+  {
+    "start": 16.7,
+    "end": 21.4,
+    "en": "Identify records, correct duplicates, rerun, and validate Freight and GP.",
+    "zh": "识别记录，修正重复分摊，重新运行，并验证 Freight 与毛利。",
+    "sourceIndex": 4
+  },
+  {
+    "start": 21.4,
+    "end": 28,
+    "en": "Review revenue, cost and source cost-credit trends.",
+    "zh": "查看收入、成本及源成本抵减趋势。",
+    "sourceIndex": 5
+  },
+  {
+    "start": 28,
+    "end": 31.133333333333333,
+    "en": "Trace a separate allocation exception.",
+    "zh": "追溯另一个独立的分摊异常。",
+    "sourceIndex": 6
+  },
+  {
+    "start": 31.133333333333333,
+    "end": 33.733333333333334,
+    "en": "GA's month-three gross profit is negative.",
+    "zh": "GA 第三个月毛利为负。",
+    "sourceIndex": 7
+  },
+  {
+    "start": 33.733333333333334,
+    "end": 38.4,
+    "en": "Ask why gross profit turned negative.",
+    "zh": "询问毛利为什么转为负数。",
+    "sourceIndex": 8
+  },
+  {
+    "start": 38.4,
+    "end": 43.766666666666666,
+    "en": "Follow the rules, true-up, revenue base, and source evidence.",
+    "zh": "依次追踪规则、轧差、收入基数和源凭证。",
+    "sourceIndex": 9
+  },
+  {
+    "start": 43.766666666666666,
+    "end": 45.86666666666667,
+    "en": "Open the negative revenue voucher.",
+    "zh": "打开负收入凭证。",
+    "sourceIndex": 10
+  },
+  {
+    "start": 45.86666666666667,
+    "end": 48.86666666666667,
+    "en": "Check amount, segment, user and reference.",
+    "zh": "核对金额、segment、入账人和参考号。",
+    "sourceIndex": 11
+  },
+  {
+    "start": 48.86666666666667,
+    "end": 50.86666666666667,
+    "en": "No confirmed sample offset.",
+    "zh": "样例内未确认正向对冲。",
+    "sourceIndex": 12
+  },
+  {
+    "start": 50.86666666666667,
+    "end": 54.86666666666667,
+    "en": "LE's negative base raises GA's share and pressures GP.",
+    "zh": "LE 负基数放大 GA 权重，影响毛利。"
+  },
+  {
+    "start": 54.86666666666667,
+    "end": 58.56666666666667,
+    "en": "Compare excluding the voucher from the allocation base only.",
+    "zh": "比较仅将凭证排除在分摊基数之外的方案。",
+    "sourceIndex": 13
+  },
+  {
+    "start": 58.56666666666667,
+    "end": 63.3,
+    "en": "Posted revenue and months one and two stay unchanged.",
+    "zh": "已入账收入和前两个月的分摊结果不变。",
+    "sourceIndex": 14
+  },
+  {
+    "start": 63.3,
+    "end": 68,
+    "en": "GA improves; total GP unchanged; LE needs review.",
+    "zh": "GA 改善，总毛利不变，LE 仍待核查。",
+    "sourceIndex": 15
+  },
+  {
+    "start": 68,
+    "end": 73,
+    "en": "Save the candidate and generate a report with evidence, assumptions, and actions.",
+    "zh": "保存候选方案，生成包含证据、假设和行动的报告。",
+    "sourceIndex": 16
+  },
+  {
+    "start": 73,
+    "end": 78.13333333333334,
+    "en": "Turn proposals into accountable actions.",
+    "zh": "将改善建议转化为责任明确的行动。",
+    "sourceIndex": 17
+  },
+  {
+    "start": 78.13333333333334,
+    "end": 80.1,
+    "en": "Assign an owner.",
+    "zh": "分派负责人。",
+    "sourceIndex": 18
+  },
+  {
+    "start": 80.1,
+    "end": 82.23333333333333,
+    "en": "Confirm receipt.",
+    "zh": "确认任务已接收。",
+    "sourceIndex": 19
+  },
+  {
+    "start": 82.23333333333333,
+    "end": 87.23333333333333,
+    "en": "Start work and track the handoff.",
+    "zh": "开始处理并追踪交接。",
+    "sourceIndex": 20
+  },
+  {
+    "start": 87.23333333333333,
+    "end": 88.4,
+    "en": "Record the outcome.",
+    "zh": "记录处理结果。",
+    "sourceIndex": 21
+  },
+  {
+    "start": 88.4,
+    "end": 90,
+    "en": "Ledger unchanged.",
+    "zh": "账务保持不变。",
+    "sourceIndex": 22
+  },
+  {
+    "start": 90,
+    "end": 97.53333333333333,
+    "en": "Understand the logic behind the numbers. Ask the report.",
+    "zh": "理解数字背后的逻辑，直接询问报表规则。",
+    "sourceIndex": 23
+  },
+  {
+    "start": 97.53333333333333,
+    "end": 102.5,
+    "en": "The simulated answer excerpt includes source citations.",
+    "zh": "查看模拟回答片段及其来源引用。",
+    "sourceIndex": 24
+  },
+  {
+    "start": 102.5,
+    "end": 105,
+    "en": "Explore built-in and personal knowledge.",
+    "zh": "查看内置和个人知识库。",
+    "sourceIndex": 25
+  },
+  {
+    "start": 105,
+    "end": 112.36666666666666,
+    "en": "Build monitors around your questions. Choose scope and metrics.",
+    "zh": "围绕业务问题创建监控，选择范围和指标。",
+    "sourceIndex": 26
+  },
+  {
+    "start": 112.36666666666666,
+    "end": 117.3,
+    "en": "Review the chart, then set a gross-profit threshold.",
+    "zh": "查看图表，再设置毛利阈值。",
+    "sourceIndex": 27
+  },
+  {
+    "start": 117.3,
+    "end": 122,
+    "en": "Add a revenue trend.",
+    "zh": "添加收入趋势。"
+  },
+  {
+    "start": 122,
+    "end": 125.16666666666667,
+    "en": "Drag to arrange your monitors.",
+    "zh": "拖动卡片，调整监控布局。"
+  },
+  {
+    "start": 125.16666666666667,
+    "end": 127.5,
+    "en": "Reuse templates.",
+    "zh": "复用监控模板。"
+  },
+  {
+    "start": 127.5,
+    "end": 131.5,
+    "en": "One workspace. From reporting signals to accountable action.",
+    "zh": "一个工作空间，从报表信号走向可追踪的行动。"
+  },
+  {
+    "start": 131.5,
+    "end": 134.5,
+    "en": "Finance Exception Intelligence.",
+    "zh": "财务异常智能。"
+  }
+]

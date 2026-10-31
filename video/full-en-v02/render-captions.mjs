@@ -1,0 +1,12 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {spawn} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+const root=path.dirname(fileURLToPath(import.meta.url));
+const band=process.argv[2];
+const run=async(args)=>new Promise((resolve,reject)=>{const p=spawn(process.execPath,[path.join(root,'run-hyperframes.mjs'),band,...args],{cwd:root,windowsHide:true,stdio:'inherit'});p.on('error',reject);p.on('close',code=>code===0?resolve():reject(new Error('HyperFrames exit '+code)));});
+await run(['check','--json','--at','3,50,66,112,123,165','--no-browser-gpu']);
+await run(['snapshot','--at','3,50,66,112,123,165','--no-browser-gpu']);
+await run(['render','--output',path.join(root,'renders/captions-mix.mp4'),'--fps','60','--quality','high','--workers','2','--no-browser-gpu']);
+await fs.writeFile(path.join(root,'hyperframes-render-complete.json'),JSON.stringify({complete:true,output:'renders/captions-mix.mp4'}));
+console.log('HYPERFRAMES_RENDER_COMPLETE');

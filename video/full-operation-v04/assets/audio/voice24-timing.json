@@ -1,0 +1,26 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  3,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Ask"
+    },
+    {
+        "Index":  4,
+        "Count":  5,
+        "Seconds":  0.39499999999999996,
+        "Text":  "about"
+    },
+    {
+        "Index":  10,
+        "Count":  6,
+        "Seconds":  0.69,
+        "Text":  "report"
+    },
+    {
+        "Index":  17,
+        "Count":  5,
+        "Seconds":  1.115,
+        "Text":  "logic"
+    }
+]

@@ -1,0 +1,32 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  4,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Open"
+    },
+    {
+        "Index":  5,
+        "Count":  3,
+        "Seconds":  0.365,
+        "Text":  "the"
+    },
+    {
+        "Index":  9,
+        "Count":  8,
+        "Seconds":  0.44,
+        "Text":  "negative"
+    },
+    {
+        "Index":  18,
+        "Count":  7,
+        "Seconds":  0.845,
+        "Text":  "revenue"
+    },
+    {
+        "Index":  26,
+        "Count":  7,
+        "Seconds":  1.26,
+        "Text":  "voucher"
+    }
+]

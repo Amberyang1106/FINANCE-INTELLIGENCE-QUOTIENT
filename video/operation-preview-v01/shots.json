@@ -1,0 +1,26 @@
+[
+  {
+    "id": "01",
+    "start": 0.35,
+    "end": 4.8,
+    "text": "Start with the negative G P alert, then open Analysis."
+  },
+  {
+    "id": "02",
+    "start": 5.1,
+    "end": 12.5,
+    "text": "Ask why G P turned negative. The investigation traces the allocation and revenue base."
+  },
+  {
+    "id": "03",
+    "start": 13.2,
+    "end": 19,
+    "text": "Open the source voucher. Review the amount, posting user, and reference."
+  },
+  {
+    "id": "04",
+    "start": 20,
+    "end": 29.7,
+    "text": "Exclude it from the base only. G A improves, but total G P stays unchanged. L E remains unresolved."
+  }
+]

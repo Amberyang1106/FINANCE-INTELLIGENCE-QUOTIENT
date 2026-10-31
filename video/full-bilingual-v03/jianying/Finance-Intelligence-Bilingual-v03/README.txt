@@ -1,0 +1,1 @@
+Editable draft: native English and Chinese text, separate narration and music, 15 picture segments. Internal motion is baked into the video. Windows Jianying opening is not yet verified. Run relocate.py after moving this folder, then import/copy it to your configured Jianying draft directory. Keep a backup: saving in Jianying may upgrade/encrypt draft data.

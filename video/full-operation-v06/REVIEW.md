@@ -1,0 +1,5 @@
+# Independent acceptance
+
+Approved fordelivery.148.5s,2K30,AAC48kHzstereo. Branding,explicitseparatecasebridge,causechain,chaptercardsandScenario3conclusions readable. FullrecordedUIvisible; navigationandbilingualcaptionsbelowUI. Receivedcaptionmatchesreceipt;dragandMarketseparate. Full decode passes,no captionoverlapormissingmedia. NativeJianying20picture/1narration/1music/34EN/34ZHsegments,148.5s. Playbackandchapterseekverified. Measuredencodedmix:-15.96LUFS,-2.19dBTP. Voicepaceaftertrimming≤1.26×.
+
+SubjectiveaudiolisteningandactualWindowsJianyingopening/editingunverified.

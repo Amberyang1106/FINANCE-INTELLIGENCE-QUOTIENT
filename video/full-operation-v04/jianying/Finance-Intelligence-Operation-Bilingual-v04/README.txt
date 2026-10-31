@@ -1,0 +1,1 @@
+Native English/Chinese captions; separate narration/music; picture split by15storyshots. Camera moves are baked into picture. After moving the folder run relocate.py to update Resources paths. Windows Jianying application opening remains unverified. Saving in Jianying may upgrade/encrypt draft data. Music attribution: Cipher, Kevin MacLeod/incompetech.com, CC BY4.0.

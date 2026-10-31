@@ -1,0 +1,44 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  6,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Review"
+    },
+    {
+        "Index":  7,
+        "Count":  9,
+        "Seconds":  0.44999999999999996,
+        "Text":  "reporting"
+    },
+    {
+        "Index":  17,
+        "Count":  6,
+        "Seconds":  0.99,
+        "Text":  "health"
+    },
+    {
+        "Index":  25,
+        "Count":  4,
+        "Seconds":  2.25,
+        "Text":  "Open"
+    },
+    {
+        "Index":  30,
+        "Count":  3,
+        "Seconds":  2.5149999999999997,
+        "Text":  "the"
+    },
+    {
+        "Index":  34,
+        "Count":  7,
+        "Seconds":  2.5949999999999998,
+        "Text":  "Freight"
+    },
+    {
+        "Index":  42,
+        "Count":  5,
+        "Seconds":  2.9099999999999997,
+        "Text":  "alert"
+    }
+]

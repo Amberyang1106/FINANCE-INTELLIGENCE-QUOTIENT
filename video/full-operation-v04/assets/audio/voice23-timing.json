@@ -1,0 +1,44 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  4,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Task"
+    },
+    {
+        "Index":  5,
+        "Count":  10,
+        "Seconds":  0.45999999999999996,
+        "Text":  "completion"
+    },
+    {
+        "Index":  16,
+        "Count":  4,
+        "Seconds":  1.065,
+        "Text":  "does"
+    },
+    {
+        "Index":  21,
+        "Count":  3,
+        "Seconds":  1.305,
+        "Text":  "not"
+    },
+    {
+        "Index":  25,
+        "Count":  6,
+        "Seconds":  1.5599999999999998,
+        "Text":  "change"
+    },
+    {
+        "Index":  32,
+        "Count":  3,
+        "Seconds":  1.95,
+        "Text":  "the"
+    },
+    {
+        "Index":  36,
+        "Count":  6,
+        "Seconds":  2.06,
+        "Text":  "ledger"
+    }
+]

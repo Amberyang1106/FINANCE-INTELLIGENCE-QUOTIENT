@@ -1,0 +1,689 @@
+{
+  "fpa-report-knowledge:v1": {
+    "version": 1,
+    "bases": [],
+    "chats": [
+      {
+        "id": "4efcda7b-dd62-4e5e-85c8-d0bd5ad90609",
+        "report": "isg-service",
+        "library": "all",
+        "title": "Please tell me the allocation logic for ISG Service.",
+        "messages": [
+          {
+            "id": "a57d526f-d65a-4590-8f88-249aebf37e66",
+            "role": "user",
+            "report": "isg-service",
+            "text": "Please tell me the allocation logic for ISG Service."
+          },
+          {
+            "id": "124528bb-ce5f-4c4c-8019-58b5bdd0e95d",
+            "role": "assistant",
+            "report": "isg-service",
+            "status": "complete",
+            "visibleChars": 1955,
+            "blocks": [
+              {
+                "title": "Allocation scope and eligible inputs",
+                "text": "Allocate ISG Service costs by quarter, profit center and bpc_seg_cd, using the share of revenue after allocation (Rev%). The revenue base includes AMTREV, IMMDREV and GTN rows where checking_flg=AL and non_alloc_flg is not Y. Cost inputs are BMC and NBMC rows where checking_flg is blank and non_alloc_flg is not Y."
+              },
+              {
+                "title": "Copy costs before allocating the pool",
+                "text": "Costs with an existing bpc_seg_cd are copied to that segment, regardless of alloc_flg. If bpc_seg_cd is blank, alloc_flg=B and refreshed_gtm_cust_seg_leve2 has a value, map SM to B0 and MM to SMBMM; retain other values and copy the cost. Other costs with a blank bpc_seg_cd enter the allocation pool. An A-class cost with missing bpc_seg_cd also triggers the A-class missing-dimension check."
+              },
+              {
+                "title": "Month 1 and month 2 allocation",
+                "text": "For month 1 and month 2, Rev%[segment] = the month revenue base for that segment / the total month revenue base for the profit center. Allocated cost[segment] = the month allocation pool × that month Rev%. Keep copied costs separate from the allocated pool."
+              },
+              {
+                "title": "Month 3 quarterly true-up",
+                "text": "For month 3, calculate quarterly Rev% from the quarter revenue base. Month 3 allocated cost[segment] = quarter allocation pool × quarterly Rev%[segment] − month 1 executed allocation[segment] − month 2 executed allocation[segment]. Deduct prior pool allocations only, not copied costs. In the approved close scenario, months 1–2 stay locked and only month 3 true-up is recalculated."
+              },
+              {
+                "title": "No-base default and unresolved boundaries",
+                "text": "When there is no revenue base, allocate the cost pool to B0 (no_base_default_seg). Do not automatically treat a net-zero, near-zero or negative total revenue base as the no-row case; those boundary policies require separate confirmation. A negative true-up can be a valid quarterly adjustment and is not by itself proof of a posting error."
+              },
+              {
+                "title": "Service categories and amount selection",
+                "text": "Revenue categories are AMTREV, IMMDREV and GTN; cost categories are BMC and NBMC. Select amt_lc for geo_cd=PRC; select amt for other geographies, including ROW. The sample displays USD. The field-selection rule alone does not establish the currency of every real dataset."
+              }
+            ],
+            "citations": [
+              {
+                "id": "builtin-mr-logic/business-logic/allocation-scope",
+                "baseId": "builtin-mr-logic",
+                "baseName": "MR Logic",
+                "sourceId": "business-logic",
+                "sourceName": "Business Logic.md",
+                "sourceType": "file",
+                "sectionId": "allocation-scope",
+                "title": "Allocation scope and eligible inputs",
+                "text": "Allocate ISG Service costs by quarter, profit center and bpc_seg_cd, using the share of revenue after allocation (Rev%). The revenue base includes AMTREV, IMMDREV and GTN rows where checking_flg=AL and non_alloc_flg is not Y. Cost inputs are BMC and NBMC rows where checking_flg is blank and non_alloc_flg is not Y.",
+                "kind": "rule",
+                "tags": [
+                  "allocation",
+                  "methodology",
+                  "revenue base"
+                ],
+                "score": 100,
+                "report": "isg-service"
+              },
+              {
+                "id": "builtin-mr-logic/business-logic/copy-routing",
+                "baseId": "builtin-mr-logic",
+                "baseName": "MR Logic",
+                "sourceId": "business-logic",
+                "sourceName": "Business Logic.md",
+                "sourceType": "file",
+                "sectionId": "copy-routing",
+                "title": "Copy costs before allocating the pool",
+                "text": "Costs with an existing bpc_seg_cd are copied to that segment, regardless of alloc_flg. If bpc_seg_cd is blank, alloc_flg=B and refreshed_gtm_cust_seg_leve2 has a value, map SM to B0 and MM to SMBMM; retain other values and copy the cost. Other costs with a blank bpc_seg_cd enter the allocation pool. An A-class cost with missing bpc_seg_cd also triggers the A-class missing-dimension check.",
+                "kind": "rule",
+                "tags": [
+                  "allocation",
+                  "copy",
+                  "A/B/C",
+                  "gtm"
+                ],
+                "score": 99,
+                "report": "isg-service"
+              },
+              {
+                "id": "builtin-mr-logic/business-logic/monthly-rate",
+                "baseId": "builtin-mr-logic",
+                "baseName": "MR Logic",
+                "sourceId": "business-logic",
+                "sourceName": "Business Logic.md",
+                "sourceType": "file",
+                "sectionId": "monthly-rate",
+                "title": "Month 1 and month 2 allocation",
+                "text": "For month 1 and month 2, Rev%[segment] = the month revenue base for that segment / the total month revenue base for the profit center. Allocated cost[segment] = the month allocation pool × that month Rev%. Keep copied costs separate from the allocated pool.",
+                "kind": "rule",
+                "tags": [
+                  "allocation",
+                  "monthly",
+                  "Rev%"
+                ],
+                "score": 98,
+                "report": "isg-service"
+              },
+              {
+                "id": "builtin-mr-logic/business-logic/quarter-true-up",
+                "baseId": "builtin-mr-logic",
+                "baseName": "MR Logic",
+                "sourceId": "business-logic",
+                "sourceName": "Business Logic.md",
+                "sourceType": "file",
+                "sectionId": "quarter-true-up",
+                "title": "Month 3 quarterly true-up",
+                "text": "For month 3, calculate quarterly Rev% from the quarter revenue base. Month 3 allocated cost[segment] = quarter allocation pool × quarterly Rev%[segment] − month 1 executed allocation[segment] − month 2 executed allocation[segment]. Deduct prior pool allocations only, not copied costs. In the approved close scenario, months 1–2 stay locked and only month 3 true-up is recalculated.",
+                "kind": "rule",
+                "tags": [
+                  "allocation",
+                  "quarter",
+                  "true-up",
+                  "month 3"
+                ],
+                "score": 97,
+                "report": "isg-service"
+              },
+              {
+                "id": "builtin-mr-logic/business-logic/no-base",
+                "baseId": "builtin-mr-logic",
+                "baseName": "MR Logic",
+                "sourceId": "business-logic",
+                "sourceName": "Business Logic.md",
+                "sourceType": "file",
+                "sectionId": "no-base",
+                "title": "No-base default and unresolved boundaries",
+                "text": "When there is no revenue base, allocate the cost pool to B0 (no_base_default_seg). Do not automatically treat a net-zero, near-zero or negative total revenue base as the no-row case; those boundary policies require separate confirmation. A negative true-up can be a valid quarterly adjustment and is not by itself proof of a posting error.",
+                "kind": "rule",
+                "tags": [
+                  "allocation",
+                  "B0",
+                  "no base"
+                ],
+                "score": 96,
+                "report": "isg-service"
+              },
+              {
+                "id": "builtin-mr-logic/data-dictionary/categories-currency",
+                "baseId": "builtin-mr-logic",
+                "baseName": "MR Logic",
+                "sourceId": "data-dictionary",
+                "sourceName": "Data Dictionary & Mapping.md",
+                "sourceType": "file",
+                "sectionId": "categories-currency",
+                "title": "Service categories and amount selection",
+                "text": "Revenue categories are AMTREV, IMMDREV and GTN; cost categories are BMC and NBMC. Select amt_lc for geo_cd=PRC; select amt for other geographies, including ROW. The sample displays USD. The field-selection rule alone does not establish the currency of every real dataset.",
+                "kind": "field",
+                "tags": [
+                  "svc_catg_cd",
+                  "geo_cd",
+                  "amt",
+                  "amt_lc",
+                  "currency"
+                ],
+                "score": 95,
+                "report": "isg-service"
+              }
+            ],
+            "trace": [
+              "Report scope: ISG Service",
+              "Search knowledge bases: MR Logic",
+              "Read 2 searchable source documents; matched 6 sections.",
+              "Organize the retrieved sections and stream the answer with citations."
+            ],
+            "createdAt": "2026-10-30T09:04:53.570Z"
+          }
+        ],
+        "createdAt": "2026-10-30T09:04:53.380Z"
+      }
+    ],
+    "activeChat": "4efcda7b-dd62-4e5e-85c8-d0bd5ad90609",
+    "activeBase": "builtin-mr-logic"
+  },
+  "fpa-proposal-tasks:v1": {
+    "version": 1,
+    "actor": "alex.chen",
+    "proposals": [
+      {
+        "id": "00033fd9-056d-4bca-892f-55a0c0e943a4",
+        "key": "{\"sample\":true,\"scope\":{\"business\":\"ISG Service\",\"geo\":\"ROW\",\"profitCenter\":\"L0AUXG\",\"quarter\":\"2026 Q3\",\"period\":\"2026009\",\"document\":\"5900018271\",\"reference\":\"5900018392\"},\"exclude\":\"REV-2026009-ADJ9001\",\"notes\":\"Built-in demo proposal: verify posting background, counterpart, segment and policy eligibility before recording an allocation-base decision.\",\"actions\":[\"contact\",\"fx\",\"offset\",\"segment\"],\"impact\":{\"originalGPGa\":\"−235,412.32 USD\",\"candidateGPGa\":\"197,960.36 USD\",\"totalGP\":\"−727,638.08 USD / unchanged\",\"leCandidateGP\":\"−1,075,406.28 USD\"}}",
+        "source": {
+          "plan": {
+            "exclude": true,
+            "excludedRecord": "REV-2026009-ADJ9001",
+            "document": "5900018271",
+            "scope": "L0AUXG",
+            "period": "2026009",
+            "notes": "Built-in demo proposal: verify posting background, counterpart, segment and policy eligibility before recording an allocation-base decision.",
+            "actions": [
+              "contact",
+              "offset",
+              "segment",
+              "fx"
+            ],
+            "savedAt": "2026-10-28T01:00:00.000Z"
+          },
+          "sample": true,
+          "case": {
+            "business": "ISG Service",
+            "geo": "ROW",
+            "profitCenter": "L0AUXG",
+            "quarter": "2026 Q3",
+            "period": "2026009",
+            "document": "5900018271",
+            "reference": "5900018392"
+          },
+          "evidence": {
+            "document": "5900018271",
+            "recordId": "REV-2026009-ADJ9001",
+            "segment": "LE",
+            "user": "yangtt16",
+            "amount": "−1,203,813.00 USD",
+            "text": "Quarter-end service revenue adjustment — pending positive-entry review",
+            "counterpart": "No matching positive reference confirmed within the sample quarter; wider checks remain open."
+          },
+          "cause": "The negative LE revenue voucher reduces the quarter denominator and raises the GA allocation weight.",
+          "assumptions": "Exclude the voucher from the allocation base only; preserve posted revenue, copy costs, cost pool and months 1–2. Recalculate month 3 true-up only. Business eligibility is not yet verified.",
+          "impact": {
+            "originalGPGa": "−235,412.32 USD",
+            "candidateGPGa": "197,960.36 USD",
+            "totalGP": "−727,638.08 USD / unchanged",
+            "leCandidateGP": "−1,075,406.28 USD"
+          },
+          "actions": [
+            {
+              "id": "contact",
+              "title": "Contact the posting user",
+              "text": "Ask yangtt16 about the entry background and reference 5900018392. Request the expected positive voucher."
+            },
+            {
+              "id": "offset",
+              "title": "Verify the positive counterpart",
+              "text": "Extend the search if needed. The sample-quarter check does not prove that no offset exists elsewhere."
+            },
+            {
+              "id": "segment",
+              "title": "Check the LE segment assignment",
+              "text": "Compare the source document and business ownership before deciding whether a segment correction is needed."
+            },
+            {
+              "id": "fx",
+              "title": "Check currency differences if relevant",
+              "text": "No FX residual is evidenced in this USD-only sample. Request original-currency details for a real case."
+            }
+          ],
+          "hasUnsavedChanges": false
+        },
+        "createdAt": "2026-10-28T01:00:00.000Z"
+      },
+      {
+        "id": "703383a2-5164-4208-b918-f32bd701bf19",
+        "key": "{\"sample\":false,\"scope\":{\"business\":\"ISG Service\",\"geo\":\"ROW\",\"profitCenter\":\"L0AUXG\",\"quarter\":\"2026 Q3\",\"period\":\"2026009\",\"document\":\"5900018271\",\"reference\":\"5900018392\"},\"exclude\":\"REV-2026009-ADJ9001\",\"notes\":\"\",\"actions\":[\"contact\",\"offset\",\"segment\"],\"impact\":{\"originalGPGa\":\"−235,412.32 USD\",\"candidateGPGa\":\"197,960.36 USD\",\"totalGP\":\"−727,638.08 USD / unchanged\",\"leCandidateGP\":\"−1,075,406.28 USD\"}}",
+        "source": {
+          "plan": {
+            "exclude": true,
+            "excludedRecord": "REV-2026009-ADJ9001",
+            "document": "5900018271",
+            "scope": "L0AUXG",
+            "period": "2026009",
+            "notes": "",
+            "actions": [
+              "contact",
+              "offset",
+              "segment"
+            ],
+            "savedAt": "2026-10-30T09:04:25.916Z"
+          },
+          "sample": false,
+          "case": {
+            "business": "ISG Service",
+            "geo": "ROW",
+            "profitCenter": "L0AUXG",
+            "quarter": "2026 Q3",
+            "period": "2026009",
+            "document": "5900018271",
+            "reference": "5900018392"
+          },
+          "evidence": {
+            "document": "5900018271",
+            "recordId": "REV-2026009-ADJ9001",
+            "segment": "LE",
+            "user": "yangtt16",
+            "amount": "−1,203,813.00 USD",
+            "text": "Quarter-end service revenue adjustment — pending positive-entry review",
+            "counterpart": "No matching positive reference confirmed within the sample quarter; wider checks remain open."
+          },
+          "cause": "The negative LE revenue voucher reduces the quarter denominator and raises the GA allocation weight.",
+          "assumptions": "Exclude the voucher from the allocation base only; preserve posted revenue, copy costs, cost pool and months 1–2. Recalculate month 3 true-up only. Business eligibility is not yet verified.",
+          "impact": {
+            "originalGPGa": "−235,412.32 USD",
+            "candidateGPGa": "197,960.36 USD",
+            "totalGP": "−727,638.08 USD / unchanged",
+            "leCandidateGP": "−1,075,406.28 USD"
+          },
+          "actions": [
+            {
+              "id": "contact",
+              "title": "Contact the posting user",
+              "text": "Ask yangtt16 about the entry background and reference 5900018392. Request the expected positive voucher."
+            },
+            {
+              "id": "offset",
+              "title": "Verify the positive counterpart",
+              "text": "Extend the search if needed. The sample-quarter check does not prove that no offset exists elsewhere."
+            },
+            {
+              "id": "segment",
+              "title": "Check the LE segment assignment",
+              "text": "Compare the source document and business ownership before deciding whether a segment correction is needed."
+            }
+          ],
+          "hasUnsavedChanges": false
+        },
+        "createdAt": "2026-10-30T09:04:37.452Z"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "54567d58-0d2a-4f45-8559-6fa8fcb40ed4",
+        "number": "DEMO-001",
+        "proposalId": "00033fd9-056d-4bca-892f-55a0c0e943a4",
+        "sample": true,
+        "actionId": "contact",
+        "title": "Contact the posting user",
+        "description": "Ask yangtt16 about the entry background and reference 5900018392. Request the expected positive voucher.",
+        "status": "completed",
+        "assignee": "yangtt16",
+        "dueDate": "2026-11-03",
+        "createdAt": "2026-10-28T01:00:00.000Z",
+        "updatedAt": "2026-10-28T01:40:00.000Z",
+        "events": [
+          {
+            "id": "45ee09e8-f149-49c7-adfd-16b633bb5431",
+            "at": "2026-10-28T01:00:00.000Z",
+            "actor": "finance-reviewer",
+            "type": "created",
+            "status": "created",
+            "note": "Created from the selected saved proposal action."
+          },
+          {
+            "id": "abd09e39-322b-4583-b252-c58986806a25",
+            "at": "2026-10-28T01:05:00.000Z",
+            "actor": "finance-reviewer",
+            "type": "assigned",
+            "status": "assigned",
+            "note": "Assigned to yangtt16. Waiting for this person to acknowledge the task."
+          },
+          {
+            "id": "922face9-5b7a-48f2-8ead-8137ea8f0cf0",
+            "at": "2026-10-28T01:09:00.000Z",
+            "actor": "yangtt16",
+            "type": "received",
+            "status": "received",
+            "note": "Built-in demo receipt: posting-background request received."
+          },
+          {
+            "id": "acee5a73-f291-4462-90fd-d6b3950e3186",
+            "at": "2026-10-28T01:15:00.000Z",
+            "actor": "yangtt16",
+            "type": "started",
+            "status": "in_progress",
+            "note": "Built-in demo: reviewing the adjustment text and reference."
+          },
+          {
+            "id": "94694978-c598-441b-a665-f39c17274365",
+            "at": "2026-10-28T01:40:00.000Z",
+            "actor": "yangtt16",
+            "type": "completed",
+            "status": "completed",
+            "note": "Built-in demo outcome: entry background documented. Wider counterpart and allocation-policy reviews remain open."
+          }
+        ]
+      },
+      {
+        "id": "bc1b6e15-8c79-4501-afaa-ddec171eb9fe",
+        "number": "DEMO-002",
+        "proposalId": "00033fd9-056d-4bca-892f-55a0c0e943a4",
+        "sample": true,
+        "actionId": "offset",
+        "title": "Verify the positive counterpart",
+        "description": "Extend the search if needed. The sample-quarter check does not prove that no offset exists elsewhere.",
+        "status": "in_progress",
+        "assignee": "alex.chen",
+        "dueDate": "2026-11-04",
+        "createdAt": "2026-10-28T01:00:00.000Z",
+        "updatedAt": "2026-10-28T01:35:00.000Z",
+        "events": [
+          {
+            "id": "52eade0a-d28c-4203-beee-d0188d8bf7ef",
+            "at": "2026-10-28T01:00:00.000Z",
+            "actor": "finance-reviewer",
+            "type": "created",
+            "status": "created",
+            "note": "Created from the selected saved proposal action."
+          },
+          {
+            "id": "9410f38a-7c93-4f9f-9caf-bc3bb29dcbaa",
+            "at": "2026-10-28T01:06:00.000Z",
+            "actor": "finance-reviewer",
+            "type": "assigned",
+            "status": "assigned",
+            "note": "Assigned to Maya Patel. Waiting for this person to acknowledge the task."
+          },
+          {
+            "id": "e259d9e6-f47d-43e1-9728-e893f5a59b79",
+            "at": "2026-10-28T01:12:00.000Z",
+            "actor": "maya.patel",
+            "type": "received",
+            "status": "received",
+            "note": "Built-in demo: initial counterpart review acknowledged."
+          },
+          {
+            "id": "63d9262f-5e0f-46b9-909f-6a1f76a103ae",
+            "at": "2026-10-28T01:20:00.000Z",
+            "actor": "finance-reviewer",
+            "type": "reassigned",
+            "status": "assigned",
+            "note": "Reassigned from Maya Patel to Alex Chen. Waiting for this person to acknowledge the task."
+          },
+          {
+            "id": "8f2aa9fe-5e2f-4153-b81d-6823262370bf",
+            "at": "2026-10-28T01:25:00.000Z",
+            "actor": "alex.chen",
+            "type": "received",
+            "status": "received",
+            "note": "Built-in demo: handoff received from Maya for the extended offset review."
+          },
+          {
+            "id": "17d81bce-ce39-406e-8395-6354b331a60c",
+            "at": "2026-10-28T01:35:00.000Z",
+            "actor": "alex.chen",
+            "type": "started",
+            "status": "in_progress",
+            "note": "Built-in demo: extending the check across periods and one-to-many offsets."
+          }
+        ]
+      },
+      {
+        "id": "bbcefd98-6586-42a8-9365-bada3fd3dfd2",
+        "number": "DEMO-003",
+        "proposalId": "00033fd9-056d-4bca-892f-55a0c0e943a4",
+        "sample": true,
+        "actionId": "segment",
+        "title": "Check the LE segment assignment",
+        "description": "Compare the source document and business ownership before deciding whether a segment correction is needed.",
+        "status": "assigned",
+        "assignee": "maya.patel",
+        "dueDate": "2026-11-05",
+        "createdAt": "2026-10-28T01:00:00.000Z",
+        "updatedAt": "2026-10-28T01:07:00.000Z",
+        "events": [
+          {
+            "id": "bafbdde5-a5c4-4ad0-9ddc-6afcc21f8f73",
+            "at": "2026-10-28T01:00:00.000Z",
+            "actor": "finance-reviewer",
+            "type": "created",
+            "status": "created",
+            "note": "Created from the selected saved proposal action."
+          },
+          {
+            "id": "ca02d75f-1a09-402e-8b7e-ee96ea7df9ed",
+            "at": "2026-10-28T01:07:00.000Z",
+            "actor": "finance-reviewer",
+            "type": "assigned",
+            "status": "assigned",
+            "note": "Assigned to Maya Patel. Waiting for this person to acknowledge the task."
+          }
+        ]
+      },
+      {
+        "id": "8b14b341-f12e-4f59-be55-209d00b2feb9",
+        "number": "DEMO-004",
+        "proposalId": "00033fd9-056d-4bca-892f-55a0c0e943a4",
+        "sample": true,
+        "actionId": "fx",
+        "title": "Check currency differences if relevant",
+        "description": "No FX residual is evidenced in this USD-only sample. Request original-currency details for a real case.",
+        "status": "received",
+        "assignee": "david.kim",
+        "dueDate": "2026-11-05",
+        "createdAt": "2026-10-28T01:00:00.000Z",
+        "updatedAt": "2026-10-28T01:18:00.000Z",
+        "events": [
+          {
+            "id": "97ce2bb0-88a3-43b6-b993-fc82243d68ec",
+            "at": "2026-10-28T01:00:00.000Z",
+            "actor": "finance-reviewer",
+            "type": "created",
+            "status": "created",
+            "note": "Created from the selected saved proposal action."
+          },
+          {
+            "id": "8553c3e9-79fa-426f-a132-ac38c7830f71",
+            "at": "2026-10-28T01:08:00.000Z",
+            "actor": "finance-reviewer",
+            "type": "assigned",
+            "status": "assigned",
+            "note": "Assigned to David Kim. Waiting for this person to acknowledge the task."
+          },
+          {
+            "id": "4fefe95b-9cbf-4ee8-8b44-a44311affddf",
+            "at": "2026-10-28T01:18:00.000Z",
+            "actor": "david.kim",
+            "type": "received",
+            "status": "received",
+            "note": "Built-in demo: received the relevance check. No FX residual is evidenced in this USD-only sample."
+          }
+        ]
+      },
+      {
+        "id": "32853a00-b154-4589-b541-c0f2adf972a8",
+        "number": "DEMO-005",
+        "proposalId": "00033fd9-056d-4bca-892f-55a0c0e943a4",
+        "sample": true,
+        "actionId": "base-decision",
+        "title": "Confirm the allocation-base treatment",
+        "description": "Review entry validity and allocation-policy eligibility, then document the agreed treatment of voucher 5900018271. If an exclusion is approved, keep posted revenue and months 1–2 fixed and recalculate month 3 only. Record the decision and outcome; this task does not update the ledger.",
+        "status": "created",
+        "assignee": null,
+        "dueDate": "",
+        "createdAt": "2026-10-28T01:00:00.000Z",
+        "updatedAt": "2026-10-28T01:00:00.000Z",
+        "events": [
+          {
+            "id": "809527d4-9c3a-4cce-9a94-ed35594e653b",
+            "at": "2026-10-28T01:00:00.000Z",
+            "actor": "finance-reviewer",
+            "type": "created",
+            "status": "created",
+            "note": "Created from the selected saved proposal action."
+          }
+        ]
+      },
+      {
+        "id": "70a996db-2cb4-4cf5-8227-958d29e03e3b",
+        "number": "TASK-006",
+        "proposalId": "703383a2-5164-4208-b918-f32bd701bf19",
+        "sample": false,
+        "actionId": "contact",
+        "title": "Contact the posting user",
+        "description": "Ask yangtt16 about the entry background and reference 5900018392. Request the expected positive voucher.",
+        "status": "completed",
+        "assignee": "alex.chen",
+        "dueDate": "",
+        "createdAt": "2026-10-30T09:04:37.452Z",
+        "updatedAt": "2026-10-30T09:04:48.703Z",
+        "events": [
+          {
+            "id": "35e7d784-683d-4ed0-8f8c-b68a6d44800f",
+            "at": "2026-10-30T09:04:37.452Z",
+            "actor": "finance-reviewer",
+            "type": "created",
+            "status": "created",
+            "note": "Created from the selected saved proposal action."
+          },
+          {
+            "id": "cc5bcae3-08ec-4405-a258-abe9d45fdb76",
+            "at": "2026-10-30T09:04:46.999Z",
+            "actor": "finance-reviewer",
+            "type": "assigned",
+            "status": "assigned",
+            "note": "Assigned to Alex Chen. Waiting for this person to acknowledge the task."
+          },
+          {
+            "id": "27417224-f474-4187-a1f0-f555cc1b01a0",
+            "at": "2026-10-30T09:04:47.056Z",
+            "actor": "alex.chen",
+            "type": "received",
+            "status": "received",
+            "note": "Task received and acknowledged."
+          },
+          {
+            "id": "468754b1-b48a-4e7a-9d9c-766d7aea58cd",
+            "at": "2026-10-30T09:04:47.089Z",
+            "actor": "alex.chen",
+            "type": "started",
+            "status": "in_progress",
+            "note": "Work started on the assigned action."
+          },
+          {
+            "id": "7adcaaf9-0047-436e-b568-cbacb2c7ba64",
+            "at": "2026-10-30T09:04:48.703Z",
+            "actor": "alex.chen",
+            "type": "completed",
+            "status": "completed",
+            "note": "Demo follow-up documented: request for entry context and positive counterpart prepared. Allocation-policy review remains open; no ledger change."
+          }
+        ]
+      }
+    ],
+    "sampleSeedVersion": 1,
+    "origin": "samples"
+  },
+  "isg-allocation-demo:L0AUXG:1.33757:v1": {
+    "version": 1,
+    "scope": "L0AUXG",
+    "plan": {
+      "exclude": true,
+      "excludedRecord": "REV-2026009-ADJ9001",
+      "document": "5900018271",
+      "scope": "L0AUXG",
+      "period": "2026009",
+      "notes": "",
+      "actions": [
+        "contact",
+        "offset",
+        "segment"
+      ],
+      "savedAt": "2026-10-30T09:04:25.916Z"
+    },
+    "report": {
+      "plan": {
+        "exclude": true,
+        "excludedRecord": "REV-2026009-ADJ9001",
+        "document": "5900018271",
+        "scope": "L0AUXG",
+        "period": "2026009",
+        "notes": "",
+        "actions": [
+          "contact",
+          "offset",
+          "segment"
+        ],
+        "savedAt": "2026-10-30T09:04:25.916Z"
+      },
+      "generatedAt": "2026-10-30T09:04:25.958Z"
+    }
+  },
+  "fpa-monitor-studio:v1": {
+    "version": 1,
+    "cards": [
+      {
+        "id": "d0e396bf-c882-4e13-b5f6-40dc9d839a87",
+        "title": "Segment gross profit",
+        "kind": "bar",
+        "description": "Latest quarter · GP by BPC Segment. Flag losses before close.",
+        "scope": {
+          "bg": "ISG",
+          "report": "isg-service",
+          "dimension": "bpc_seg_cd",
+          "kpi": "gp"
+        },
+        "benchmark": {
+          "below": 0
+        },
+        "pos": {
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 5
+        }
+      },
+      {
+        "id": "a13af87f-4e7e-4ad2-8f2f-82507e28f896",
+        "title": "Revenue momentum",
+        "kind": "line",
+        "description": "Five quarters · Revenue by BPC BU. Follow growth and decline.",
+        "scope": {
+          "bg": "ISG",
+          "report": "isg-service",
+          "dimension": "bpc_bu",
+          "kpi": "revenue"
+        },
+        "benchmark": {
+          "growth": 8,
+          "decline": 5
+        },
+        "pos": {
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 5
+        }
+      }
+    ],
+    "templates": []
+  }
+}

@@ -1,0 +1,31 @@
+1
+00:00:00,333 --> 00:00:04,833
+Start with the negative GP alert, then open Analysis.
+
+2
+00:00:05,100 --> 00:00:08,200
+Ask why GP turned negative.
+
+3
+00:00:08,200 --> 00:00:12,367
+Trace the allocation and revenue base.
+
+4
+00:00:13,200 --> 00:00:15,767
+Open the source voucher.
+
+5
+00:00:15,767 --> 00:00:19,133
+Review the amount, posting user, and reference.
+
+6
+00:00:20,000 --> 00:00:23,300
+Exclude the voucher from the allocation base only.
+
+7
+00:00:23,300 --> 00:00:26,400
+GA improves. Total month 3 GP stays unchanged.
+
+8
+00:00:26,400 --> 00:00:30,000
+LE remains unresolved. Finance review is still required.

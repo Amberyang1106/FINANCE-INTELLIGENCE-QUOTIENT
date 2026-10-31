@@ -1,0 +1,7 @@
+node_modules/
+renders/
+*.log
+capture-command.json
+capture-result.json
+capture-ready.json
+public/operation.webm

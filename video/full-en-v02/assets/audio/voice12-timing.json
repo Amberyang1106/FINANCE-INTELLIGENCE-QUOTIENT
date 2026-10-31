@@ -1,0 +1,86 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  8,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Built-in"
+    },
+    {
+        "Index":  9,
+        "Count":  5,
+        "Seconds":  0.46499999999999997,
+        "Text":  "rules"
+    },
+    {
+        "Index":  15,
+        "Count":  3,
+        "Seconds":  0.79499999999999993,
+        "Text":  "and"
+    },
+    {
+        "Index":  19,
+        "Count":  8,
+        "Seconds":  0.93499999999999994,
+        "Text":  "personal"
+    },
+    {
+        "Index":  28,
+        "Count":  9,
+        "Seconds":  1.41,
+        "Text":  "knowledge"
+    },
+    {
+        "Index":  38,
+        "Count":  9,
+        "Seconds":  1.8099999999999998,
+        "Text":  "libraries"
+    },
+    {
+        "Index":  48,
+        "Count":  4,
+        "Seconds":  2.44,
+        "Text":  "keep"
+    },
+    {
+        "Index":  53,
+        "Count":  9,
+        "Seconds":  2.71,
+        "Text":  "reporting"
+    },
+    {
+        "Index":  63,
+        "Count":  11,
+        "Seconds":  3.2249999999999996,
+        "Text":  "definitions"
+    },
+    {
+        "Index":  75,
+        "Count":  4,
+        "Seconds":  3.895,
+        "Text":  "easy"
+    },
+    {
+        "Index":  80,
+        "Count":  2,
+        "Seconds":  4.1949999999999994,
+        "Text":  "to"
+    },
+    {
+        "Index":  83,
+        "Count":  4,
+        "Seconds":  4.31,
+        "Text":  "find"
+    },
+    {
+        "Index":  88,
+        "Count":  3,
+        "Seconds":  4.68,
+        "Text":  "and"
+    },
+    {
+        "Index":  92,
+        "Count":  5,
+        "Seconds":  4.845,
+        "Text":  "reuse"
+    }
+]

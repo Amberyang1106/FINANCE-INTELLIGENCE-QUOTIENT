@@ -14,3 +14,8 @@ video/launch-preview/film/.hyperframes/
 !.env.example
 .DS_Store
 Thumbs.db
+
+# Reinstallable video export dependencies and regenerated temporary audio
+**/python-lib/
+**/assets/trim/
+*.remotion-in-progress

@@ -1,0 +1,86 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  6,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Assign"
+    },
+    {
+        "Index":  7,
+        "Count":  2,
+        "Seconds":  0.47,
+        "Text":  "an"
+    },
+    {
+        "Index":  10,
+        "Count":  5,
+        "Seconds":  0.595,
+        "Text":  "owner"
+    },
+    {
+        "Index":  17,
+        "Count":  3,
+        "Seconds":  1.805,
+        "Text":  "The"
+    },
+    {
+        "Index":  21,
+        "Count":  8,
+        "Seconds":  1.94,
+        "Text":  "assignee"
+    },
+    {
+        "Index":  30,
+        "Count":  8,
+        "Seconds":  2.5149999999999997,
+        "Text":  "receives"
+    },
+    {
+        "Index":  39,
+        "Count":  3,
+        "Seconds":  2.9949999999999997,
+        "Text":  "the"
+    },
+    {
+        "Index":  43,
+        "Count":  4,
+        "Seconds":  3.0949999999999998,
+        "Text":  "task"
+    },
+    {
+        "Index":  48,
+        "Count":  3,
+        "Seconds":  3.505,
+        "Text":  "and"
+    },
+    {
+        "Index":  52,
+        "Count":  6,
+        "Seconds":  3.63,
+        "Text":  "starts"
+    },
+    {
+        "Index":  59,
+        "Count":  4,
+        "Seconds":  4.045,
+        "Text":  "work"
+    },
+    {
+        "Index":  65,
+        "Count":  5,
+        "Seconds":  5.2749999999999995,
+        "Text":  "Track"
+    },
+    {
+        "Index":  71,
+        "Count":  4,
+        "Seconds":  5.6049999999999995,
+        "Text":  "each"
+    },
+    {
+        "Index":  76,
+        "Count":  7,
+        "Seconds":  5.81,
+        "Text":  "handoff"
+    }
+]

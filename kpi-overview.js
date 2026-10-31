@@ -1,6 +1,13 @@
 /* Fixed KPI monitors reuse the reviewed allocation model; historical quarters are illustrative. */
 (function(){'use strict';
 var model=window.FPAMonitor,$=function(id){return document.getElementById(id);};
+var months=['Apr-26','May-26','Jun-26','Jul-26','Aug-26','Sep-26','Oct-26','Nov-26','Dec-26','Jan-27','Feb-27','Mar-27'];
+var monitors=['Geo','Region','Segment','RTM','Channel','CPU','CPU Deal','CPU Deal Name','CPU Family','CPU Part Number','CPU SKU Name','CPU Vendor','Units QTY','Derived net revenue','Derived BMC','Derived GP','Q BPC Revenue','Q BPC BMC','Q BPC GP','Freight','Warranty','WOI'];
+if ($('statusGrid')) {
+$('statusGrid').innerHTML='<table class="status-table"><thead><tr><th scope="col">Monitor</th>'+months.map(function(m){return '<th scope="col">'+m+'</th>';}).join('')+'</tr></thead><tbody>'+monitors.map(function(name){return '<tr><th scope="row">'+name+'</th>'+months.map(function(m,i){return '<td>'+(name==='Freight'&&i===2?'<button type="button" class="status-light alert-light" id="freightTrigger" aria-label="Freight alert for June 2026; open details"></button>':'<span class="status-light" role="img" aria-label="No sample alert"></span>')+'</td>';}).join('')+'</tr>';}).join('')+'</tbody></table>';
+$('freightTrigger').addEventListener('click',function(){$('freightAlert').showModal();});
+$('closeFreight').addEventListener('click',function(){$('freightAlert').close();});
+}
 var money=function(cents){return new Intl.NumberFormat('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}).format(cents/100);};
 var compact=function(cents){return '$'+(cents/100000000).toFixed(2)+'m';};
 var short=function(cents){return cents>=100000000?compact(cents):'$'+(cents/100000).toFixed(0)+'k';};

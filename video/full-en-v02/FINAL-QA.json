@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-30",
+  "media": {
+    "file": "Finance-Exception-Intelligence-Vantage-Overview-en-US-v02.mp4",
+    "bytes": 138863439,
+    "sha256": "4bd554b2bb8e1ba9da4c3c300f0f6dd07dca130d6530b6e9143d462764ab7c3e",
+    "width": 3840,
+    "height": 2160,
+    "fps": 60,
+    "seconds": 170,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "channels": 2
+  },
+  "completeDecodePassed": true,
+  "sourceChecksPassed": true,
+  "hyperframesChecksPassed": true,
+  "decodedFramesReviewed": [
+    3,
+    13.2,
+    25,
+    37,
+    50,
+    66,
+    81,
+    91,
+    103,
+    112,
+    123,
+    133,
+    144,
+    158.5,
+    161,
+    165
+  ],
+  "captionFix": {
+    "issue": "Sequential HyperFrames caption capture retained previous glyphs.",
+    "acceptedRouting": "Remotion picture + HyperFrames mixed narration/music + stateless ASS subtitles",
+    "font": "Native graphics Geologica; final captions ArialMT"
+  },
+  "audio": {
+    "integratedLUFS": -16.29,
+    "truePeakDbTP": -2.73,
+    "loudnessRangeLU": 5.4,
+    "auditioned": false
+  },
+  "browserPlayback": {
+    "metadata": {
+      "width": 3840,
+      "height": 2160,
+      "duration": 170,
+      "readyState": 4,
+      "error": null
+    },
+    "played": {
+      "time": 1.064199,
+      "paused": false,
+      "decoded": 71
+    },
+    "errors": [],
+    "pass": true,
+    "note": "Headless muted playback/seek verification. This is not an audible listening review."
+  },
+  "branch": "feature/vantage-ui",
+  "mainUnchanged": true,
+  "pushed": false,
+  "humanReview": "Synthetic voice timbre and audible music balance remain for user playback."
+}

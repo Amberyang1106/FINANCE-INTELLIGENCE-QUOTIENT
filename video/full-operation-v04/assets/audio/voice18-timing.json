@@ -1,0 +1,56 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  6,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Create"
+    },
+    {
+        "Index":  7,
+        "Count":  1,
+        "Seconds":  0.46499999999999997,
+        "Text":  "a"
+    },
+    {
+        "Index":  9,
+        "Count":  9,
+        "Seconds":  0.52,
+        "Text":  "follow-up"
+    },
+    {
+        "Index":  19,
+        "Count":  4,
+        "Seconds":  1.04,
+        "Text":  "task"
+    },
+    {
+        "Index":  24,
+        "Count":  4,
+        "Seconds":  1.43,
+        "Text":  "from"
+    },
+    {
+        "Index":  29,
+        "Count":  3,
+        "Seconds":  1.635,
+        "Text":  "the"
+    },
+    {
+        "Index":  33,
+        "Count":  4,
+        "Seconds":  1.7149999999999999,
+        "Text":  "same"
+    },
+    {
+        "Index":  38,
+        "Count":  5,
+        "Seconds":  2.04,
+        "Text":  "saved"
+    },
+    {
+        "Index":  44,
+        "Count":  8,
+        "Seconds":  2.425,
+        "Text":  "proposal"
+    }
+]

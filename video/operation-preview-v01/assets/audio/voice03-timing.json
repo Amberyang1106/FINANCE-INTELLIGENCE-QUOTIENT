@@ -1,0 +1,68 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  4,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Open"
+    },
+    {
+        "Index":  5,
+        "Count":  3,
+        "Seconds":  0.365,
+        "Text":  "the"
+    },
+    {
+        "Index":  9,
+        "Count":  6,
+        "Seconds":  0.445,
+        "Text":  "source"
+    },
+    {
+        "Index":  16,
+        "Count":  7,
+        "Seconds":  0.80499999999999994,
+        "Text":  "voucher"
+    },
+    {
+        "Index":  25,
+        "Count":  6,
+        "Seconds":  2.175,
+        "Text":  "Review"
+    },
+    {
+        "Index":  32,
+        "Count":  3,
+        "Seconds":  2.505,
+        "Text":  "the"
+    },
+    {
+        "Index":  36,
+        "Count":  6,
+        "Seconds":  2.6399999999999997,
+        "Text":  "amount"
+    },
+    {
+        "Index":  44,
+        "Count":  7,
+        "Seconds":  3.2199999999999998,
+        "Text":  "posting"
+    },
+    {
+        "Index":  52,
+        "Count":  4,
+        "Seconds":  3.645,
+        "Text":  "user"
+    },
+    {
+        "Index":  58,
+        "Count":  3,
+        "Seconds":  4.24,
+        "Text":  "and"
+    },
+    {
+        "Index":  62,
+        "Count":  9,
+        "Seconds":  4.39,
+        "Text":  "reference"
+    }
+]

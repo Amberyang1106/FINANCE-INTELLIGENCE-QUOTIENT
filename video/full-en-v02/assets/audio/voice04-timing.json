@@ -1,0 +1,110 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  3,
+        "Seconds":  0.099999999999999992,
+        "Text":  "The"
+    },
+    {
+        "Index":  4,
+        "Count":  13,
+        "Seconds":  0.215,
+        "Text":  "investigation"
+    },
+    {
+        "Index":  18,
+        "Count":  7,
+        "Seconds":  1.055,
+        "Text":  "carries"
+    },
+    {
+        "Index":  26,
+        "Count":  3,
+        "Seconds":  1.45,
+        "Text":  "the"
+    },
+    {
+        "Index":  30,
+        "Count":  5,
+        "Seconds":  1.535,
+        "Text":  "scope"
+    },
+    {
+        "Index":  36,
+        "Count":  7,
+        "Seconds":  1.9449999999999998,
+        "Text":  "forward"
+    },
+    {
+        "Index":  45,
+        "Count":  8,
+        "Seconds":  2.84,
+        "Text":  "checking"
+    },
+    {
+        "Index":  54,
+        "Count":  3,
+        "Seconds":  3.205,
+        "Text":  "the"
+    },
+    {
+        "Index":  58,
+        "Count":  5,
+        "Seconds":  3.3249999999999997,
+        "Text":  "rules"
+    },
+    {
+        "Index":  65,
+        "Count":  11,
+        "Seconds":  3.9,
+        "Text":  "quarter-end"
+    },
+    {
+        "Index":  77,
+        "Count":  7,
+        "Seconds":  4.49,
+        "Text":  "true-up"
+    },
+    {
+        "Index":  86,
+        "Count":  7,
+        "Seconds":  5.085,
+        "Text":  "revenue"
+    },
+    {
+        "Index":  94,
+        "Count":  4,
+        "Seconds":  5.52,
+        "Text":  "base"
+    },
+    {
+        "Index":  100,
+        "Count":  3,
+        "Seconds":  6.0649999999999995,
+        "Text":  "and"
+    },
+    {
+        "Index":  104,
+        "Count":  6,
+        "Seconds":  6.1899999999999995,
+        "Text":  "source"
+    },
+    {
+        "Index":  111,
+        "Count":  9,
+        "Seconds":  6.5699999999999994,
+        "Text":  "documents"
+    },
+    {
+        "Index":  121,
+        "Count":  6,
+        "Seconds":  7.145,
+        "Text":  "across"
+    },
+    {
+        "Index":  128,
+        "Count":  8,
+        "Seconds":  7.5299999999999994,
+        "Text":  "segments"
+    }
+]

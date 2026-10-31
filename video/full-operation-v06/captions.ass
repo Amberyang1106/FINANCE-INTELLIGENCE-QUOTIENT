@@ -1,0 +1,79 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 2560
+PlayResY: 1440
+WrapStyle: 0
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: EN,Arial,42,&H00FFFFFF,&H00FFFFFF,&H00100B07,&H80000000,0,0,0,0,100,100,0,0,1,3,0,2,160,160,106,1
+Style: ZH,Microsoft YaHei,36,&H00CCDBDF,&H00FFFFFF,&H00100B07,&H80000000,0,0,0,0,100,100,0,0,1,3,0,2,160,160,35,1
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,0:00:00.00,0:00:03.00,EN,,0,0,0,,Finance Exception Intelligence.
+Dialogue: 0,0:00:00.00,0:00:03.00,ZH,,0,0,0,,财务异常智能。
+Dialogue: 0,0:00:03.00,0:00:05.00,EN,,0,0,0,,Evidence into action.
+Dialogue: 0,0:00:03.00,0:00:05.00,ZH,,0,0,0,,从证据走向行动。
+Dialogue: 0,0:00:05.00,0:00:06.00,EN,,0,0,0,,Monthly status.
+Dialogue: 0,0:00:05.00,0:00:06.00,ZH,,0,0,0,,查看月度监控状态。
+Dialogue: 0,0:00:06.00,0:00:07.00,EN,,0,0,0,,Open Freight.
+Dialogue: 0,0:00:06.00,0:00:07.00,ZH,,0,0,0,,打开 Freight 预警。
+Dialogue: 0,0:00:07.00,0:00:10.00,EN,,0,0,0,,A possible duplicate allocation needs finance review.
+Dialogue: 0,0:00:07.00,0:00:10.00,ZH,,0,0,0,,可能存在重复分摊，需财务核实。
+Dialogue: 0,0:00:10.00,0:00:14.89,EN,,0,0,0,,Identify records, correct duplicates, rerun, and validate Freight and GP.
+Dialogue: 0,0:00:10.00,0:00:14.89,ZH,,0,0,0,,识别记录，修正重复分摊，重新运行，并验证 Freight 与毛利。
+Dialogue: 0,0:00:14.89,0:00:24.77,EN,,0,0,0,,Review revenue, cost, and cost credit trends.
+Dialogue: 0,0:00:14.89,0:00:24.77,ZH,,0,0,0,,查看收入、成本和成本抵减趋势。
+Dialogue: 0,0:00:24.77,0:00:27.90,EN,,0,0,0,,Now, investigate a separate allocation exception.
+Dialogue: 0,0:00:24.77,0:00:27.90,ZH,,0,0,0,,再看一个独立的分摊异常。
+Dialogue: 0,0:00:27.90,0:00:31.00,EN,,0,0,0,,GA's month-three gross profit is negative.
+Dialogue: 0,0:00:27.90,0:00:31.00,ZH,,0,0,0,,GA 第三个月毛利为负。
+Dialogue: 0,0:00:31.00,0:00:35.67,EN,,0,0,0,,Ask why gross profit turned negative.
+Dialogue: 0,0:00:31.00,0:00:35.67,ZH,,0,0,0,,询问毛利为什么转为负数。
+Dialogue: 0,0:00:35.67,0:00:42.25,EN,,0,0,0,,Follow the rules, true-up, revenue base, and source evidence.
+Dialogue: 0,0:00:35.67,0:00:42.25,ZH,,0,0,0,,依次追踪规则、轧差、收入基数和源凭证。
+Dialogue: 0,0:00:42.25,0:00:44.78,EN,,0,0,0,,Open the negative revenue voucher.
+Dialogue: 0,0:00:42.25,0:00:44.78,ZH,,0,0,0,,打开负收入凭证。
+Dialogue: 0,0:00:44.78,0:00:47.30,EN,,0,0,0,,Check amount, segment, user and reference.
+Dialogue: 0,0:00:44.78,0:00:47.30,ZH,,0,0,0,,核对金额、segment、入账人和参考号。
+Dialogue: 0,0:00:47.30,0:00:49.83,EN,,0,0,0,,No matching positive entry is confirmed.
+Dialogue: 0,0:00:47.30,0:00:49.83,ZH,,0,0,0,,本样例尚未确认匹配的正向凭证。
+Dialogue: 0,0:00:49.83,0:00:53.83,EN,,0,0,0,,LE's negative base raises GA's share and pressures GP.
+Dialogue: 0,0:00:49.83,0:00:53.83,ZH,,0,0,0,,LE 负基数放大 GA 权重，影响毛利。
+Dialogue: 0,0:00:53.83,0:00:58.55,EN,,0,0,0,,Compare excluding the voucher from the allocation base only.
+Dialogue: 0,0:00:53.83,0:00:58.55,ZH,,0,0,0,,比较仅将凭证排除在分摊基数之外的方案。
+Dialogue: 0,0:00:58.55,0:01:03.27,EN,,0,0,0,,Posted revenue and months one and two stay unchanged.
+Dialogue: 0,0:00:58.55,0:01:03.27,ZH,,0,0,0,,已入账收入和前两个月的分摊结果不变。
+Dialogue: 0,0:01:03.27,0:01:07.98,EN,,0,0,0,,GA improves; total GP unchanged; LE needs review.
+Dialogue: 0,0:01:03.27,0:01:07.98,ZH,,0,0,0,,GA 改善，总毛利不变，LE 仍待核查。
+Dialogue: 0,0:01:07.98,0:01:14.19,EN,,0,0,0,,Save the candidate and generate a report with evidence, assumptions, and actions.
+Dialogue: 0,0:01:07.98,0:01:14.19,ZH,,0,0,0,,保存候选方案，生成包含证据、假设和行动的报告。
+Dialogue: 0,0:01:14.19,0:01:20.94,EN,,0,0,0,,Turn this saved proposal into accountable follow-up.
+Dialogue: 0,0:01:14.19,0:01:20.94,ZH,,0,0,0,,让这份已保存方案进入有负责人、有反馈的后续行动。
+Dialogue: 0,0:01:20.94,0:01:23.29,EN,,0,0,0,,Assign an owner.
+Dialogue: 0,0:01:20.94,0:01:23.29,ZH,,0,0,0,,分派负责人。
+Dialogue: 0,0:01:23.29,0:01:25.57,EN,,0,0,0,,Confirm receipt.
+Dialogue: 0,0:01:23.29,0:01:25.57,ZH,,0,0,0,,确认任务已接收。
+Dialogue: 0,0:01:25.57,0:01:32.18,EN,,0,0,0,,Start work and track the handoff.
+Dialogue: 0,0:01:25.57,0:01:32.18,ZH,,0,0,0,,开始处理并追踪交接。
+Dialogue: 0,0:01:32.18,0:01:34.15,EN,,0,0,0,,Record the outcome.
+Dialogue: 0,0:01:32.18,0:01:34.15,ZH,,0,0,0,,记录处理结果。
+Dialogue: 0,0:01:34.15,0:01:36.10,EN,,0,0,0,,Ledger unchanged.
+Dialogue: 0,0:01:34.15,0:01:36.10,ZH,,0,0,0,,账务保持不变。
+Dialogue: 0,0:01:37.10,0:01:45.05,EN,,0,0,0,,Next, understand the rules behind the numbers. Ask about report logic.
+Dialogue: 0,0:01:37.10,0:01:45.05,ZH,,0,0,0,,接下来理解数字背后的规则，询问报表逻辑。
+Dialogue: 0,0:01:45.05,0:01:52.99,EN,,0,0,0,,The simulated answer streams from the selected knowledge base and links to its source.
+Dialogue: 0,0:01:45.05,0:01:52.99,ZH,,0,0,0,,模拟答案从所选知识库流式展示，并链接原文。
+Dialogue: 0,0:01:52.99,0:01:57.00,EN,,0,0,0,,Explore built-in and personal knowledge.
+Dialogue: 0,0:01:52.99,0:01:57.00,ZH,,0,0,0,,查看内置和个人知识库。
+Dialogue: 0,0:01:58.00,0:02:05.19,EN,,0,0,0,,Use that understanding to define your monitor. Choose the report, dimension and metric.
+Dialogue: 0,0:01:58.00,0:02:05.19,ZH,,0,0,0,,基于对规则的理解定义监控，选择报表、维度和指标。
+Dialogue: 0,0:02:05.19,0:02:12.37,EN,,0,0,0,,Review the chart, then set a gross-profit threshold.
+Dialogue: 0,0:02:05.19,0:02:12.37,ZH,,0,0,0,,查看图表，再设置毛利阈值。
+Dialogue: 0,0:02:12.37,0:02:18.50,EN,,0,0,0,,Add a revenue trend.
+Dialogue: 0,0:02:12.37,0:02:18.50,ZH,,0,0,0,,添加收入趋势。
+Dialogue: 0,0:02:18.50,0:02:21.67,EN,,0,0,0,,Drag to arrange your monitors.
+Dialogue: 0,0:02:18.50,0:02:21.67,ZH,,0,0,0,,拖动卡片，调整监控布局。
+Dialogue: 0,0:02:21.67,0:02:23.47,EN,,0,0,0,,Reuse templates.
+Dialogue: 0,0:02:21.67,0:02:23.47,ZH,,0,0,0,,复用监控模板。
+Dialogue: 0,0:02:23.47,0:02:28.50,EN,,0,0,0,,Finance Exception Intelligence. From signals to accountable action.
+Dialogue: 0,0:02:23.47,0:02:28.50,ZH,,0,0,0,,财务异常智能：从监测信号走向可追踪的行动。

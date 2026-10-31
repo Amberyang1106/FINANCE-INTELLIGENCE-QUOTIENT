@@ -1,0 +1,19 @@
+{
+  "decode_pass": true,
+  "decode_errors": "",
+  "duration_seconds": 148.5,
+  "missing_media": [],
+  "caption_overlap": [],
+  "max_voice_tempo": 1.259140625,
+  "picture_segments": 20,
+  "tracks": 5,
+  "segments": [
+    20,
+    1,
+    1,
+    34,
+    34
+  ],
+  "full_native_viewport_retained": true,
+  "jianying_open_verified": false
+}

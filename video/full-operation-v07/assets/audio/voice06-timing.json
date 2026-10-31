@@ -1,0 +1,68 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  8,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Identify"
+    },
+    {
+        "Index":  9,
+        "Count":  7,
+        "Seconds":  0.735,
+        "Text":  "records"
+    },
+    {
+        "Index":  18,
+        "Count":  7,
+        "Seconds":  1.405,
+        "Text":  "correct"
+    },
+    {
+        "Index":  26,
+        "Count":  10,
+        "Seconds":  1.78,
+        "Text":  "duplicates"
+    },
+    {
+        "Index":  38,
+        "Count":  5,
+        "Seconds":  2.6149999999999998,
+        "Text":  "rerun"
+    },
+    {
+        "Index":  45,
+        "Count":  3,
+        "Seconds":  3.1999999999999997,
+        "Text":  "and"
+    },
+    {
+        "Index":  49,
+        "Count":  8,
+        "Seconds":  3.34,
+        "Text":  "validate"
+    },
+    {
+        "Index":  58,
+        "Count":  7,
+        "Seconds":  3.835,
+        "Text":  "Freight"
+    },
+    {
+        "Index":  66,
+        "Count":  3,
+        "Seconds":  4.13,
+        "Text":  "and"
+    },
+    {
+        "Index":  70,
+        "Count":  1,
+        "Seconds":  4.285,
+        "Text":  "G"
+    },
+    {
+        "Index":  72,
+        "Count":  1,
+        "Seconds":  4.515,
+        "Text":  "P"
+    }
+]

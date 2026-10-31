@@ -1,0 +1,32 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  5,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Trace"
+    },
+    {
+        "Index":  6,
+        "Count":  1,
+        "Seconds":  0.425,
+        "Text":  "a"
+    },
+    {
+        "Index":  8,
+        "Count":  8,
+        "Seconds":  0.48,
+        "Text":  "separate"
+    },
+    {
+        "Index":  17,
+        "Count":  10,
+        "Seconds":  0.92999999999999994,
+        "Text":  "allocation"
+    },
+    {
+        "Index":  28,
+        "Count":  9,
+        "Seconds":  1.575,
+        "Text":  "exception"
+    }
+]

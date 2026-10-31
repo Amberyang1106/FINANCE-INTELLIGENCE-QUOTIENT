@@ -1,0 +1,14 @@
+{
+  "branch": {
+    "code": 0,
+    "out": "feature/vantage-ui\n",
+    "err": ""
+  },
+  "main": {
+    "code": 0,
+    "out": "3071b6df494298594eed4674c59a4b88bd80bb30\n",
+    "err": ""
+  },
+  "fullFilmSha256": "4bd554b2bb8e1ba9da4c3c300f0f6dd07dca130d6530b6e9143d462764ab7c3e",
+  "applicationSha256": "c0ea358eba954874db32f442558e51eac2d25ea536f810b6dba1fd5cd8d3e157"
+}

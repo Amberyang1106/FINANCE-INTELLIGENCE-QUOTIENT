@@ -1,0 +1,56 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  7,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Compare"
+    },
+    {
+        "Index":  8,
+        "Count":  9,
+        "Seconds":  0.49,
+        "Text":  "excluding"
+    },
+    {
+        "Index":  18,
+        "Count":  3,
+        "Seconds":  1.02,
+        "Text":  "the"
+    },
+    {
+        "Index":  22,
+        "Count":  7,
+        "Seconds":  1.0999999999999999,
+        "Text":  "voucher"
+    },
+    {
+        "Index":  30,
+        "Count":  4,
+        "Seconds":  1.505,
+        "Text":  "from"
+    },
+    {
+        "Index":  35,
+        "Count":  3,
+        "Seconds":  1.7049999999999998,
+        "Text":  "the"
+    },
+    {
+        "Index":  39,
+        "Count":  10,
+        "Seconds":  1.845,
+        "Text":  "allocation"
+    },
+    {
+        "Index":  50,
+        "Count":  4,
+        "Seconds":  2.52,
+        "Text":  "base"
+    },
+    {
+        "Index":  55,
+        "Count":  4,
+        "Seconds":  2.8449999999999998,
+        "Text":  "only"
+    }
+]

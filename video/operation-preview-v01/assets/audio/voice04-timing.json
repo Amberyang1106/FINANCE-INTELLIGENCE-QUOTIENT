@@ -1,0 +1,116 @@
+﻿[
+    {
+        "Index":  0,
+        "Count":  7,
+        "Seconds":  0.099999999999999992,
+        "Text":  "Exclude"
+    },
+    {
+        "Index":  8,
+        "Count":  2,
+        "Seconds":  0.55999999999999994,
+        "Text":  "it"
+    },
+    {
+        "Index":  11,
+        "Count":  4,
+        "Seconds":  0.68499999999999994,
+        "Text":  "from"
+    },
+    {
+        "Index":  16,
+        "Count":  3,
+        "Seconds":  0.89,
+        "Text":  "the"
+    },
+    {
+        "Index":  20,
+        "Count":  4,
+        "Seconds":  0.97,
+        "Text":  "base"
+    },
+    {
+        "Index":  25,
+        "Count":  4,
+        "Seconds":  1.315,
+        "Text":  "only"
+    },
+    {
+        "Index":  31,
+        "Count":  1,
+        "Seconds":  2.58,
+        "Text":  "G"
+    },
+    {
+        "Index":  33,
+        "Count":  1,
+        "Seconds":  2.85,
+        "Text":  "A"
+    },
+    {
+        "Index":  35,
+        "Count":  8,
+        "Seconds":  3.005,
+        "Text":  "improves"
+    },
+    {
+        "Index":  45,
+        "Count":  3,
+        "Seconds":  4.045,
+        "Text":  "but"
+    },
+    {
+        "Index":  49,
+        "Count":  5,
+        "Seconds":  4.205,
+        "Text":  "total"
+    },
+    {
+        "Index":  55,
+        "Count":  1,
+        "Seconds":  4.5649999999999995,
+        "Text":  "G"
+    },
+    {
+        "Index":  57,
+        "Count":  1,
+        "Seconds":  4.795,
+        "Text":  "P"
+    },
+    {
+        "Index":  59,
+        "Count":  5,
+        "Seconds":  5.0649999999999995,
+        "Text":  "stays"
+    },
+    {
+        "Index":  65,
+        "Count":  9,
+        "Seconds":  5.435,
+        "Text":  "unchanged"
+    },
+    {
+        "Index":  76,
+        "Count":  1,
+        "Seconds":  7.045,
+        "Text":  "L"
+    },
+    {
+        "Index":  78,
+        "Count":  1,
+        "Seconds":  7.2399999999999993,
+        "Text":  "E"
+    },
+    {
+        "Index":  80,
+        "Count":  7,
+        "Seconds":  7.385,
+        "Text":  "remains"
+    },
+    {
+        "Index":  88,
+        "Count":  10,
+        "Seconds":  7.8549999999999995,
+        "Text":  "unresolved"
+    }
+]
